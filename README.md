@@ -19,7 +19,7 @@ Then when you're working on your project, just run the following command:
 bundle exec compass watch
 ```
 
-Once it has all been compiled yo view the templates by opening the index.html file:
+Once it has all been compiled you can view the templates by opening the index.html file:
 
 ```bash
 cd booking-system-template

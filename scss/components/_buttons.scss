@@ -4,6 +4,30 @@ button.button {
 	font-size: 1.25rem;
 	text-decoration: none;
 
+	&.light-grey { 
+		background-color: #E8EAEA;
+		color: $body-font-color;
+
+		&.active {
+			background-color: #C7C7C7;
+			box-shadow: inset 1px 1px 3px #8E8C8C;
+		}	
+
+		&.bookmark-icon {
+			background-image: url(../images/icons/bookmark.svg);
+			background-size: 1rem 1rem;
+			background-repeat: no-repeat;
+			background-position: 10px 50%;
+		}
+
+		&.lamp-icon {
+			background-image: url(../images/icons/lamp.svg);
+			background-size: 1rem 1rem;
+			background-repeat: no-repeat;
+			background-position: 10px 50%;
+		}
+	}
+
 	&.disabled {
 		background-color: $button-disabled-color;
 	}
@@ -42,32 +66,10 @@ button.button {
 	}
 
 	&.grey {
+		background-color: $grey;
+	}
+
+	&.dark-grey {
 		background-color: $darker-grey;
 	}
-}
-
-
-.button-light-grey { 
-	background-color: #E8EAEA;
-	color: $body-font-color;
-
-	&.active {
-		background-color: #C7C7C7;
-		box-shadow: inset 1px 1px 3px #8E8C8C;
-	}	
-
-	&.bookmark-icon {
-		background-image: url(../images/icons/bookmark.svg);
-		background-size: 1rem 1rem;
-		background-repeat: no-repeat;
-		background-position: 10px 50%;
-	}
-
-	&.lamp-icon {
-		background-image: url(../images/icons/lamp.svg);
-		background-size: 1rem 1rem;
-		background-repeat: no-repeat;
-		background-position: 10px 50%;
-	}
-
 }

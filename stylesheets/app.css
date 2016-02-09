@@ -4381,21 +4381,49 @@ button.button {
   text-decoration: none;
 }
 /* line 7, ../scss/components/_buttons.scss */
+a.button.light-grey,
+button.button.light-grey {
+  background-color: #E8EAEA;
+  color: #4e4e4e;
+}
+/* line 11, ../scss/components/_buttons.scss */
+a.button.light-grey.active,
+button.button.light-grey.active {
+  background-color: #C7C7C7;
+  box-shadow: inset 1px 1px 3px #8E8C8C;
+}
+/* line 16, ../scss/components/_buttons.scss */
+a.button.light-grey.bookmark-icon,
+button.button.light-grey.bookmark-icon {
+  background-image: url(../images/icons/bookmark.svg);
+  background-size: 1rem 1rem;
+  background-repeat: no-repeat;
+  background-position: 10px 50%;
+}
+/* line 23, ../scss/components/_buttons.scss */
+a.button.light-grey.lamp-icon,
+button.button.light-grey.lamp-icon {
+  background-image: url(../images/icons/lamp.svg);
+  background-size: 1rem 1rem;
+  background-repeat: no-repeat;
+  background-position: 10px 50%;
+}
+/* line 31, ../scss/components/_buttons.scss */
 a.button.disabled,
 button.button.disabled {
   background-color: #D5D5D5;
 }
-/* line 11, ../scss/components/_buttons.scss */
+/* line 35, ../scss/components/_buttons.scss */
 a.button.radius,
 button.button.radius {
   border-radius: 3px;
 }
-/* line 15, ../scss/components/_buttons.scss */
+/* line 39, ../scss/components/_buttons.scss */
 a.button.round,
 button.button.round {
   border-radius: 1000px;
 }
-/* line 19, ../scss/components/_buttons.scss */
+/* line 43, ../scss/components/_buttons.scss */
 a.button.small,
 button.button.small {
   padding: 1rem;
@@ -4403,12 +4431,12 @@ button.button.small {
   width: 1rem;
   display: inline-block;
 }
-/* line 26, ../scss/components/_buttons.scss */
+/* line 50, ../scss/components/_buttons.scss */
 a.button.circle,
 button.button.circle {
   border-radius: 50%;
 }
-/* line 29, ../scss/components/_buttons.scss */
+/* line 53, ../scss/components/_buttons.scss */
 a.button.circle.help,
 button.button.circle.help {
   background-image: url(../images/icons/question.svg);
@@ -4416,7 +4444,7 @@ button.button.circle.help {
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
-/* line 37, ../scss/components/_buttons.scss */
+/* line 61, ../scss/components/_buttons.scss */
 a.button.arrow-down,
 button.button.arrow-down {
   background-image: url(../images/icons/arrow-down.svg);
@@ -4424,35 +4452,15 @@ button.button.arrow-down {
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
-/* line 44, ../scss/components/_buttons.scss */
+/* line 68, ../scss/components/_buttons.scss */
 a.button.grey,
 button.button.grey {
   background-color: #878787;
 }
-
-/* line 50, ../scss/components/_buttons.scss */
-.button-light-grey {
-  background-color: #E8EAEA;
-  color: #4e4e4e;
-}
-/* line 54, ../scss/components/_buttons.scss */
-.button-light-grey.active {
-  background-color: #C7C7C7;
-  box-shadow: inset 1px 1px 3px #8E8C8C;
-}
-/* line 59, ../scss/components/_buttons.scss */
-.button-light-grey.bookmark-icon {
-  background-image: url(../images/icons/bookmark.svg);
-  background-size: 1rem 1rem;
-  background-repeat: no-repeat;
-  background-position: 10px 50%;
-}
-/* line 66, ../scss/components/_buttons.scss */
-.button-light-grey.lamp-icon {
-  background-image: url(../images/icons/lamp.svg);
-  background-size: 1rem 1rem;
-  background-repeat: no-repeat;
-  background-position: 10px 50%;
+/* line 72, ../scss/components/_buttons.scss */
+a.button.dark-grey,
+button.button.dark-grey {
+  background-color: #535353;
 }
 
 /* line 2, ../scss/components/_forms.scss */
@@ -4565,7 +4573,7 @@ form .is-invalid-input:not(:focus) {
 .comment-box .comment-header {
   height: 3rem;
   line-height: 3rem;
-  border-bottom: 1px solid #535353;
+  border-bottom: 1px solid #878787;
 }
 /* line 34, ../scss/components/_panels.scss */
 .comment-box .comment-header .avatar, .comment-box .comment-header .name {
@@ -4743,7 +4751,6 @@ div[id^="skypeModal"] .progress .progress-img.disabled h5 {
 /* line 1, ../scss/components/_footer.scss */
 footer {
   background-color: #F4F4F4;
-  height: 5.625rem;
   padding: 1rem;
   box-shadow: 0 0 10px 3px #D5D5D5;
 }

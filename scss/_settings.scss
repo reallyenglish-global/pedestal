@@ -56,9 +56,9 @@ $light-gray: #e6e6e6;
 $medium-gray: #cacaca;
 $dark-gray: #8a8a8a;
 
-$grey: #535353;
+$darker-grey: #535353;
 $dark-grey: #727272;
-$darker-grey: #878787;
+$grey: #878787;
 
 // $black: #0a0a0a;
 $white: #FFF;
@@ -554,6 +554,6 @@ $reveal-width: 95%;
 // -----------
 
 $topbar-padding: 0 3rem;
-$topbar-background: $grey;
+$topbar-background: $darker-grey;
 // $topbar-title-spacing: 1rem;
 // $topbar-input-width: 200px;
