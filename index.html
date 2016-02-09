@@ -1,0 +1,317 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+  <title>Reallyenglish Booking Template</title>
+  <link rel="stylesheet" href="stylesheets/app.css" />
+</head>
+<body>
+  <header>
+    <nav class="top-bar">
+      <div class="top-bar-title">
+        <span data-responsive-toggle="responsive-menu" data-hide-for="medium">
+          <span class="menu-icon" data-toggle></span>
+        </span>
+        Reallyenglish
+      </div>
+      <div id="responsive-menu">
+        <div class="top-bar-left">
+          <ul class="dropdown menu" data-dropdown-menu>
+            <li><a data-open="skypeModal1">Orientation</a></li>
+            <li><a>Book a lesson</a></li>
+            <li><a href="#">How to study</a></li>
+            <li><a href="#">Change Skype ID</a></li>
+            <li><a href="#">My page</a></li>
+          </ul>
+        </div>
+        <div class="top-bar-right">
+         <ul class="menu">
+          <li><input type="text" placeholder="マイ・コース" class="grey"></li>
+          <li><button href="#" class="button radius arrow-down grey"></button></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+<div id="body">
+  <div class="reveal" id="skypeModal1" data-reveal class="skype-modal">
+    <div class="progress" role="progressbar" tabindex="0" aria-valuenow="10" aria-valuemin="0" aria-valuetext="10 percent" aria-valuemax="100">
+      <div class="progress-meter"></div>
+      <div class="progress-img rocket progress-0">
+        <h5>Introduction</h5>
+      </div>
+      <div class="progress-img skype progress-50 disabled">
+        <h5>Get Skype</h5>
+      </div>
+      <div class="progress-img enter progress-100 disabled">
+        <h5>Enter Skype ID</h5>
+      </div>
+    </div>
+    <div class="row medium-unstack">
+      <div class="hide-for-small-only medium-4 medium-offset-0 columns">
+        <img src="images/registration-graphics1.png">
+      </div>
+      <div class="medium-8 columns">
+        <h3 class="blue">Getting started</h3>
+        <p>Welcome to your online speaking course. This course is a mixture of studying online lessons with your Tutor and some self study lessons. Please use this course to book all your online speaking lessons.</p>
+        <div class="row align-right">
+          <div class="medium-5 columns">
+            <a class="button round expanded" data-open="skypeModal2">Next</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div class="reveal" id="skypeModal2" data-reveal class="skype-modal">
+    <div class="progress" role="progressbar" tabindex="0" aria-valuenow="60" aria-valuemin="0" aria-valuetext="60 percent" aria-valuemax="100">
+      <div class="progress-meter"></div>
+      <div class="progress-img rocket progress-0">
+        <h5>Introduction</h5>
+      </div>
+      <div class="progress-img skype progress-50">
+        <h5>Get Skype</h5>
+      </div>
+      <div class="progress-img enter progress-100 disabled">
+        <h5>Enter Skype ID</h5>
+      </div>
+    </div>
+    <div class="row medium-unstack">
+      <div class="hide-for-small-only medium-4 medium-offset-0 columns">
+        <img src="images/registration-graphics2.png">
+      </div>
+      <div class="medium-8 columns">
+        <h3 class="blue">Get Skype for your online lessons</h3>
+        <p>Our teachers use Skype to contact you for booked lessons. In order for teachers to contact you for a lesson you need to install Skype.</p>
+        <p>If you don't have Skype please <a href="http://www.skype.com">install it from here</a></p>
+        <div class="row align-middle">
+          <div class="small-6 columns align-center">
+            <a href="">Get Skype</a>
+          </div>
+          <div class="small-6 columns">
+            <a class="button round expanded" data-open="skypeModal3">Ok I've installed it</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="reveal" id="skypeModal3" data-reveal class="skype-modal">
+   <div class="progress" role="progressbar" tabindex="0" aria-valuenow="90" aria-valuemin="0" aria-valuetext="90 percent" aria-valuemax="100">
+    <div class="progress-meter"></div>
+    <div class="progress-img rocket progress-0">
+      <h5>Introduction</h5>
+    </div>
+    <div class="progress-img skype progress-50">
+      <h5>Get Skype</h5>
+    </div>
+    <div class="progress-img enter progress-100 disabled">
+      <h5>Enter Skype ID</h5>
+    </div>
+  </div>
+  <form data-abide novalidate data-live-validate="true">
+    <div class="row medium-unstack">
+      <div class="medium-8 columns">
+        <h3 class="blue">One last thing</h3>
+        <p>Create a Skype account <a>here</a> and make note of the Skype name you have chosen.</p>
+        <div class="row">
+          <div class="small-3 columns">
+            <label for="skype-name" class="middle">Skype Name*</label>
+          </div>
+          <div class="small-9 columns">
+            <input type="text" id="skype-name" name="skypeName" required aria-invalid aria-describedby="uuid">
+          </div>
+        </div>
+        <div class="row">
+          <div class="small-3 columns">
+            <label for="nickname" class="middle">Nickname*</label>
+          </div>
+          <div class="small-9 columns">
+            <input type="text" id="nickname" name="nickname"required aria-invalid aria-describedby="uuid">
+          </div>
+        </div>
+        <div class="row">
+          <div class="small-3 columns">
+            <label for="mobile-number" class="middle" name="mobileNumber">Mobile Number</label>
+          </div>
+          <div class="small-9 columns">
+            <input type="text" id="mobile-number">
+          </div>
+        </div>
+        <input id="agree-checkbox" type="checkbox" name="agree"><label for="agree-checkbox">I agree to the privacy policy</label>
+      </div>
+      <div class="hide-for-small-only medium-offset-0 medium-4 columns">
+        <img src="images/registration-graphics3.png">
+        <button class="button round float-right" type="submit">Save and continue</button>
+      </div>
+
+    </div>
+    <div class="row">
+      <div class="small-12 columns">
+        <div data-abide-error class="alert callout" style="display: none;">
+          <h4>Whoops, you need to finish the form!</h4>
+          <p>Please fill in all fields marked with a star.</p>
+        </div>
+      </div> 
+    </div>
+  </form>
+</div>
+<div class="callout">
+  <h4 class="underline">Teacher Assesments</h4>
+  <div class="comment-box">
+    <div class="comment-header row">
+      <div class="small-4 columns">
+       <img class="avatar" src="">
+       <h5 class="name">Simon</h5>
+     </div>
+     <div class="small-8 columns">
+      <time class="date">6th January 2016</time>
+    </div>
+  </div>
+  <div class="comment-section">
+    <div class="row medium-unstack">
+      <div class="title medium-9 columns">
+        <h5><strong>Air Travel Overseas</strong> - EZ To Talk Basic</h5>
+      </div>
+      <div class="score medium-3 columns right">
+        <h5><strong>3</strong> - Excellent</h5>
+      </div>
+    </div>
+    <p class="comment-text">Bacon ipsum dolor amet meatball ribeye pancetta, pork loin flank short ribs bacon turkey t-bone shank shankle. Brisket strip steak jerky, ham hock cow doner chuck jowl ball tip beef spare ribs pork belly boudin. Frankfurter tail cow pastrami cupim bacon, ground round boudin porchetta pork chop. Bacon beef ribs ground round pig boudin swine prosciutto ribeye ball tip flank doner sirloin short loin shank.</p>
+  </div>
+</div>
+<div class="comment-box">
+  <div class="comment-header row">
+    <div class="small-4 columns">
+     <img class="avatar" src="">
+     <h5 class="name">Simon</h5>
+   </div>
+   <div class="small-8 columns">
+    <time class="date">6th January 2016</time>
+  </div>
+</div>
+<div class="comment-section">
+  <div class="row medium-unstack">
+    <div class="title medium-9 columns">
+      <h5><strong>Getting to the office</strong> - EZ To Talk Basic</h5>
+    </div>
+    <div class="score medium-3 columns right">
+      <h5><strong>1</strong> - Fair</h5>
+    </div>
+  </div>
+  <p class="comment-text">Bacon ipsum dolor amet meatball ribeye pancetta, pork loin flank short ribs bacon turkey t-bone shank shankle. Brisket strip steak jerky, ham hock cow doner chuck jowl ball tip beef spare ribs pork belly boudin. Frankfurter tail cow pastrami cupim bacon, ground round boudin porchetta pork chop. Bacon beef ribs ground round pig boudin swine prosciutto ribeye ball tip flank doner sirloin short loin shank.</p>
+</div>
+</div>
+</div>
+<div class="callout">
+  <div class="callout primary panel-booking">
+    <h4>What to do next</h4>
+    <div class="row medium-unstack">
+      <div class="medium-9 columns col-wrap-margin">
+        <p class="booking-text">Please book your next lessons for studying: <span class="lesson-title">Checking in for a flight</span></p>
+      </div>
+      <div class="medium-3 columns">
+        <a class="button round button-booking expanded">Book a lesson</a>
+      </div>
+    </div>
+  </div>
+  <div class="row medium-unstack">
+    <div class="medium-6 large-3 columns col-wrap-margin">
+      <a href="" class="button button-light-grey round active lamp-icon left expanded">Study tasks</a>
+    </div>
+    <div class="medium-6 large-3 columns end">
+      <a href="" class="button button-light-grey round bookmark-icon left expanded">Booked Lessons</a>
+    </div>
+  </div>
+
+  <div class="lesson-table">
+    <div class="panel-white radius row show-for-medium ">
+      <div class="medium-2 columns">Type</div>
+      <div class="medium-3 columns">Lesson Name</div>
+      <div class="medium-2 columns">Category</div>
+      <div class="medium-2 columns">Topic</div>
+      <div class="medium-3 columns">Status</div>
+    </div>
+
+    <div class="panel-white radius row medium-unstack small-collapse medium-uncollapse lesson-row">
+      <div class="medium-2 columns">Tutor Study</div>
+      <div class="medium-3 columns title">
+        Talking about Trip <br>
+        旅行に遠ざかるの話
+      </div>
+      <div class="medium-2 columns">Grammar</div>
+      <div class="medium-2 columns">重要表現</div>
+      <div class="row medium-3 small-collapse large-uncollapse columns pass" passed="true">
+        <div class="medium-5 columns">Passed</div>
+        <div class="medium-7 columns">
+          <a href="/" class="button small circle button-light-grey help"></a>
+          <a href="/" class="button small radius button-light-grey arrow-down"></a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="panel-white radius row medium-unstack small-collapse medium-uncollapse lesson-row">
+      <div class="medium-2 columns">Tutor Study</div>
+      <div class="medium-3 columns title">
+        Planning to go out <br>
+        出て行く予定
+      </div>
+      <div class="medium-2 columns">Grammar</div>
+      <div class="medium-2 columns">重要表現</div>
+      <div class="row medium-3 small-collapse large-uncollapse columns pass" passed="false"> 
+        <div class="medium-5 columns">Failed</div>
+        <div class="medium-7 columns">
+          <a href="/" class="button small circle button-light-grey help"></a>
+          <a href="/" class="button small radius button-light-grey arrow-down"></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel-white radius row medium-unstack small-collapse medium-uncollapse lesson-row">
+      <div class="medium-2 columns">Tutor Study</div>
+      <div class="medium-3 columns title">
+        Getting to the office <br>
+        事務所への行き方
+      </div>
+      <div class="medium-2 columns">Grammar</div>
+      <div class="medium-2 columns">重要表現</div>
+      <div class="row medium-3 small-collapse large-uncollapse columns pass" passed="true"> 
+        <div class="medium-5 columns">Passed</div>
+        <div class="medium-7 columns">
+          <a href="/" class="button small circle button-light-grey help"></a>
+          <a href="/" class="button small radius button-light-grey arrow-down"></a>
+        </div> 
+      </div>
+    </div>
+
+    <div class="panel-white radius row medium-unstack small-collapse medium-uncollapse lesson-row">
+      <div class="medium-2 columns">Tutor Study</div>
+      <div class="medium-3 columns title">
+        Caring for pets <br>
+        ペットのお手入れ
+      </div>
+      <div class="medium-2 columns">Grammar</div>
+      <div class="medium-2 columns">重要表現</div>
+      <div class="row medium-3 small-collapse large-uncollapse columns pass" passed="false"> 
+        <div class="medium-5 columns">Failed</div>
+        <div class="medium-7 columns">
+          <a href="/" class="button small circle button-light-grey help"></a>
+          <a href="/" class="button small radius button-light-grey arrow-down"></a>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+        <div class="panel-footer">
+        <button class="button float-right round" type="button">Leave Feedback</button>
+      </footer>
+</div>
+
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/foundation-sites/dist/foundation.min.js"></script>
+<script src="bower_components/foundation-sites/js/foundation.util.mediaQuery.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

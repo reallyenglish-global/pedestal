@@ -1,0 +1,55 @@
+#body {
+	padding: 1rem 3rem;
+	background-color: #ECECEB;
+}
+
+//TODO: move to grid scss
+.row {
+	.column {
+		&.align-center {
+			text-align: center;
+		}
+	}
+}
+
+//Move to mixins
+@mixin calc($key, $value) {
+  #{$key}: -webkit-calc(#{$value});
+  #{$key}: -moz-calc(#{$value});
+  #{$key}: calc(#{$value});
+}
+
+//Move to progress
+.progress {
+	&[aria-valuenow="10"] {
+		.progress-meter {
+			width: 10%;
+		}
+	}
+
+	&[aria-valuenow="60"] {
+		.progress-meter {
+			width: 60%;
+		}
+	}
+
+	&[aria-valuenow="90"] {
+		.progress-meter {
+			width: 90%;
+		}
+	}
+}
+
+@include breakpoint(small only) { 
+	#body {
+
+		.col-wrap-margin {
+			margin-bottom: 1rem;
+		}
+	}
+	
+
+	.progress {
+		margin-bottom: 1rem;
+	}
+}

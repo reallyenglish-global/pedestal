@@ -1,0 +1,75 @@
+.top-bar {
+
+	line-height: rem-calc(54);
+	height: rem-calc(54);
+
+	.top-bar-title {
+		color: $white;
+		display: inline-block;
+	}
+
+	.top-bar-left {
+		padding: 0.5rem 0;
+	}
+
+	.top-bar-right {
+		padding: 0.75rem 0;
+	}
+
+	.menu {
+
+		a {
+			text-decoration: none;
+			color: $white;
+		}
+
+		input {
+			margin-right: 0;
+			border-top-left-radius: 3px;
+			border-bottom-left-radius: 3px;
+		}
+
+		.button {
+			border-top-left-radius: 0;
+			border-bottom-left-radius: 0;
+		}
+
+		.button, input {
+			height: rem-calc(30);
+		}
+
+
+	}
+	
+}
+
+
+@include breakpoint(small only) {
+	.top-bar {
+		.top-bar-right,
+		.top-bar-left {
+			padding: 0;
+		}
+
+		.top-bar-right {
+			margin-bottom: 1.5rem;
+
+			.menu input {
+				width: 100%;
+			}
+		}
+
+		.menu[role="menubar"] {
+			li {
+				display: block;
+			}
+		}
+	}
+}
+
+
+// @media #{$small-only} { 
+// 	.top-bar {
+// 		padding: 0 $callout-padding;
+// 	}	
+// }

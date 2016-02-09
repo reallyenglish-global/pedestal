@@ -1,0 +1,94 @@
+$comment-header-height: 3rem;
+
+.callout {
+
+  &.alert {
+    margin-top: 1.5rem;
+    box-shadow: 0 0 0 1px #908E8E,
+          0 0 0 2px $alert-color,
+          0 0 0 3px #f5d3d1;
+
+          h4 {
+            color: #F35B51;
+          }
+  }
+
+  &.primary {
+    border: 1px solid #9acce0;
+    color: #4e4e4e;
+    border-radius: 5px;
+    margin: 0 0 $callout-padding 0;
+  }
+}
+
+.comment-box {
+  @include callout();
+  background-color: $white;
+  border-radius: 2px;
+
+  .comment-header {
+  	height: $comment-header-height;
+  	line-height: $comment-header-height;
+  	border-bottom: 1px solid $grey;
+
+  	.avatar, .name {
+  		display: inline-block;
+  	}  
+  }
+
+  .comment-section {
+    padding-top: $callout-padding;
+
+    .title h5 {
+      color: #0088CF;
+      line-height: 1.4;
+    }
+
+    .score h5 {
+      text-align: right;
+      color: #EC8B1C;
+    }
+
+    .comment-text {
+      overflow: hidden;
+      margin: 0;
+      height: 3rem;
+    }
+  }
+
+}
+
+
+.panel-booking {
+  @include callout();
+
+  .booking-text {
+    margin: 0;
+  }
+
+  .lesson-title {
+    color: #0088CF;
+    font-weight: bold;
+  }
+
+}
+
+.panel-white {
+  @include callout();
+  background-color: $white;
+  margin-top: $callout-padding;
+
+  &.radius {
+    border-radius: 2px;
+  }
+}
+
+@include breakpoint(small only) { 
+  .comment-box {
+    .comment-section {
+      .score h5 {
+      text-align: left;
+    }
+    }
+  }
+}

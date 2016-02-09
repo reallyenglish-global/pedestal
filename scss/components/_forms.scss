@@ -1,0 +1,15 @@
+input {
+	&.grey {
+		background-color: $darker-grey;
+		border: 1px solid $dark-grey;
+	}
+}
+
+form {
+	.is-invalid-input:not(:focus) {
+		box-shadow: 0 0 0 1px #908E8E,
+					0 0 0 2px $alert-color,
+					0 0 0 3px #f5d3d1;
+	}
+}
+	
