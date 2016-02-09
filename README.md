@@ -3,7 +3,7 @@
 The easiest way to get started is to clone the repository by entering the following command:
 
 ```bash
-git clone https://github.com/KevinAdu/booking-system-template.git
+git clone https://github.com/reallyenglish/booking-system-template.git
 ```
 
 ## Requirements
