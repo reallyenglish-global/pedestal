@@ -1,6 +1,5 @@
 .lesson-table {
 	.lesson-row {
-
 		.columns {
 			margin-bottom: 1rem;
 		} 
@@ -11,11 +10,11 @@
 		}
 
 		.pass {
-			&[passed="true"] {
+			&[data-passed="true"] {
 				color: #42A87B;
 			}
 
-			&[passed="false"] {
+			&[data-passed="false"] {
 				color: #EA6962;
 			}
 		}

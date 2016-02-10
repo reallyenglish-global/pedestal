@@ -4335,36 +4335,46 @@ body {
 }
 
 /* line 1, ../scss/base/_layout.scss */
-#body {
-  padding: 1rem 3rem;
+body {
   background-color: #ECECEB;
 }
 
-/* line 9, ../scss/base/_layout.scss */
+/* line 5, ../scss/base/_layout.scss */
+#body {
+  padding: 1rem 3rem;
+  max-width: 62.5rem;
+  margin: 0 auto;
+}
+
+/* line 14, ../scss/base/_layout.scss */
 .row .column.align-center, .row .align-center.columns {
   text-align: center;
 }
 
-/* line 25, ../scss/base/_layout.scss */
+/* line 30, ../scss/base/_layout.scss */
 .progress[aria-valuenow="10"] .progress-meter {
   width: 10%;
 }
-/* line 31, ../scss/base/_layout.scss */
+/* line 36, ../scss/base/_layout.scss */
 .progress[aria-valuenow="60"] .progress-meter {
   width: 60%;
 }
-/* line 37, ../scss/base/_layout.scss */
+/* line 42, ../scss/base/_layout.scss */
 .progress[aria-valuenow="90"] .progress-meter {
   width: 90%;
 }
 
 @media screen and (min-width: 0em) and (max-width: 39.9375em) {
-  /* line 46, ../scss/base/_layout.scss */
+  /* line 49, ../scss/base/_layout.scss */
+  #body {
+    max-width: 100%;
+  }
+  /* line 52, ../scss/base/_layout.scss */
   #body .col-wrap-margin {
     margin-bottom: 1rem;
   }
 
-  /* line 52, ../scss/base/_layout.scss */
+  /* line 58, ../scss/base/_layout.scss */
   .progress {
     margin-bottom: 1rem;
   }
@@ -4474,60 +4484,76 @@ form .is-invalid-input:not(:focus) {
   box-shadow: 0 0 0 1px #908E8E, 0 0 0 2px #F35B52, 0 0 0 3px #f5d3d1;
 }
 
+/* line 16, ../scss/components/_forms.scss */
+textarea {
+  min-height: 7.5rem;
+}
+
 /* line 1, ../scss/components/_nav.scss */
 .top-bar {
   line-height: 3.375rem;
   height: 3.375rem;
 }
 /* line 6, ../scss/components/_nav.scss */
+.top-bar > .row {
+  margin: 0 auto;
+  max-width: 62.5rem;
+  padding: 0 3rem;
+}
+/* line 14, ../scss/components/_nav.scss */
 .top-bar .top-bar-title {
   color: #FFF;
   display: inline-block;
 }
-/* line 11, ../scss/components/_nav.scss */
+/* line 19, ../scss/components/_nav.scss */
 .top-bar .top-bar-left {
   padding: 0.5rem 0;
 }
-/* line 15, ../scss/components/_nav.scss */
+/* line 23, ../scss/components/_nav.scss */
 .top-bar .top-bar-right {
   padding: 0.75rem 0;
 }
-/* line 21, ../scss/components/_nav.scss */
+/* line 29, ../scss/components/_nav.scss */
 .top-bar .menu a {
   text-decoration: none;
   color: #FFF;
 }
-/* line 26, ../scss/components/_nav.scss */
+/* line 34, ../scss/components/_nav.scss */
 .top-bar .menu input {
   margin-right: 0;
   border-top-left-radius: 3px;
   border-bottom-left-radius: 3px;
 }
-/* line 32, ../scss/components/_nav.scss */
+/* line 40, ../scss/components/_nav.scss */
 .top-bar .menu .button {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
-/* line 37, ../scss/components/_nav.scss */
+/* line 45, ../scss/components/_nav.scss */
 .top-bar .menu .button, .top-bar .menu input {
   height: 1.875rem;
 }
 
 @media screen and (min-width: 0em) and (max-width: 39.9375em) {
-  /* line 49, ../scss/components/_nav.scss */
+  /* line 58, ../scss/components/_nav.scss */
+  .top-bar > .row {
+    max-width: 100%;
+    padding: 0;
+  }
+  /* line 62, ../scss/components/_nav.scss */
   .top-bar .top-bar-right,
   .top-bar .top-bar-left {
     padding: 0;
   }
-  /* line 54, ../scss/components/_nav.scss */
+  /* line 67, ../scss/components/_nav.scss */
   .top-bar .top-bar-right {
     margin-bottom: 1.5rem;
   }
-  /* line 57, ../scss/components/_nav.scss */
+  /* line 70, ../scss/components/_nav.scss */
   .top-bar .top-bar-right .menu input {
     width: 100%;
   }
-  /* line 63, ../scss/components/_nav.scss */
+  /* line 76, ../scss/components/_nav.scss */
   .top-bar .menu[role="menubar"] li {
     display: block;
   }
@@ -4560,6 +4586,7 @@ form .is-invalid-input:not(:focus) {
   background-color: #fdfdfd;
   background-color: #FFF;
   border-radius: 2px;
+  padding-top: 0;
 }
 /* line 55, ../bower_components/foundation-sites/scss/components/_callout.scss */
 .comment-box > :first-child {
@@ -4569,38 +4596,44 @@ form .is-invalid-input:not(:focus) {
 .comment-box > :last-child {
   margin-bottom: 0;
 }
-/* line 29, ../scss/components/_panels.scss */
+/* line 30, ../scss/components/_panels.scss */
 .comment-box .comment-header {
   height: 3rem;
   line-height: 3rem;
   border-bottom: 1px solid #878787;
 }
-/* line 34, ../scss/components/_panels.scss */
+/* line 35, ../scss/components/_panels.scss */
 .comment-box .comment-header .avatar, .comment-box .comment-header .name {
   display: inline-block;
 }
 /* line 39, ../scss/components/_panels.scss */
+.comment-box .comment-header .avatar {
+  max-height: 2.5rem;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+/* line 46, ../scss/components/_panels.scss */
 .comment-box .comment-section {
   padding-top: 1.25rem;
 }
-/* line 42, ../scss/components/_panels.scss */
+/* line 49, ../scss/components/_panels.scss */
 .comment-box .comment-section .title h5 {
   color: #0088CF;
   line-height: 1.4;
 }
-/* line 47, ../scss/components/_panels.scss */
+/* line 54, ../scss/components/_panels.scss */
 .comment-box .comment-section .score h5 {
   text-align: right;
   color: #EC8B1C;
 }
-/* line 52, ../scss/components/_panels.scss */
+/* line 59, ../scss/components/_panels.scss */
 .comment-box .comment-section .comment-text {
   overflow: hidden;
   margin: 0;
   height: 3rem;
 }
 
-/* line 62, ../scss/components/_panels.scss */
+/* line 69, ../scss/components/_panels.scss */
 .panel-booking {
   margin: 0 0 1rem 0;
   padding: 1.25rem;
@@ -4618,17 +4651,17 @@ form .is-invalid-input:not(:focus) {
 .panel-booking > :last-child {
   margin-bottom: 0;
 }
-/* line 65, ../scss/components/_panels.scss */
+/* line 72, ../scss/components/_panels.scss */
 .panel-booking .booking-text {
   margin: 0;
 }
-/* line 69, ../scss/components/_panels.scss */
+/* line 76, ../scss/components/_panels.scss */
 .panel-booking .lesson-title {
   color: #0088CF;
   font-weight: bold;
 }
 
-/* line 76, ../scss/components/_panels.scss */
+/* line 83, ../scss/components/_panels.scss */
 .panel-white {
   margin: 0 0 1rem 0;
   padding: 1.25rem;
@@ -4648,13 +4681,13 @@ form .is-invalid-input:not(:focus) {
 .panel-white > :last-child {
   margin-bottom: 0;
 }
-/* line 81, ../scss/components/_panels.scss */
+/* line 88, ../scss/components/_panels.scss */
 .panel-white.radius {
   border-radius: 2px;
 }
 
 @media screen and (min-width: 0em) and (max-width: 39.9375em) {
-  /* line 89, ../scss/components/_panels.scss */
+  /* line 96, ../scss/components/_panels.scss */
   .comment-box .comment-section .score h5 {
     text-align: left;
   }
@@ -4755,29 +4788,29 @@ footer {
   box-shadow: 0 0 10px 3px #D5D5D5;
 }
 
-/* line 4, ../scss/components/_lesson-table.scss */
+/* line 3, ../scss/components/_lesson-table.scss */
 .lesson-table .lesson-row .columns {
   margin-bottom: 1rem;
 }
-/* line 8, ../scss/components/_lesson-table.scss */
+/* line 7, ../scss/components/_lesson-table.scss */
 .lesson-table .lesson-row .title {
   color: #0088CF;
 }
-/* line 14, ../scss/components/_lesson-table.scss */
-.lesson-table .lesson-row .pass[passed="true"] {
+/* line 13, ../scss/components/_lesson-table.scss */
+.lesson-table .lesson-row .pass[data-passed="true"] {
   color: #42A87B;
 }
-/* line 18, ../scss/components/_lesson-table.scss */
-.lesson-table .lesson-row .pass[passed="false"] {
+/* line 17, ../scss/components/_lesson-table.scss */
+.lesson-table .lesson-row .pass[data-passed="false"] {
   color: #EA6962;
 }
 
 @media screen and (min-width: 0em) and (max-width: 39.9375em) {
-  /* line 29, ../scss/components/_lesson-table.scss */
+  /* line 28, ../scss/components/_lesson-table.scss */
   .lesson-table .lesson-row .columns {
     margin-bottom: 0.75rem;
   }
-  /* line 32, ../scss/components/_lesson-table.scss */
+  /* line 31, ../scss/components/_lesson-table.scss */
   .lesson-table .lesson-row .columns:last-child {
     margin-bottom: 0;
   }

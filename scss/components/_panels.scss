@@ -25,6 +25,7 @@ $comment-header-height: 3rem;
   @include callout();
   background-color: $white;
   border-radius: 2px;
+  padding-top: 0;
 
   .comment-header {
   	height: $comment-header-height;
@@ -33,7 +34,13 @@ $comment-header-height: 3rem;
 
   	.avatar, .name {
   		display: inline-block;
-  	}  
+  	}
+
+    .avatar {
+      max-height: $comment-header-height - 0.5rem;
+      border-radius: 50%;
+      margin-right: 0.5rem;
+    }
   }
 
   .comment-section {

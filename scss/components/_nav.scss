@@ -2,6 +2,14 @@
 
 	line-height: rem-calc(54);
 	height: rem-calc(54);
+	
+	& > .row {
+		margin: 0 auto;
+		max-width: 62.5rem;
+		padding: 0 3rem;	
+	}
+	
+
 
 	.top-bar-title {
 		color: $white;
@@ -46,6 +54,11 @@
 
 @include breakpoint(small only) {
 	.top-bar {
+
+		& > .row {
+		max-width: 100%;
+		padding: 0;	
+	}
 		.top-bar-right,
 		.top-bar-left {
 			padding: 0;
