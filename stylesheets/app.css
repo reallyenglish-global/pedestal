@@ -4347,34 +4347,39 @@ body {
 }
 
 /* line 14, ../scss/base/_layout.scss */
-.row .column.align-center, .row .align-center.columns {
+.row .column
+.row .column.align-center, .row .columns
+.row .column.align-center, .row .column
+.row .align-center.columns, .row .columns
+.row .align-center.columns {
   text-align: center;
 }
 
-/* line 30, ../scss/base/_layout.scss */
+/* line 31, ../scss/base/_layout.scss */
 .progress[aria-valuenow="10"] .progress-meter {
   width: 10%;
 }
-/* line 36, ../scss/base/_layout.scss */
+/* line 37, ../scss/base/_layout.scss */
 .progress[aria-valuenow="60"] .progress-meter {
   width: 60%;
 }
-/* line 42, ../scss/base/_layout.scss */
+/* line 43, ../scss/base/_layout.scss */
 .progress[aria-valuenow="90"] .progress-meter {
   width: 90%;
 }
 
 @media screen and (min-width: 0em) and (max-width: 39.9375em) {
-  /* line 49, ../scss/base/_layout.scss */
+  /* line 50, ../scss/base/_layout.scss */
   #body {
     max-width: 100%;
+    padding: 1rem 0;
   }
-  /* line 52, ../scss/base/_layout.scss */
+  /* line 54, ../scss/base/_layout.scss */
   #body .col-wrap-margin {
     margin-bottom: 1rem;
   }
 
-  /* line 58, ../scss/base/_layout.scss */
+  /* line 60, ../scss/base/_layout.scss */
   .progress {
     margin-bottom: 1rem;
   }
@@ -4535,25 +4540,29 @@ textarea {
 }
 
 @media screen and (min-width: 0em) and (max-width: 39.9375em) {
-  /* line 58, ../scss/components/_nav.scss */
+  /* line 56, ../scss/components/_nav.scss */
+  .top-bar {
+    padding: 0 1.25rem;
+  }
+  /* line 60, ../scss/components/_nav.scss */
   .top-bar > .row {
     max-width: 100%;
     padding: 0;
   }
-  /* line 62, ../scss/components/_nav.scss */
+  /* line 64, ../scss/components/_nav.scss */
   .top-bar .top-bar-right,
   .top-bar .top-bar-left {
     padding: 0;
   }
-  /* line 67, ../scss/components/_nav.scss */
+  /* line 69, ../scss/components/_nav.scss */
   .top-bar .top-bar-right {
     margin-bottom: 1.5rem;
   }
-  /* line 70, ../scss/components/_nav.scss */
+  /* line 72, ../scss/components/_nav.scss */
   .top-bar .top-bar-right .menu input {
     width: 100%;
   }
-  /* line 76, ../scss/components/_nav.scss */
+  /* line 78, ../scss/components/_nav.scss */
   .top-bar .menu[role="menubar"] li {
     display: block;
   }
@@ -4598,7 +4607,7 @@ textarea {
 }
 /* line 30, ../scss/components/_panels.scss */
 .comment-box .comment-header {
-  height: 3rem;
+  min-height: 3rem;
   line-height: 3rem;
   border-bottom: 1px solid #878787;
 }
@@ -4690,6 +4699,11 @@ textarea {
   /* line 96, ../scss/components/_panels.scss */
   .comment-box .comment-section .score h5 {
     text-align: left;
+  }
+
+  /* line 103, ../scss/components/_panels.scss */
+  .panel-booking .lesson-title {
+    display: block;
   }
 }
 /* line 4, ../scss/components/_modals.scss */

@@ -11,6 +11,7 @@ body {
 //TODO: move to grid scss
 .row {
 	.column {
+		&
 		&.align-center {
 			text-align: center;
 		}
@@ -48,6 +49,7 @@ body {
 @include breakpoint(small only) { 
 	#body {
 		max-width: 100%;
+		padding: 1rem 0;
 
 		.col-wrap-margin {
 			margin-bottom: 1rem;

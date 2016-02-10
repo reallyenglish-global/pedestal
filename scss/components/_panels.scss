@@ -28,7 +28,7 @@ $comment-header-height: 3rem;
   padding-top: 0;
 
   .comment-header {
-  	height: $comment-header-height;
+  	min-height: $comment-header-height;
   	line-height: $comment-header-height;
   	border-bottom: 1px solid $grey;
 
@@ -96,6 +96,12 @@ $comment-header-height: 3rem;
       .score h5 {
       text-align: left;
     }
+    }
+  }
+
+  .panel-booking {
+    .lesson-title {
+      display: block;
     }
   }
 }
