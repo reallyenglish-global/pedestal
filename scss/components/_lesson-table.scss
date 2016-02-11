@@ -1,23 +1,6 @@
 .lesson-table {
-	.lesson-row {
-		.columns {
-			margin-bottom: 1rem;
-		} 
-
-		.title {
-			color: $primary-color;
-
-		}
-
-		.pass {
-			&[data-passed="true"] {
-				color: #42A87B;
-			}
-
-			&[data-passed="false"] {
-				color: #EA6962;
-			}
-		}
+	.panel-white {
+		padding: 0.5rem;
 	}
 }
 
@@ -26,7 +9,6 @@
 	.lesson-row {
 
 		.columns {
-			margin-bottom: 0.75rem;
 
 			&:last-child {
 				margin-bottom: 0;

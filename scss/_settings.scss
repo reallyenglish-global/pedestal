@@ -47,7 +47,7 @@
 $global-font-size: 100%;
 $global-width: rem-calc(1200);
 $global-lineheight: 1.5;
-$primary-color: #0088CF;
+$primary-color: #48AADF;
 $secondary-color: #777;
 $success-color: #3adb76;
 $warning-color: #ffae00;
@@ -56,7 +56,7 @@ $light-gray: #e6e6e6;
 $medium-gray: #cacaca;
 $dark-gray: #8a8a8a;
 
-$darker-grey: #535353;
+$darker-grey: #676767;
 $dark-grey: #727272;
 $grey: #878787;
 
@@ -90,10 +90,10 @@ $body-font-family: "ProximaNova", "Helvetica Neue", Helvetica, Roboto, Arial, sa
 
 $grid-row-width: 100%;
 //$grid-column-count: 12;
-// $grid-column-responsive-gutter: (
-//   small: 20px,
-//   medium: 0,
-// );
+$grid-column-responsive-gutter: (
+  small: 20px,
+  medium: 1.5rem,
+);
 //$grid-column-align-edge: true;
 //$block-grid-max: 8;
 
@@ -233,7 +233,7 @@ $form-label-color-invalid: $body-font-color;
 // 11. Button
 // ----------
 
-$button-padding: 0.55em 1em;
+$button-padding: 0.50em 1em;
 $button-margin: 0;
 // $button-fill: solid;
 // $button-background: $primary-color;
@@ -248,7 +248,7 @@ $button-sizes: (
   large: 1.25rem,
 );
 $button-opacity-disabled: 1;
-$button-disabled-color: #D5D5D5; 
+$button-disabled-color: #D1D1D1; 
 
 // 12. Button Group
 // ----------------
@@ -262,9 +262,9 @@ $button-disabled-color: #D5D5D5;
 // 13. Callout
 // -----------
 
-$callout-background: #F0F0F0; //#dff0f4;
+$callout-background: #F3F3F3; //#dff0f4;
 //$callout-background-fade: 85%;
-$callout-border: 1px solid #D6D6D6;
+$callout-border: 1px solid #E4E4E4;
 //$callout-margin: 0 0 1rem 0;
 $callout-padding: rem-calc(20);
 $callout-font-color: $body-font-color;

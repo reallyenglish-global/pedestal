@@ -1,11 +1,12 @@
 a.button,
 button.button {
 
-	font-size: 1.25rem;
+	font-size: 1.1rem;
 	text-decoration: none;
+	font-weight: 700;
 
 	&.light-grey { 
-		background-color: #E8EAEA;
+		background-color: #ECECEB;
 		color: $body-font-color;
 
 		&.active {
@@ -26,6 +27,10 @@ button.button {
 			background-repeat: no-repeat;
 			background-position: 10px 50%;
 		}
+
+		&:hover {
+			background-color: darken(#E8E8E8, 10%);
+		}
 	}
 
 	&.disabled {
@@ -33,7 +38,7 @@ button.button {
 	}
 
 	&.radius {
-		border-radius: 3px;
+		border-radius: 5px;
 	}
 
 	&.round {
@@ -45,6 +50,13 @@ button.button {
 		height: 1rem;
 		width: 1rem;
 		display: inline-block;
+
+		&.close {
+			background-image: url(../images/icons/close-icon.svg);
+			background-size: 0.75rem 0.75rem;
+			background-repeat: no-repeat;
+			background-position: 50% 50%;
+		}
 	}
 
 	&.circle {

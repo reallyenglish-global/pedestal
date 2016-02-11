@@ -25,12 +25,15 @@ $comment-header-height: 3rem;
   @include callout();
   background-color: $white;
   border-radius: 2px;
-  padding-top: 0;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 
   .comment-header {
   	min-height: $comment-header-height;
-  	line-height: $comment-header-height;
-  	border-bottom: 1px solid $grey;
+
+    h5 {
+      margin-bottom: 0;
+    }
 
   	.avatar, .name {
   		display: inline-block;
@@ -39,30 +42,17 @@ $comment-header-height: 3rem;
     .avatar {
       max-height: $comment-header-height - 0.5rem;
       border-radius: 50%;
-      margin-right: 0.5rem;
+      margin-right: 0.3rem;
     }
-  }
-
-  .comment-section {
-    padding-top: $callout-padding;
 
     .title h5 {
-      color: #0088CF;
-      line-height: 1.4;
+      color: $primary-color;
     }
 
     .score h5 {
-      text-align: right;
-      color: #EC8B1C;
-    }
-
-    .comment-text {
-      overflow: hidden;
-      margin: 0;
-      height: 3rem;
+      color: #E59C3C;
     }
   }
-
 }
 
 

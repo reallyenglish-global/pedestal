@@ -1,5 +1,5 @@
 body {
-	background-color: #ECECEB;
+	background-color: #ECECEC;
 }
 
 #body {
@@ -11,9 +11,11 @@ body {
 //TODO: move to grid scss
 .row {
 	.column {
-		&
 		&.align-center {
 			text-align: center;
+		}
+		&.align-right {
+			text-align: right;
 		}
 	}
 }
