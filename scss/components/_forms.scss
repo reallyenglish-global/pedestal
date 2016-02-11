@@ -1,19 +1,35 @@
-input {
-	&.grey {
-		background-color: $grey;
-		border: 1px solid $dark-grey;
-	}
-}
-
 form {
 	.is-invalid-input:not(:focus) {
-		box-shadow: 0 0 0 1px #908E8E,
-					0 0 0 2px $alert-color,
-					0 0 0 3px #f5d3d1;
+		box-shadow: 0 0 0 1px #F1F1F1,
+					0 0 0 2px #C09B9A,
+					0 0 0 3px #F1A1A0;
 	}
 }
 
 textarea {
 	min-height: rem-calc(120);
+	margin: 0;
 }
-	
+
+$input-border-style: 1px solid #BBB;
+
+.input-group {
+
+	.input-group-field {
+		border: none;
+		border-left: $input-border-style;
+		border-top: $input-border-style;
+		border-bottom: $input-border-style;
+		border-radius: 5px 0 0 5px;
+		height: 2rem;
+	}
+	.input-group-button {
+		.button {
+			height: 2rem;
+			border-right: $input-border-style;
+			border-top: $input-border-style;
+			border-bottom: $input-border-style;
+			border-radius: 0 5px 5px 0;
+		}
+	}
+}

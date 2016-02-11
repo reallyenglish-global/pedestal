@@ -3,13 +3,16 @@ $comment-header-height: 3rem;
 .callout {
 
   &.alert {
+    background-color: #F8E4E4;
     margin-top: 1.5rem;
-    box-shadow: 0 0 0 1px #908E8E,
-          0 0 0 2px $alert-color,
-          0 0 0 3px #f5d3d1;
+    box-shadow: 0 0 0 1px #D1C1C1,
+          0 0 0 2px #D47A7B,
+          0 0 0 3px #F4D7D7;
+    padding: 0.75rem;
 
           h4 {
-            color: #F35B51;
+            color: #ED696A;
+            margin: 0;
           }
   }
 
