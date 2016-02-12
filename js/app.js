@@ -1,6 +1,6 @@
 // Foundation JavaScript
 // Documentation can be found at: http://foundation.zurb.com/docs
-//= require foundation/app
+
 $(document).foundation();
 
 var modal = $("#skypeModal3"),
