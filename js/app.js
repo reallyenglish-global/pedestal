@@ -30,11 +30,6 @@ $(document)
 	modalFormSubmit.removeClass("disabled");
 	modalFormSubmit.on("click", enableClose); 
 })
-// to prevent form from submitting upon successful validation
-.on("submit", function(ev) {
-	ev.preventDefault();
-	modalForm.foundation("resetForm");
-})
 .on("open.zf.reveal", function(ev, modal) {
 	modalForm.foundation("resetForm");
 	if(modal) {
