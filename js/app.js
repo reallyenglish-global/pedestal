@@ -30,3 +30,10 @@ $(document)
 	modalFormSubmit.removeClass("disabled");
 	modalFormSubmit.on("click", enableClose); 
 })
+.on("open.zf.reveal", function(ev, modal) {
+	modalForm.foundation("resetForm");
+	if(modal) {
+		modal.find("[data-abide-error]").attr("style", "display: none;")
+	}
+
+})
