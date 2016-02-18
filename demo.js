@@ -4,12 +4,12 @@
 $(document).foundation();
 
 var modal = $("#skypeModal3"),
-	modalForm = modal.find("form"),
-	modalFormSubmit = modalForm.find("button[type='submit']"),
-	enableClose = function() {
-		modal.foundation("close");	
-	},
-	inputs = $("#skypeModal3 form input").get();
+modalForm = modal.find("form"),
+modalFormSubmit = modalForm.find("button[type='submit']"),
+enableClose = function() {
+	modal.foundation("close");	
+},
+inputs = $("#skypeModal3 form input").get();
 
 inputs.forEach(function(input) {
 	$(input).on("change", function(e) {
@@ -40,5 +40,4 @@ $(document)
 	if(modal) {
 		modal.find("[data-abide-error]").attr("style", "display: none;")
 	}
-
-})
+});

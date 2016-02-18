@@ -11,7 +11,14 @@ git clone https://github.com/reallyenglish/booking-system-template.git
   * Ruby 1.9+
   * [Node.js](http://nodejs.org)
   * [compass](http://compass-style.org/): `gem install compass`
+  * [Bundler](http://http://bundler.io/): `gem install bundler`
   * [bower](http://bower.io): `npm install bower -g`
+
+ We should then install our bower components using the following command:
+
+ ```bash
+ bower install
+ ```
   
 Then when you're working on your project, just run the following command:
 
