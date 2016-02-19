@@ -263,8 +263,8 @@ $button-disabled-color: #D1D1D1;
 // -----------
 
 $callout-background: #F3F3F3; //#dff0f4;
-//$callout-background-fade: 85%;
-$callout-border: 1px solid #E4E4E4;
+$callout-background-fade: 0%;
+$callout-border: none;
 //$callout-margin: 0 0 1rem 0;
 $callout-padding: rem-calc(20);
 $callout-font-color: $body-font-color;

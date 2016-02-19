@@ -17,10 +17,13 @@ $comment-header-height: 3rem;
   }
 
   &.primary {
-    border: 1px solid #9acce0;
-    color: #4e4e4e;
-    border-radius: 5px;
+    background-color: #bce2ec;
     margin: 0 0 $callout-padding 0;
+  }
+
+  &.success {
+    background-color: #bbe9c5;
+    border: 1px solid #cdecd4;
   }
 }
 

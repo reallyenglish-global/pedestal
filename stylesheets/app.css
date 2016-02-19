@@ -2577,11 +2577,11 @@ select[multiple] {
 .callout {
   margin: 0 0 1rem 0;
   padding: 1.25rem;
-  border: 1px solid #E4E4E4;
+  border: none;
   border-radius: 0;
   position: relative;
   color: #4e4e4e;
-  background-color: #fdfdfd;
+  background-color: #f3f3f3;
 }
 /* line 55, ../bower_components/foundation-sites/scss/components/_callout.scss */
 .callout > :first-child {
@@ -2593,23 +2593,23 @@ select[multiple] {
 }
 /* line 92, ../bower_components/foundation-sites/scss/components/_callout.scss */
 .callout.primary {
-  background-color: #e4f2fa;
+  background-color: #48aadf;
 }
 /* line 92, ../bower_components/foundation-sites/scss/components/_callout.scss */
 .callout.secondary {
-  background-color: #ebebeb;
+  background-color: #777777;
 }
 /* line 92, ../bower_components/foundation-sites/scss/components/_callout.scss */
 .callout.success {
-  background-color: #e1faea;
+  background-color: #3adb76;
 }
 /* line 92, ../bower_components/foundation-sites/scss/components/_callout.scss */
 .callout.alert {
-  background-color: #fde6e5;
+  background-color: #f35b52;
 }
 /* line 92, ../bower_components/foundation-sites/scss/components/_callout.scss */
 .callout.warning {
-  background-color: #fff3d9;
+  background-color: #ffae00;
 }
 /* line 97, ../bower_components/foundation-sites/scss/components/_callout.scss */
 .callout.small {
@@ -4336,7 +4336,7 @@ body {
 
 /* line 1, ../scss/base/_layout.scss */
 body {
-  background-color: #ECECEC;
+  background-color: #E5E5E5;
 }
 
 /* line 5, ../scss/base/_layout.scss */
@@ -4587,21 +4587,24 @@ textarea {
 }
 /* line 19, ../scss/components/_panels.scss */
 .callout.primary {
-  border: 1px solid #9acce0;
-  color: #4e4e4e;
-  border-radius: 5px;
+  background-color: #bce2ec;
   margin: 0 0 1.25rem 0;
 }
+/* line 24, ../scss/components/_panels.scss */
+.callout.success {
+  background-color: #bbe9c5;
+  border: 1px solid #cdecd4;
+}
 
-/* line 27, ../scss/components/_panels.scss */
+/* line 30, ../scss/components/_panels.scss */
 .comment-box {
   margin: 0 0 1rem 0;
   padding: 1.25rem;
-  border: 1px solid #E4E4E4;
+  border: none;
   border-radius: 0;
   position: relative;
   color: #4e4e4e;
-  background-color: #fdfdfd;
+  background-color: #f3f3f3;
   background-color: #FFF;
   border-radius: 2px;
   padding-top: 0.5rem;
@@ -4615,42 +4618,42 @@ textarea {
 .comment-box > :last-child {
   margin-bottom: 0;
 }
-/* line 34, ../scss/components/_panels.scss */
+/* line 37, ../scss/components/_panels.scss */
 .comment-box .comment-header {
   min-height: 3rem;
 }
-/* line 37, ../scss/components/_panels.scss */
+/* line 40, ../scss/components/_panels.scss */
 .comment-box .comment-header h5 {
   margin-bottom: 0;
 }
-/* line 41, ../scss/components/_panels.scss */
+/* line 44, ../scss/components/_panels.scss */
 .comment-box .comment-header .avatar, .comment-box .comment-header .name {
   display: inline-block;
 }
-/* line 45, ../scss/components/_panels.scss */
+/* line 48, ../scss/components/_panels.scss */
 .comment-box .comment-header .avatar {
   max-height: 2.5rem;
   border-radius: 50%;
   margin-right: 0.3rem;
 }
-/* line 51, ../scss/components/_panels.scss */
+/* line 54, ../scss/components/_panels.scss */
 .comment-box .comment-header .title h5 {
   color: #48AADF;
 }
-/* line 55, ../scss/components/_panels.scss */
+/* line 58, ../scss/components/_panels.scss */
 .comment-box .comment-header .score h5 {
   color: #E59C3C;
 }
 
-/* line 62, ../scss/components/_panels.scss */
+/* line 65, ../scss/components/_panels.scss */
 .panel-booking {
   margin: 0 0 1rem 0;
   padding: 1.25rem;
-  border: 1px solid #E4E4E4;
+  border: none;
   border-radius: 0;
   position: relative;
   color: #4e4e4e;
-  background-color: #fdfdfd;
+  background-color: #f3f3f3;
 }
 /* line 55, ../bower_components/foundation-sites/scss/components/_callout.scss */
 .panel-booking > :first-child {
@@ -4660,25 +4663,25 @@ textarea {
 .panel-booking > :last-child {
   margin-bottom: 0;
 }
-/* line 65, ../scss/components/_panels.scss */
+/* line 68, ../scss/components/_panels.scss */
 .panel-booking .booking-text {
   margin: 0;
 }
-/* line 69, ../scss/components/_panels.scss */
+/* line 72, ../scss/components/_panels.scss */
 .panel-booking .lesson-title {
   color: #0088CF;
   font-weight: bold;
 }
 
-/* line 76, ../scss/components/_panels.scss */
+/* line 79, ../scss/components/_panels.scss */
 .panel-white {
   margin: 0 0 1rem 0;
   padding: 1.25rem;
-  border: 1px solid #E4E4E4;
+  border: none;
   border-radius: 0;
   position: relative;
   color: #4e4e4e;
-  background-color: #fdfdfd;
+  background-color: #f3f3f3;
   background-color: #FFF;
   margin-top: 1.25rem;
 }
@@ -4690,18 +4693,18 @@ textarea {
 .panel-white > :last-child {
   margin-bottom: 0;
 }
-/* line 81, ../scss/components/_panels.scss */
+/* line 84, ../scss/components/_panels.scss */
 .panel-white.radius {
   border-radius: 2px;
 }
 
 @media screen and (min-width: 0em) and (max-width: 39.9375em) {
-  /* line 89, ../scss/components/_panels.scss */
+  /* line 92, ../scss/components/_panels.scss */
   .comment-box .comment-section .score h5 {
     text-align: left;
   }
 
-  /* line 96, ../scss/components/_panels.scss */
+  /* line 99, ../scss/components/_panels.scss */
   .panel-booking .lesson-title {
     display: block;
   }
