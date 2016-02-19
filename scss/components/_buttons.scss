@@ -1,12 +1,12 @@
 a.button,
 button.button {
 
-	font-size: 1.1rem;
+	font-size: 1.2rem;
 	text-decoration: none;
 	font-weight: 700;
 
 	&.light-grey { 
-		background-color: #ECECEB;
+		background-color: #F3F3F3;
 		color: $body-font-color;
 
 		&.active {

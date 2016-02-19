@@ -20,6 +20,10 @@ body {
 	}
 }
 
+.tab-container {
+	margin-bottom: 1rem;
+}
+
 //Move to mixins
 @mixin calc($key, $value) {
   #{$key}: -webkit-calc(#{$value});

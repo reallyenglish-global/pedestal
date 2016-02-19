@@ -4355,31 +4355,36 @@ body {
   text-align: right;
 }
 
-/* line 33, ../scss/base/_layout.scss */
+/* line 23, ../scss/base/_layout.scss */
+.tab-container {
+  margin-bottom: 1rem;
+}
+
+/* line 37, ../scss/base/_layout.scss */
 .progress[aria-valuenow="10"] .progress-meter {
   width: 10%;
 }
-/* line 39, ../scss/base/_layout.scss */
+/* line 43, ../scss/base/_layout.scss */
 .progress[aria-valuenow="60"] .progress-meter {
   width: 60%;
 }
-/* line 45, ../scss/base/_layout.scss */
+/* line 49, ../scss/base/_layout.scss */
 .progress[aria-valuenow="90"] .progress-meter {
   width: 90%;
 }
 
 @media screen and (min-width: 0em) and (max-width: 39.9375em) {
-  /* line 52, ../scss/base/_layout.scss */
+  /* line 56, ../scss/base/_layout.scss */
   #body {
     max-width: 100%;
     padding: 1rem 0;
   }
-  /* line 56, ../scss/base/_layout.scss */
+  /* line 60, ../scss/base/_layout.scss */
   #body .col-wrap-margin {
     margin-bottom: 1rem;
   }
 
-  /* line 62, ../scss/base/_layout.scss */
+  /* line 66, ../scss/base/_layout.scss */
   .progress {
     margin-bottom: 1rem;
   }
@@ -4403,14 +4408,14 @@ a {
 /* line 1, ../scss/components/_buttons.scss */
 a.button,
 button.button {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   text-decoration: none;
   font-weight: 700;
 }
 /* line 8, ../scss/components/_buttons.scss */
 a.button.light-grey,
 button.button.light-grey {
-  background-color: #ECECEB;
+  background-color: #F3F3F3;
   color: #4e4e4e;
 }
 /* line 12, ../scss/components/_buttons.scss */
@@ -4443,7 +4448,7 @@ button.button.light-grey:hover {
 /* line 36, ../scss/components/_buttons.scss */
 a.button.disabled,
 button.button.disabled {
-  background-color: #D1D1D1;
+  background-color: #D2D2D2;
 }
 /* line 40, ../scss/components/_buttons.scss */
 a.button.radius,
@@ -4667,13 +4672,8 @@ textarea {
 .panel-booking .booking-text {
   margin: 0;
 }
-/* line 72, ../scss/components/_panels.scss */
-.panel-booking .lesson-title {
-  color: #0088CF;
-  font-weight: bold;
-}
 
-/* line 79, ../scss/components/_panels.scss */
+/* line 73, ../scss/components/_panels.scss */
 .panel-white {
   margin: 0 0 1rem 0;
   padding: 1.25rem;
@@ -4693,18 +4693,18 @@ textarea {
 .panel-white > :last-child {
   margin-bottom: 0;
 }
-/* line 84, ../scss/components/_panels.scss */
+/* line 78, ../scss/components/_panels.scss */
 .panel-white.radius {
   border-radius: 2px;
 }
 
 @media screen and (min-width: 0em) and (max-width: 39.9375em) {
-  /* line 92, ../scss/components/_panels.scss */
+  /* line 86, ../scss/components/_panels.scss */
   .comment-box .comment-section .score h5 {
     text-align: left;
   }
 
-  /* line 99, ../scss/components/_panels.scss */
+  /* line 93, ../scss/components/_panels.scss */
   .panel-booking .lesson-title {
     display: block;
   }
