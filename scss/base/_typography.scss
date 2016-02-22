@@ -5,8 +5,16 @@
 a {
 	text-decoration: none;
 	color: #449DD2;
+
+	&.grey {
+		color: #717576;
+	}
 }
 
 .bold {
 	font-weight: 700;
+}
+
+.underline {
+	text-decoration: underline;
 }
