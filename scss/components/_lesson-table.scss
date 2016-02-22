@@ -51,15 +51,36 @@ $booked-lesson-color: #e0f0f3;
 			}
 		}
 
+		.rating {
+			display: inline-block;
+
+			.comment {
+				display: inline-block;
+				margin: 0 0 0 0.5rem;
+			}
+
+			.star {
+				color: #f0CC6E;
+			}
+		}
+
+		.tick-icon,
 		.calendar-icon {
-			background-image: url(../images/icons/calendar.svg);
 			background-size: 0.75rem 0.75rem;
 			background-repeat: no-repeat;
 			background-position: 50% 50%;
 			display: inline-block;
 			height: 0.8rem;
 			width: 0.8rem;
-			margin-right: 0.75rem;
+			margin-right: 0.5rem;
+		}
+
+		.calendar-icon {
+			background-image: url(../images/icons/calendar.svg);
+		}
+
+		.tick-icon {
+			background-image: url(../images/icons/tick.svg);
 		}
 	}
 
@@ -74,14 +95,18 @@ $booked-lesson-color: #e0f0f3;
 	}
 
 	#current-bookings-panel {
-		.lesson-row {
+		> div:nth-child(3n) {
 			background-color: $booked-lesson-color;
 		}
 	}
 
 	#completed-lessons-panel {
-		.lesson-row {
+		> div:nth-child(3n) {
 			background-color: #ecf7f2;
+		}
+
+		time {
+			color: #7dbaa7;
 		}
 	}
 
@@ -92,7 +117,7 @@ $booked-lesson-color: #e0f0f3;
 	}
 
 	#cancelled-lessons-panel {
-		.lesson-row{
+		.lesson-row {
 			background-color: #eee1e6;
 		}
 	}

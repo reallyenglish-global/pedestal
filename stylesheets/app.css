@@ -4459,21 +4459,27 @@ button.button.light-grey:hover {
   background-color: #cfcfcf;
 }
 /* line 35, ../scss/components/_buttons.scss */
+a.button.yellow,
+button.button.yellow {
+  background-color: #fffcef;
+  color: #4e4e4e;
+}
+/* line 40, ../scss/components/_buttons.scss */
 a.button.disabled,
 button.button.disabled {
   background-color: #D2D2D2;
 }
-/* line 39, ../scss/components/_buttons.scss */
+/* line 44, ../scss/components/_buttons.scss */
 a.button.radius,
 button.button.radius {
   border-radius: 5px;
 }
-/* line 43, ../scss/components/_buttons.scss */
+/* line 48, ../scss/components/_buttons.scss */
 a.button.round,
 button.button.round {
   border-radius: 1000px;
 }
-/* line 47, ../scss/components/_buttons.scss */
+/* line 52, ../scss/components/_buttons.scss */
 a.button.small,
 button.button.small {
   padding: 1rem;
@@ -4481,7 +4487,7 @@ button.button.small {
   width: 1rem;
   display: inline-block;
 }
-/* line 53, ../scss/components/_buttons.scss */
+/* line 58, ../scss/components/_buttons.scss */
 a.button.small.close,
 button.button.small.close {
   background-image: url(../images/icons/close-icon.svg);
@@ -4489,12 +4495,12 @@ button.button.small.close {
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
-/* line 61, ../scss/components/_buttons.scss */
+/* line 66, ../scss/components/_buttons.scss */
 a.button.circle,
 button.button.circle {
   border-radius: 50%;
 }
-/* line 64, ../scss/components/_buttons.scss */
+/* line 69, ../scss/components/_buttons.scss */
 a.button.circle.help,
 button.button.circle.help {
   background-image: url(../images/icons/question.svg);
@@ -4502,31 +4508,41 @@ button.button.circle.help {
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
-/* line 72, ../scss/components/_buttons.scss */
+/* line 77, ../scss/components/_buttons.scss */
 a.button.arrow-down,
 button.button.arrow-down {
   background-image: url(../images/icons/arrow-down.svg);
-  background-size: 0.75rem 0.75rem;
+  background-size: 0.5rem 0.5rem;
   background-repeat: no-repeat;
+}
+/* line 82, ../scss/components/_buttons.scss */
+a.button.arrow-down.right,
+button.button.arrow-down.right {
+  background-position: 96% 50%;
+  padding-left: 0.5rem;
+}
+/* line 87, ../scss/components/_buttons.scss */
+a.button.arrow-down.center,
+button.button.arrow-down.center {
   background-position: 50% 50%;
 }
-/* line 79, ../scss/components/_buttons.scss */
+/* line 92, ../scss/components/_buttons.scss */
 a.button.grey,
 button.button.grey {
   background-color: #878787;
 }
-/* line 83, ../scss/components/_buttons.scss */
+/* line 96, ../scss/components/_buttons.scss */
 a.button.dark-grey,
 button.button.dark-grey {
   background-color: #676767;
 }
-/* line 87, ../scss/components/_buttons.scss */
+/* line 100, ../scss/components/_buttons.scss */
 a.button.white,
 button.button.white {
   background-color: #FFF;
   color: #989898;
 }
-/* line 91, ../scss/components/_buttons.scss */
+/* line 104, ../scss/components/_buttons.scss */
 a.button.white.active,
 button.button.white.active {
   color: #58595b;
@@ -4881,45 +4897,70 @@ footer {
   margin-left: 0.75rem;
 }
 /* line 54, ../scss/components/_lesson-table.scss */
+.lesson-table .lesson-row .rating {
+  display: inline-block;
+}
+/* line 57, ../scss/components/_lesson-table.scss */
+.lesson-table .lesson-row .rating .comment {
+  display: inline-block;
+  margin: 0 0 0 0.5rem;
+}
+/* line 62, ../scss/components/_lesson-table.scss */
+.lesson-table .lesson-row .rating .star {
+  color: #f0CC6E;
+}
+/* line 67, ../scss/components/_lesson-table.scss */
+.lesson-table .lesson-row .tick-icon,
 .lesson-table .lesson-row .calendar-icon {
-  background-image: url(../images/icons/calendar.svg);
   background-size: 0.75rem 0.75rem;
   background-repeat: no-repeat;
   background-position: 50% 50%;
   display: inline-block;
   height: 0.8rem;
   width: 0.8rem;
-  margin-right: 0.75rem;
+  margin-right: 0.5rem;
 }
-/* line 66, ../scss/components/_lesson-table.scss */
+/* line 78, ../scss/components/_lesson-table.scss */
+.lesson-table .lesson-row .calendar-icon {
+  background-image: url(../images/icons/calendar.svg);
+}
+/* line 82, ../scss/components/_lesson-table.scss */
+.lesson-table .lesson-row .tick-icon {
+  background-image: url(../images/icons/tick.svg);
+}
+/* line 87, ../scss/components/_lesson-table.scss */
 .lesson-table .lesson-row:last-child {
   border-bottom: 1px solid #e7e7e7;
 }
-/* line 70, ../scss/components/_lesson-table.scss */
+/* line 91, ../scss/components/_lesson-table.scss */
 .lesson-table #completed-lessons-panel,
 .lesson-table #incompleted-lessons-panel,
 .lesson-table #cancelled-lessons-panel {
   display: none;
 }
-/* line 77, ../scss/components/_lesson-table.scss */
-.lesson-table #current-bookings-panel .lesson-row {
+/* line 98, ../scss/components/_lesson-table.scss */
+.lesson-table #current-bookings-panel > div:nth-child(3n) {
   background-color: #e0f0f3;
 }
-/* line 83, ../scss/components/_lesson-table.scss */
-.lesson-table #completed-lessons-panel .lesson-row {
+/* line 104, ../scss/components/_lesson-table.scss */
+.lesson-table #completed-lessons-panel > div:nth-child(3n) {
   background-color: #ecf7f2;
 }
-/* line 89, ../scss/components/_lesson-table.scss */
+/* line 108, ../scss/components/_lesson-table.scss */
+.lesson-table #completed-lessons-panel time {
+  color: #7dbaa7;
+}
+/* line 114, ../scss/components/_lesson-table.scss */
 .lesson-table #incompleted-lessons-panel .lesson-row {
   background-color: #f4e9e2;
 }
-/* line 95, ../scss/components/_lesson-table.scss */
+/* line 120, ../scss/components/_lesson-table.scss */
 .lesson-table #cancelled-lessons-panel .lesson-row {
   background-color: #eee1e6;
 }
 
 @media screen and (min-width: 0em) and (max-width: 39.9375em) {
-  /* line 107, ../scss/components/_lesson-table.scss */
+  /* line 132, ../scss/components/_lesson-table.scss */
   .lesson-table .lesson-row .columns:last-child {
     margin-bottom: 0;
   }

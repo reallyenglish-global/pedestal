@@ -92,7 +92,7 @@ $("#incompleted-lessons-button").on("click", function(e) {
 $("#cancelled-lessons-button").on("click", function(e) {
 	$("#current-bookings-panel").hide();
 	$("#completed-lessons-panel").hide();
-	$("incompleted-lessons-panel").hide();
+	$("#incompleted-lessons-panel").hide();
 	$("#cancelled-lessons-panel").show();
 	$("#current-bookings-button").removeClass("active");
 	$("#completed-lessons-button").removeClass("active");
