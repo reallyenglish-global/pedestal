@@ -8,25 +8,24 @@
 	</head>
 	<body>
 		<header>
-			<nav class="top-bar">
-				<div class="row">
-					<div class="top-bar-title">
-						<span data-responsive-toggle="responsive-menu" data-hide-for="medium">
-							<span class="menu-icon" data-toggle></span>
-						</span>
-						Reallyenglish
-					</div>
-					<div id="responsive-menu">
-						<div class="top-bar-right">
-							<ul class="dropdown menu" data-dropdown-menu>
-								<li><a data-open="skypeModal1">Orientation</a></li>
-								<li><a>Book a lesson</a></li>
-								<li><a href="#">How to study</a></li>
-								<li><a href="#">Change Skype ID</a></li>
-								<li><a href="#">My page</a></li>
-							</ul>
-						</div>
-					</div>
+			<div class="title-bar" data-responsive-toggle="main-menu" data-hide-for="extramedium">
+				<button class="menu-icon" type="button" data-toggle></button>
+				<div class="title-bar-title">Reallyenglish</div>
+			</div>
+			<nav class="top-bar" id="main-menu">
+				<div class="top-bar-left">
+					<ul class="dropdown menu" data-dropdown-menu>
+						<li class="menu-text">Reallyenglish</li>
+					</ul>
+				</div>
+				<div class="top-bar-right">
+					<ul class="menu" data-responsive-menu="drilldown medium-dropdown">
+						<li><a data-open="skypeModal1">Orientation</a></li>
+						<li><a href="#">Book a lesson</a></li>
+						<li><a href="#">How to study</a></li>
+						<li><a href="#">Change Skype ID</a></li>
+						<li><a href="#">My page</a></li>
+					</ul>
 				</div>
 			</nav>
 		</header>
@@ -221,8 +220,8 @@
 								<div class="medium-3 columns rating">
 									<span class="star">&#9733;</span>
 									<span class="star">&#9733;</span>
-									 <span class="star">&#9733;</span>
-									 <p class="comment">Excellent</p>
+									<span class="star">&#9733;</span>
+									<p class="comment">Excellent</p>
 								</div>
 								<div class="medium-4 columns">
 									<div class="icon tick-icon"></div>

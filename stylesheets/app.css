@@ -441,7 +441,7 @@ th {
 
 /* line 119, ../bower_components/foundation-sites/scss/_global.scss */
 .foundation-mq {
-  font-family: "small=0em&medium=40em&large=64em&xlarge=75em&xxlarge=90em";
+  font-family: "small=0em&medium=40em&extramedium=47.375em&large=64em&xlarge=75em&xxlarge=90em";
 }
 
 /* line 123, ../bower_components/foundation-sites/scss/_global.scss */
@@ -944,6 +944,198 @@ button {
 
   /* line 266, ../bower_components/foundation-sites/scss/grid/_flex-grid.scss */
   .medium-uncollapse > .column, .medium-uncollapse > .columns {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+}
+@media screen and (min-width: 47.375em) {
+  /* line 210, ../bower_components/foundation-sites/scss/grid/_flex-grid.scss */
+  .extramedium-1 {
+    flex: 0 0 8.33333%;
+    max-width: 8.33333%;
+  }
+
+  /* line 218, ../bower_components/foundation-sites/scss/grid/_flex-grid.scss */
+  .extramedium-offset-0 {
+    margin-left: 0%;
+  }
+
+  /* line 210, ../bower_components/foundation-sites/scss/grid/_flex-grid.scss */
+  .extramedium-2 {
+    flex: 0 0 16.66667%;
+    max-width: 16.66667%;
+  }
+
+  /* line 218, ../bower_components/foundation-sites/scss/grid/_flex-grid.scss */
+  .extramedium-offset-1 {
+    margin-left: 8.33333%;
+  }
+
+  /* line 210, ../bower_components/foundation-sites/scss/grid/_flex-grid.scss */
+  .extramedium-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+
+  /* line 218, ../bower_components/foundation-sites/scss/grid/_flex-grid.scss */
+  .extramedium-offset-2 {
+    margin-left: 16.66667%;
+  }
+
+  /* line 210, ../bower_components/foundation-sites/scss/grid/_flex-grid.scss */
+  .extramedium-4 {
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+  }
+
+  /* line 218, ../bower_components/foundation-sites/scss/grid/_flex-grid.scss */
+  .extramedium-offset-3 {
+    margin-left: 25%;
+  }
+
+  /* line 210, ../bower_components/foundation-sites/scss/grid/_flex-grid.scss */
+  .extramedium-5 {
+    flex: 0 0 41.66667%;
+    max-width: 41.66667%;
+  }
+
+  /* line 218, ../bower_components/foundation-sites/scss/grid/_flex-grid.scss */
+  .extramedium-offset-4 {
+    margin-left: 33.33333%;
+  }
+
+  /* line 210, ../bower_components/foundation-sites/scss/grid/_flex-grid.scss */
+  .extramedium-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  /* line 218, ../bower_components/foundation-sites/scss/grid/_flex-grid.scss */
+  .extramedium-offset-5 {
+    margin-left: 41.66667%;
+  }
+
+  /* line 210, ../bower_components/foundation-sites/scss/grid/_flex-grid.scss */
+  .extramedium-7 {
+    flex: 0 0 58.33333%;
+    max-width: 58.33333%;
+  }
+
+  /* line 218, ../bower_components/foundation-sites/scss/grid/_flex-grid.scss */
+  .extramedium-offset-6 {
+    margin-left: 50%;
+  }
+
+  /* line 210, ../bower_components/foundation-sites/scss/grid/_flex-grid.scss */
+  .extramedium-8 {
+    flex: 0 0 66.66667%;
+    max-width: 66.66667%;
+  }
+
+  /* line 218, ../bower_components/foundation-sites/scss/grid/_flex-grid.scss */
+  .extramedium-offset-7 {
+    margin-left: 58.33333%;
+  }
+
+  /* line 210, ../bower_components/foundation-sites/scss/grid/_flex-grid.scss */
+  .extramedium-9 {
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
+
+  /* line 218, ../bower_components/foundation-sites/scss/grid/_flex-grid.scss */
+  .extramedium-offset-8 {
+    margin-left: 66.66667%;
+  }
+
+  /* line 210, ../bower_components/foundation-sites/scss/grid/_flex-grid.scss */
+  .extramedium-10 {
+    flex: 0 0 83.33333%;
+    max-width: 83.33333%;
+  }
+
+  /* line 218, ../bower_components/foundation-sites/scss/grid/_flex-grid.scss */
+  .extramedium-offset-9 {
+    margin-left: 75%;
+  }
+
+  /* line 210, ../bower_components/foundation-sites/scss/grid/_flex-grid.scss */
+  .extramedium-11 {
+    flex: 0 0 91.66667%;
+    max-width: 91.66667%;
+  }
+
+  /* line 218, ../bower_components/foundation-sites/scss/grid/_flex-grid.scss */
+  .extramedium-offset-10 {
+    margin-left: 83.33333%;
+  }
+
+  /* line 210, ../bower_components/foundation-sites/scss/grid/_flex-grid.scss */
+  .extramedium-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  /* line 218, ../bower_components/foundation-sites/scss/grid/_flex-grid.scss */
+  .extramedium-offset-11 {
+    margin-left: 91.66667%;
+  }
+
+  /* line 225, ../bower_components/foundation-sites/scss/grid/_flex-grid.scss */
+  .extramedium-order-1 {
+    order: 1;
+  }
+
+  /* line 225, ../bower_components/foundation-sites/scss/grid/_flex-grid.scss */
+  .extramedium-order-2 {
+    order: 2;
+  }
+
+  /* line 225, ../bower_components/foundation-sites/scss/grid/_flex-grid.scss */
+  .extramedium-order-3 {
+    order: 3;
+  }
+
+  /* line 225, ../bower_components/foundation-sites/scss/grid/_flex-grid.scss */
+  .extramedium-order-4 {
+    order: 4;
+  }
+
+  /* line 225, ../bower_components/foundation-sites/scss/grid/_flex-grid.scss */
+  .extramedium-order-5 {
+    order: 5;
+  }
+
+  /* line 225, ../bower_components/foundation-sites/scss/grid/_flex-grid.scss */
+  .extramedium-order-6 {
+    order: 6;
+  }
+}
+@media screen and (min-width: 47.375em) and (min-width: 47.375em) {
+  /* line 233, ../bower_components/foundation-sites/scss/grid/_flex-grid.scss */
+  .extramedium-expand {
+    flex: 1 1 0px;
+  }
+}
+/* line 241, ../bower_components/foundation-sites/scss/grid/_flex-grid.scss */
+.row.extramedium-unstack .column, .row.extramedium-unstack .columns {
+  flex: 0 0 100%;
+}
+@media screen and (min-width: 47.375em) {
+  /* line 241, ../bower_components/foundation-sites/scss/grid/_flex-grid.scss */
+  .row.extramedium-unstack .column, .row.extramedium-unstack .columns {
+    flex: 1 1 0px;
+  }
+}
+@media screen and (min-width: 47.375em) {
+  /* line 254, ../bower_components/foundation-sites/scss/grid/_flex-grid.scss */
+  .extramedium-collapse > .column, .extramedium-collapse > .columns {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* line 266, ../bower_components/foundation-sites/scss/grid/_flex-grid.scss */
+  .extramedium-uncollapse > .column, .extramedium-uncollapse > .columns {
     padding-left: 0.75rem;
     padding-right: 0.75rem;
   }
@@ -1534,6 +1726,27 @@ p + .stat {
 
   /* line 10, ../bower_components/foundation-sites/scss/typography/_alignment.scss */
   .medium-text-justify {
+    text-align: justify;
+  }
+}
+@media screen and (min-width: 47.375em) {
+  /* line 10, ../bower_components/foundation-sites/scss/typography/_alignment.scss */
+  .extramedium-text-left {
+    text-align: left;
+  }
+
+  /* line 10, ../bower_components/foundation-sites/scss/typography/_alignment.scss */
+  .extramedium-text-right {
+    text-align: right;
+  }
+
+  /* line 10, ../bower_components/foundation-sites/scss/typography/_alignment.scss */
+  .extramedium-text-center {
+    text-align: center;
+  }
+
+  /* line 10, ../bower_components/foundation-sites/scss/typography/_alignment.scss */
+  .extramedium-text-justify {
     text-align: justify;
   }
 }
@@ -2167,16 +2380,44 @@ select[multiple] {
   }
 }
 
-@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+@media screen and (min-width: 40em) and (max-width: 47.3125em) {
   /* line 81, ../bower_components/foundation-sites/scss/components/_visibility.scss */
   .hide-for-medium-only {
     display: none !important;
   }
 }
 
-@media screen and (max-width: 39.9375em), screen and (min-width: 64em) {
+@media screen and (max-width: 39.9375em), screen and (min-width: 47.375em) {
   /* line 85, ../bower_components/foundation-sites/scss/components/_visibility.scss */
   .show-for-medium-only {
+    display: none !important;
+  }
+}
+
+@media screen and (min-width: 47.375em) {
+  /* line 72, ../bower_components/foundation-sites/scss/components/_visibility.scss */
+  .hide-for-extramedium {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 47.3125em) {
+  /* line 76, ../bower_components/foundation-sites/scss/components/_visibility.scss */
+  .show-for-extramedium {
+    display: none !important;
+  }
+}
+
+@media screen and (min-width: 47.375em) and (max-width: 63.9375em) {
+  /* line 81, ../bower_components/foundation-sites/scss/components/_visibility.scss */
+  .hide-for-extramedium-only {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 47.3125em), screen and (min-width: 64em) {
+  /* line 85, ../bower_components/foundation-sites/scss/components/_visibility.scss */
+  .show-for-extramedium-only {
     display: none !important;
   }
 }
@@ -3039,6 +3280,16 @@ select[multiple] {
     display: block;
   }
 }
+@media screen and (min-width: 47.375em) {
+  /* line 67, ../bower_components/foundation-sites/scss/components/_menu.scss */
+  .menu.extramedium-horizontal > li {
+    display: table-cell;
+  }
+  /* line 72, ../bower_components/foundation-sites/scss/components/_menu.scss */
+  .menu.extramedium-vertical > li {
+    display: block;
+  }
+}
 @media screen and (min-width: 64em) {
   /* line 67, ../bower_components/foundation-sites/scss/components/_menu.scss */
   .menu.large-horizontal > li {
@@ -3212,6 +3463,29 @@ body {
   }
   /* line 146, ../bower_components/foundation-sites/scss/components/_off-canvas.scss */
   .position-right.reveal-for-medium ~ .off-canvas-content {
+    margin-right: 250px;
+  }
+}
+@media screen and (min-width: 47.375em) {
+  /* line 166, ../bower_components/foundation-sites/scss/components/_off-canvas.scss */
+  .position-left.reveal-for-extramedium {
+    left: 0;
+    z-index: auto;
+    position: fixed;
+  }
+  /* line 146, ../bower_components/foundation-sites/scss/components/_off-canvas.scss */
+  .position-left.reveal-for-extramedium ~ .off-canvas-content {
+    margin-left: 250px;
+  }
+
+  /* line 170, ../bower_components/foundation-sites/scss/components/_off-canvas.scss */
+  .position-right.reveal-for-extramedium {
+    right: 0;
+    z-index: auto;
+    position: fixed;
+  }
+  /* line 146, ../bower_components/foundation-sites/scss/components/_off-canvas.scss */
+  .position-right.reveal-for-extramedium ~ .off-canvas-content {
     margin-right: 250px;
   }
 }
@@ -3890,7 +4164,7 @@ tbody td {
   padding: 0.5rem 0.625rem 0.625rem;
 }
 
-@media screen and (max-width: 63.9375em) {
+@media screen and (max-width: 47.3125em) {
   /* line 188, ../bower_components/foundation-sites/scss/components/_table.scss */
   table.stack thead {
     display: none;
@@ -4251,7 +4525,7 @@ table.hover tr:nth-of-type(even):hover {
   }
 }
 
-@media screen and (max-width: 63.9375em) {
+@media screen and (max-width: 47.3125em) {
   /* line 49, ../bower_components/foundation-sites/scss/components/_top-bar.scss */
   .stacked-for-medium .top-bar-title {
     width: 100%;
@@ -4262,6 +4536,21 @@ table.hover tr:nth-of-type(even):hover {
   }
   /* line 57, ../bower_components/foundation-sites/scss/components/_top-bar.scss */
   .stacked-for-medium .top-bar-left {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 63.9375em) {
+  /* line 49, ../bower_components/foundation-sites/scss/components/_top-bar.scss */
+  .stacked-for-extramedium .top-bar-title {
+    width: 100%;
+  }
+  /* line 53, ../bower_components/foundation-sites/scss/components/_top-bar.scss */
+  .stacked-for-extramedium .top-bar-right {
+    width: 100%;
+  }
+  /* line 57, ../bower_components/foundation-sites/scss/components/_top-bar.scss */
+  .stacked-for-extramedium .top-bar-left {
     width: 100%;
   }
 }
@@ -4578,45 +4867,45 @@ textarea {
   border-radius: 0 5px 5px 0;
 }
 
-/* line 1, ../scss/components/_nav.scss */
-.top-bar {
-  line-height: 3.375rem;
-  height: 3.375rem;
+/* line 3, ../scss/components/_nav.scss */
+header, header .title-bar {
+  background-color: #676767;
 }
-/* line 6, ../scss/components/_nav.scss */
-.top-bar > .row {
-  margin: 0 auto;
-  max-width: 62.5rem;
+/* line 7, ../scss/components/_nav.scss */
+header .top-bar {
   padding: 0 3rem;
+  max-width: 62.5rem;
+  margin: 0 auto;
 }
 /* line 12, ../scss/components/_nav.scss */
-.top-bar .top-bar-title,
-.top-bar a {
+header .top-bar .menu-text,
+header .top-bar a {
   color: #FFF;
 }
 /* line 17, ../scss/components/_nav.scss */
-.top-bar .top-bar-title {
-  display: inline-block;
-}
-/* line 21, ../scss/components/_nav.scss */
-.top-bar .top-bar-right {
-  padding: 0.5rem 0;
+header .top-bar .menu-text {
+  font-weight: 400;
 }
 
-@media screen and (min-width: 0em) and (max-width: 39.9375em) {
-  /* line 29, ../scss/components/_nav.scss */
-  .top-bar {
-    padding: 0 1.25rem;
+@media screen and (max-width: 47.3125em) {
+  /* line 25, ../scss/components/_nav.scss */
+  .title-bar {
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
-  /* line 33, ../scss/components/_nav.scss */
-  .top-bar > .row {
-    max-width: 100%;
-    padding: 0;
-  }
-  /* line 37, ../scss/components/_nav.scss */
-  .top-bar .top-bar-right,
+
+  /* line 31, ../scss/components/_nav.scss */
   .top-bar .top-bar-left {
-    padding: 0;
+    display: none;
+  }
+  /* line 35, ../scss/components/_nav.scss */
+  .top-bar .top-bar-right {
+    float: none;
+  }
+  /* line 38, ../scss/components/_nav.scss */
+  .top-bar .top-bar-right .menu li[role="menuitem"] {
+    display: block;
+    padding-left: 2rem;
   }
 }
 /* line 5, ../scss/components/_panels.scss */
@@ -4867,49 +5156,50 @@ footer {
 /* line 20, ../scss/components/_lesson-table.scss */
 .lesson-table .lesson-set.booked div.lesson-row:nth-child(4) {
   background-color: #e0f0f3;
+  border-top: none;
 }
-/* line 25, ../scss/components/_lesson-table.scss */
+/* line 26, ../scss/components/_lesson-table.scss */
 .lesson-table .lesson-header {
   margin: 1rem 0;
 }
-/* line 29, ../scss/components/_lesson-table.scss */
+/* line 30, ../scss/components/_lesson-table.scss */
 .lesson-table .lesson-button-row {
   background-color: #F3F3F3;
 }
-/* line 33, ../scss/components/_lesson-table.scss */
+/* line 34, ../scss/components/_lesson-table.scss */
 .lesson-table .lesson-label {
   padding: 0.5rem 1.25rem;
 }
-/* line 37, ../scss/components/_lesson-table.scss */
+/* line 38, ../scss/components/_lesson-table.scss */
 .lesson-table .lesson-row {
   border: 1px solid #e7e7e7;
   border-bottom: none;
 }
-/* line 41, ../scss/components/_lesson-table.scss */
+/* line 42, ../scss/components/_lesson-table.scss */
 .lesson-table .lesson-row .avatar {
   height: 1.5rem;
   width: 1.5rem;
   border-radius: 50%;
   margin-right: 0.5rem;
 }
-/* line 49, ../scss/components/_lesson-table.scss */
+/* line 50, ../scss/components/_lesson-table.scss */
 .lesson-table .lesson-row time strong {
   margin-left: 0.75rem;
 }
-/* line 54, ../scss/components/_lesson-table.scss */
+/* line 55, ../scss/components/_lesson-table.scss */
 .lesson-table .lesson-row .rating {
   display: inline-block;
 }
-/* line 57, ../scss/components/_lesson-table.scss */
+/* line 58, ../scss/components/_lesson-table.scss */
 .lesson-table .lesson-row .rating .comment {
   display: inline-block;
   margin: 0 0 0 0.5rem;
 }
-/* line 62, ../scss/components/_lesson-table.scss */
+/* line 63, ../scss/components/_lesson-table.scss */
 .lesson-table .lesson-row .rating .star {
   color: #f0CC6E;
 }
-/* line 67, ../scss/components/_lesson-table.scss */
+/* line 68, ../scss/components/_lesson-table.scss */
 .lesson-table .lesson-row .tick-icon,
 .lesson-table .lesson-row .calendar-icon,
 .lesson-table .lesson-row .incomplete-icon,
@@ -4922,71 +5212,71 @@ footer {
   width: 0.9rem;
   margin-right: 0.5rem;
 }
-/* line 80, ../scss/components/_lesson-table.scss */
+/* line 81, ../scss/components/_lesson-table.scss */
 .lesson-table .lesson-row .calendar-icon {
   background-image: url(../images/icons/calendar.svg);
 }
-/* line 84, ../scss/components/_lesson-table.scss */
+/* line 85, ../scss/components/_lesson-table.scss */
 .lesson-table .lesson-row .tick-icon {
   background-image: url(../images/icons/tick.svg);
 }
-/* line 88, ../scss/components/_lesson-table.scss */
+/* line 89, ../scss/components/_lesson-table.scss */
 .lesson-table .lesson-row .incomplete-icon {
   background-image: url(../images/icons/incomplete.svg);
 }
-/* line 92, ../scss/components/_lesson-table.scss */
+/* line 93, ../scss/components/_lesson-table.scss */
 .lesson-table .lesson-row .cancel-icon {
   background-image: url(../images/icons/cancelled.svg);
 }
-/* line 97, ../scss/components/_lesson-table.scss */
+/* line 98, ../scss/components/_lesson-table.scss */
 .lesson-table .lesson-row:last-child {
   border-bottom: 1px solid #e7e7e7;
 }
-/* line 101, ../scss/components/_lesson-table.scss */
+/* line 102, ../scss/components/_lesson-table.scss */
 .lesson-table #completed-lessons-panel,
 .lesson-table #incompleted-lessons-panel,
 .lesson-table #cancelled-lessons-panel {
   display: none;
 }
-/* line 108, ../scss/components/_lesson-table.scss */
+/* line 109, ../scss/components/_lesson-table.scss */
 .lesson-table #current-bookings-panel > div.lesson-row:nth-child(3n) {
   background-color: #e0f0f3;
 }
-/* line 114, ../scss/components/_lesson-table.scss */
+/* line 115, ../scss/components/_lesson-table.scss */
 .lesson-table #completed-lessons-panel > div.lesson-row:nth-child(3n) {
   background-color: #ecf7f2;
 }
-/* line 118, ../scss/components/_lesson-table.scss */
+/* line 119, ../scss/components/_lesson-table.scss */
 .lesson-table #completed-lessons-panel time {
   color: #7dbaa7;
 }
-/* line 124, ../scss/components/_lesson-table.scss */
+/* line 125, ../scss/components/_lesson-table.scss */
 .lesson-table #incompleted-lessons-panel .lesson-row {
   background-color: #f4e9e2;
 }
-/* line 128, ../scss/components/_lesson-table.scss */
+/* line 129, ../scss/components/_lesson-table.scss */
 .lesson-table #incompleted-lessons-panel time {
   color: #dda989;
 }
-/* line 132, ../scss/components/_lesson-table.scss */
+/* line 133, ../scss/components/_lesson-table.scss */
 .lesson-table #incompleted-lessons-panel .remark {
   color: #a39e9e;
 }
-/* line 138, ../scss/components/_lesson-table.scss */
+/* line 139, ../scss/components/_lesson-table.scss */
 .lesson-table #cancelled-lessons-panel .lesson-row {
   background-color: #eee1e6;
 }
-/* line 142, ../scss/components/_lesson-table.scss */
+/* line 143, ../scss/components/_lesson-table.scss */
 .lesson-table #cancelled-lessons-panel time {
   color: #d09baf;
 }
-/* line 146, ../scss/components/_lesson-table.scss */
+/* line 147, ../scss/components/_lesson-table.scss */
 .lesson-table #cancelled-lessons-panel .remark {
   color: #a39e9e;
 }
 
 @media screen and (min-width: 0em) and (max-width: 39.9375em) {
-  /* line 158, ../scss/components/_lesson-table.scss */
+  /* line 159, ../scss/components/_lesson-table.scss */
   .lesson-table .lesson-row .columns:last-child {
     margin-bottom: 0;
   }

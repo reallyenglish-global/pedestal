@@ -19,6 +19,7 @@ $booked-lesson-color: #e0f0f3;
 
 		&.booked div.lesson-row:nth-child(4) {
 			background-color: $booked-lesson-color;
+			border-top: none;
 		}
 	}
 
@@ -94,7 +95,7 @@ $booked-lesson-color: #e0f0f3;
 		}
 	}
 
-	.lesson-row:last-child {
+		.lesson-row:last-child {
 		border-bottom: 1px solid #e7e7e7;
 	}
 
