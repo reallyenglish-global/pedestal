@@ -4911,56 +4911,82 @@ footer {
 }
 /* line 67, ../scss/components/_lesson-table.scss */
 .lesson-table .lesson-row .tick-icon,
-.lesson-table .lesson-row .calendar-icon {
-  background-size: 0.75rem 0.75rem;
+.lesson-table .lesson-row .calendar-icon,
+.lesson-table .lesson-row .incomplete-icon,
+.lesson-table .lesson-row .cancel-icon {
+  background-size: 0.8rem 0.8rem;
   background-repeat: no-repeat;
   background-position: 50% 50%;
   display: inline-block;
-  height: 0.8rem;
-  width: 0.8rem;
+  height: 0.9rem;
+  width: 0.9rem;
   margin-right: 0.5rem;
 }
-/* line 78, ../scss/components/_lesson-table.scss */
+/* line 80, ../scss/components/_lesson-table.scss */
 .lesson-table .lesson-row .calendar-icon {
   background-image: url(../images/icons/calendar.svg);
 }
-/* line 82, ../scss/components/_lesson-table.scss */
+/* line 84, ../scss/components/_lesson-table.scss */
 .lesson-table .lesson-row .tick-icon {
   background-image: url(../images/icons/tick.svg);
 }
-/* line 87, ../scss/components/_lesson-table.scss */
+/* line 88, ../scss/components/_lesson-table.scss */
+.lesson-table .lesson-row .incomplete-icon {
+  background-image: url(../images/icons/incomplete.svg);
+}
+/* line 92, ../scss/components/_lesson-table.scss */
+.lesson-table .lesson-row .cancel-icon {
+  background-image: url(../images/icons/cancelled.svg);
+}
+/* line 97, ../scss/components/_lesson-table.scss */
 .lesson-table .lesson-row:last-child {
   border-bottom: 1px solid #e7e7e7;
 }
-/* line 91, ../scss/components/_lesson-table.scss */
+/* line 101, ../scss/components/_lesson-table.scss */
 .lesson-table #completed-lessons-panel,
 .lesson-table #incompleted-lessons-panel,
 .lesson-table #cancelled-lessons-panel {
   display: none;
 }
-/* line 98, ../scss/components/_lesson-table.scss */
-.lesson-table #current-bookings-panel > div:nth-child(3n) {
+/* line 108, ../scss/components/_lesson-table.scss */
+.lesson-table #current-bookings-panel > div.lesson-row:nth-child(3n) {
   background-color: #e0f0f3;
 }
-/* line 104, ../scss/components/_lesson-table.scss */
-.lesson-table #completed-lessons-panel > div:nth-child(3n) {
+/* line 114, ../scss/components/_lesson-table.scss */
+.lesson-table #completed-lessons-panel > div.lesson-row:nth-child(3n) {
   background-color: #ecf7f2;
 }
-/* line 108, ../scss/components/_lesson-table.scss */
+/* line 118, ../scss/components/_lesson-table.scss */
 .lesson-table #completed-lessons-panel time {
   color: #7dbaa7;
 }
-/* line 114, ../scss/components/_lesson-table.scss */
+/* line 124, ../scss/components/_lesson-table.scss */
 .lesson-table #incompleted-lessons-panel .lesson-row {
   background-color: #f4e9e2;
 }
-/* line 120, ../scss/components/_lesson-table.scss */
+/* line 128, ../scss/components/_lesson-table.scss */
+.lesson-table #incompleted-lessons-panel time {
+  color: #dda989;
+}
+/* line 132, ../scss/components/_lesson-table.scss */
+.lesson-table #incompleted-lessons-panel .remark {
+  color: #a39e9e;
+}
+/* line 138, ../scss/components/_lesson-table.scss */
 .lesson-table #cancelled-lessons-panel .lesson-row {
   background-color: #eee1e6;
 }
+/* line 142, ../scss/components/_lesson-table.scss */
+.lesson-table #cancelled-lessons-panel time {
+  color: #d09baf;
+}
+/* line 146, ../scss/components/_lesson-table.scss */
+.lesson-table #cancelled-lessons-panel .remark {
+  color: #a39e9e;
+}
 
 @media screen and (min-width: 0em) and (max-width: 39.9375em) {
-  /* line 132, ../scss/components/_lesson-table.scss */
+  /* line 158, ../scss/components/_lesson-table.scss */
   .lesson-table .lesson-row .columns:last-child {
     margin-bottom: 0;
   }
