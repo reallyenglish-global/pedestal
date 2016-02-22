@@ -26,6 +26,10 @@ $booked-lesson-color: #e0f0f3;
 		margin: 1rem 0;
 	}
 
+	.lesson-button-row {
+		background-color: $callout-background;
+	}
+
 	.lesson-label {
 		padding: 0.5rem 1.25rem;
 	}
@@ -61,6 +65,36 @@ $booked-lesson-color: #e0f0f3;
 
 	.lesson-row:last-child {
 		border-bottom: 1px solid #e7e7e7;
+	}
+
+	#completed-lessons-panel,
+	#incompleted-lessons-panel,
+	#cancelled-lessons-panel {
+		display: none;
+	}
+
+	#current-bookings-panel {
+		.lesson-row {
+			background-color: $booked-lesson-color;
+		}
+	}
+
+	#completed-lessons-panel {
+		.lesson-row {
+			background-color: #ecf7f2;
+		}
+	}
+
+	#incompleted-lessons-panel {
+		.lesson-row {
+			background-color: #f4e9e2;
+		}
+	}
+
+	#cancelled-lessons-panel {
+		.lesson-row{
+			background-color: #eee1e6;
+		}
 	}
 }
 

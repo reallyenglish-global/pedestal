@@ -83,4 +83,14 @@ button.button {
 	&.dark-grey {
 		background-color: $darker-grey;
 	}
+
+	&.white {
+		background-color: $white;
+		color: #989898;
+
+		&.active {
+			color: #58595b;
+			border: 2px solid #bbbdbf;
+		}
+	}
 }

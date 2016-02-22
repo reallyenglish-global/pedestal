@@ -4520,6 +4520,18 @@ a.button.dark-grey,
 button.button.dark-grey {
   background-color: #676767;
 }
+/* line 87, ../scss/components/_buttons.scss */
+a.button.white,
+button.button.white {
+  background-color: #FFF;
+  color: #989898;
+}
+/* line 91, ../scss/components/_buttons.scss */
+a.button.white.active,
+button.button.white.active {
+  color: #58595b;
+  border: 2px solid #bbbdbf;
+}
 
 /* line 2, ../scss/components/_forms.scss */
 form .is-invalid-input:not(:focus) {
@@ -4845,26 +4857,30 @@ footer {
   margin: 1rem 0;
 }
 /* line 29, ../scss/components/_lesson-table.scss */
+.lesson-table .lesson-button-row {
+  background-color: #F3F3F3;
+}
+/* line 33, ../scss/components/_lesson-table.scss */
 .lesson-table .lesson-label {
   padding: 0.5rem 1.25rem;
 }
-/* line 33, ../scss/components/_lesson-table.scss */
+/* line 37, ../scss/components/_lesson-table.scss */
 .lesson-table .lesson-row {
   border: 1px solid #e7e7e7;
   border-bottom: none;
 }
-/* line 37, ../scss/components/_lesson-table.scss */
+/* line 41, ../scss/components/_lesson-table.scss */
 .lesson-table .lesson-row .avatar {
   height: 1.5rem;
   width: 1.5rem;
   border-radius: 50%;
   margin-right: 0.5rem;
 }
-/* line 45, ../scss/components/_lesson-table.scss */
+/* line 49, ../scss/components/_lesson-table.scss */
 .lesson-table .lesson-row time strong {
   margin-left: 0.75rem;
 }
-/* line 50, ../scss/components/_lesson-table.scss */
+/* line 54, ../scss/components/_lesson-table.scss */
 .lesson-table .lesson-row .calendar-icon {
   background-image: url(../images/icons/calendar.svg);
   background-size: 0.75rem 0.75rem;
@@ -4875,13 +4891,35 @@ footer {
   width: 0.8rem;
   margin-right: 0.75rem;
 }
-/* line 62, ../scss/components/_lesson-table.scss */
+/* line 66, ../scss/components/_lesson-table.scss */
 .lesson-table .lesson-row:last-child {
   border-bottom: 1px solid #e7e7e7;
 }
+/* line 70, ../scss/components/_lesson-table.scss */
+.lesson-table #completed-lessons-panel,
+.lesson-table #incompleted-lessons-panel,
+.lesson-table #cancelled-lessons-panel {
+  display: none;
+}
+/* line 77, ../scss/components/_lesson-table.scss */
+.lesson-table #current-bookings-panel .lesson-row {
+  background-color: #e0f0f3;
+}
+/* line 83, ../scss/components/_lesson-table.scss */
+.lesson-table #completed-lessons-panel .lesson-row {
+  background-color: #ecf7f2;
+}
+/* line 89, ../scss/components/_lesson-table.scss */
+.lesson-table #incompleted-lessons-panel .lesson-row {
+  background-color: #f4e9e2;
+}
+/* line 95, ../scss/components/_lesson-table.scss */
+.lesson-table #cancelled-lessons-panel .lesson-row {
+  background-color: #eee1e6;
+}
 
 @media screen and (min-width: 0em) and (max-width: 39.9375em) {
-  /* line 73, ../scss/components/_lesson-table.scss */
+  /* line 107, ../scss/components/_lesson-table.scss */
   .lesson-table .lesson-row .columns:last-child {
     margin-bottom: 0;
   }
