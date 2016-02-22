@@ -7,7 +7,7 @@ var modal = $("#skypeModal3"),
 modalForm = modal.find("form"),
 modalFormSubmit = modalForm.find("button[type='submit']"),
 enableClose = function() {
-	modal.foundation("close");	
+	modal.foundation("close");
 },
 inputs = $("#skypeModal3 form input").get();
 
@@ -15,7 +15,7 @@ inputs.forEach(function(input) {
 	$(input).on("change", function(e) {
 		modalForm.foundation("validateForm");
 	});
-})
+});
 
 $(document)
 .on("invalid.zf.abide", function(ev,elem) {
@@ -28,7 +28,7 @@ $(document)
 })
 .on("formvalid.zf.abide", function(ev,frm) {
 	modalFormSubmit.removeClass("disabled");
-	modalFormSubmit.on("click", enableClose); 
+	modalFormSubmit.on("click", enableClose);
 })
 // to prevent form from submitting upon successful validation
 .on("submit", function(ev) {
@@ -40,4 +40,18 @@ $(document)
 	if(modal) {
 		modal.find("[data-abide-error]").attr("style", "display: none;")
 	}
+});
+
+$("#booked-lessons-button").on("click", function(e) {
+	$("#study-tasks").hide();
+	$("#booked-lessons").show();
+	$("#booked-lessons-button").addClass("active");
+	$("#study-tasks-button").removeClass("active");
+});
+
+$("#study-tasks-button").on("click", function(e) {
+	$("#study-tasks").show();
+	$("#booked-lessons").hide();
+	$("#booked-lessons-button").removeClass("active");
+	$("#study-tasks-button").addClass("active");
 });

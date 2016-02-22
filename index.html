@@ -152,123 +152,135 @@
 			</div>
 			<div class="row tab-container medium-unstack">
 				<div class="medium-6 large-3 columns col-wrap-margin">
-					<a href="" class="button light-grey round active lamp-icon left expanded">Study tasks</a>
+					<a href="#" class="button light-grey round active lamp-icon left expanded" id="study-tasks-button">Study tasks</a>
 				</div>
 				<div class="medium-6 large-3 columns">
-					<a href="" class="button light-grey round bookmark-icon left expanded">Booked Lessons</a>
+					<a href="#" class="button light-grey round bookmark-icon left expanded" id="booked-lessons-button">Booked Lessons</a>
 				</div>
 			</div>
 			<div class="callout">
-				<div class="callout primary panel-booking">
-					<div class="small-12 columns">
-						<h4 class="bold">What to do next</h4>
-					</div>
-					<div class="row medium-unstack align-middle">
-						<div class="medium-9 columns col-wrap-margin">
-							<p class="booking-text">Please book your next lessons for studying: <strong>Checking in for a flight</strong></p>
-						</div>
-						<div class="medium-3 columns">
-							<a class="button round button-booking expanded">Book lesson</a>
+				<div id="booked-lessons">
+					<div class="lesson-table">
+						<div class="lesson-header panel-white radius row show-for-medium ">
+							<div class="medium-2 columns">Type</div>
+							<div class="medium-3 columns">Lesson Name</div>
+							<div class="medium-2 columns">Category</div>
+							<div class="medium-2 columns">Topic</div>
 						</div>
 					</div>
 				</div>
-				<div class="lesson-table">
-					<div class="lesson-header panel-white radius row show-for-medium ">
-						<div class="medium-2 columns">Type</div>
-						<div class="medium-3 columns">Lesson Name</div>
-						<div class="medium-2 columns">Category</div>
-						<div class="medium-2 columns">Topic</div>
-					</div>
-					<div class="lesson-set booked">
-						<div class="row">
-							<div class="shrink columns lesson-label">Lesson 1</div>
+				<div id="study-tasks">
+					<div class="callout primary panel-booking">
+						<div class="small-12 columns">
+							<h4 class="bold">What to do next</h4>
 						</div>
-						<div class="panel-white radius row medium-unstack small-collapse medium-uncollapse lesson-row">
-							<div class="medium-2 columns">Self Study</div>
-							<div class="medium-3 columns title">
-								出て行く予定 <br>
-								<strong>Planning to go out</strong>
+						<div class="row medium-unstack align-middle">
+							<div class="medium-9 columns col-wrap-margin">
+								<p class="booking-text">Please book your next lessons for studying: <strong>Checking in for a flight</strong></p>
 							</div>
-							<div class="medium-2 columns">日常生活 <br> <strong>食事</strong></div>
-							<div class="medium-2 columns">Grammar</div>
-							<div class="medium-3 small-collapse large-uncollapse columns align-right">
-								<a href="#" class="button small circle light-grey help right"></a>
-							</div>
-						</div>
-
-						<div class="panel-white radius row medium-unstack small-collapse medium-uncollapse lesson-row">
-							<div class="medium-2 columns">Speaking</div>
-							<div class="medium-3 columns title"><strong>Good Food</strong></div>
-							<div class="medium-2 columns">Grammar</div>
-							<div class="medium-2 columns"></div>
-							<div class="medium-3 small-collapse large-uncollapse columns align-right">
-								<a href="#" class="bold">Download PDF</a>
-							</div>
-						</div>
-						<div class="panel-white radius row medium-unstack small-collapse medium-uncollapse lesson-row">
-							<div class="medium-2 columns">
-								<img class="avatar" src="images/avatar.png">
-								Simon
-							</div>
-							<div class="medium-3 columns title"></div>
-							<div class="medium-4 columns">
-								<div class="calendar-icon"></div>
-								<time>14:30pm <strong>Fri 2 July 2016</strong></time>
-							</div>
-							<div class="medium-3 small-collapse large-uncollapse columns align-right">
-								<a href="#" class="grey underline bold">Cancel</a>
-							</div>
-						</div>
-						<div class="panel-white radius row medium-unstack small-collapse medium-uncollapse lesson-row">
-							<div class="medium-2 columns">Supplement</div>
-							<div class="medium-3 columns title">
-								ペットのお手入れ <br>
-								<strong>Caring for pets</strong>
-							</div>
-							<div class="medium-2 columns">日常生活 <br> <strong>食事</strong></div>
-							<div class="medium-2 columns">Listening</div>
-							<div class="medium-3 small-collapse large-uncollapse columns align-right">
-								<a href="#" class="button small circle light-grey help right"></a>
+							<div class="medium-3 columns">
+								<a class="button round button-booking expanded">Book lesson</a>
 							</div>
 						</div>
 					</div>
-					<div class="lesson-set unbooked">
-						<div class="row">
-							<div class="shrink columns lesson-label">Lesson 2</div>
+					<div class="lesson-table">
+						<div class="lesson-header panel-white radius row show-for-medium ">
+							<div class="medium-2 columns">Type</div>
+							<div class="medium-3 columns">Lesson Name</div>
+							<div class="medium-2 columns">Category</div>
+							<div class="medium-2 columns">Topic</div>
 						</div>
-						<div class="panel-white radius row medium-unstack small-collapse medium-uncollapse lesson-row">
-							<div class="medium-2 columns">Self Study</div>
-							<div class="medium-3 columns title">
-								出て行く予定 <br>
-								<strong>Planning to go out</strong>
+						<div class="lesson-set booked">
+							<div class="row">
+								<div class="shrink columns lesson-label">Lesson 1</div>
 							</div>
-							<div class="medium-2 columns">日常生活 <br> <strong>食事</strong></div>
-							<div class="medium-2 columns">Grammar</div>
-							<div class="medium-3 small-collapse large-uncollapse columns align-right">
-								<a href="#" class="button small circle light-grey help right"></a>
+							<div class="panel-white radius row medium-unstack small-collapse medium-uncollapse lesson-row">
+								<div class="medium-2 columns">Self Study</div>
+								<div class="medium-3 columns title">
+									出て行く予定 <br>
+									<strong>Planning to go out</strong>
+								</div>
+								<div class="medium-2 columns">日常生活 <br> <strong>食事</strong></div>
+								<div class="medium-2 columns">Grammar</div>
+								<div class="medium-3 small-collapse large-uncollapse columns align-right">
+									<a href="#" class="button small circle light-grey help right"></a>
+								</div>
 							</div>
-						</div>
 
-						<div class="panel-white radius row medium-unstack small-collapse medium-uncollapse lesson-row speaking">
-							<div class="medium-2 columns">Speaking</div>
-							<div class="medium-3 columns title"><strong>Good Food</strong></div>
-							<div class="medium-2 columns">Grammar</div>
-							<div class="medium-2 columns"></div>
-							<div class="medium-3 small-collapse large-uncollapse columns align-right">
-								<a href="#" class="bold">Download PDF</a>
+							<div class="panel-white radius row medium-unstack small-collapse medium-uncollapse lesson-row">
+								<div class="medium-2 columns">Speaking</div>
+								<div class="medium-3 columns title"><strong>Good Food</strong></div>
+								<div class="medium-2 columns">Grammar</div>
+								<div class="medium-2 columns"></div>
+								<div class="medium-3 small-collapse large-uncollapse columns align-right">
+									<a href="#" class="bold">Download PDF</a>
+								</div>
+							</div>
+							<div class="panel-white radius row medium-unstack small-collapse medium-uncollapse lesson-row">
+								<div class="medium-2 columns">
+									<img class="avatar" src="images/avatar.png">
+									Simon
+								</div>
+								<div class="medium-3 columns title"></div>
+								<div class="medium-4 columns">
+									<div class="calendar-icon"></div>
+									<time>14:30pm <strong>Fri 2 July 2016</strong></time>
+								</div>
+								<div class="medium-3 small-collapse large-uncollapse columns align-right">
+									<a href="#" class="grey underline bold">Cancel</a>
+								</div>
+							</div>
+							<div class="panel-white radius row medium-unstack small-collapse medium-uncollapse lesson-row">
+								<div class="medium-2 columns">Supplement</div>
+								<div class="medium-3 columns title">
+									ペットのお手入れ <br>
+									<strong>Caring for pets</strong>
+								</div>
+								<div class="medium-2 columns">日常生活 <br> <strong>食事</strong></div>
+								<div class="medium-2 columns">Listening</div>
+								<div class="medium-3 small-collapse large-uncollapse columns align-right">
+									<a href="#" class="button small circle light-grey help right"></a>
+								</div>
 							</div>
 						</div>
-
-						<div class="panel-white radius row medium-unstack small-collapse medium-uncollapse lesson-row">
-							<div class="medium-2 columns">Supplement</div>
-							<div class="medium-3 columns title">
-								ペットのお手入れ <br>
-								<strong>Caring for pets</strong>
+						<div class="lesson-set unbooked">
+							<div class="row">
+								<div class="shrink columns lesson-label">Lesson 2</div>
 							</div>
-							<div class="medium-2 columns">日常生活 <br> <strong>食事</strong></div>
-							<div class="medium-2 columns">Listening</div>
-							<div class="medium-3 small-collapse large-uncollapse columns align-right">
-								<a href="#" class="button small circle light-grey help right"></a>
+							<div class="panel-white radius row medium-unstack small-collapse medium-uncollapse lesson-row">
+								<div class="medium-2 columns">Self Study</div>
+								<div class="medium-3 columns title">
+									出て行く予定 <br>
+									<strong>Planning to go out</strong>
+								</div>
+								<div class="medium-2 columns">日常生活 <br> <strong>食事</strong></div>
+								<div class="medium-2 columns">Grammar</div>
+								<div class="medium-3 small-collapse large-uncollapse columns align-right">
+									<a href="#" class="button small circle light-grey help right"></a>
+								</div>
+							</div>
+
+							<div class="panel-white radius row medium-unstack small-collapse medium-uncollapse lesson-row speaking">
+								<div class="medium-2 columns">Speaking</div>
+								<div class="medium-3 columns title"><strong>Good Food</strong></div>
+								<div class="medium-2 columns">Grammar</div>
+								<div class="medium-2 columns"></div>
+								<div class="medium-3 small-collapse large-uncollapse columns align-right">
+									<a href="#" class="bold">Download PDF</a>
+								</div>
+							</div>
+
+							<div class="panel-white radius row medium-unstack small-collapse medium-uncollapse lesson-row">
+								<div class="medium-2 columns">Supplement</div>
+								<div class="medium-3 columns title">
+									ペットのお手入れ <br>
+									<strong>Caring for pets</strong>
+								</div>
+								<div class="medium-2 columns">日常生活 <br> <strong>食事</strong></div>
+								<div class="medium-2 columns">Listening</div>
+								<div class="medium-3 small-collapse large-uncollapse columns align-right">
+									<a href="#" class="button small circle light-grey help right"></a>
+								</div>
 							</div>
 						</div>
 					</div>

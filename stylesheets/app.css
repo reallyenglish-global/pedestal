@@ -4346,45 +4346,50 @@ body {
   margin: 0 auto;
 }
 
-/* line 14, ../scss/base/_layout.scss */
+/* line 11, ../scss/base/_layout.scss */
+#booked-lessons {
+  display: none;
+}
+
+/* line 18, ../scss/base/_layout.scss */
 .row .column.align-center, .row .align-center.columns {
   text-align: center;
 }
-/* line 17, ../scss/base/_layout.scss */
+/* line 21, ../scss/base/_layout.scss */
 .row .column.align-right, .row .align-right.columns {
   text-align: right;
 }
 
-/* line 23, ../scss/base/_layout.scss */
+/* line 27, ../scss/base/_layout.scss */
 .tab-container {
   margin-bottom: 1rem;
 }
 
-/* line 37, ../scss/base/_layout.scss */
+/* line 41, ../scss/base/_layout.scss */
 .progress[aria-valuenow="10"] .progress-meter {
   width: 10%;
 }
-/* line 43, ../scss/base/_layout.scss */
+/* line 47, ../scss/base/_layout.scss */
 .progress[aria-valuenow="60"] .progress-meter {
   width: 60%;
 }
-/* line 49, ../scss/base/_layout.scss */
+/* line 53, ../scss/base/_layout.scss */
 .progress[aria-valuenow="90"] .progress-meter {
   width: 90%;
 }
 
 @media screen and (min-width: 0em) and (max-width: 39.9375em) {
-  /* line 56, ../scss/base/_layout.scss */
+  /* line 60, ../scss/base/_layout.scss */
   #body {
     max-width: 100%;
     padding: 1rem 0;
   }
-  /* line 60, ../scss/base/_layout.scss */
+  /* line 64, ../scss/base/_layout.scss */
   #body .col-wrap-margin {
     margin-bottom: 1rem;
   }
 
-  /* line 66, ../scss/base/_layout.scss */
+  /* line 70, ../scss/base/_layout.scss */
   .progress {
     margin-bottom: 1rem;
   }

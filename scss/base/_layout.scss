@@ -8,6 +8,10 @@ body {
 	margin: 0 auto;
 }
 
+#booked-lessons {
+	display: none;
+}
+
 //TODO: move to grid scss
 .row {
 	.column {
@@ -52,7 +56,7 @@ body {
 	}
 }
 
-@include breakpoint(small only) { 
+@include breakpoint(small only) {
 	#body {
 		max-width: 100%;
 		padding: 1rem 0;
@@ -61,7 +65,7 @@ body {
 			margin-bottom: 1rem;
 		}
 	}
-	
+
 
 	.progress {
 		margin-bottom: 1rem;
