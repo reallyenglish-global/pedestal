@@ -1,18 +1,17 @@
 a.button,
 button.button {
 
-	font-size: 1.2rem;
+	font-size: 1rem;
 	text-decoration: none;
-	font-weight: 700;
 
-	&.light-grey { 
+	&.light-grey {
 		background-color: #F3F3F3;
 		color: $body-font-color;
 
 		&.active {
 			background-color: #C7C7C7;
 			box-shadow: inset 1px 1px 3px #8E8C8C;
-		}	
+		}
 
 		&.bookmark-icon {
 			background-image: url(../images/icons/bookmark.svg);
@@ -69,7 +68,7 @@ button.button {
 			background-position: 50% 50%;
 		}
 	}
-	
+
 	&.arrow-down {
 		background-image: url(../images/icons/arrow-down.svg);
 		background-size: 0.75rem 0.75rem;
