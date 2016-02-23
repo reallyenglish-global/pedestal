@@ -7,7 +7,6 @@
 	<link rel="stylesheet" href="stylesheets/app.css" />
 </head>
 <body>
-
 	<header>
 		<div class="title-bar" data-responsive-toggle="main-menu" data-hide-for="extramedium">
 			<button class="menu-icon" type="button" data-toggle></button>
@@ -159,159 +158,34 @@
 			</div>
 		</div>
 		<div class="callout tabs-content" data-tabs-content="task-lesson-tabs">
-			<div class="tabs-panel" id="booked-lessons">
-				<div class="lesson-table">
-					<div class="tabs lesson-button-row radius row" data-tabs="" id="lesson-table-tabs">
-						<div class="large-3 columns tabs-title is-active">
-							<a href="#current-bookings-panel" aria-selected="true" id="current-bookings-button" class="button white">Current bookings</a>
-						</div>
-						<div class="large-2 columns tabs-title">
-							<a href="#completed-lessons-panel" id="completed-lessons-button" class="button white">Completed</a>
-						</div>
-						<div class="large-2 columns tabs-title">
-							<a href="#incompleted-lessons-panel" id="incompleted-lessons-button" class="button white">Incompleted</a>
-						</div>
-						<div class="large-2 columns tabs-title">
-							<a href="#cancelled-lessons-panel" id="cancelled-lessons-button" class="button white">Cancelled</a>
-						</div>
+		<div class="tabs-panel" id="booked-lessons">
+			<div class="lesson-table">
+				<div class="tabs lesson-button-row radius row" data-tabs="" id="lesson-table-tabs">
+					<div class="large-3 columns tabs-title is-active">
+						<a href="#current-bookings-panel" aria-selected="true" id="current-bookings-button" class="button white">Current bookings</a>
 					</div>
-					<div class="lesson-header panel-white radius row show-for-medium">
-						<div class="medium-2 columns">Type</div>
-						<div class="medium-3 columns">Lesson Name</div>
-						<div class="medium-2 columns">Category</div>
-						<div class="medium-2 columns">Topic</div>
+					<div class="large-2 columns tabs-title">
+						<a href="#completed-lessons-panel" id="completed-lessons-button" class="button white">Completed</a>
 					</div>
-	
-					<div class="tabs-content" data-tabs-content="lesson-table-tabs">
-						<div id="current-bookings-panel" class="tabs-panel lesson-set is-active">
-							<div class="row">
-								<div class="shrink columns lesson-label">Lesson 1</div>
-							</div>
-							<div class="panel-white radius row medium-unstack small-collapse medium-uncollapse lesson-row">
-								<div class="medium-2 columns">Speaking</div>
-								<div class="medium-3 columns title"><strong>Good Food</strong></div>
-								<div class="medium-2 columns">Grammar</div>
-								<div class="medium-2 columns"></div>
-								<div class="medium-3 small-collapse large-uncollapse columns align-right">
-									<a href="#" class="bold">Download PDF</a>
-								</div>
-							</div>
-							<div class="panel-white radius row medium-unstack small-collapse medium-uncollapse lesson-row">
-								<div class="medium-2 columns">
-									<img class="avatar" src="images/avatar.png">
-									Simon
-								</div>
-								<div class="medium-3 columns title"></div>
-								<div class="medium-4 columns">
-									<div class="calendar-icon"></div>
-									<time>14:30pm <strong>Fri 2 July 2016</strong></time>
-								</div>
-								<div class="medium-3 small-collapse large-uncollapse columns align-right">
-									<a href="#" class="grey underline bold">Cancel</a>
-								</div>
-							</div>
-						</div>
-						<div id="completed-lessons-panel" class="tabs-panel lesson-set">
-							<div class="row">
-								<div class="shrink columns lesson-label">Lesson 1</div>
-							</div>
-							<div class="panel-white radius row medium-unstack small-collapse medium-uncollapse lesson-row">
-								<div class="medium-2 columns">Speaking</div>
-								<div class="medium-3 columns title"><strong>Good Food</strong></div>
-								<div class="medium-4 columns">Grammar</div>
-								<div class="medium-3 small-collapse large-uncollapse columns align-right">
-									<a href="#" class="bold">Download PDF</a>
-								</div>
-							</div>
-							<div class="panel-white radius row medium-unstack small-collapse medium-uncollapse lesson-row">
-								<div class="medium-2 columns">
-									<img class="avatar" src="images/avatar.png">
-									Simon
-								</div>
-								<div class="medium-3 columns rating">
-									<span class="star">&#9733;</span>
-									<span class="star">&#9733;</span>
-									<span class="star">&#9733;</span>
-									<p class="comment">Excellent</p>
-								</div>
-								<div class="medium-4 columns">
-									<div class="icon tick-icon"></div>
-									<time>Fri 2 July 2016</time>
-								</div>
-								<div class="medium-3 small-collapse large-uncollapse columns align-right">
-									<button type="button" class="button yellow arrow-down right">Show feedback</button>
-								</div>
-							</div>
-						</div>
-						<div id="incompleted-lessons-panel" class="tabs-panel lesson-set">
-							<div class="panel-white radius row medium-unstack small-collapse medium-uncollapse lesson-row">
-								<div class="medium-5 columns">
-									<img class="avatar" src="images/avatar.png">
-									Lesson with Simon
-								</div>
-								<div class="medium-4 columns">
-									<div class="incomplete-icon"></div>
-									<time>Mon 25 June 2016</time>
-								</div>
-								<div class="medium-3 remark columns align-right">Student absent</div>
-							</div>
-						</div>
-						<div id="cancelled-lessons-panel" class="tabs-panel lesson-set">
-							<div class="panel-white radius row medium-unstack small-collapse medium-uncollapse lesson-row">
-								<div class="medium-5 columns">
-									<img class="avatar" src="images/avatar.png">
-									Lesson with Simon
-								</div>
-								<div class="medium-4 columns">
-									<div class="cancel-icon"></div>
-									<time>Mon 25 June 2016</time>
-								</div>
-								<div class="medium-3 remark columns align-right">Student absent</div>
-							</div>
-						</div>
-	
+					<div class="large-2 columns tabs-title">
+						<a href="#incompleted-lessons-panel" id="incompleted-lessons-button" class="button white">Incompleted</a>
 					</div>
-	
-				</div>
-			</div>
-			<div class="tabs-panel is-active" id="study-tasks">
-				<div class="callout primary panel-booking">
-					<div class="small-12 columns">
-						<h4 class="bold">What to do next</h4>
-					</div>
-					<div class="row medium-unstack align-middle">
-						<div class="medium-9 columns col-wrap-margin">
-							<p class="booking-text">Please book your next lessons for studying: <strong>Checking in for a flight</strong></p>
-						</div>
-						<div class="medium-3 columns">
-							<a class="button round button-booking expanded">Book lesson</a>
-						</div>
+					<div class="large-2 columns tabs-title">
+						<a href="#cancelled-lessons-panel" id="cancelled-lessons-button" class="button white">Cancelled</a>
 					</div>
 				</div>
-				<div class="lesson-table">
-					<div class="lesson-header panel-white radius row show-for-medium ">
-						<div class="medium-2 columns">Type</div>
-						<div class="medium-3 columns">Lesson Name</div>
-						<div class="medium-2 columns">Category</div>
-						<div class="medium-2 columns">Topic</div>
-					</div>
-					<div class="lesson-set booked">
+				<div class="lesson-header panel-white radius row show-for-medium">
+					<div class="medium-2 columns">Type</div>
+					<div class="medium-3 columns">Lesson Name</div>
+					<div class="medium-2 columns">Category</div>
+					<div class="medium-2 columns">Topic</div>
+				</div>
+		
+				<div class="tabs-content" data-tabs-content="lesson-table-tabs">
+					<div id="current-bookings-panel" class="tabs-panel lesson-set is-active">
 						<div class="row">
 							<div class="shrink columns lesson-label">Lesson 1</div>
 						</div>
-						<div class="panel-white radius row medium-unstack small-collapse medium-uncollapse lesson-row">
-							<div class="medium-2 columns">Self Study</div>
-							<div class="medium-3 columns title">
-								出て行く予定 <br>
-								<strong>Planning to go out</strong>
-							</div>
-							<div class="medium-2 columns">日常生活 <br> <strong>食事</strong></div>
-							<div class="medium-2 columns">Grammar</div>
-							<div class="medium-3 small-collapse large-uncollapse columns align-right">
-								<a href="#" class="button small circle light-grey help right"></a>
-							</div>
-						</div>
-	
 						<div class="panel-white radius row medium-unstack small-collapse medium-uncollapse lesson-row">
 							<div class="medium-2 columns">Speaking</div>
 							<div class="medium-3 columns title"><strong>Good Food</strong></div>
@@ -335,61 +209,186 @@
 								<a href="#" class="grey underline bold">Cancel</a>
 							</div>
 						</div>
-						<div class="panel-white radius row medium-unstack small-collapse medium-uncollapse lesson-row">
-							<div class="medium-2 columns">Supplement</div>
-							<div class="medium-3 columns title">
-								ペットのお手入れ <br>
-								<strong>Caring for pets</strong>
-							</div>
-							<div class="medium-2 columns">日常生活 <br> <strong>食事</strong></div>
-							<div class="medium-2 columns">Listening</div>
-							<div class="medium-3 small-collapse large-uncollapse columns align-right">
-								<a href="#" class="button small circle light-grey help right"></a>
-							</div>
-						</div>
 					</div>
-					<div class="lesson-set unbooked">
+					<div id="completed-lessons-panel" class="tabs-panel lesson-set">
 						<div class="row">
-							<div class="shrink columns lesson-label">Lesson 2</div>
+							<div class="shrink columns lesson-label">Lesson 1</div>
 						</div>
 						<div class="panel-white radius row medium-unstack small-collapse medium-uncollapse lesson-row">
-							<div class="medium-2 columns">Self Study</div>
-							<div class="medium-3 columns title">
-								出て行く予定 <br>
-								<strong>Planning to go out</strong>
-							</div>
-							<div class="medium-2 columns">日常生活 <br> <strong>食事</strong></div>
-							<div class="medium-2 columns">Grammar</div>
-							<div class="medium-3 small-collapse large-uncollapse columns align-right">
-								<a href="#" class="button small circle light-grey help right"></a>
-							</div>
-						</div>
-	
-						<div class="panel-white radius row medium-unstack small-collapse medium-uncollapse lesson-row speaking">
 							<div class="medium-2 columns">Speaking</div>
 							<div class="medium-3 columns title"><strong>Good Food</strong></div>
-							<div class="medium-2 columns">Grammar</div>
-							<div class="medium-2 columns"></div>
+							<div class="medium-4 columns">Grammar</div>
 							<div class="medium-3 small-collapse large-uncollapse columns align-right">
 								<a href="#" class="bold">Download PDF</a>
 							</div>
 						</div>
-	
 						<div class="panel-white radius row medium-unstack small-collapse medium-uncollapse lesson-row">
-							<div class="medium-2 columns">Supplement</div>
-							<div class="medium-3 columns title">
-								ペットのお手入れ <br>
-								<strong>Caring for pets</strong>
+							<div class="medium-2 columns">
+								<img class="avatar" src="images/avatar.png">
+								Simon
 							</div>
-							<div class="medium-2 columns">日常生活 <br> <strong>食事</strong></div>
-							<div class="medium-2 columns">Listening</div>
+							<div class="medium-3 columns rating">
+								<span class="star">&#9733;</span>
+								<span class="star">&#9733;</span>
+								<span class="star">&#9733;</span>
+								<p class="comment">Excellent</p>
+							</div>
+							<div class="medium-4 columns">
+								<div class="icon tick-icon"></div>
+								<time>Fri 2 July 2016</time>
+							</div>
 							<div class="medium-3 small-collapse large-uncollapse columns align-right">
-								<a href="#" class="button small circle light-grey help right"></a>
+								<button type="button" class="button yellow arrow-down right">Show feedback</button>
 							</div>
+						</div>
+					</div>
+					<div id="incompleted-lessons-panel" class="tabs-panel lesson-set">
+						<div class="panel-white radius row medium-unstack small-collapse medium-uncollapse lesson-row">
+							<div class="medium-5 columns">
+								<img class="avatar" src="images/avatar.png">
+								Lesson with Simon
+							</div>
+							<div class="medium-4 columns">
+								<div class="incomplete-icon"></div>
+								<time>Mon 25 June 2016</time>
+							</div>
+							<div class="medium-3 remark columns align-right">Student absent</div>
+						</div>
+					</div>
+					<div id="cancelled-lessons-panel" class="tabs-panel lesson-set">
+						<div class="panel-white radius row medium-unstack small-collapse medium-uncollapse lesson-row">
+							<div class="medium-5 columns">
+								<img class="avatar" src="images/avatar.png">
+								Lesson with Simon
+							</div>
+							<div class="medium-4 columns">
+								<div class="cancel-icon"></div>
+								<time>Mon 25 June 2016</time>
+							</div>
+							<div class="medium-3 remark columns align-right">Student absent</div>
+						</div>
+					</div>
+		
+				</div>
+		
+			</div>
+		</div>
+		<div class="tabs-panel is-active" id="study-tasks">
+			<div class="callout primary panel-booking">
+				<div class="small-12 columns">
+					<h4 class="bold">What to do next</h4>
+				</div>
+				<div class="row medium-unstack align-middle">
+					<div class="medium-9 columns col-wrap-margin">
+						<p class="booking-text">Please book your next lessons for studying: <strong>Checking in for a flight</strong></p>
+					</div>
+					<div class="medium-3 columns">
+						<a class="button round button-booking expanded">Book lesson</a>
+					</div>
+				</div>
+			</div>
+			<div class="lesson-table">
+				<div class="lesson-header panel-white radius row show-for-medium ">
+					<div class="medium-2 columns">Type</div>
+					<div class="medium-3 columns">Lesson Name</div>
+					<div class="medium-2 columns">Category</div>
+					<div class="medium-2 columns">Topic</div>
+				</div>
+				<div class="lesson-set booked">
+					<div class="row">
+						<div class="shrink columns lesson-label">Lesson 1</div>
+					</div>
+					<div class="panel-white radius row medium-unstack small-collapse medium-uncollapse lesson-row">
+						<div class="medium-2 columns">Self Study</div>
+						<div class="medium-3 columns title">
+							出て行く予定 <br>
+							<strong>Planning to go out</strong>
+						</div>
+						<div class="medium-2 columns">日常生活 <br> <strong>食事</strong></div>
+						<div class="medium-2 columns">Grammar</div>
+						<div class="medium-3 small-collapse large-uncollapse columns align-right">
+							<a href="#" class="button small circle light-grey help right"></a>
+						</div>
+					</div>
+		
+					<div class="panel-white radius row medium-unstack small-collapse medium-uncollapse lesson-row">
+						<div class="medium-2 columns">Speaking</div>
+						<div class="medium-3 columns title"><strong>Good Food</strong></div>
+						<div class="medium-2 columns">Grammar</div>
+						<div class="medium-2 columns"></div>
+						<div class="medium-3 small-collapse large-uncollapse columns align-right">
+							<a href="#" class="bold">Download PDF</a>
+						</div>
+					</div>
+					<div class="panel-white radius row medium-unstack small-collapse medium-uncollapse lesson-row">
+						<div class="medium-2 columns">
+							<img class="avatar" src="images/avatar.png">
+							Simon
+						</div>
+						<div class="medium-3 columns title"></div>
+						<div class="medium-4 columns">
+							<div class="calendar-icon"></div>
+							<time>14:30pm <strong>Fri 2 July 2016</strong></time>
+						</div>
+						<div class="medium-3 small-collapse large-uncollapse columns align-right">
+							<a href="#" class="grey underline bold">Cancel</a>
+						</div>
+					</div>
+					<div class="panel-white radius row medium-unstack small-collapse medium-uncollapse lesson-row">
+						<div class="medium-2 columns">Supplement</div>
+						<div class="medium-3 columns title">
+							ペットのお手入れ <br>
+							<strong>Caring for pets</strong>
+						</div>
+						<div class="medium-2 columns">日常生活 <br> <strong>食事</strong></div>
+						<div class="medium-2 columns">Listening</div>
+						<div class="medium-3 small-collapse large-uncollapse columns align-right">
+							<a href="#" class="button small circle light-grey help right"></a>
+						</div>
+					</div>
+				</div>
+				<div class="lesson-set unbooked">
+					<div class="row">
+						<div class="shrink columns lesson-label">Lesson 2</div>
+					</div>
+					<div class="panel-white radius row medium-unstack small-collapse medium-uncollapse lesson-row">
+						<div class="medium-2 columns">Self Study</div>
+						<div class="medium-3 columns title">
+							出て行く予定 <br>
+							<strong>Planning to go out</strong>
+						</div>
+						<div class="medium-2 columns">日常生活 <br> <strong>食事</strong></div>
+						<div class="medium-2 columns">Grammar</div>
+						<div class="medium-3 small-collapse large-uncollapse columns align-right">
+							<a href="#" class="button small circle light-grey help right"></a>
+						</div>
+					</div>
+		
+					<div class="panel-white radius row medium-unstack small-collapse medium-uncollapse lesson-row speaking">
+						<div class="medium-2 columns">Speaking</div>
+						<div class="medium-3 columns title"><strong>Good Food</strong></div>
+						<div class="medium-2 columns">Grammar</div>
+						<div class="medium-2 columns"></div>
+						<div class="medium-3 small-collapse large-uncollapse columns align-right">
+							<a href="#" class="bold">Download PDF</a>
+						</div>
+					</div>
+		
+					<div class="panel-white radius row medium-unstack small-collapse medium-uncollapse lesson-row">
+						<div class="medium-2 columns">Supplement</div>
+						<div class="medium-3 columns title">
+							ペットのお手入れ <br>
+							<strong>Caring for pets</strong>
+						</div>
+						<div class="medium-2 columns">日常生活 <br> <strong>食事</strong></div>
+						<div class="medium-2 columns">Listening</div>
+						<div class="medium-3 small-collapse large-uncollapse columns align-right">
+							<a href="#" class="button small circle light-grey help right"></a>
 						</div>
 					</div>
 				</div>
 			</div>
+		</div>
 		</div>
 	</div>
 	<footer>
@@ -423,7 +422,6 @@
 			</div>
 		</div>
 	</footer>
-
 	<script src="bower_components/jquery/dist/jquery.min.js"></script>
 	<script src="bower_components/foundation-sites/dist/foundation.min.js"></script>
 	<script src="bower_components/foundation-sites/js/foundation.util.mediaQuery.js"></script>
