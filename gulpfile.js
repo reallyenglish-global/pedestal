@@ -6,6 +6,7 @@ var panini   = require('panini');
 var rimraf   = require('rimraf');
 var sequence = require('run-sequence');
 var sherpa   = require('style-sherpa');
+var compass  = require('gulp-compass');
 
 // Port to use for the development server.
 var PORT = 8000;
@@ -79,19 +80,15 @@ gulp.task('pages:reset', function(done) {
   done();
 });
 
-gulp.task('sass', function() {
-
-	return gulp.src('src/assets/scss/app.scss')
-	.pipe($.sass({
-		includePaths: PATHS.sass
-	})
-	.on('error', $.sass.logError))
-	.pipe($.autoprefixer({
-		browsers: COMPATIBILITY
-		}))
-	.pipe(gulp.dest('dist/assets/css'))
-	.pipe(browser.reload({ stream: true }));
-	});
+gulp.task('compass', function() {
+  gulp.src('./src/assets/sccs/**/*.scss')
+    .pipe(compass({
+      config_file: './config.rb',
+      css: 'src/assets/css',
+      sass: 'src/assets/scss'
+    }))
+    .pipe(gulp.dest('dist/assets/scss'));
+});
 
 // Combine JavaScript into one file
 // In production, the file is minified
@@ -114,7 +111,7 @@ gulp.task('images', function() {
 
 // Build the "dist" folder by running all of the above tasks
 gulp.task('build', function(done) {
-	sequence('clean', ['pages', 'sass', 'javascript', 'images', 'copy'], done);
+	sequence('clean', ['pages', 'compass', 'javascript', 'images', 'copy'], done);
 	});
 
 // Start a server with LiveReload to preview the site in
@@ -129,7 +126,7 @@ gulp.task('default', ['build', 'server'], function() {
 	gulp.watch(PATHS.assets, ['copy']);
 	gulp.watch(['src/pages/**/*'], ['pages']);
 	gulp.watch(['src/{layouts,partials,helpers,data}/**/*'], ['pages:reset']);
-	gulp.watch(['src/assets/scss/**/{*.scss, *.sass}'], ['sass']);
+	gulp.watch(['src/assets/scss/**/{*.scss, *.sass}'], ['compass']);
 	gulp.watch(['src/assets/js/**/*.js'], ['javascript']);
 	gulp.watch(['src/assets/img/**/*'], ['images']);
 	});

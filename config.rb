@@ -2,11 +2,9 @@
 add_import_path "bower_components/foundation-sites/scss"
 
 # Set this to the root of your project when deployed:
-http_path = "/"
-css_dir = "stylesheets"
-sass_dir = "scss"
-images_dir = "images"
-javascripts_dir = "js"
+http_path = "dist/"
+css_dir = "src/assets/css"
+sass_dir = "src/assets/scss"
 
 # You can select your preferred output style here (can be overridden via the command line):
 # output_style = :expanded or :nested or :compact or :compressed
