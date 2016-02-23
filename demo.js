@@ -41,17 +41,3 @@ $(document)
 		modal.find("[data-abide-error]").attr("style", "display: none;")
 	}
 });
-
-$("#booked-lessons-button").on("click", function(e) {
-	$("#study-tasks").hide();
-	$("#booked-lessons").show();
-	$("#booked-lessons-button").addClass("active");
-	$("#study-tasks-button").removeClass("active");
-});
-
-$("#study-tasks-button").on("click", function(e) {
-	$("#study-tasks").show();
-	$("#booked-lessons").hide();
-	$("#booked-lessons-button").removeClass("active");
-	$("#study-tasks-button").addClass("active");
-});
