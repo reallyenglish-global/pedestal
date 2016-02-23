@@ -4886,23 +4886,27 @@ header .top-bar a {
 header .top-bar .menu-text {
   font-weight: 400;
 }
+/* line 20, ../scss/components/_nav.scss */
+header .top-bar .menu-text a {
+  padding: 0;
+}
 
 @media screen and (max-width: 47.3125em) {
-  /* line 25, ../scss/components/_nav.scss */
+  /* line 29, ../scss/components/_nav.scss */
   .title-bar {
     padding-left: 3rem;
     padding-right: 3rem;
   }
 
-  /* line 31, ../scss/components/_nav.scss */
+  /* line 35, ../scss/components/_nav.scss */
   .top-bar .top-bar-left {
     display: none;
   }
-  /* line 35, ../scss/components/_nav.scss */
+  /* line 39, ../scss/components/_nav.scss */
   .top-bar .top-bar-right {
     float: none;
   }
-  /* line 38, ../scss/components/_nav.scss */
+  /* line 42, ../scss/components/_nav.scss */
   .top-bar .top-bar-right .menu li[role="menuitem"] {
     display: block;
     padding-left: 2rem;
