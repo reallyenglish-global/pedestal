@@ -1,0 +1,24 @@
+{
+  "name": "booking-system-template",
+  "version": "1.0.0",
+  "description": "HTML Templates using Foundation 6 for the Booking System",
+  "main": "demo.js",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "panini": "^1.2.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reallyenglish/booking-system-template.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/reallyenglish/booking-system-template/issues"
+  },
+  "homepage": "https://github.com/reallyenglish/booking-system-template#readme"
+}
