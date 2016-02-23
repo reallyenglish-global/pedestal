@@ -99,12 +99,6 @@ $booked-lesson-color: #e0f0f3;
 		border-bottom: 1px solid #e7e7e7;
 	}
 
-	#completed-lessons-panel,
-	#incompleted-lessons-panel,
-	#cancelled-lessons-panel {
-		display: none;
-	}
-
 	#current-bookings-panel {
 		> div.lesson-row:nth-child(3n) {
 			background-color: $booked-lesson-color;

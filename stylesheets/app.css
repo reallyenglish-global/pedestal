@@ -5232,51 +5232,45 @@ footer {
 .lesson-table .lesson-row:last-child {
   border-bottom: 1px solid #e7e7e7;
 }
-/* line 102, ../scss/components/_lesson-table.scss */
-.lesson-table #completed-lessons-panel,
-.lesson-table #incompleted-lessons-panel,
-.lesson-table #cancelled-lessons-panel {
-  display: none;
-}
-/* line 109, ../scss/components/_lesson-table.scss */
+/* line 103, ../scss/components/_lesson-table.scss */
 .lesson-table #current-bookings-panel > div.lesson-row:nth-child(3n) {
   background-color: #e0f0f3;
 }
-/* line 115, ../scss/components/_lesson-table.scss */
+/* line 109, ../scss/components/_lesson-table.scss */
 .lesson-table #completed-lessons-panel > div.lesson-row:nth-child(3n) {
   background-color: #ecf7f2;
 }
-/* line 119, ../scss/components/_lesson-table.scss */
+/* line 113, ../scss/components/_lesson-table.scss */
 .lesson-table #completed-lessons-panel time {
   color: #7dbaa7;
 }
-/* line 125, ../scss/components/_lesson-table.scss */
+/* line 119, ../scss/components/_lesson-table.scss */
 .lesson-table #incompleted-lessons-panel .lesson-row {
   background-color: #f4e9e2;
 }
-/* line 129, ../scss/components/_lesson-table.scss */
+/* line 123, ../scss/components/_lesson-table.scss */
 .lesson-table #incompleted-lessons-panel time {
   color: #dda989;
 }
-/* line 133, ../scss/components/_lesson-table.scss */
+/* line 127, ../scss/components/_lesson-table.scss */
 .lesson-table #incompleted-lessons-panel .remark {
   color: #a39e9e;
 }
-/* line 139, ../scss/components/_lesson-table.scss */
+/* line 133, ../scss/components/_lesson-table.scss */
 .lesson-table #cancelled-lessons-panel .lesson-row {
   background-color: #eee1e6;
 }
-/* line 143, ../scss/components/_lesson-table.scss */
+/* line 137, ../scss/components/_lesson-table.scss */
 .lesson-table #cancelled-lessons-panel time {
   color: #d09baf;
 }
-/* line 147, ../scss/components/_lesson-table.scss */
+/* line 141, ../scss/components/_lesson-table.scss */
 .lesson-table #cancelled-lessons-panel .remark {
   color: #a39e9e;
 }
 
 @media screen and (min-width: 0em) and (max-width: 39.9375em) {
-  /* line 159, ../scss/components/_lesson-table.scss */
+  /* line 153, ../scss/components/_lesson-table.scss */
   .lesson-table .lesson-row .columns:last-child {
     margin-bottom: 0;
   }
