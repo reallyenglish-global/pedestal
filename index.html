@@ -149,118 +149,131 @@
 					</div>
 				</form>
 			</div>
-			<div class="row tab-container medium-unstack">
-				<div class="medium-6 large-3 columns col-wrap-margin">
-					<a href="#" class="button light-grey round active lamp-icon left expanded" id="study-tasks-button">Study tasks</a>
+			<div class="row tabs medium-unstack" data-tabs="" id="task-lesson-tabs">
+				<div class="medium-6 large-3 columns col-wrap-margin tabs-title is-active">
+					<a href="#study-tasks" class="button light-grey round active lamp-icon left expanded" id="study-tasks-button" aria-selected="true">Study tasks</a>
 				</div>
-				<div class="medium-6 large-3 columns">
-					<a href="#" class="button light-grey round bookmark-icon left expanded" id="booked-lessons-button">Booked Lessons</a>
+				<div class="medium-6 large-3 columns tabs-title">
+					<a href="#booked-lessons" class="button light-grey round bookmark-icon left expanded" id="booked-lessons-button">Booked Lessons</a>
 				</div>
 			</div>
-			<div class="callout">
-				<div id="booked-lessons">
+			<div class="callout tabs-content" data-tabs-content="task-lesson-tabs">
+				<div class="tabs-panel" id="booked-lessons">
 					<div class="lesson-table">
-						<div class="lesson-button-row panel-white radius row show-for-medium">
-							<div class="medium-3 columns"><button type="button" id="current-bookings-button" class="button white expanded active">Current bookings</button></div>
-							<div class="medium-2 columns"><button type="button" id="completed-lessons-button" class="button white">Completed</button></div>
-							<div class="medium-2 columns"><button type="button" id="incompleted-lessons-button" class="button white">Incompleted</button></div>
-							<div class="medium-2 columns"><button type="button" id="cancelled-lessons-button" class="button white">Cancelled</button></div>
+						<div class="tabs lesson-button-row radius row show-for-medium" data-tabs="" id="lesson-table-tabs">
+							<div class="medium-3 columns tabs-title is-active">
+								<a href="#current-bookings-panel" aria-selected="true" id="current-bookings-button" class="button white">Current bookings</a>
+							</div>
+							<div class="medium-2 columns tabs-title">
+								<a href="#completed-lessons-panel" id="completed-lessons-button" class="button white">Completed</a>
+							</div>
+							<div class="medium-2 columns tabs-title">
+								<a href="#incompleted-lessons-panel" id="incompleted-lessons-button" class="button white">Incompleted</a>
+							</div>
+							<div class="medium-2 columns tabs-title">
+								<a href="#cancelled-lessons-panel" id="cancelled-lessons-button" class="button white">Cancelled</a>
+							</div>
 						</div>
-						<div class="lesson-header panel-white radius row show-for-medium ">
+						<div class="lesson-header panel-white radius row show-for-medium">
 							<div class="medium-2 columns">Type</div>
 							<div class="medium-3 columns">Lesson Name</div>
 							<div class="medium-2 columns">Category</div>
 							<div class="medium-2 columns">Topic</div>
 						</div>
-						<div id="current-bookings-panel" class="lesson-set">
-							<div class="row">
-								<div class="shrink columns lesson-label">Lesson 1</div>
-							</div>
-							<div class="panel-white radius row medium-unstack small-collapse medium-uncollapse lesson-row">
-								<div class="medium-2 columns">Speaking</div>
-								<div class="medium-3 columns title"><strong>Good Food</strong></div>
-								<div class="medium-2 columns">Grammar</div>
-								<div class="medium-2 columns"></div>
-								<div class="medium-3 small-collapse large-uncollapse columns align-right">
-									<a href="#" class="bold">Download PDF</a>
+
+						<div class="tabs-content" data-tabs-content="lesson-table-tabs">
+							<div id="current-bookings-panel" class="tabs-panel lesson-set is-active">
+								<div class="row">
+									<div class="shrink columns lesson-label">Lesson 1</div>
+								</div>
+								<div class="panel-white radius row medium-unstack small-collapse medium-uncollapse lesson-row">
+									<div class="medium-2 columns">Speaking</div>
+									<div class="medium-3 columns title"><strong>Good Food</strong></div>
+									<div class="medium-2 columns">Grammar</div>
+									<div class="medium-2 columns"></div>
+									<div class="medium-3 small-collapse large-uncollapse columns align-right">
+										<a href="#" class="bold">Download PDF</a>
+									</div>
+								</div>
+								<div class="panel-white radius row medium-unstack small-collapse medium-uncollapse lesson-row">
+									<div class="medium-2 columns">
+										<img class="avatar" src="images/avatar.png">
+										Simon
+									</div>
+									<div class="medium-3 columns title"></div>
+									<div class="medium-4 columns">
+										<div class="calendar-icon"></div>
+										<time>14:30pm <strong>Fri 2 July 2016</strong></time>
+									</div>
+									<div class="medium-3 small-collapse large-uncollapse columns align-right">
+										<a href="#" class="grey underline bold">Cancel</a>
+									</div>
 								</div>
 							</div>
-							<div class="panel-white radius row medium-unstack small-collapse medium-uncollapse lesson-row">
-								<div class="medium-2 columns">
-									<img class="avatar" src="images/avatar.png">
-									Simon
+							<div id="completed-lessons-panel" class="tabs-panel lesson-set">
+								<div class="row">
+									<div class="shrink columns lesson-label">Lesson 1</div>
 								</div>
-								<div class="medium-3 columns title"></div>
-								<div class="medium-4 columns">
-									<div class="calendar-icon"></div>
-									<time>14:30pm <strong>Fri 2 July 2016</strong></time>
+								<div class="panel-white radius row medium-unstack small-collapse medium-uncollapse lesson-row">
+									<div class="medium-2 columns">Speaking</div>
+									<div class="medium-3 columns title"><strong>Good Food</strong></div>
+									<div class="medium-4 columns">Grammar</div>
+									<div class="medium-3 small-collapse large-uncollapse columns align-right">
+										<a href="#" class="bold">Download PDF</a>
+									</div>
 								</div>
-								<div class="medium-3 small-collapse large-uncollapse columns align-right">
-									<a href="#" class="grey underline bold">Cancel</a>
+								<div class="panel-white radius row medium-unstack small-collapse medium-uncollapse lesson-row">
+									<div class="medium-2 columns">
+										<img class="avatar" src="images/avatar.png">
+										Simon
+									</div>
+									<div class="medium-3 columns rating">
+										<span class="star">&#9733;</span>
+										<span class="star">&#9733;</span>
+										<span class="star">&#9733;</span>
+										<p class="comment">Excellent</p>
+									</div>
+									<div class="medium-4 columns">
+										<div class="icon tick-icon"></div>
+										<time>Fri 2 July 2016</time>
+									</div>
+									<div class="medium-3 small-collapse large-uncollapse columns align-right">
+										<button type="button" class="button yellow arrow-down right">Show feedback</button>
+									</div>
 								</div>
 							</div>
+							<div id="incompleted-lessons-panel" class="tabs-panel lesson-set">
+								<div class="panel-white radius row medium-unstack small-collapse medium-uncollapse lesson-row">
+									<div class="medium-5 columns">
+										<img class="avatar" src="images/avatar.png">
+										Lesson with Simon
+									</div>
+									<div class="medium-4 columns">
+										<div class="incomplete-icon"></div>
+										<time>Mon 25 June 2016</time>
+									</div>
+									<div class="medium-3 remark columns align-right">Student absent</div>
+								</div>
+							</div>
+							<div id="cancelled-lessons-panel" class="tabs-panel lesson-set">
+								<div class="panel-white radius row medium-unstack small-collapse medium-uncollapse lesson-row">
+									<div class="medium-5 columns">
+										<img class="avatar" src="images/avatar.png">
+										Lesson with Simon
+									</div>
+									<div class="medium-4 columns">
+										<div class="cancel-icon"></div>
+										<time>Mon 25 June 2016</time>
+									</div>
+									<div class="medium-3 remark columns align-right">Student absent</div>
+								</div>
+							</div>
+
 						</div>
-						<div id="completed-lessons-panel" class="lesson-set">
-							<div class="row">
-								<div class="shrink columns lesson-label">Lesson 1</div>
-							</div>
-							<div class="panel-white radius row medium-unstack small-collapse medium-uncollapse lesson-row">
-								<div class="medium-2 columns">Speaking</div>
-								<div class="medium-3 columns title"><strong>Good Food</strong></div>
-								<div class="medium-4 columns">Grammar</div>
-								<div class="medium-3 small-collapse large-uncollapse columns align-right">
-									<a href="#" class="bold">Download PDF</a>
-								</div>
-							</div>
-							<div class="panel-white radius row medium-unstack small-collapse medium-uncollapse lesson-row">
-								<div class="medium-2 columns">
-									<img class="avatar" src="images/avatar.png">
-									Simon
-								</div>
-								<div class="medium-3 columns rating">
-									<span class="star">&#9733;</span>
-									<span class="star">&#9733;</span>
-									<span class="star">&#9733;</span>
-									<p class="comment">Excellent</p>
-								</div>
-								<div class="medium-4 columns">
-									<div class="icon tick-icon"></div>
-									<time>Fri 2 July 2016</time>
-								</div>
-								<div class="medium-3 small-collapse large-uncollapse columns align-right">
-									<button type="button" class="button yellow arrow-down right">Show feedback</button>
-								</div>
-							</div>
-						</div>
-						<div id="incompleted-lessons-panel" class="lesson-set">
-							<div class="panel-white radius row medium-unstack small-collapse medium-uncollapse lesson-row">
-								<div class="medium-5 columns">
-									<img class="avatar" src="images/avatar.png">
-									Lesson with Simon
-								</div>
-								<div class="medium-4 columns">
-									<div class="incomplete-icon"></div>
-									<time>Mon 25 June 2016</time>
-								</div>
-								<div class="medium-3 remark columns align-right">Student absent</div>
-							</div>
-						</div>
-						<div id="cancelled-lessons-panel" class="lesson-set">
-							<div class="panel-white radius row medium-unstack small-collapse medium-uncollapse lesson-row">
-								<div class="medium-5 columns">
-									<img class="avatar" src="images/avatar.png">
-									Lesson with Simon
-								</div>
-								<div class="medium-4 columns">
-									<div class="cancel-icon"></div>
-									<time>Mon 25 June 2016</time>
-								</div>
-								<div class="medium-3 remark columns align-right">Student absent</div>
-							</div>
-						</div>
+
 					</div>
 				</div>
-				<div id="study-tasks">
+				<div class="tabs-panel is-active" id="study-tasks">
 					<div class="callout primary panel-booking">
 						<div class="small-12 columns">
 							<h4 class="bold">What to do next</h4>

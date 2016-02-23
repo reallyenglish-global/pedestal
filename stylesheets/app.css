@@ -4205,8 +4205,8 @@ table.hover tr:nth-of-type(even):hover {
 .tabs {
   margin: 0;
   list-style-type: none;
-  background: #FFF;
-  border: 1px solid #e6e6e6;
+  background: transparent;
+  border: 1px solid none;
 }
 /* line 134, ../bower_components/foundation-sites/scss/util/_mixins.scss */
 .tabs::before, .tabs::after {
@@ -4270,15 +4270,15 @@ table.hover tr:nth-of-type(even):hover {
 
 /* line 159, ../bower_components/foundation-sites/scss/components/_tabs.scss */
 .tabs-content {
-  background: #FFF;
+  background: transparent;
   transition: all 0.5s ease;
-  border: 1px solid #e6e6e6;
+  border: 1px solid none;
   border-top: 0;
 }
 
 /* line 163, ../bower_components/foundation-sites/scss/components/_tabs.scss */
 .tabs-content.vertical {
-  border: 1px solid #e6e6e6;
+  border: 1px solid none;
   border-left: 0;
 }
 
@@ -4635,50 +4635,45 @@ body {
   margin: 0 auto;
 }
 
-/* line 11, ../scss/base/_layout.scss */
-#booked-lessons {
-  display: none;
-}
-
-/* line 18, ../scss/base/_layout.scss */
+/* line 14, ../scss/base/_layout.scss */
 .row .column.align-center, .row .align-center.columns {
   text-align: center;
 }
-/* line 21, ../scss/base/_layout.scss */
+/* line 17, ../scss/base/_layout.scss */
 .row .column.align-right, .row .align-right.columns {
   text-align: right;
 }
 
-/* line 27, ../scss/base/_layout.scss */
-.tab-container {
+/* line 23, ../scss/base/_layout.scss */
+#task-lesson-tabs {
   margin-bottom: 1rem;
 }
 
-/* line 41, ../scss/base/_layout.scss */
+/* line 37, ../scss/base/_layout.scss */
 .progress[aria-valuenow="10"] .progress-meter {
   width: 10%;
 }
-/* line 47, ../scss/base/_layout.scss */
+/* line 43, ../scss/base/_layout.scss */
 .progress[aria-valuenow="60"] .progress-meter {
   width: 60%;
 }
-/* line 53, ../scss/base/_layout.scss */
+/* line 49, ../scss/base/_layout.scss */
 .progress[aria-valuenow="90"] .progress-meter {
   width: 90%;
 }
 
 @media screen and (min-width: 0em) and (max-width: 39.9375em) {
-  /* line 60, ../scss/base/_layout.scss */
+  /* line 56, ../scss/base/_layout.scss */
   #body {
     max-width: 100%;
     padding: 1rem 0;
   }
-  /* line 64, ../scss/base/_layout.scss */
+  /* line 60, ../scss/base/_layout.scss */
   #body .col-wrap-margin {
     margin-bottom: 1rem;
   }
 
-  /* line 70, ../scss/base/_layout.scss */
+  /* line 66, ../scss/base/_layout.scss */
   .progress {
     margin-bottom: 1rem;
   }
@@ -4714,19 +4709,19 @@ button.button {
   font-size: 1rem;
   text-decoration: none;
 }
-/* line 7, ../scss/components/_buttons.scss */
+/* line 13, ../scss/components/_buttons.scss */
 a.button.light-grey,
 button.button.light-grey {
   background-color: #F3F3F3;
   color: #4e4e4e;
 }
-/* line 11, ../scss/components/_buttons.scss */
-a.button.light-grey.active,
-button.button.light-grey.active {
+/* line 17, ../scss/components/_buttons.scss */
+a.button.light-grey[aria-selected="true"],
+button.button.light-grey[aria-selected="true"] {
   background-color: #C7C7C7;
   box-shadow: inset 1px 1px 3px #8E8C8C;
 }
-/* line 16, ../scss/components/_buttons.scss */
+/* line 22, ../scss/components/_buttons.scss */
 a.button.light-grey.bookmark-icon,
 button.button.light-grey.bookmark-icon {
   background-image: url(../images/icons/bookmark.svg);
@@ -4734,7 +4729,7 @@ button.button.light-grey.bookmark-icon {
   background-repeat: no-repeat;
   background-position: 10px 50%;
 }
-/* line 23, ../scss/components/_buttons.scss */
+/* line 29, ../scss/components/_buttons.scss */
 a.button.light-grey.lamp-icon,
 button.button.light-grey.lamp-icon {
   background-image: url(../images/icons/lamp.svg);
@@ -4742,33 +4737,33 @@ button.button.light-grey.lamp-icon {
   background-repeat: no-repeat;
   background-position: 10px 50%;
 }
-/* line 30, ../scss/components/_buttons.scss */
+/* line 36, ../scss/components/_buttons.scss */
 a.button.light-grey:hover,
 button.button.light-grey:hover {
   background-color: #cfcfcf;
 }
-/* line 35, ../scss/components/_buttons.scss */
+/* line 41, ../scss/components/_buttons.scss */
 a.button.yellow,
 button.button.yellow {
   background-color: #fffcef;
   color: #4e4e4e;
 }
-/* line 40, ../scss/components/_buttons.scss */
+/* line 46, ../scss/components/_buttons.scss */
 a.button.disabled,
 button.button.disabled {
   background-color: #D2D2D2;
 }
-/* line 44, ../scss/components/_buttons.scss */
+/* line 50, ../scss/components/_buttons.scss */
 a.button.radius,
 button.button.radius {
   border-radius: 5px;
 }
-/* line 48, ../scss/components/_buttons.scss */
+/* line 54, ../scss/components/_buttons.scss */
 a.button.round,
 button.button.round {
   border-radius: 1000px;
 }
-/* line 52, ../scss/components/_buttons.scss */
+/* line 58, ../scss/components/_buttons.scss */
 a.button.small,
 button.button.small {
   padding: 1rem;
@@ -4776,7 +4771,7 @@ button.button.small {
   width: 1rem;
   display: inline-block;
 }
-/* line 58, ../scss/components/_buttons.scss */
+/* line 64, ../scss/components/_buttons.scss */
 a.button.small.close,
 button.button.small.close {
   background-image: url(../images/icons/close-icon.svg);
@@ -4784,12 +4779,12 @@ button.button.small.close {
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
-/* line 66, ../scss/components/_buttons.scss */
+/* line 72, ../scss/components/_buttons.scss */
 a.button.circle,
 button.button.circle {
   border-radius: 50%;
 }
-/* line 69, ../scss/components/_buttons.scss */
+/* line 75, ../scss/components/_buttons.scss */
 a.button.circle.help,
 button.button.circle.help {
   background-image: url(../images/icons/question.svg);
@@ -4797,43 +4792,43 @@ button.button.circle.help {
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
-/* line 77, ../scss/components/_buttons.scss */
+/* line 83, ../scss/components/_buttons.scss */
 a.button.arrow-down,
 button.button.arrow-down {
   background-image: url(../images/icons/arrow-down.svg);
   background-size: 0.5rem 0.5rem;
   background-repeat: no-repeat;
 }
-/* line 82, ../scss/components/_buttons.scss */
+/* line 88, ../scss/components/_buttons.scss */
 a.button.arrow-down.right,
 button.button.arrow-down.right {
   background-position: 96% 50%;
   padding-left: 0.5rem;
 }
-/* line 87, ../scss/components/_buttons.scss */
+/* line 93, ../scss/components/_buttons.scss */
 a.button.arrow-down.center,
 button.button.arrow-down.center {
   background-position: 50% 50%;
 }
-/* line 92, ../scss/components/_buttons.scss */
+/* line 98, ../scss/components/_buttons.scss */
 a.button.grey,
 button.button.grey {
   background-color: #878787;
 }
-/* line 96, ../scss/components/_buttons.scss */
+/* line 102, ../scss/components/_buttons.scss */
 a.button.dark-grey,
 button.button.dark-grey {
   background-color: #676767;
 }
-/* line 100, ../scss/components/_buttons.scss */
+/* line 106, ../scss/components/_buttons.scss */
 a.button.white,
 button.button.white {
   background-color: #FFF;
   color: #989898;
 }
-/* line 104, ../scss/components/_buttons.scss */
-a.button.white.active,
-button.button.white.active {
+/* line 110, ../scss/components/_buttons.scss */
+a.button.white[aria-selected="true"],
+button.button.white[aria-selected="true"] {
   color: #58595b;
   border: 2px solid #bbbdbf;
 }
@@ -4867,22 +4862,22 @@ textarea {
   border-radius: 0 5px 5px 0;
 }
 
-/* line 3, ../scss/components/_nav.scss */
+/* line 2, ../scss/components/_nav.scss */
 header, header .title-bar {
   background-color: #676767;
 }
-/* line 7, ../scss/components/_nav.scss */
+/* line 6, ../scss/components/_nav.scss */
 header .top-bar {
   padding: 0 3rem;
   max-width: 62.5rem;
   margin: 0 auto;
 }
-/* line 12, ../scss/components/_nav.scss */
+/* line 11, ../scss/components/_nav.scss */
 header .top-bar .menu-text,
 header .top-bar a {
   color: #FFF;
 }
-/* line 17, ../scss/components/_nav.scss */
+/* line 16, ../scss/components/_nav.scss */
 header .top-bar .menu-text {
   font-weight: 400;
 }
@@ -4891,13 +4886,32 @@ header .top-bar .menu-text a {
   padding: 0;
 }
 
+/* line 24, ../scss/components/_nav.scss */
+.tabs .tabs-title > a.button {
+  padding: 0.5em 1em;
+}
+
+/* line 33, ../scss/components/_nav.scss */
+.tabs-content.callout {
+  background-color: #F3F3F3;
+}
+/* line 37, ../scss/components/_nav.scss */
+.tabs-content .tabs-panel {
+  padding: 0;
+}
+
 @media screen and (max-width: 47.3125em) {
+<<<<<<< HEAD
   /* line 29, ../scss/components/_nav.scss */
+=======
+  /* line 44, ../scss/components/_nav.scss */
+>>>>>>> foundation_tabs
   .title-bar {
     padding-left: 3rem;
     padding-right: 3rem;
   }
 
+<<<<<<< HEAD
   /* line 35, ../scss/components/_nav.scss */
   .top-bar .top-bar-left {
     display: none;
@@ -4907,6 +4921,17 @@ header .top-bar .menu-text a {
     float: none;
   }
   /* line 42, ../scss/components/_nav.scss */
+=======
+  /* line 50, ../scss/components/_nav.scss */
+  .top-bar .top-bar-left {
+    display: none;
+  }
+  /* line 54, ../scss/components/_nav.scss */
+  .top-bar .top-bar-right {
+    float: none;
+  }
+  /* line 57, ../scss/components/_nav.scss */
+>>>>>>> foundation_tabs
   .top-bar .top-bar-right .menu li[role="menuitem"] {
     display: block;
     padding-left: 2rem;
@@ -5170,40 +5195,44 @@ footer {
 .lesson-table .lesson-button-row {
   background-color: #F3F3F3;
 }
-/* line 34, ../scss/components/_lesson-table.scss */
+/* line 33, ../scss/components/_lesson-table.scss */
+.lesson-table .lesson-button-row div.tabs-title:first-child {
+  padding-left: 0;
+}
+/* line 38, ../scss/components/_lesson-table.scss */
 .lesson-table .lesson-label {
   padding: 0.5rem 1.25rem;
 }
-/* line 38, ../scss/components/_lesson-table.scss */
+/* line 42, ../scss/components/_lesson-table.scss */
 .lesson-table .lesson-row {
   border: 1px solid #e7e7e7;
   border-bottom: none;
 }
-/* line 42, ../scss/components/_lesson-table.scss */
+/* line 46, ../scss/components/_lesson-table.scss */
 .lesson-table .lesson-row .avatar {
   height: 1.5rem;
   width: 1.5rem;
   border-radius: 50%;
   margin-right: 0.5rem;
 }
-/* line 50, ../scss/components/_lesson-table.scss */
+/* line 54, ../scss/components/_lesson-table.scss */
 .lesson-table .lesson-row time strong {
   margin-left: 0.75rem;
 }
-/* line 55, ../scss/components/_lesson-table.scss */
+/* line 59, ../scss/components/_lesson-table.scss */
 .lesson-table .lesson-row .rating {
   display: inline-block;
 }
-/* line 58, ../scss/components/_lesson-table.scss */
+/* line 62, ../scss/components/_lesson-table.scss */
 .lesson-table .lesson-row .rating .comment {
   display: inline-block;
   margin: 0 0 0 0.5rem;
 }
-/* line 63, ../scss/components/_lesson-table.scss */
+/* line 67, ../scss/components/_lesson-table.scss */
 .lesson-table .lesson-row .rating .star {
   color: #f0CC6E;
 }
-/* line 68, ../scss/components/_lesson-table.scss */
+/* line 72, ../scss/components/_lesson-table.scss */
 .lesson-table .lesson-row .tick-icon,
 .lesson-table .lesson-row .calendar-icon,
 .lesson-table .lesson-row .incomplete-icon,
@@ -5216,71 +5245,65 @@ footer {
   width: 0.9rem;
   margin-right: 0.5rem;
 }
-/* line 81, ../scss/components/_lesson-table.scss */
+/* line 85, ../scss/components/_lesson-table.scss */
 .lesson-table .lesson-row .calendar-icon {
   background-image: url(../images/icons/calendar.svg);
 }
-/* line 85, ../scss/components/_lesson-table.scss */
+/* line 89, ../scss/components/_lesson-table.scss */
 .lesson-table .lesson-row .tick-icon {
   background-image: url(../images/icons/tick.svg);
 }
-/* line 89, ../scss/components/_lesson-table.scss */
+/* line 93, ../scss/components/_lesson-table.scss */
 .lesson-table .lesson-row .incomplete-icon {
   background-image: url(../images/icons/incomplete.svg);
 }
-/* line 93, ../scss/components/_lesson-table.scss */
+/* line 97, ../scss/components/_lesson-table.scss */
 .lesson-table .lesson-row .cancel-icon {
   background-image: url(../images/icons/cancelled.svg);
 }
-/* line 98, ../scss/components/_lesson-table.scss */
+/* line 102, ../scss/components/_lesson-table.scss */
 .lesson-table .lesson-row:last-child {
   border-bottom: 1px solid #e7e7e7;
 }
-/* line 102, ../scss/components/_lesson-table.scss */
-.lesson-table #completed-lessons-panel,
-.lesson-table #incompleted-lessons-panel,
-.lesson-table #cancelled-lessons-panel {
-  display: none;
-}
-/* line 109, ../scss/components/_lesson-table.scss */
+/* line 107, ../scss/components/_lesson-table.scss */
 .lesson-table #current-bookings-panel > div.lesson-row:nth-child(3n) {
   background-color: #e0f0f3;
 }
-/* line 115, ../scss/components/_lesson-table.scss */
+/* line 113, ../scss/components/_lesson-table.scss */
 .lesson-table #completed-lessons-panel > div.lesson-row:nth-child(3n) {
   background-color: #ecf7f2;
 }
-/* line 119, ../scss/components/_lesson-table.scss */
+/* line 117, ../scss/components/_lesson-table.scss */
 .lesson-table #completed-lessons-panel time {
   color: #7dbaa7;
 }
-/* line 125, ../scss/components/_lesson-table.scss */
+/* line 123, ../scss/components/_lesson-table.scss */
 .lesson-table #incompleted-lessons-panel .lesson-row {
   background-color: #f4e9e2;
 }
-/* line 129, ../scss/components/_lesson-table.scss */
+/* line 127, ../scss/components/_lesson-table.scss */
 .lesson-table #incompleted-lessons-panel time {
   color: #dda989;
 }
-/* line 133, ../scss/components/_lesson-table.scss */
+/* line 131, ../scss/components/_lesson-table.scss */
 .lesson-table #incompleted-lessons-panel .remark {
   color: #a39e9e;
 }
-/* line 139, ../scss/components/_lesson-table.scss */
+/* line 137, ../scss/components/_lesson-table.scss */
 .lesson-table #cancelled-lessons-panel .lesson-row {
   background-color: #eee1e6;
 }
-/* line 143, ../scss/components/_lesson-table.scss */
+/* line 141, ../scss/components/_lesson-table.scss */
 .lesson-table #cancelled-lessons-panel time {
   color: #d09baf;
 }
-/* line 147, ../scss/components/_lesson-table.scss */
+/* line 145, ../scss/components/_lesson-table.scss */
 .lesson-table #cancelled-lessons-panel .remark {
   color: #a39e9e;
 }
 
 @media screen and (min-width: 0em) and (max-width: 39.9375em) {
-  /* line 159, ../scss/components/_lesson-table.scss */
+  /* line 157, ../scss/components/_lesson-table.scss */
   .lesson-table .lesson-row .columns:last-child {
     margin-bottom: 0;
   }

@@ -8,10 +8,6 @@ body {
 	margin: 0 auto;
 }
 
-#booked-lessons {
-	display: none;
-}
-
 //TODO: move to grid scss
 .row {
 	.column {
@@ -24,7 +20,7 @@ body {
 	}
 }
 
-.tab-container {
+#task-lesson-tabs {
 	margin-bottom: 1rem;
 }
 

@@ -1,5 +1,4 @@
 header {
-
 	&, .title-bar {
 		background-color: $topbar-background;
 	}
@@ -21,6 +20,26 @@ header {
 				padding: 0;
 			}
 		}
+	}
+}
+
+.tabs {
+	.tabs-title {
+		> a.button {
+			padding: $button-padding;
+		}
+	}
+}
+
+
+
+.tabs-content {
+	&.callout {
+		background-color: $callout-background;
+	}
+
+	.tabs-panel {
+		padding: 0;
 	}
 }
 
