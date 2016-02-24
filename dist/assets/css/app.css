@@ -2886,7 +2886,7 @@ body {
 }
 .pagination a,
 .pagination button {
-  color: #0a0a0a;
+  color: #A2A2A2;
   display: block;
   padding: 0.1875rem 0.625rem;
   border-radius: 0;
@@ -2897,7 +2897,7 @@ body {
 }
 .pagination .current {
   padding: 0.1875rem 0.625rem;
-  background: #48AADF;
+  background: #2392bb;
   color: #FFF;
   cursor: default;
 }
@@ -3883,6 +3883,11 @@ button.button.white[aria-selected="true"] {
   color: #58595b;
   border: 2px solid #bbbdbf;
 }
+a.button.white.alt,
+button.button.white.alt {
+  color: #3babde;
+  border: 2px solid #3babde;
+}
 
 form .is-invalid-input:not(:focus) {
   box-shadow: 0 0 0 1px #F7ADA9, 0 0 0 2px #F0726D, 0 0 0 3px #F4C6C5;
@@ -4266,4 +4271,87 @@ footer {
   .lesson-table .lesson-row .columns:last-child {
     margin-bottom: 0;
   }
+}
+.day-picker {
+  height: 4rem;
+  margin: 0 0 1.5rem 0;
+}
+.day-picker .previous-week,
+.day-picker .next-week {
+  background-color: #e5e5e5;
+  padding: 1.25rem 0.75rem;
+  height: 100%;
+}
+.day-picker .previous-week {
+  text-align: right;
+  background-image: none;
+  margin-right: 0.25rem;
+}
+.day-picker .next-week {
+  text-align: left;
+  background-image: none;
+  margin-left: 0.25rem;
+}
+.day-picker ul {
+  margin-bottom: 0;
+}
+.day-picker ul li {
+  display: inline-block;
+  margin: 0 0.25rem;
+  height: 100%;
+  padding: 0.5rem 0;
+}
+.day-picker ul li.day {
+  background-color: #d3ebee;
+  text-align: center;
+  color: #939598;
+}
+.day-picker ul li.day.weekend {
+  background-color: #cfdfee;
+}
+.day-picker ul li.day.selected {
+  color: #FFF;
+  background-color: #3babde;
+}
+
+.pagination li.current {
+  border-radius: 5px;
+}
+
+.teacher-panel {
+  border: 1px solid #e5e5e4;
+  padding: 0 0 1rem 0;
+  background-color: #FFF;
+}
+.teacher-panel .pagination {
+  background-color: #f7f7f7;
+  padding: 0.5rem 0;
+}
+.teacher-panel .teacher-row {
+  background-color: #FFF;
+  padding: 0.5rem 0;
+}
+.teacher-panel .teacher-row .teacher-avatar {
+  text-align: center;
+  color: #939598;
+}
+.teacher-panel .teacher-row .teacher-avatar img {
+  border-radius: 50%;
+  margin-bottom: 0.5rem;
+}
+.teacher-panel .booking-row {
+  padding: 0.5rem 0;
+  margin: 0 1rem;
+}
+.teacher-panel .booking-row time {
+  color: #939598;
+}
+.teacher-panel .booking-row button {
+  padding: 0.25rem 1rem;
+}
+.teacher-panel .booking-row:nth-child(odd) {
+  background-color: #f1f2f2;
+}
+.teacher-panel .booking-row:nth-child(even) {
+  background-color: #FFF;
 }

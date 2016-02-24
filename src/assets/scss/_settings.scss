@@ -419,12 +419,12 @@ $menu-item-padding: 0.7rem 0.6rem;
 
 // $pagination-font-size: rem-calc(14);
 // $pagination-margin-bottom: $global-margin;
-// $pagination-item-color: $black;
+$pagination-item-color: #A2A2A2;
 // $pagination-item-padding: rem-calc(3 10);
 // $pagination-item-spacing: rem-calc(1);
 // $pagination-radius: $global-radius;
 // $pagination-item-background-hover: $light-gray;
-// $pagination-item-background-current: $primary-color;
+$pagination-item-background-current: #2392bb;
 // $pagination-item-color-current: foreground($pagination-item-background-current);
 // $pagination-item-color-disabled: $medium-gray;
 // $pagination-ellipsis-color: $black;
