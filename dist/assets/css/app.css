@@ -3883,6 +3883,11 @@ button.button.white[aria-selected="true"] {
   color: #58595b;
   border: 2px solid #bbbdbf;
 }
+a.button.white.alt,
+button.button.white.alt {
+  color: #3babde;
+  border: 2px solid #3babde;
+}
 
 form .is-invalid-input:not(:focus) {
   box-shadow: 0 0 0 1px #F1F1F1, 0 0 0 2px #C09B9A, 0 0 0 3px #F1A1A0;
@@ -4312,6 +4317,15 @@ footer {
   border-radius: 5px;
 }
 
+.teacher-panel {
+  border: 1px solid #e5e5e4;
+  padding: 0 0 1rem 0;
+  background-color: #FFF;
+}
+.teacher-panel .pagination {
+  background-color: #f7f7f7;
+  padding: 0.5rem 0;
+}
 .teacher-panel .teacher-row {
   background-color: #FFF;
   padding: 0.5rem 0;
@@ -4323,4 +4337,20 @@ footer {
 .teacher-panel .teacher-row .teacher-avatar img {
   border-radius: 50%;
   margin-bottom: 0.5rem;
+}
+.teacher-panel .booking-row {
+  padding: 0.5rem 0;
+  margin: 0 1rem;
+}
+.teacher-panel .booking-row time {
+  color: #939598;
+}
+.teacher-panel .booking-row button {
+  padding: 0.25rem 1rem;
+}
+.teacher-panel .booking-row:nth-child(odd) {
+  background-color: #f1f2f2;
+}
+.teacher-panel .booking-row:nth-child(even) {
+  background-color: #FFF;
 }
