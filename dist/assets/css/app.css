@@ -4266,3 +4266,42 @@ footer {
     margin-bottom: 0;
   }
 }
+.day-picker {
+  height: 4rem;
+  margin: 0 0 1.5rem 0;
+}
+.day-picker .previous-week,
+.day-picker .next-week {
+  background-color: #e5e5e5;
+  padding: 1.25rem 0.75rem;
+  height: 100%;
+}
+.day-picker .previous-week {
+  text-align: right;
+  background-image: none;
+}
+.day-picker .next-week {
+  text-align: left;
+  background-image: none;
+}
+.day-picker ul {
+  margin-bottom: 0;
+}
+.day-picker ul li {
+  display: inline-block;
+  margin: 0 0.25rem;
+  height: 100%;
+  padding: 0.5rem 0;
+}
+.day-picker ul li.day {
+  background-color: #d3ebee;
+  text-align: center;
+  color: #939598;
+}
+.day-picker ul li.day.weekend {
+  background-color: #cfdfee;
+}
+.day-picker ul li.day.selected {
+  color: #FFF;
+  background-color: #3babde;
+}

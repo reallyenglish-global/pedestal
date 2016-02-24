@@ -1,0 +1,47 @@
+.day-picker {
+	height: 4rem;
+	margin: 0 0 1.5rem 0;
+
+	.previous-week,
+	.next-week {
+		background-color: #e5e5e5;
+		padding: 1.25rem 0.75rem;
+		height: 100%;
+	}
+
+	.previous-week {
+		text-align: right;
+		background-image: none;
+	}
+
+	.next-week {
+		text-align: left;
+		background-image: none;
+	}
+
+	ul {
+		margin-bottom: 0;
+
+		li {
+			display: inline-block;
+			margin: 0 0.25rem;
+			height: 100%;
+			padding: 0.5rem 0;
+
+			&.day {
+				background-color: #d3ebee;
+				text-align: center;
+				color: #939598;
+
+				&.weekend {
+					background-color: #cfdfee;
+				}
+
+				&.selected {
+					color: $white;
+					background-color: #3babde;
+				}
+			}
+		}
+	}
+}
