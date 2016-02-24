@@ -47,9 +47,8 @@ var PATHS = {
     'bower_components/foundation-sites/js/foundation.tabs.js',
     'bower_components/foundation-sites/js/foundation.toggler.js',
     'bower_components/foundation-sites/js/foundation.tooltip.js',
-    'src/assets/js/**/!(app).js',
-	'src/assets/js/app.js',
-	'src/assets/js/demo.js'
+    'src/assets/js/**/!(demo).js',
+	'src/assets/js/app.js'
 	]
 };
 
@@ -84,7 +83,7 @@ gulp.task('compass', function() {
   gulp.src('./src/assets/sccs/**/*.scss')
     .pipe(compass({
       config_file: './config.rb',
-      css: 'src/assets/css',
+      css: 'dist/assets/css',
       sass: 'src/assets/scss'
     }))
     .pipe(gulp.dest('dist/assets/scss'));
@@ -93,6 +92,9 @@ gulp.task('compass', function() {
 // Combine JavaScript into one file
 // In production, the file is minified
 gulp.task('javascript', function() {
+
+	gulp.src('src/assets/js/demo.js')
+	.pipe(gulp.dest('dist/assets/js'));
 
 	return gulp.src(PATHS.javascript)
 	.pipe($.concat('app.js'))
