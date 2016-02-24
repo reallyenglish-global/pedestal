@@ -3885,7 +3885,7 @@ button.button.white[aria-selected="true"] {
 }
 
 form .is-invalid-input:not(:focus) {
-  box-shadow: 0 0 0 1px #F1F1F1, 0 0 0 2px #C09B9A, 0 0 0 3px #F1A1A0;
+  box-shadow: 0 0 0 1px #F7ADA9, 0 0 0 2px #F0726D, 0 0 0 3px #F4C6C5;
 }
 
 textarea {
@@ -3967,22 +3967,23 @@ header .top-bar .menu-text a {
   }
 }
 .callout.alert {
-  background-color: #F8E4E4;
+  background-color: #F4C6C8;
   margin-top: 1.5rem;
-  box-shadow: 0 0 0 1px #D1C1C1, 0 0 0 2px #D47A7B, 0 0 0 3px #F4D7D7;
+  border: 1px solid #f5ddde;
   padding: 0.75rem;
 }
 .callout.alert h4 {
-  color: #ED696A;
+  color: #4E4E4E;
   margin: 0;
 }
 .callout.primary {
   background-color: #bce2ec;
+  border: 1px solid #E1EDF0;
   margin: 0 0 1.25rem 0;
 }
 .callout.success {
   background-color: #bbe9c5;
-  border: 1px solid #cdecd4;
+  border: 1px solid #DEEFE2;
 }
 
 .comment-box {
