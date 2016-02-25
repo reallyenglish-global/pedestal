@@ -4277,33 +4277,31 @@ footer {
   background-color: #e5e5e5;
   padding: 1.25rem 0.75rem;
   height: 4rem;
-  width: 6rem;
+  width: 11.5555%;
   cursor: pointer;
 }
 .day-picker .previous-week {
   text-align: right;
-  background-image: none;
   margin-right: 0.25rem;
   float: left;
   background-image: url(../images/icons/scroll-arrow-left.svg);
   background-repeat: no-repeat;
-  background-position: 0.25rem 50%;
+  background-position: 50% 50%;
   background-size: 1.75rem 1.75rem;
 }
 .day-picker .next-week {
   text-align: left;
-  background-image: none;
   margin-left: 0.25rem;
   float: right;
   background-image: url(../images/icons/scroll-arrow-right.svg);
   background-repeat: no-repeat;
-  background-position: 4.25rem 50%;
+  background-position: 50% 50%;
   background-size: 1.75rem 1.75rem;
 }
 .day-picker .day-picker-frame {
   height: 4rem;
   margin: 0 auto 1.5rem auto;
-  width: 41rem;
+  width: 74.6%;
   padding: 0;
 }
 .day-picker .day-picker-frame ul.days {
