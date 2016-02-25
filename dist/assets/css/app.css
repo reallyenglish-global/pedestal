@@ -3747,6 +3747,9 @@ body {
     max-width: 100%;
     padding: 1rem 0;
   }
+  #body > h2 {
+    margin: 0 1.5rem 1rem 1.5rem;
+  }
   #body .col-wrap-margin {
     margin-bottom: 1rem;
   }
