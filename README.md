@@ -20,7 +20,7 @@ git clone https://github.com/reallyenglish/booking-system-template.git
 bower install
 ```
 
-#### Also we need to install our npm dependencies too
+#### Also we need to install our npm dependencies too:
 
 ```bash
 npm install
