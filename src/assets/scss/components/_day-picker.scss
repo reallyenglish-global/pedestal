@@ -13,6 +13,10 @@
 		background-image: none;
 		margin-right: 0.25rem;
 		float: left;
+		background-image: url(../images/icons/scroll-arrow-left.svg);
+		background-repeat: no-repeat;
+		background-position: 0.25rem 50%;
+		background-size: 1.75rem 1.75rem;
 	}
 
 	.next-week {
@@ -20,6 +24,10 @@
 		background-image: none;
 		margin-left: 0.25rem;
 		float: right;
+		background-image: url(../images/icons/scroll-arrow-right.svg);
+		background-repeat: no-repeat;
+		background-position: 4.25rem 50%;
+		background-size: 1.75rem 1.75rem;
 	}
 
 	.day-picker-frame {
