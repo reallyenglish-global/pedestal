@@ -8,27 +8,30 @@ git clone https://github.com/reallyenglish/booking-system-template.git
 
 ## Requirements
 
-  * Ruby 1.9+
-  * [Node.js](http://nodejs.org)
-  * [compass](http://compass-style.org/): `gem install compass`
-  * [Bundler](http://http://bundler.io/): `gem install bundler`
-  * [bower](http://bower.io): `npm install bower -g`
+* Ruby 1.9+
+* [Node.js](http://nodejs.org)
+* [compass](http://compass-style.org/): `gem install compass`
+* [bower](http://bower.io): `npm install bower -g`
+* [Gulp](http://gulpjs.com/): `npm install -g gulp-cli`
 
- We should then install our bower components using the following command:
-
- ```bash
- bower install
- ```
-  
-Then when you're working on your project, just run the following command:
+#### We should then install our bower components using the following command:
 
 ```bash
-bundle exec compass watch
+bower install
 ```
 
-Once it has all been compiled you can view the templates by opening the index.html file:
+#### Also we need to install our npm dependencies too
 
 ```bash
-cd booking-system-template
-open index.html
+npm install
 ```
+
+#### To run the project, just run the following command:
+
+```bash
+gulp
+```
+
+#### Once it has all been compiled you can see live preview changes via this URL:
+
+<http://localhost:8000>
