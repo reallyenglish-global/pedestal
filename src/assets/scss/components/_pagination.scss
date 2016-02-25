@@ -1,5 +1,11 @@
 .pagination {
-	li.current {
-		border-radius: 5px;
+	li {
+		&.current {
+			border-radius: 5px;
+
+			a {
+				padding: 0;
+			}
+		}
 	}
 }
