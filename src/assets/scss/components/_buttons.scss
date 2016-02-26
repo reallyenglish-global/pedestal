@@ -14,7 +14,7 @@ button.button {
 		background-color: #F3F3F3;
 		color: $body-font-color;
 
-		&[aria-selected="true"] {
+		&.selected {
 			background-color: #C7C7C7;
 			box-shadow: inset 1px 1px 3px #8E8C8C;
 		}
