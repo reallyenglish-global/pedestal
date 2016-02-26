@@ -17377,7 +17377,6 @@ Foundation.plugin(ResponsiveToggle, 'ResponsiveToggle');
 
 		// Normalizing frame
 		if (!parallax) {
-			debugger
 			frame = $frame[0];
 		}
 
@@ -19147,7 +19146,6 @@ Foundation.plugin(ResponsiveToggle, 'ResponsiveToggle');
 	}
 
 	Sly.getInstance = function (element) {
-		console.log(element)
 		return $.data(element, namespace);
 	};
 
