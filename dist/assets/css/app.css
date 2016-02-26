@@ -3788,8 +3788,9 @@ button.button.light-grey {
   background-color: #F3F3F3;
   color: #4e4e4e;
 }
-a.button.light-grey.selected,
-button.button.light-grey.selected {
+a.button.light-grey.selected, a.button.light-grey[aria-selected="true"],
+button.button.light-grey.selected,
+button.button.light-grey[aria-selected="true"] {
   background-color: #C7C7C7;
   box-shadow: inset 1px 1px 3px #8E8C8C;
 }

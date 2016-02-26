@@ -4,17 +4,12 @@ button.button {
 	font-size: 1rem;
 	text-decoration: none;
 
-	.is-active {
-		.light-grey {
-
-		}
-	}
-
 	&.light-grey {
 		background-color: #F3F3F3;
 		color: $body-font-color;
 
-		&.selected {
+		&.selected,
+		&[aria-selected="true"] {
 			background-color: #C7C7C7;
 			box-shadow: inset 1px 1px 3px #8E8C8C;
 		}
