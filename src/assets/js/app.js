@@ -1,6 +1,5 @@
 (function() {
-	var $frame = $('.day-picker-frame');
-	var sly = new Sly($frame, {
+	$('.day-picker-frame').sly({
 		horizontal: true,
 		itemNav: 'basic',
 		smart: true,
@@ -20,7 +19,7 @@
 	}).init();
 
 	$(window).resize(function(e) {
-		$frame.sly('reload');
+		$('.day-picker-frame').sly('reload');
 	});
 
 })();
