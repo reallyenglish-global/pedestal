@@ -4262,6 +4262,10 @@ footer {
 .lesson-table .lesson-row.highlight-blue {
   background-color: #e0f0f3;
 }
+.lesson-table .lesson-row.highlight-blue.bordered {
+  border: 2px solid #9bcbde;
+  border-bottom: none;
+}
 .lesson-table .lesson-row.highlight-green {
   background-color: #ecf7f2;
 }

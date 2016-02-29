@@ -100,6 +100,11 @@ $booked-lesson-color: #e0f0f3;
 
 		&.highlight-blue {
 			background-color: $booked-lesson-color;
+
+			&.bordered {
+				border: 2px solid #9bcbde;
+				border-bottom: none;
+			}
 		}
 
 		&.highlight-green {
