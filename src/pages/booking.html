@@ -1,4 +1,5 @@
 <div id="body">
+	{{> teacher-modal}}
 	<h2>Book speaking lesson</h2>
 	<div class="callout">
 		{{> day-picker}}
@@ -37,7 +38,7 @@
 						<time>7.00am</time>
 					</div>
 					<div class="columns">
-						<button class="button white alt round expanded">Book</button>
+						<button data-open="bookModal" class="button white alt round expanded">Book</button>
 					</div>
 					<div class="columns"></div>
 					<div class="columns"></div>

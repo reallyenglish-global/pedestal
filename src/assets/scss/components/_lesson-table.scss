@@ -14,7 +14,7 @@ $booked-lesson-color: #e0f0f3;
 
 		&.unbooked div.lesson-row:nth-child(3) {
 			box-shadow: inset 0 -6px 0 -2px $booked-lesson-color,
-						inset 0 -7px 0 -2px #edf6f8;
+			inset 0 -7px 0 -2px #edf6f8;
 		}
 
 		&.booked div.lesson-row:nth-child(4) {
@@ -97,67 +97,68 @@ $booked-lesson-color: #e0f0f3;
 		.cancel-icon {
 			background-image: url(../images/icons/cancelled.svg);
 		}
-	}
 
-		.lesson-row:last-child {
-		border-bottom: 1px solid #e7e7e7;
-	}
-
-	#current-bookings-panel {
-		> div.lesson-row:nth-child(3n) {
+		&.highlight-blue {
 			background-color: $booked-lesson-color;
-		}
-	}
 
-	#completed-lessons-panel {
-		> div.lesson-row:nth-child(3n) {
+			&.bordered {
+				border: 2px solid #9bcbde;
+				border-bottom: none;
+			}
+		}
+
+		&.highlight-green {
 			background-color: #ecf7f2;
+
+			time {
+				color: #7dbaa7;
+			}
 		}
 
-		time {
-			color: #7dbaa7;
-		}
-	}
-
-	#incompleted-lessons-panel {
-		.lesson-row {
+		&.highlight-orange {
 			background-color: #f4e9e2;
+
+			time {
+				color: #dda989;
+			}
+
+			.remark {
+				color: #a39e9e;
+			}
 		}
 
-		time {
-			color: #dda989;
+		&.highlight-purple {
+			background-color: #eee1e6;
+
+			time {
+				color: #d09baf;
+			}
+
+			.remark {
+				color: #a39e9e;
+			}
 		}
 
-		.remark {
-			color: #a39e9e;
+		&.short {
+			margin: 0 0.75rem;
 		}
 	}
 
-	#cancelled-lessons-panel {
-		.lesson-row {
-			background-color: #eee1e6;
-		}
-
-		time {
-			color: #d09baf;
-		}
-
-		.remark {
-			color: #a39e9e;
-		}
+	.lesson-row:last-child {
+		border-bottom: 1px solid #e7e7e7;
 	}
 }
 
 @include breakpoint(small only) {
-.lesson-table {
-	.lesson-row {
+	.lesson-table {
+		.lesson-row {
 
-		.columns {
+			.columns {
 
-			&:last-child {
-				margin-bottom: 0;
+				&:last-child {
+					margin-bottom: 0;
+				}
 			}
 		}
 	}
-}
 }
