@@ -61,6 +61,11 @@
 						color: $white;
 						background-color: #3babde;
 					}
+
+					&.disabled {
+						background-color: #e5e5e5;
+						color: #EBF7F2;
+					}
 				}
 			}
 		}
