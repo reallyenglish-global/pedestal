@@ -3782,6 +3782,10 @@ a.grey {
   text-align: center;
 }
 
+.right {
+  text-align: right;
+}
+
 a.button,
 button.button {
   font-size: 1rem;
