@@ -4259,35 +4259,35 @@ footer {
 .lesson-table .lesson-row .cancel-icon {
   background-image: url(../images/icons/cancelled.svg);
 }
-.lesson-table .lesson-row:last-child {
-  border-bottom: 1px solid #e7e7e7;
-}
-.lesson-table #current-bookings-panel > div.lesson-row:nth-child(3n) {
+.lesson-table .lesson-row.highlight-blue {
   background-color: #e0f0f3;
 }
-.lesson-table #completed-lessons-panel > div.lesson-row:nth-child(3n) {
+.lesson-table .lesson-row.highlight-green {
   background-color: #ecf7f2;
 }
-.lesson-table #completed-lessons-panel time {
+.lesson-table .lesson-row.highlight-green time {
   color: #7dbaa7;
 }
-.lesson-table #incompleted-lessons-panel .lesson-row {
+.lesson-table .lesson-row.highlight-orange {
   background-color: #f4e9e2;
 }
-.lesson-table #incompleted-lessons-panel time {
+.lesson-table .lesson-row.highlight-orange time {
   color: #dda989;
 }
-.lesson-table #incompleted-lessons-panel .remark {
+.lesson-table .lesson-row.highlight-orange .remark {
   color: #a39e9e;
 }
-.lesson-table #cancelled-lessons-panel .lesson-row {
+.lesson-table .lesson-row.highlight-purple {
   background-color: #eee1e6;
 }
-.lesson-table #cancelled-lessons-panel time {
+.lesson-table .lesson-row.highlight-purple time {
   color: #d09baf;
 }
-.lesson-table #cancelled-lessons-panel .remark {
+.lesson-table .lesson-row.highlight-purple .remark {
   color: #a39e9e;
+}
+.lesson-table .lesson-row:last-child {
+  border-bottom: 1px solid #e7e7e7;
 }
 
 @media screen and (min-width: 0em) and (max-width: 39.9375em) {
