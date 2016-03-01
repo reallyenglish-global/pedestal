@@ -112,4 +112,18 @@ button.button {
 			border: 2px solid #3babde;
 		}
 	}
+
+	.title,
+	.sub-text {
+		display: block;
+	}
+
+	.title {
+		font-size: 1rem;
+		margin-bottom: 0.25rem;
+	}
+
+	.sub-text {
+		font-size: 0.75rem;
+	}
 }

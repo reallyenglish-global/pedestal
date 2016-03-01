@@ -3900,6 +3900,21 @@ button.button.white.alt {
   color: #3babde;
   border: 2px solid #3babde;
 }
+a.button .title,
+a.button .sub-text,
+button.button .title,
+button.button .sub-text {
+  display: block;
+}
+a.button .title,
+button.button .title {
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+}
+a.button .sub-text,
+button.button .sub-text {
+  font-size: 0.75rem;
+}
 
 form .is-invalid-input:not(:focus) {
   box-shadow: 0 0 0 1px #F7ADA9, 0 0 0 2px #F0726D, 0 0 0 3px #F4C6C5;
