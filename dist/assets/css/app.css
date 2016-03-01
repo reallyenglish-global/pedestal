@@ -3900,6 +3900,18 @@ button.button.white.alt {
   color: #3babde;
   border: 2px solid #3babde;
 }
+a.button.blue,
+button.button.blue {
+  background-color: #9bcbde;
+  color: #FFF;
+}
+a.button.tick,
+button.button.tick {
+  background-image: url(../images/icons/white-tick.svg);
+  background-size: 1rem 1rem;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
 a.button .title,
 a.button .sub-text,
 button.button .title,
