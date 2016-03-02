@@ -3098,7 +3098,7 @@ body.is-reveal-open {
 .reveal {
   display: none;
   z-index: 1006;
-  padding: 1rem;
+  padding: 2rem;
   border: 1px solid #cacaca;
   margin: 6.25rem auto 0;
   background-color: #FFF;
@@ -4144,8 +4144,7 @@ div[id^="skypeModal"] {
   max-width: 62.5rem;
 }
 div[id^="skypeModal"] .progress {
-  margin: 3rem;
-  margin-bottom: 4rem;
+  margin: 2rem 3rem 6rem 3rem;
   position: relative;
 }
 div[id^="skypeModal"] .progress .progress-img {
