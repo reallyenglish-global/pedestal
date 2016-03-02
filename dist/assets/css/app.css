@@ -4128,6 +4128,10 @@ header .top-bar .menu-text a {
     display: block;
   }
 }
+.reveal-modal-bg {
+  position: fixed;
+}
+
 div[id^="bookModal"] .modal-title {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
@@ -4449,6 +4453,7 @@ footer {
 }
 .teacher-panel .booking-row button {
   padding: 0.25rem 1rem;
+  font-size: 0.8rem;
 }
 .teacher-panel .booking-row:nth-child(odd) {
   background-color: #f1f2f2;
