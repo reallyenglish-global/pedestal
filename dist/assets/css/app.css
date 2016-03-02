@@ -4321,9 +4321,6 @@ footer {
 .lesson-table .lesson-row.highlight-purple .remark {
   color: #a39e9e;
 }
-.lesson-table .lesson-row.short {
-  margin: 0 0.75rem;
-}
 .lesson-table .lesson-row:last-child {
   border-bottom: 1px solid #e7e7e7;
 }

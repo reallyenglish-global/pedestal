@@ -138,10 +138,6 @@ $booked-lesson-color: #e0f0f3;
 				color: #a39e9e;
 			}
 		}
-
-		&.short {
-			margin: 0 0.75rem;
-		}
 	}
 
 	.lesson-row:last-child {
@@ -152,9 +148,7 @@ $booked-lesson-color: #e0f0f3;
 @include breakpoint(small only) {
 	.lesson-table {
 		.lesson-row {
-
 			.columns {
-
 				&:last-child {
 					margin-bottom: 0;
 				}
