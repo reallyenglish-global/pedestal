@@ -1,5 +1,10 @@
 header {
-	&, .title-bar {
+	.header-row {
+		background-color: #FFF;
+		border-bottom: 1px solid #dcdcdc;
+	}
+	.primary-nav,
+	.title-bar {
 		background-color: $topbar-background;
 	}
 

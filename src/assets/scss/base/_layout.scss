@@ -1,7 +1,7 @@
 body {
 	background-color: #E5E5E5;
 }
-
+header .row,
 #body {
 	padding: 1rem 3rem;
 	max-width: 62.5rem;
@@ -17,6 +17,10 @@ body {
 		&.align-right {
 			text-align: right;
 		}
+	}
+
+	&.white {
+		background-color: #fff;
 	}
 }
 

@@ -3715,6 +3715,7 @@ body {
   background-color: #E5E5E5;
 }
 
+header .row,
 #body {
   padding: 1rem 3rem;
   max-width: 62.5rem;
@@ -3726,6 +3727,9 @@ body {
 }
 .row .column.align-right, .row .align-right.columns {
   text-align: right;
+}
+.row.white {
+  background-color: #fff;
 }
 
 #task-lesson-tabs {
@@ -3953,7 +3957,12 @@ textarea {
   border-radius: 0 5px 5px 0;
 }
 
-header, header .title-bar {
+header .header-row {
+  background-color: #FFF;
+  border-bottom: 1px solid #dcdcdc;
+}
+header .primary-nav,
+header .title-bar {
   background-color: #676767;
 }
 header .top-bar {
