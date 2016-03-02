@@ -98,6 +98,10 @@ $booked-lesson-color: #e0f0f3;
 			background-image: url(../images/icons/cancelled.svg);
 		}
 
+		&.lesson-row + [class*='highlight'] {
+			border-top: none;
+		}
+
 		&.highlight-blue {
 			background-color: $booked-lesson-color;
 

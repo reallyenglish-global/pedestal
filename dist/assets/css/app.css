@@ -4290,6 +4290,9 @@ footer {
 .lesson-table .lesson-row .cancel-icon {
   background-image: url(../images/icons/cancelled.svg);
 }
+.lesson-table .lesson-row.lesson-row + [class*='highlight'] {
+  border-top: none;
+}
 .lesson-table .lesson-row.highlight-blue {
   background-color: #e0f0f3;
 }
