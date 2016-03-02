@@ -447,7 +447,7 @@ $progress-margin-bottom: 5rem;
 $reveal-width: 95%;
 $reveal-max-width: 48.5rem;
 // $reveal-offset: rem-calc(100);
-// $reveal-padding: $global-padding;
+$reveal-padding: 2rem;
 // $reveal-border: 1px solid $medium-gray;
 // $reveal-radius: $global-radius;
 // $reveal-zindex: 1005;
@@ -540,16 +540,16 @@ $tab-content-border: none;
 // // 34. Tooltip
 // // -----------
 
-// $has-tip-font-weight: $global-weight-bold;
-// $has-tip-border-bottom: dotted 1px $dark-gray;
-// $tooltip-background-color: $black;
-// $tooltip-color: $white;
+$has-tip-font-weight: 300;
+$has-tip-border-bottom: none;
+$tooltip-background-color: $white;
+$tooltip-color: $body-font-color;
 // $tooltip-padding: 0.75rem;
 // $tooltip-font-size: $small-font-size;
 // $tooltip-pip-width: 0.75rem;
 // $tooltip-pip-height: $tooltip-pip-width * 0.866;
 // $tooltip-pip-offset: 1.25rem;
-// $tooltip-radius: $global-radius;
+$tooltip-radius: 6px;
 
 // 35. Top Bar
 // -----------
