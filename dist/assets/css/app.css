@@ -3768,7 +3768,7 @@ header .row,
 
 a {
   text-decoration: none;
-  color: #449DD2;
+  color: #167aa2;
 }
 a.grey {
   color: #717576;
@@ -4142,6 +4142,9 @@ div[id^="bookModal"] .teacher-name {
 
 div[id^="skypeModal"] {
   max-width: 62.5rem;
+}
+div[id^="skypeModal"] .nav-row {
+  margin-top: 1.5rem;
 }
 div[id^="skypeModal"] .progress {
   margin: 2rem 3rem 6rem 3rem;

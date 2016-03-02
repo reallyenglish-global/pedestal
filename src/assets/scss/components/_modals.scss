@@ -20,6 +20,10 @@ div[id^="skypeModal"] {
 	$progress-img-dimension: 3.5rem;
 	max-width: 62.5rem;
 
+	.nav-row {
+		margin-top: 1.5rem;
+	}
+
 	.progress {
 		margin: 2rem 3rem 6rem 3rem;
 		position: relative;
@@ -98,22 +102,22 @@ div[id^="skypeModal"] {
 	}
 
 	.progress {
-	&[aria-valuenow="10"] {
-		.progress-meter {
-			width: 15%;
+		&[aria-valuenow="10"] {
+			.progress-meter {
+				width: 15%;
+			}
 		}
-	}
 
-	&[aria-valuenow="60"] {
-		.progress-meter {
-			width: 65%;
+		&[aria-valuenow="60"] {
+			.progress-meter {
+				width: 65%;
+			}
 		}
-	}
 
-	&[aria-valuenow="90"] {
-		.progress-meter {
-			width: 85%;
+		&[aria-valuenow="90"] {
+			.progress-meter {
+				width: 85%;
+			}
 		}
 	}
-}
 }
