@@ -74,10 +74,14 @@ $booked-lesson-color: #e0f0f3;
 			border-top-left-radius: 5px;
 			padding-top: 0.75rem;
 			padding-bottom: 0.75rem;
+			margin-top: 1.25rem;
 		}
 
-		.assessment-message {
+		.assessment-feedback {
 			background-color: #fffcef;
+			padding: 1rem;
+			display: none;
+			margin-bottom: 1rem;
 		}
 
 		.tick-icon,
@@ -125,7 +129,6 @@ $booked-lesson-color: #e0f0f3;
 		&.highlight-green {
 			background-color: #ecf7f2;
 			padding: 0;
-			height: 3.5rem;
 
 			time {
 				color: #7dbaa7;
