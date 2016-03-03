@@ -69,6 +69,17 @@ $booked-lesson-color: #e0f0f3;
 			}
 		}
 
+		.show-feedback {
+			border-top-right-radius: 5px;
+			border-top-left-radius: 5px;
+			padding-top: 0.75rem;
+			padding-bottom: 0.75rem;
+		}
+
+		.assessment-message {
+			background-color: #fffcef;
+		}
+
 		.tick-icon,
 		.calendar-icon,
 		.incomplete-icon,
@@ -113,6 +124,8 @@ $booked-lesson-color: #e0f0f3;
 
 		&.highlight-green {
 			background-color: #ecf7f2;
+			padding: 0;
+			height: 3.5rem;
 
 			time {
 				color: #7dbaa7;
