@@ -3792,7 +3792,7 @@ a.grey {
 
 a.button,
 button.button {
-  font-size: 1rem;
+  font-size: 0.9rem;
   text-decoration: none;
 }
 a.button.light-grey,
@@ -4457,7 +4457,6 @@ div[id^="skypeModal"] .progress .progress-img.disabled h5 {
 }
 .teacher-panel .booking-row .button {
   padding: 0.25rem 1rem;
-  font-size: 0.8rem;
 }
 .teacher-panel .booking-row:nth-child(odd) {
   background-color: #f1f2f2;
