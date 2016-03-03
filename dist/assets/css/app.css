@@ -3874,7 +3874,7 @@ button.button.arrow-down {
 }
 a.button.arrow-down.on-right,
 button.button.arrow-down.on-right {
-  background-position: 96% 50%;
+  background-position: 91% 50%;
   padding-right: 2rem;
 }
 a.button.arrow-down.center,
@@ -4289,6 +4289,15 @@ div[id^="skypeModal"] .progress .progress-img.disabled h5 {
 .lesson-table .lesson-row .rating .star {
   color: #f0CC6E;
 }
+.lesson-table .lesson-row .show-feedback {
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+.lesson-table .lesson-row .assessment-message {
+  background-color: #fffcef;
+}
 .lesson-table .lesson-row .tick-icon,
 .lesson-table .lesson-row .calendar-icon,
 .lesson-table .lesson-row .incomplete-icon,
@@ -4325,6 +4334,8 @@ div[id^="skypeModal"] .progress .progress-img.disabled h5 {
 }
 .lesson-table .lesson-row.highlight-green {
   background-color: #ecf7f2;
+  padding: 0;
+  height: 3.5rem;
 }
 .lesson-table .lesson-row.highlight-green time {
   color: #7dbaa7;
