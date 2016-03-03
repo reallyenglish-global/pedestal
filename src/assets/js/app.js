@@ -22,4 +22,8 @@
 		$('.day-picker-frame').sly('reload');
 	});
 
+	$(".show-feedback").click(function() {
+		$(this).parent().siblings(".medium-12").find(".assessment-feedback").toggle();
+	})
+
 })();
