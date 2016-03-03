@@ -3,8 +3,10 @@ require './remove-all-comments'
 add_import_path "bower_components/foundation-sites/scss"
 
 # Set this to the root of your project when deployed:
-css_dir = "dist/assets/css"
-sass_dir = "src/assets/scss"
+http_path = "/"
+css_dir = "assets/css"
+sass_dir = "../src/assets/scss"
+fonts_dir = "assets/fonts"
 
 # You can select your preferred output style here (can be overridden via the command line):
 # output_style = :expanded or :nested or :compact or :compressed
