@@ -4341,6 +4341,9 @@ div[id^="skypeModal"] .progress .progress-img.disabled h5 {
   padding: 0;
 }
 .lesson-table .lesson-row.highlight-green time {
+  display: inline-block;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   color: #7dbaa7;
 }
 .lesson-table .lesson-row.highlight-orange {

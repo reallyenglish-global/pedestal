@@ -131,6 +131,9 @@ $booked-lesson-color: #e0f0f3;
 			padding: 0;
 
 			time {
+				display: inline-block;
+				margin-top: 1rem;
+				margin-bottom: 1rem;
 				color: #7dbaa7;
 			}
 		}
