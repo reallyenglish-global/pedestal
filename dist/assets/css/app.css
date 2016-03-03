@@ -3694,11 +3694,11 @@ table.hover tr:nth-of-type(even):hover {
 
 @font-face {
   font-family: ProximaNova;
-  src: url("../fonts/Proxima-Nova/Proxima-Nova-Regular.otf") format("opentype");
+  src: url('/dist/assets/fonts/Proxima-Nova/Proxima-Nova-Regular.otf') format("opentype");
 }
 @font-face {
   font-family: ProximaNova;
-  src: url("../fonts/Proxima-Nova/Proxima-Nova-Bold.otf") format("opentype");
+  src: url('/dist/assets/fonts/Proxima-Nova/Proxima-Nova-Bold.otf') format("opentype");
   font-weight: 700;
 }
 html,

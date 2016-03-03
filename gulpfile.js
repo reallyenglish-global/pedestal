@@ -84,10 +84,11 @@ gulp.task('compass', function() {
   gulp.src('./src/assets/sccs/**/*.scss')
     .pipe(compass({
       config_file: './config.rb',
+      http_path: '/',
       css: 'dist/assets/css',
-      sass: 'src/assets/scss'
-    }))
-    .pipe(gulp.dest('dist/assets/scss'));
+      sass: 'src/assets/scss',
+      relative: false
+    }));
 });
 
 // Combine JavaScript into one file
