@@ -50,6 +50,31 @@ $booked-lesson-color: #e0f0f3;
 			margin-right: 0.5rem;
 		}
 
+		%lesson-icon {
+			height: 2.5rem;
+			width: 2.5rem;
+			background-size: 2.5rem 2.5rem;
+			background-repeat: no-repeat;
+			background-position: 50% 50%;
+			display: inline-block;
+		}
+
+		.grammar-icon {
+			@extend %lesson-icon;
+			background-image: url("../images/icons/grammar.svg");
+		}
+
+		.listening-icon {
+			@extend %lesson-icon;
+			background-image: url("../images/icons/listening.svg");
+		}
+
+		.reading-icon {
+			@extend %lesson-icon;
+			background-image: url("../images/icons/reading.svg");
+		}
+
+
 		time {
 			strong {
 				margin-left: 0.75rem;
