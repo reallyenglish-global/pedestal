@@ -3865,6 +3865,7 @@ button.button.circle.help {
   background-size: 0.75rem 0.75rem;
   background-repeat: no-repeat;
   background-position: 50% 50%;
+  padding: 0.75rem;
 }
 a.button.arrow-down,
 button.button.arrow-down {
@@ -4243,6 +4244,7 @@ div[id^="skypeModal"] .progress .progress-img.disabled h5 {
 }
 .lesson-table .panel-white {
   padding: 1rem 0.5rem;
+  color: #989898;
 }
 .lesson-table .lesson-set {
   margin-bottom: 1rem;
@@ -4270,11 +4272,40 @@ div[id^="skypeModal"] .progress .progress-img.disabled h5 {
   border: 1px solid #e7e7e7;
   border-bottom: none;
 }
+.lesson-table .lesson-row .title {
+  color: #4e4e4e;
+}
 .lesson-table .lesson-row .avatar {
   height: 1.5rem;
   width: 1.5rem;
   border-radius: 50%;
   margin-right: 0.5rem;
+}
+.lesson-table .lesson-row .grammar-icon, .lesson-table .lesson-row .listening-icon, .lesson-table .lesson-row .reading-icon {
+  height: 2.5rem;
+  width: 2.5rem;
+  background-size: 2.5rem 2.5rem;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  display: inline-block;
+}
+.lesson-table .lesson-row .grammar-icon {
+  background-image: url("../images/icons/grammar.svg");
+}
+.lesson-table .lesson-row .listening-icon {
+  background-image: url("../images/icons/listening.svg");
+}
+.lesson-table .lesson-row .reading-icon {
+  background-image: url("../images/icons/reading.svg");
+}
+.lesson-table .lesson-row .download-icon {
+  height: 1.5rem;
+  width: 1.5rem;
+  background-size: 1.5rem 1.5rem;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  display: inline-block;
+  background-image: url("../images/icons/download.svg");
 }
 .lesson-table .lesson-row time strong {
   margin-left: 0.75rem;
@@ -4301,6 +4332,7 @@ div[id^="skypeModal"] .progress .progress-img.disabled h5 {
   padding: 1rem;
   display: none;
   margin-bottom: 1rem;
+  font-size: 0.8rem;
 }
 .lesson-table .lesson-row .tick-icon,
 .lesson-table .lesson-row .calendar-icon,
@@ -4325,6 +4357,9 @@ div[id^="skypeModal"] .progress .progress-img.disabled h5 {
 }
 .lesson-table .lesson-row .cancel-icon {
   background-image: url(../images/icons/cancelled.svg);
+}
+.lesson-table .lesson-row[class*='highlight'] {
+  color: #4e4e4e;
 }
 .lesson-table .lesson-row.lesson-row + [class*='highlight'] {
   border-top: none;

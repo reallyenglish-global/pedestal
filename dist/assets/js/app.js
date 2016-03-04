@@ -17252,7 +17252,7 @@ Foundation.plugin(ResponsiveToggle, 'ResponsiveToggle');
 	});
 
 	$(".show-feedback").click(function() {
-		$(this).parent().siblings(".medium-12").find(".assessment-feedback").toggle();
+		$(this).parent().siblings().find(".assessment-feedback").toggle();
 	})
 
 })();
