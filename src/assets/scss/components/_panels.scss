@@ -77,6 +77,10 @@ $comment-header-height: 3rem;
   &.radius {
     border-radius: 2px;
   }
+
+  &.bordered {
+    border: 1px solid #E5E5E4;
+  }
 }
 
 @include breakpoint(small only) {
