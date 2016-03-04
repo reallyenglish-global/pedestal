@@ -3865,6 +3865,7 @@ button.button.circle.help {
   background-size: 0.75rem 0.75rem;
   background-repeat: no-repeat;
   background-position: 50% 50%;
+  padding: 0.75rem;
 }
 a.button.arrow-down,
 button.button.arrow-down {
