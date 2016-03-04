@@ -1,12 +1,14 @@
 $booked-lesson-color: #e0f0f3;
 
 .lesson-table {
+
 	.row, .panel-white {
 		margin: 0;
 	}
 
 	.panel-white {
 		padding: 1rem 0.5rem;
+		color: #989898;
 	}
 
 	.lesson-set {
@@ -42,6 +44,10 @@ $booked-lesson-color: #e0f0f3;
 	.lesson-row {
 		border: 1px solid #e7e7e7;
 		border-bottom: none;
+
+		.title {
+			color: $body-font-color;
+		}
 
 		.avatar {
 			height: 1.5rem;

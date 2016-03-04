@@ -4244,6 +4244,7 @@ div[id^="skypeModal"] .progress .progress-img.disabled h5 {
 }
 .lesson-table .panel-white {
   padding: 1rem 0.5rem;
+  color: #989898;
 }
 .lesson-table .lesson-set {
   margin-bottom: 1rem;
@@ -4270,6 +4271,9 @@ div[id^="skypeModal"] .progress .progress-img.disabled h5 {
 .lesson-table .lesson-row {
   border: 1px solid #e7e7e7;
   border-bottom: none;
+}
+.lesson-table .lesson-row .title {
+  color: #4e4e4e;
 }
 .lesson-table .lesson-row .avatar {
   height: 1.5rem;
