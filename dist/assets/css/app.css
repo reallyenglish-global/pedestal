@@ -4301,6 +4301,7 @@ div[id^="skypeModal"] .progress .progress-img.disabled h5 {
   padding: 1rem;
   display: none;
   margin-bottom: 1rem;
+  font-size: 0.8rem;
 }
 .lesson-table .lesson-row .tick-icon,
 .lesson-table .lesson-row .calendar-icon,
