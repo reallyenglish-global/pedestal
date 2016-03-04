@@ -4519,3 +4519,8 @@ div[id^="skypeModal"] .progress .progress-img.disabled h5 {
 .teacher-panel .booking-row:nth-child(even) {
   background-color: #FFF;
 }
+
+.faq-contents {
+  list-style: none;
+  margin-left: 1.5rem;
+}
