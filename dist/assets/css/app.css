@@ -4520,7 +4520,25 @@ div[id^="skypeModal"] .progress .progress-img.disabled h5 {
   background-color: #FFF;
 }
 
-.faq-contents {
+#faq {
+  color: #4e4e4e;
+}
+#faq .faq-contents {
   list-style: none;
   margin-left: 1.5rem;
+}
+#faq .question {
+  color: #167AA2;
+  font-weight: 600;
+}
+#faq .steps-list {
+  margin: 0;
+  list-style-type: none;
+}
+#faq .steps-list > li {
+  counter-increment: section;
+  margin-bottom: 0.5rem;
+}
+#faq .steps-list > li:before {
+  content: "[" counter(section) "] ";
 }

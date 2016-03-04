@@ -1,4 +1,27 @@
-.faq-contents {
-	list-style: none;
-	margin-left: 1.5rem;
+#faq {
+	color: $body-font-color;
+
+	.faq-contents {
+		list-style: none;
+		margin-left: 1.5rem;
+	}
+
+	.question {
+		color: #167AA2;
+		font-weight: 600;
+	}
+
+	.steps-list {
+		margin: 0;
+		list-style-type: none;
+
+		& > li {
+			counter-increment: section;
+			margin-bottom: 0.5rem;
+
+			&:before {
+				content: "[" counter(section) "] ";
+			}
+		}
+	}
 }
