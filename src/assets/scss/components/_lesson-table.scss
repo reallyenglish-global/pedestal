@@ -74,6 +74,16 @@ $booked-lesson-color: #e0f0f3;
 			background-image: url("../images/icons/reading.svg");
 		}
 
+		.download-icon {
+			height: 1.5rem;
+			width: 1.5rem;
+			background-size: 1.5rem 1.5rem;
+			background-repeat: no-repeat;
+			background-position: 50% 50%;
+			display: inline-block;
+			background-image: url("../images/icons/download.svg");
+		}
+
 
 		time {
 			strong {
