@@ -1,15 +1,24 @@
 #faq {
 	color: $body-font-color;
 
-	.show-answer {
+	%answer {
 		display: block;
-		background-image: url("../../assets/images/icons/plus.svg");
 		background-size: 1.5rem 1.5rem;
 		background-repeat: no-repeat;
 		background-position: 50% 50%;
 		height: 1.5rem;
 		width: 1.5rem;
 		cursor: pointer;
+	}
+
+	.show-answer {
+		@extend %answer;
+		background-image: url("../../assets/images/icons/plus.svg");
+	}
+
+	.hide-answer {
+		@extend %answer;
+		background-image: url("../../assets/images/icons/minus.svg");
 	}
 
 	.faq-heading {
