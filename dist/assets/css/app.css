@@ -4522,6 +4522,16 @@ div[id^="skypeModal"] .progress .progress-img.disabled h5 {
 #faq {
   color: #4e4e4e;
 }
+#faq .show-answer {
+  display: block;
+  background-image: url("../../assets/images/icons/plus.svg");
+  background-size: 1.5rem 1.5rem;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  height: 1.5rem;
+  width: 1.5rem;
+  cursor: pointer;
+}
 #faq .faq-heading {
   margin-bottom: 0;
 }
