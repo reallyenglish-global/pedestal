@@ -4535,6 +4535,9 @@ div[id^="skypeModal"] .progress .progress-img.disabled h5 {
   margin: 0;
   list-style-type: none;
 }
+#faq .steps-list .steps {
+  margin-bottom: 1.5rem;
+}
 #faq .steps-list > li {
   counter-increment: section;
   margin-bottom: 0.5rem;
