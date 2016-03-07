@@ -3732,10 +3732,6 @@ header .row,
   background-color: #fff;
 }
 
-#task-lesson-tabs {
-  margin-bottom: 1rem;
-}
-
 .progress[aria-valuenow="10"] .progress-meter {
   width: 10%;
 }
@@ -3982,6 +3978,9 @@ header .top-bar .menu-text a {
   padding: 0;
 }
 
+.tabs {
+  margin-bottom: 1.5rem;
+}
 .tabs .tabs-title > a.button {
   padding: 0.5em 1em;
 }
