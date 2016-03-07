@@ -38,5 +38,12 @@
 
     $(".show-answer").click(function() {
         $(this).closest(".row").siblings(".faq-answer").toggle();
+        $(this).toggleClass(function() {
+            if($(this).hasClass("show-answer")) {
+                return "hide-answer";
+            } else {
+                return "show-answer";
+            }
+        });
     });
 })();
