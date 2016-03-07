@@ -1024,7 +1024,7 @@ td {
 
 p {
   font-size: inherit;
-  line-height: 1.6;
+  line-height: 1.4;
   margin-bottom: 1rem;
   text-rendering: optimizeLegibility;
 }
@@ -1148,7 +1148,7 @@ hr {
 ul,
 ol,
 dl {
-  line-height: 1.6;
+  line-height: 1.4;
   margin-bottom: 1rem;
   list-style-position: outside;
 }
@@ -1185,7 +1185,7 @@ blockquote {
   border-left: 1px solid #cacaca;
 }
 blockquote, blockquote p {
-  line-height: 1.6;
+  line-height: 1.4;
   color: #8a8a8a;
 }
 
@@ -3732,10 +3732,6 @@ header .row,
   background-color: #fff;
 }
 
-#task-lesson-tabs {
-  margin-bottom: 1rem;
-}
-
 .progress[aria-valuenow="10"] .progress-meter {
   width: 10%;
 }
@@ -3982,6 +3978,9 @@ header .top-bar .menu-text a {
   padding: 0;
 }
 
+.tabs {
+  margin-bottom: 1.5rem;
+}
 .tabs .tabs-title > a.button {
   padding: 0.5em 1em;
 }
@@ -4118,6 +4117,9 @@ header .top-bar .menu-text a {
 }
 .panel-white.radius {
   border-radius: 2px;
+}
+.panel-white.bordered {
+  border: 1px solid #E5E5E4;
 }
 
 @media screen and (min-width: 0em) and (max-width: 39.9375em) {
@@ -4515,4 +4517,53 @@ div[id^="skypeModal"] .progress .progress-img.disabled h5 {
 }
 .teacher-panel .booking-row:nth-child(even) {
   background-color: #FFF;
+}
+
+#faq {
+  color: #4e4e4e;
+}
+#faq .show-answer {
+  display: block;
+  background-image: url("../../assets/images/icons/plus.svg");
+  background-size: 1.5rem 1.5rem;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  height: 1.5rem;
+  width: 1.5rem;
+  cursor: pointer;
+}
+#faq .faq-heading {
+  margin-bottom: 0;
+}
+#faq .faq-contents {
+  list-style: none;
+  margin: 0 0 0 1.5rem;
+}
+#faq .question {
+  color: #167AA2;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+#faq .faq-answer {
+  display: none;
+  margin-top: 1rem;
+}
+#faq .steps-list .step-heading {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
+#faq .steps-list .steps {
+  margin-bottom: 1.5rem;
+}
+#faq .dash-list {
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 1.25rem;
+}
+#faq .dash-list > li:before {
+  display: inline-block;
+  content: "-";
+  width: 1rem;
+  margin-left: -1rem;
 }

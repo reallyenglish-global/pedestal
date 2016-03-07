@@ -34,6 +34,9 @@
 
 	$(".show-feedback").click(function() {
 		$(this).parent().siblings().find(".assessment-feedback").toggle();
-	})
+	});
 
+    $(".show-answer").click(function() {
+        $(this).closest(".row").siblings(".faq-answer").toggle();
+    });
 })();
