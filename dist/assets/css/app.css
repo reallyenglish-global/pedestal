@@ -228,7 +228,7 @@ html {
 body {
   padding: 0;
   margin: 0;
-  font-family: "ProximaNova", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "ProximaNova", "Helvetica Neue", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Helvetica, Roboto, Arial, sans-serif;
   font-weight: normal;
   line-height: 1.5;
   color: #4e4e4e;
@@ -1052,7 +1052,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "ProximaNova", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "ProximaNova", "Helvetica Neue", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Helvetica, Roboto, Arial, sans-serif;
   font-weight: normal;
   font-style: normal;
   color: inherit;
