@@ -4,7 +4,7 @@ body {
 header .row,
 #body {
 	padding: 1rem 3rem;
-	max-width: 62.5rem;
+	max-width: $global-max-width;
 	margin: 0 auto;
 }
 
