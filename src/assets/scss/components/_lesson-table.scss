@@ -82,7 +82,6 @@ $booked-lesson-color: #e0f0f3;
 
 		.speaking-icon {
 			@extend %lesson-icon;
-			height: 2rem;
 			background-image: url("../images/icons/speaking.svg");
 		}
 
