@@ -3966,6 +3966,14 @@ header .top-bar {
   padding: 0 3rem;
   max-width: 62.5rem;
   margin: 0 auto;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+header .top-bar .menu li {
+  height: 2.5rem;
+}
+header .top-bar .menu li.current {
+  background-color: #888;
 }
 header .top-bar .menu-text,
 header .top-bar a {
@@ -3973,6 +3981,7 @@ header .top-bar a {
 }
 header .top-bar .menu-text {
   font-weight: 400;
+  font-size: 1rem;
 }
 header .top-bar .menu-text a {
   padding: 0;
