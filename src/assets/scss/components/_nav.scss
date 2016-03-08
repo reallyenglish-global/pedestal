@@ -13,6 +13,16 @@ header {
 		padding: 0 3rem;
 		max-width: 62.5rem;
 		margin: 0 auto;
+		font-size: 0.75rem;
+		font-weight: bold;
+
+		.menu li {
+			height: 2.5rem;
+
+			&.current {
+				background-color: #888;
+			}
+		}
 
 		.menu-text,
 		a {
@@ -21,7 +31,7 @@ header {
 
 		.menu-text {
 			font-weight: 400;
-
+			font-size: 1rem;
 			a {
 				padding: 0;
 			}
