@@ -22,7 +22,7 @@ div[id^="bookModal"] {
 div[id^="skypeModal"] {
 
 	$progress-img-dimension: 3.5rem;
-	max-width: 62.5rem;
+	max-width: $global-max-width;
 
 	.nav-row {
 		margin-top: 1.5rem;

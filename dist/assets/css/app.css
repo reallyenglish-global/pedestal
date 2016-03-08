@@ -3718,7 +3718,7 @@ body {
 header .row,
 #body {
   padding: 1rem 3rem;
-  max-width: 62.5rem;
+  max-width: 70.5rem;
   margin: 0 auto;
 }
 
@@ -3964,7 +3964,7 @@ header .title-bar {
 }
 header .top-bar {
   padding: 0 3rem;
-  max-width: 62.5rem;
+  max-width: 70.5rem;
   margin: 0 auto;
   font-size: 0.75rem;
   font-weight: bold;
@@ -4159,7 +4159,7 @@ div[id^="bookModal"] .teacher-name {
 }
 
 div[id^="skypeModal"] {
-  max-width: 62.5rem;
+  max-width: 70.5rem;
 }
 div[id^="skypeModal"] .nav-row {
   margin-top: 1.5rem;
@@ -4238,7 +4238,7 @@ div[id^="skypeModal"] .progress .progress-img.disabled h5 {
 }
 .footer {
   padding-bottom: 2rem;
-  max-width: 62.5rem;
+  max-width: 70.5rem;
   margin: 0 auto;
 }
 .footer small {
