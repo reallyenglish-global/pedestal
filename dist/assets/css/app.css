@@ -4293,7 +4293,7 @@ div[id^="skypeModal"] .progress .progress-img.disabled h5 {
   border-radius: 50%;
   margin-right: 0.5rem;
 }
-.lesson-table .lesson-row .grammar-icon, .lesson-table .lesson-row .listening-icon, .lesson-table .lesson-row .reading-icon {
+.lesson-table .lesson-row .grammar-icon, .lesson-table .lesson-row .listening-icon, .lesson-table .lesson-row .reading-icon, .lesson-table .lesson-row .speaking-icon {
   height: 2.5rem;
   width: 2.5rem;
   background-size: 2.5rem 2.5rem;
@@ -4309,6 +4309,10 @@ div[id^="skypeModal"] .progress .progress-img.disabled h5 {
 }
 .lesson-table .lesson-row .reading-icon {
   background-image: url("../images/icons/reading.svg");
+}
+.lesson-table .lesson-row .speaking-icon {
+  height: 2rem;
+  background-image: url("../images/icons/speaking.svg");
 }
 .lesson-table .lesson-row .download-icon {
   height: 1.5rem;
