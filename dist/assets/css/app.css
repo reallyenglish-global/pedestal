@@ -3786,20 +3786,6 @@ button.button.light-grey[aria-selected="true"] {
   background-color: #C7C7C7;
   box-shadow: inset 1px 1px 3px #8E8C8C;
 }
-a.button.light-grey.bookmark-icon,
-button.button.light-grey.bookmark-icon {
-  background-image: url(../images/icons/bookmark.svg);
-  background-size: 1rem 1rem;
-  background-repeat: no-repeat;
-  background-position: 10px 50%;
-}
-a.button.light-grey.lamp-icon,
-button.button.light-grey.lamp-icon {
-  background-image: url(../images/icons/lamp.svg);
-  background-size: 1rem 1rem;
-  background-repeat: no-repeat;
-  background-position: 10px 50%;
-}
 a.button.light-grey:hover,
 button.button.light-grey:hover {
   background-color: #cfcfcf;
@@ -3828,39 +3814,9 @@ button.button.small {
   width: 1rem;
   display: inline-block;
 }
-a.button.small.close,
-button.button.small.close {
-  background-image: url(../images/icons/close-icon.svg);
-  background-size: 0.75rem 0.75rem;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-}
 a.button.circle,
 button.button.circle {
   border-radius: 50%;
-}
-a.button.circle.help,
-button.button.circle.help {
-  background-image: url(../images/icons/question.svg);
-  background-size: 0.75rem 0.75rem;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  padding: 0.75rem;
-}
-a.button.arrow-down,
-button.button.arrow-down {
-  background-image: url(../images/icons/arrow-down.svg);
-  background-size: 0.5rem 0.5rem;
-  background-repeat: no-repeat;
-}
-a.button.arrow-down.on-right,
-button.button.arrow-down.on-right {
-  background-position: 91% 50%;
-  padding-right: 2rem;
-}
-a.button.arrow-down.center,
-button.button.arrow-down.center {
-  background-position: 50% 50%;
 }
 a.button.grey,
 button.button.grey {
@@ -3890,13 +3846,6 @@ button.button.blue {
   background-color: #9bcbde;
   color: #FFF;
 }
-a.button.tick,
-button.button.tick {
-  background-image: url(../images/icons/white-tick.svg);
-  background-size: 1rem 1rem;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-}
 a.button .title,
 a.button .sub-text,
 button.button .title,
@@ -3911,6 +3860,94 @@ button.button .title {
 a.button .sub-text,
 button.button .sub-text {
   font-size: 0.75rem;
+}
+
+.close {
+  background-image: url(../images/icons/close-icon.svg);
+  background-size: 0.75rem 0.75rem;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.help {
+  background-image: url(../images/icons/question.svg);
+  background-size: 0.75rem 0.75rem;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  padding: 0.75rem;
+}
+
+.arrow-down {
+  background-image: url(../images/icons/arrow-down.svg);
+  background-size: 0.5rem 0.5rem;
+  background-repeat: no-repeat;
+}
+.arrow-down.on-right {
+  background-position: 91% 50%;
+  padding-right: 2rem;
+}
+.arrow-down.center {
+  background-position: 50% 50%;
+}
+
+.tick {
+  background-image: url(../images/icons/white-tick.svg);
+  background-size: 1rem 1rem;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.grammar-icon, .listening-icon, .reading-icon, .speaking-icon {
+  height: 2.5rem;
+  width: 2.5rem;
+  background-size: 2.5rem 2.5rem;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  display: inline-block;
+}
+
+.grammar-icon {
+  background-image: url("../images/icons/grammar.svg");
+}
+
+.listening-icon {
+  background-image: url("../images/icons/listening.svg");
+}
+
+.reading-icon {
+  background-image: url("../images/icons/reading.svg");
+}
+
+.speaking-icon {
+  background-image: url("../images/icons/speaking.svg");
+}
+
+.download-icon {
+  height: 1.5rem;
+  width: 1.5rem;
+  background-size: 1.5rem 1.5rem;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  display: inline-block;
+  background-image: url("../images/icons/download.svg");
+}
+
+.show-answer, .hide-answer {
+  display: block;
+  background-size: 1.5rem 1.5rem;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  height: 1.5rem;
+  width: 1.5rem;
+  cursor: pointer;
+}
+
+.show-answer {
+  background-image: url("../../assets/images/icons/plus.svg");
+}
+
+.hide-answer {
+  background-image: url("../../assets/images/icons/minus.svg");
 }
 
 form .is-invalid-input:not(:focus) {
@@ -3976,6 +4013,26 @@ header .top-bar .menu-text a {
 }
 .tabs .tabs-title > a.button {
   padding: 0.5em 1em;
+}
+.tabs #booked-lessons-button .bookmark-icon, .tabs #study-tasks-button .lamp-icon {
+  background-size: 1rem 1rem;
+  height: 1rem;
+  width: 1rem;
+  display: inline-block;
+  background-repeat: no-repeat;
+  margin-right: 0.5rem;
+}
+.tabs #booked-lessons-button {
+  text-align: left;
+}
+.tabs #booked-lessons-button .bookmark-icon {
+  background-image: url(../images/icons/bookmark.svg);
+}
+.tabs #study-tasks-button {
+  text-align: left;
+}
+.tabs #study-tasks-button .lamp-icon {
+  background-image: url(../images/icons/lamp.svg);
 }
 
 .tabs-content.callout {
@@ -4278,35 +4335,6 @@ div[id^="skypeModal"] .progress .progress-img.disabled h5 {
   border-radius: 50%;
   margin-right: 0.5rem;
 }
-.lesson-table .lesson-row .grammar-icon, .lesson-table .lesson-row .listening-icon, .lesson-table .lesson-row .reading-icon, .lesson-table .lesson-row .speaking-icon {
-  height: 2.5rem;
-  width: 2.5rem;
-  background-size: 2.5rem 2.5rem;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  display: inline-block;
-}
-.lesson-table .lesson-row .grammar-icon {
-  background-image: url("../images/icons/grammar.svg");
-}
-.lesson-table .lesson-row .listening-icon {
-  background-image: url("../images/icons/listening.svg");
-}
-.lesson-table .lesson-row .reading-icon {
-  background-image: url("../images/icons/reading.svg");
-}
-.lesson-table .lesson-row .speaking-icon {
-  background-image: url("../images/icons/speaking.svg");
-}
-.lesson-table .lesson-row .download-icon {
-  height: 1.5rem;
-  width: 1.5rem;
-  background-size: 1.5rem 1.5rem;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  display: inline-block;
-  background-image: url("../images/icons/download.svg");
-}
 .lesson-table .lesson-row time strong {
   margin-left: 0.75rem;
 }
@@ -4523,21 +4551,6 @@ div[id^="skypeModal"] .progress .progress-img.disabled h5 {
 
 #faq {
   color: #4e4e4e;
-}
-#faq .show-answer, #faq .hide-answer {
-  display: block;
-  background-size: 1.5rem 1.5rem;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  height: 1.5rem;
-  width: 1.5rem;
-  cursor: pointer;
-}
-#faq .show-answer {
-  background-image: url("../../assets/images/icons/plus.svg");
-}
-#faq .hide-answer {
-  background-image: url("../../assets/images/icons/minus.svg");
 }
 #faq .faq-heading {
   margin-bottom: 0;

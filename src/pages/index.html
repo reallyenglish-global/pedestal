@@ -1,14 +1,20 @@
 <div id="body">
 	<div class="row tabs medium-unstack" data-tabs="" id="task-lesson-tabs">
 		<div class="medium-6 large-3 columns col-wrap-margin tabs-title is-active">
-			<a href="#study-tasks" class="button light-grey round active lamp-icon left expanded" id="study-tasks-button" aria-selected="true">Study tasks</a>
+			<a href="#study-tasks" class="button light-grey round active expanded text-left" id="study-tasks-button" aria-selected="true">
+				<span class="lamp-icon"></span>
+				Study tasks
+			</a>
 		</div>
 		<div class="medium-6 large-3 columns tabs-title">
-			<a href="#booked-lessons" class="button light-grey round bookmark-icon left expanded" id="booked-lessons-button">Booked Lessons</a>
+		<a href="#booked-lessons" class="button light-grey round expanded text-left" id="booked-lessons-button">
+				<span class="bookmark-icon"></span>
+				Booked Lessons
+			</a>
 		</div>
 	</div>
 	<div class="callout tabs-content" data-tabs-content="task-lesson-tabs">
-	{{> booked-lessons-panel}}
-	{{> study-tasks-panel}}
+		{{> booked-lessons-panel}}
+		{{> study-tasks-panel}}
 	</div>
 </div>
