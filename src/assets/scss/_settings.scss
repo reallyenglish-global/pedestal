@@ -107,7 +107,7 @@ $grid-column-responsive-gutter: (
 // $header-font-weight: $global-weight-normal;
 // $header-font-style: normal;
 // $font-family-monospace: Consolas, 'Liberation Mono', Courier, monospace;
-// $header-sizes: (
+$header-sizes: (
 //   small: (
 //     'h1': 24,
 //     'h2': 20,
@@ -116,19 +116,20 @@ $grid-column-responsive-gutter: (
 //     'h5': 17,
 //     'h6': 16,
 //   ),
-//   medium: (
-//     'h1': 48,
-//     'h2': 40,
-//     'h3': 31,
-//     'h4': 25,
-//     'h5': 20,
-//     'h6': 16,
-//   ),
-// );
+  medium: (
+    'h1': 48,
+    'h2': 40,
+    'h3': 28.8,
+    'h4': 25,
+    'h5': 20,
+    'h6': 16,
+  ),
+);
 // $header-color: inherit;
 // $header-lineheight: 1.4;
 $header-margin-bottom: 1rem;
 // $header-text-rendering: optimizeLegibility;
+$header-alt-color: #678b9f;
 // $small-font-size: 80%;
 // $header-small-font-color: $medium-gray;
 $paragraph-lineheight: 1.4;
