@@ -1071,30 +1071,6 @@ h6 small {
   line-height: 0;
 }
 
-h1 {
-  font-size: 1.5rem;
-}
-
-h2 {
-  font-size: 1.25rem;
-}
-
-h3 {
-  font-size: 1.1875rem;
-}
-
-h4 {
-  font-size: 1.125rem;
-}
-
-h5 {
-  font-size: 1.0625rem;
-}
-
-h6 {
-  font-size: 1rem;
-}
-
 @media screen and (min-width: 40em) {
   h1 {
     font-size: 3rem;
@@ -1105,7 +1081,7 @@ h6 {
   }
 
   h3 {
-    font-size: 1.9375rem;
+    font-size: 1.8rem;
   }
 
   h4 {
@@ -3784,6 +3760,10 @@ a.grey {
 
 .right {
   text-align: right;
+}
+
+.intro {
+  font-size: 1.2rem;
 }
 
 a.button,
