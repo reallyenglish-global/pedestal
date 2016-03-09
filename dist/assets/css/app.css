@@ -3762,8 +3762,12 @@ a.grey {
   text-align: right;
 }
 
-.intro {
+p.intro {
   font-size: 1.2rem;
+}
+
+h1.alt, h2.alt, h3.alt, h4.alt, h5.alt, h6.alt {
+  color: #167AA2;
 }
 
 a.button,
@@ -4511,6 +4515,10 @@ div[id^="skypeModal"] .progress .progress-img.disabled h5 {
 }
 .teacher-panel .booking-row:nth-child(even) {
   background-color: #FFF;
+}
+
+#get-started img.bordered {
+  border: 2px solid #929497;
 }
 
 #faq {
