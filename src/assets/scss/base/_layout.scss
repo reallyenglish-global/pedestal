@@ -1,7 +1,8 @@
 body {
 	background-color: #E5E5E5;
 }
-header .row,
+
+.header-row > .row,
 #body {
 	padding: 1rem 3rem;
 	max-width: $global-max-width;
