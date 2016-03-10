@@ -3691,7 +3691,7 @@ body {
   background-color: #E5E5E5;
 }
 
-header .row,
+.header-row > .row,
 #body {
   padding: 1rem 3rem;
   max-width: 70.5rem;
@@ -4184,6 +4184,38 @@ header .top-bar .menu-text a {
 }
 .panel-white.bordered {
   border: 1px solid #E5E5E4;
+}
+
+.credit-status-panel {
+  margin: 0 0 1rem 0;
+  padding: 1.25rem;
+  border: none;
+  border-radius: 0;
+  position: relative;
+  color: #4e4e4e;
+  background-color: #f3f3f3;
+  margin: 0;
+  border: 1px solid #dddddc;
+}
+.credit-status-panel > :first-child {
+  margin-top: 0;
+}
+.credit-status-panel > :last-child {
+  margin-bottom: 0;
+}
+.credit-status-panel h6 {
+  margin: 0;
+  color: #989898;
+}
+.credit-status-panel.row {
+  padding: 0.5rem 0;
+}
+.credit-status-panel .status {
+  font-size: 2rem;
+  color: #58595b;
+}
+.credit-status-panel .remaining-panel:first-child {
+  border-right: 1px solid #e7e8e9;
 }
 
 @media screen and (min-width: 0em) and (max-width: 39.9375em) {

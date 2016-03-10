@@ -41,9 +41,9 @@ $comment-header-height: 3rem;
       margin-bottom: 0;
     }
 
-  	.avatar, .name {
-  		display: inline-block;
-  	}
+    .avatar, .name {
+      display: inline-block;
+    }
 
     .avatar {
       max-height: $comment-header-height - 0.5rem;
@@ -84,12 +84,38 @@ $comment-header-height: 3rem;
   }
 }
 
+.credit-status-panel {
+  @include callout();
+  margin: 0;
+  border: 1px solid #dddddc;
+
+  h6 {
+    margin: 0;
+    color: #989898;
+  }
+
+  &.row {
+    padding: 0.5rem 0;
+  }
+
+  .status {
+    font-size: 2rem;
+    color: #58595b;
+  }
+
+  .remaining-panel {
+    &:first-child {
+      border-right: 1px solid #e7e8e9;
+    }
+  }
+}
+
 @include breakpoint(small only) {
   .comment-box {
     .comment-section {
       .score h5 {
-      text-align: left;
-    }
+        text-align: left;
+      }
     }
   }
 
