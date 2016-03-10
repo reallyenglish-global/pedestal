@@ -4014,13 +4014,25 @@ header .top-bar .menu-text a {
 .tabs .tabs-title > a.button {
   padding: 0.5em 1em;
 }
-.tabs #booked-lessons-button .bookmark-icon, .tabs #study-tasks-button .lamp-icon {
+.tabs #get-started-button .get-started-icon, .tabs #faq-button .faq-icon, .tabs #booked-lessons-button .bookmark-icon, .tabs #study-tasks-button .lamp-icon {
   background-size: 1rem 1rem;
   height: 1rem;
   width: 1rem;
   display: inline-block;
   background-repeat: no-repeat;
   margin-right: 0.5rem;
+}
+.tabs #get-started-button {
+  text-align: left;
+}
+.tabs #get-started-button .get-started-icon {
+  background-image: url(../images/icons/get-started.svg);
+}
+.tabs #faq-button {
+  text-align: left;
+}
+.tabs #faq-button .faq-icon {
+  background-image: url(../images/icons/faq-question.svg);
 }
 .tabs #booked-lessons-button {
   text-align: left;

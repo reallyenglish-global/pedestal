@@ -57,6 +57,24 @@ header {
 			margin-right: 0.5rem;
 	}
 
+	#get-started-button {
+		text-align: left;
+
+		.get-started-icon {
+			@extend %tab-icon;
+			background-image: url(../images/icons/get-started.svg);
+		}
+	}
+
+	#faq-button {
+		text-align: left;
+
+		.faq-icon {
+			@extend %tab-icon;
+			background-image: url(../images/icons/faq-question.svg);
+		}
+	}
+
 	#booked-lessons-button {
 		text-align: left;
 
