@@ -3877,6 +3877,16 @@ button.button .sub-text {
   padding: 0.75rem;
 }
 
+.star {
+  background-image: url(../images/icons/star.svg);
+  display: inline-block;
+  background-size: 0.75rem 0.75rem;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  height: 0.7rem;
+  width: 0.8rem;
+}
+
 .arrow-down {
   background-image: url(../images/icons/arrow-down.svg);
   background-size: 0.5rem 0.5rem;
@@ -3898,9 +3908,9 @@ button.button .sub-text {
 }
 
 .grammar-icon, .listening-icon, .reading-icon, .speaking-icon {
-  height: 2.5rem;
-  width: 2.5rem;
-  background-size: 2.5rem 2.5rem;
+  height: 2.3rem;
+  width: 2.3rem;
+  background-size: 2.2rem 2.2rem;
   background-repeat: no-repeat;
   background-position: 50% 50%;
   display: inline-block;
@@ -3919,6 +3929,8 @@ button.button .sub-text {
 }
 
 .speaking-icon {
+  height: 1.4rem;
+  background-size: 2rem 2rem;
   background-image: url("../images/icons/speaking.svg");
 }
 
@@ -4382,13 +4394,11 @@ div[id^="skypeModal"] .progress .progress-img.disabled h5 {
 }
 .lesson-table .lesson-row .rating {
   display: inline-block;
+  vertical-align: top;
 }
 .lesson-table .lesson-row .rating .comment {
   display: inline-block;
   margin: 0 0 0 0.5rem;
-}
-.lesson-table .lesson-row .rating .star {
-  color: #f0CC6E;
 }
 .lesson-table .lesson-row .show-feedback {
   border-top-right-radius: 5px;

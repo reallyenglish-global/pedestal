@@ -13,6 +13,16 @@
 	padding: 0.75rem;
 }
 
+.star {
+	background-image: url(../images/icons/star.svg);
+	display: inline-block;
+	background-size: 0.75rem 0.75rem;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	height: 0.7rem;
+	width: 0.8rem;
+}
+
 .arrow-down {
 	background-image: url(../images/icons/arrow-down.svg);
 	background-size: 0.5rem 0.5rem;
@@ -36,9 +46,9 @@
 }
 
 %lesson-icon {
-	height: 2.5rem;
-	width: 2.5rem;
-	background-size: 2.5rem 2.5rem;
+	height: 2.3rem;
+	width: 2.3rem;
+	background-size: 2.2rem 2.2rem;
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
 	display: inline-block;
@@ -61,6 +71,8 @@
 
 .speaking-icon {
 	@extend %lesson-icon;
+	height: 1.4rem;
+	background-size: 2rem 2rem;
 	background-image: url("../images/icons/speaking.svg");
 }
 
