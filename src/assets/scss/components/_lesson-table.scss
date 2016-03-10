@@ -25,12 +25,9 @@ $booked-lesson-color: #e0f0f3;
 		}
 	}
 
-	.lesson-header {
-		margin: 1rem 0;
-	}
-
 	.lesson-button-row {
 		background-color: $callout-background;
+		margin-bottom: 1.5rem;
 
 		div.tabs-title:first-child {
 			padding-left: 0;
