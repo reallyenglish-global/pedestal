@@ -13,6 +13,16 @@
 	padding: 0.75rem;
 }
 
+.star {
+	background-image: url(../images/icons/star.svg);
+	display: inline-block;
+	background-size: 0.75rem 0.75rem;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	height: 0.7rem;
+	width: 0.8rem;
+}
+
 .arrow-down {
 	background-image: url(../images/icons/arrow-down.svg);
 	background-size: 0.5rem 0.5rem;
