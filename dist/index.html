@@ -167,295 +167,317 @@
 	<div id="body">
 		<div class="row tabs medium-unstack" data-tabs="" id="task-lesson-tabs">
 			<div class="medium-6 large-3 columns col-wrap-margin tabs-title is-active">
-				<a href="#study-tasks" class="button light-grey round active lamp-icon left expanded" id="study-tasks-button" aria-selected="true">Study tasks</a>
+				<a href="#study-tasks" class="button light-grey round active expanded text-left" id="study-tasks-button" aria-selected="true">
+					<span class="lamp-icon"></span>
+					Study tasks
+				</a>
 			</div>
 			<div class="medium-6 large-3 columns tabs-title">
-				<a href="#booked-lessons" class="button light-grey round bookmark-icon left expanded" id="booked-lessons-button">Booked Lessons</a>
+			<a href="#booked-lessons" class="button light-grey round expanded text-left" id="booked-lessons-button">
+					<span class="bookmark-icon"></span>
+					Booked Lessons
+				</a>
 			</div>
 		</div>
 		<div class="callout tabs-content" data-tabs-content="task-lesson-tabs">
-		<div class="tabs-panel" id="booked-lessons">
-			<div class="lesson-table">
-				<div class="tabs lesson-button-row radius row" data-tabs="" id="lesson-table-tabs">
-					<div class="columns tabs-title is-active">
-						<a href="#current-bookings-panel" aria-selected="true" id="current-bookings-button" class="button white">Current bookings</a>
-					</div>
-					<div class="columns tabs-title">
-						<a href="#completed-lessons-panel" id="completed-lessons-button" class="button white">Completed</a>
-					</div>
-					<div class="columns tabs-title">
-						<a href="#incompleted-lessons-panel" id="incompleted-lessons-button" class="button white">Incompleted</a>
-					</div>
-					<div class="columns tabs-title">
-						<a href="#cancelled-lessons-panel" id="cancelled-lessons-button" class="button white">Cancelled</a>
-					</div>
-				</div>
-				<div class="lesson-header panel-white radius row show-for-medium">
-					<div class="medium-2 columns">Type</div>
-					<div class="medium-3 columns">Lesson Name</div>
-					<div class="medium-2 columns">Category</div>
-					<div class="medium-2 columns">Topic</div>
-				</div>
-		
-				<div class="tabs-content" data-tabs-content="lesson-table-tabs">
-					<div id="current-bookings-panel" class="tabs-panel lesson-set is-active">
-						<div class="row">
-							<div class="shrink columns lesson-label">Lesson 1</div>
+			<div class="tabs-panel" id="booked-lessons">
+				<div class="lesson-table">
+					<div class="tabs lesson-button-row radius row" data-tabs="" id="lesson-table-tabs">
+						<div class="columns tabs-title is-active">
+							<a href="#current-bookings-panel" aria-selected="true" id="current-bookings-button" class="button white">Current bookings</a>
 						</div>
-						<div class="panel-white radius row medium-unstack small-collapse medium-uncollapse lesson-row">
-							<div class="medium-2 columns">Speaking</div>
-							<div class="medium-3 columns title"><strong>Good Food</strong></div>
-							<div class="medium-2 columns">Grammar</div>
-							<div class="medium-2 columns"></div>
-							<div class="medium-3 small-collapse large-uncollapse columns align-right">
-								<a href="#" class="bold">Download PDF</a>
-							</div>
+						<div class="columns tabs-title">
+							<a href="#completed-lessons-panel" id="completed-lessons-button" class="button white">Completed</a>
 						</div>
-						<div class="panel-white radius row medium-unstack small-collapse medium-uncollapse lesson-row highlight-blue">
-							<div class="medium-2 columns">
-								<img class="avatar" src="assets/images/avatar.png">
-								Simon
-							</div>
-							<div class="medium-3 columns title"></div>
-							<div class="medium-4 columns">
-								<div class="calendar-icon"></div>
-								<time>14:30pm <strong>Fri 2 July 2016</strong></time>
-							</div>
-							<div class="medium-3 small-collapse large-uncollapse columns align-right">
-								<a href="#" class="grey underline bold">Cancel</a>
-							</div>
+						<div class="columns tabs-title">
+							<a href="#incompleted-lessons-panel" id="incompleted-lessons-button" class="button white">Incompleted</a>
+						</div>
+						<div class="columns tabs-title">
+							<a href="#cancelled-lessons-panel" id="cancelled-lessons-button" class="button white">Cancelled</a>
 						</div>
 					</div>
-					<div id="completed-lessons-panel" class="tabs-panel lesson-set">
-						<div class="row">
-							<div class="shrink columns lesson-label">Lesson 1</div>
-						</div>
-						<div class="panel-white radius row medium-unstack small-collapse medium-uncollapse lesson-row">
-							<div class="medium-2 columns">Speaking</div>
-							<div class="medium-3 columns title"><strong>Good Food</strong></div>
-							<div class="medium-4 columns">Grammar</div>
-							<div class="medium-3 small-collapse large-uncollapse columns align-right">
-								<a href="#" class="bold">Download PDF</a>
+					<div class="lesson-header panel-white radius row show-for-medium">
+						<div class="medium-2 columns">Type</div>
+						<div class="medium-3 columns">Lesson Name</div>
+						<div class="medium-2 columns">Category</div>
+						<div class="medium-2 columns">Topic</div>
+					</div>
+			
+					<div class="tabs-content" data-tabs-content="lesson-table-tabs">
+						<div id="current-bookings-panel" class="tabs-panel lesson-set is-active">
+							<div class="row">
+								<div class="shrink columns lesson-label">Lesson 1</div>
 							</div>
-						</div>
-						<div class="panel-white radius row align-middle small-collapse medium-uncollapse lesson-row highlight-green">
-							<div class="medium-2 columns">
-								<img class="avatar" src="assets/images/avatar.png">
-								Simon
+							<div class="panel-white radius row medium-unstack small-collapse medium-uncollapse lesson-row">
+								<div class="medium-2 columns">Speaking</div>
+								<div class="medium-3 columns title"><strong>Good Food</strong></div>
+								<div class="medium-2 columns">Grammar</div>
+								<div class="medium-2 columns"></div>
+								<div class="medium-3 small-collapse large-uncollapse columns align-right">
+									<a href="#" class="bold">Download PDF</a>
+								</div>
 							</div>
-							<div class="medium-3 columns rating">
-								<span class="star">&#9733;</span>
-								<span class="star">&#9733;</span>
-								<span class="star">&#9733;</span>
-								<p class="comment">Excellent</p>
-							</div>
-							<div class="medium-4 columns">
-								<div class="icon tick-icon"></div>
-								<time>Fri 2 July 2016</time>
-							</div>
-							<div class="medium-3 columns align-bottom align-right">
-								<button type="button" class="button yellow arrow-down on-right show-feedback">Show feedback</button>
-							</div>
-							<div class="medium-12 columns">
-								<div class="assessment-feedback">
-									Book/Topic:ReallyEnglish - EZ to Talk Basic.5 - Taking Business Trips Vocabulary/Expressions: 1. Nigel is staying at the Holiday Inn. 2. My assistant is meeting our client at the airport now. 3. Your secretary is booking your tickets now. 4. Our clients are taking us out to dinner now. 5. She is traveling to London at the moment. Focus: 1. Present Continuous: be + verb + -ing for actions happening now or around now 2. Expressing ideas based on the language focus 3. Constructing sentences using the expressions 4. Practice the expressions in different situations Next topic:EZ to Talk – Basic.6 Good food Evaluation: Remarks: Book/Topic:ReallyEnglish - EZ to Talk Basic.6 - Good food Vocabulary/Expressions: 1. delicious: >> This cake is delicious. 2. fresh: >> I like to eat fresh food. 3. healthy: >> That meal looks healthy. 4. fried: >> I am trying not to eat fried food. 5. boiled: >> I have heard that boiled carrots are healthier than raw carrots. 6. plate: >> That plate of food looks wonderful. 7. taste: >> How does it taste? 8. fast food: >> Sometimes fast food is the only option for lunch. 9. microwave meal: >> I bought a microwave meal for dinner. 10. drink: >> What drink would you like? Focus: 1. Expressing ideas based on the language focus 2. Constructing sentences using the expressions 3. Practice the expressions in different situations Next topic:EZ to Talk – Basic.7 Healthy habits Evaluation: Remarks:
+							<div class="panel-white radius row medium-unstack small-collapse medium-uncollapse lesson-row highlight-blue">
+								<div class="medium-2 columns">
+									<img class="avatar" src="assets/images/avatar.png">
+									Simon
+								</div>
+								<div class="medium-3 columns title"></div>
+								<div class="medium-4 columns">
+									<div class="calendar-icon"></div>
+									<time>14:30pm <strong>Fri 2 July 2016</strong></time>
+								</div>
+								<div class="medium-3 small-collapse large-uncollapse columns align-right">
+									<a href="#" class="grey underline bold">Cancel</a>
 								</div>
 							</div>
 						</div>
-						<div class="panel-white radius row medium-unstack small-collapse medium-uncollapse lesson-row">
-							<div class="medium-2 columns">Speaking</div>
-							<div class="medium-3 columns title"><strong>Good Food</strong></div>
-							<div class="medium-4 columns">Grammar</div>
-							<div class="medium-3 small-collapse large-uncollapse columns align-right">
-								<a href="#" class="bold">Download PDF</a>
+						<div id="completed-lessons-panel" class="tabs-panel lesson-set">
+							<div class="row">
+								<div class="shrink columns lesson-label">Lesson 1</div>
+							</div>
+							<div class="panel-white radius row medium-unstack small-collapse medium-uncollapse lesson-row">
+								<div class="medium-2 columns">Speaking</div>
+								<div class="medium-3 columns title"><strong>Good Food</strong></div>
+								<div class="medium-4 columns">Grammar</div>
+								<div class="medium-3 small-collapse large-uncollapse columns align-right">
+									<a href="#" class="bold">Download PDF</a>
+								</div>
+							</div>
+							<div class="panel-white radius row align-middle small-collapse medium-uncollapse lesson-row highlight-green">
+								<div class="medium-2 columns">
+									<img class="avatar" src="assets/images/avatar.png">
+									Simon
+								</div>
+								<div class="medium-3 columns rating">
+									<span class="star">&#9733;</span>
+									<span class="star">&#9733;</span>
+									<span class="star">&#9733;</span>
+									<p class="comment">Excellent</p>
+								</div>
+								<div class="medium-4 columns">
+									<div class="icon tick-icon"></div>
+									<time>Fri 2 July 2016</time>
+								</div>
+								<div class="medium-3 columns align-bottom align-right">
+									<button type="button" class="button yellow arrow-down on-right show-feedback">Show feedback</button>
+								</div>
+								<div class="medium-12 columns">
+									<div class="assessment-feedback">
+										Book/Topic:ReallyEnglish - EZ to Talk Basic.5 - Taking Business Trips Vocabulary/Expressions: 1. Nigel is staying at the Holiday Inn. 2. My assistant is meeting our client at the airport now. 3. Your secretary is booking your tickets now. 4. Our clients are taking us out to dinner now. 5. She is traveling to London at the moment. Focus: 1. Present Continuous: be + verb + -ing for actions happening now or around now 2. Expressing ideas based on the language focus 3. Constructing sentences using the expressions 4. Practice the expressions in different situations Next topic:EZ to Talk – Basic.6 Good food Evaluation: Remarks: Book/Topic:ReallyEnglish - EZ to Talk Basic.6 - Good food Vocabulary/Expressions: 1. delicious: >> This cake is delicious. 2. fresh: >> I like to eat fresh food. 3. healthy: >> That meal looks healthy. 4. fried: >> I am trying not to eat fried food. 5. boiled: >> I have heard that boiled carrots are healthier than raw carrots. 6. plate: >> That plate of food looks wonderful. 7. taste: >> How does it taste? 8. fast food: >> Sometimes fast food is the only option for lunch. 9. microwave meal: >> I bought a microwave meal for dinner. 10. drink: >> What drink would you like? Focus: 1. Expressing ideas based on the language focus 2. Constructing sentences using the expressions 3. Practice the expressions in different situations Next topic:EZ to Talk – Basic.7 Healthy habits Evaluation: Remarks:
+									</div>
+								</div>
+							</div>
+							<div class="panel-white radius row medium-unstack small-collapse medium-uncollapse lesson-row">
+								<div class="medium-2 columns">Speaking</div>
+								<div class="medium-3 columns title"><strong>Good Food</strong></div>
+								<div class="medium-4 columns">Grammar</div>
+								<div class="medium-3 small-collapse large-uncollapse columns align-right">
+									<a href="#" class="bold">Download PDF</a>
+								</div>
+							</div>
+							<div class="panel-white radius row align-middle small-collapse medium-uncollapse lesson-row highlight-green">
+								<div class="medium-2 columns">
+									<img class="avatar" src="assets/images/avatar.png">
+									Simon
+								</div>
+								<div class="medium-3 columns rating">
+									<span class="star">&#9733;</span>
+									<span class="star">&#9733;</span>
+									<span class="star">&#9733;</span>
+									<p class="comment">Excellent</p>
+								</div>
+								<div class="medium-4 columns">
+									<div class="icon tick-icon"></div>
+									<time>Fri 2 July 2016</time>
+								</div>
+								<div class="medium-3 columns align-bottom align-right">
+								</div>
 							</div>
 						</div>
-						<div class="panel-white radius row align-middle small-collapse medium-uncollapse lesson-row highlight-green">
-							<div class="medium-2 columns">
+						<div id="incompleted-lessons-panel" class="tabs-panel lesson-set">
+							<div class="panel-white radius row medium-unstack small-collapse medium-uncollapse lesson-row align-middle">
+								<div class="medium-1 columns">
+									<span class="speaking-icon"></span>
+								</div>
+								<div class="medium-11 columns">
+									[Consumed ticket] Canceled before 23 minutes (by student)
+								</div>
+							</div>
+							<div class="panel-white radius row medium-unstack small-collapse medium-uncollapse lesson-row highlight-orange">
+								<div class="medium-4 medium-offset-1 columns">
+									<img class="avatar" src="assets/images/avatar.png">
+									Lesson with Simon
+								</div>
+								<div class="medium-4 columns">
+									<div class="incomplete-icon"></div>
+									<time>Mon 25 June 2016</time>
+								</div>
+								<div class="medium-3 remark columns align-right">Student absent</div>
+							</div>
+						</div>
+						<div id="cancelled-lessons-panel" class="tabs-panel lesson-set">
+							<div class="panel-white radius row medium-unstack small-collapse medium-uncollapse lesson-row align-middle">
+								<div class="medium-1 columns">
+									<span class="speaking-icon"></span>
+								</div>
+								<div class="medium-11 columns">
+									[Consumed ticket] Canceled before 23 minutes (by student)
+								</div>
+							</div>
+							<div class="panel-white radius row medium-unstack small-collapse medium-uncollapse lesson-row highlight-purple">
+								<div class="medium-offset-1 medium-4 columns">
+									<img class="avatar" src="assets/images/avatar.png">
+									Lesson with Simon
+								</div>
+								<div class="medium-4 columns">
+									<div class="cancel-icon"></div>
+									<time>Mon 25 June 2016</time>
+								</div>
+								<div class="medium-3 remark columns align-right">Student absent</div>
+							</div>
+						</div>
+			
+					</div>
+			
+				</div>
+			</div>
+			<div class="tabs-panel is-active" id="study-tasks">
+				<div class="callout primary panel-booking">
+					<div class="small-12 columns">
+						<h4 class="bold">What to do next</h4>
+					</div>
+					<div class="row medium-unstack align-middle">
+						<div class="medium-9 columns col-wrap-margin">
+							<p class="booking-text">Please book your next lessons for studying: <strong>Checking in for a flight</strong></p>
+						</div>
+						<div class="medium-3 columns">
+							<a class="button round button-booking expanded">Book lesson</a>
+						</div>
+					</div>
+				</div>
+				<div class="lesson-table">
+					<div class="lesson-header panel-white radius row show-for-medium ">
+						<div class="medium-3 medium-offset-1 columns">Lesson Name</div>
+						<div class="medium-3 medium-offset-2 columns">Topic</div>
+						<div class="medium-1 columns">Skill</div>
+					</div>
+					<div class="lesson-set booked">
+						<div class="row">
+							<div class="shrink columns lesson-label">Lesson 1</div>
+						</div>
+						<div class="panel-white radius row medium-unstack small-collapse medium-uncollapse lesson-row align-middle">
+							<div class="medium-1 columns">
+								<span class="reading-icon"></span>
+							</div>
+							<div class="medium-5 columns title">
+								<strong>Planning to go out</strong> <br>
+								出て行く予定
+							</div>
+							<div class="medium-3 columns">日常生活 <br> 食事</div>
+							<div class="medium-2 columns">Self Study</div>
+							<div class="medium-1 small-collapse large-uncollapse columns align-right">
+								<span data-tooltip aria-haspopup="true" class="has-tip top" data-disable-hover="true" tabindex="2" title="To take this lesson, please open Pe6 from your Mypage, and search for this lesson.">
+									<a href="#" class="button small circle white alt help right"></a>
+								</span>
+							</div>
+						</div>
+			
+						<div class="panel-white radius row medium-unstack small-collapse medium-uncollapse lesson-row align-middle">
+							<div class="medium-1 columns">
+								<span class="speaking-icon"></span>
+							</div>
+							<div class="medium-5 columns title"><strong>Good Food</strong></div>
+							<div class="medium-2 medium-offset-3 columns">Speaking</div>
+							<div class="medium-1 small-collapse large-uncollapse columns align-right align-middle row">
+								<div class="small-6 columns">
+									<a href="#" class="bold">PDF</a>
+								</div>
+								<div class="small-6 columns">
+									<span class="download-icon"></span>
+								</div>
+							</div>
+						</div>
+						<div class="panel-white radius row medium-unstack small-collapse medium-uncollapse lesson-row align-middle">
+							<div class="medium-2 medium-offset-1 columns">
 								<img class="avatar" src="assets/images/avatar.png">
 								Simon
 							</div>
-							<div class="medium-3 columns rating">
-								<span class="star">&#9733;</span>
-								<span class="star">&#9733;</span>
-								<span class="star">&#9733;</span>
-								<p class="comment">Excellent</p>
+							<div class="medium-4 medium-offset-3 columns">
+								<div class="calendar-icon"></div>
+								<time>14:30pm <strong>Fri 2 July 2016</strong></time>
 							</div>
-							<div class="medium-4 columns">
-								<div class="icon tick-icon"></div>
-								<time>Fri 2 July 2016</time>
-							</div>
-							<div class="medium-3 columns align-bottom align-right">
+							<div class="medium-1 medium-offset-1 small-collapse large-uncollapse columns align-right">
+								<a href="#" class="grey underline bold">Cancel</a>
 							</div>
 						</div>
-					</div>
-					<div id="incompleted-lessons-panel" class="tabs-panel lesson-set">
-						<div class="panel-white radius row medium-unstack small-collapse medium-uncollapse lesson-row highlight-orange">
-							<div class="medium-5 columns">
-								<img class="avatar" src="assets/images/avatar.png">
-								Lesson with Simon
+						<div class="panel-white radius row medium-unstack small-collapse medium-uncollapse lesson-row align-middle">
+							<div class="medium-1 columns">
+								<span class="grammar-icon"></span>
 							</div>
-							<div class="medium-4 columns">
-								<div class="incomplete-icon"></div>
-								<time>Mon 25 June 2016</time>
+							<div class="medium-5 columns title">
+								<strong>Caring for pets</strong> <br>
+								ペットのお手入れ
 							</div>
-							<div class="medium-3 remark columns align-right">Student absent</div>
-						</div>
-					</div>
-					<div id="cancelled-lessons-panel" class="tabs-panel lesson-set">
-						<div class="panel-white radius row medium-unstack small-collapse medium-uncollapse lesson-row highlight-purple">
-							<div class="medium-5 columns">
-								<img class="avatar" src="assets/images/avatar.png">
-								Lesson with Simon
-							</div>
-							<div class="medium-4 columns">
-								<div class="cancel-icon"></div>
-								<time>Mon 25 June 2016</time>
-							</div>
-							<div class="medium-3 remark columns align-right">Student absent</div>
-						</div>
-					</div>
-		
-				</div>
-		
-			</div>
-		</div>
-		<div class="tabs-panel is-active" id="study-tasks">
-			<div class="callout primary panel-booking">
-				<div class="small-12 columns">
-					<h4 class="bold">What to do next</h4>
-				</div>
-				<div class="row medium-unstack align-middle">
-					<div class="medium-9 columns col-wrap-margin">
-						<p class="booking-text">Please book your next lessons for studying: <strong>Checking in for a flight</strong></p>
-					</div>
-					<div class="medium-3 columns">
-						<a class="button round button-booking expanded">Book lesson</a>
-					</div>
-				</div>
-			</div>
-			<div class="lesson-table">
-				<div class="lesson-header panel-white radius row show-for-medium ">
-					<div class="medium-3 medium-offset-1 columns">Lesson Name</div>
-					<div class="medium-3 medium-offset-2 columns">Topic</div>
-					<div class="medium-1 columns">Skill</div>
-				</div>
-				<div class="lesson-set booked">
-					<div class="row">
-						<div class="shrink columns lesson-label">Lesson 1</div>
-					</div>
-					<div class="panel-white radius row medium-unstack small-collapse medium-uncollapse lesson-row align-middle">
-						<div class="medium-1 columns">
-							<span class="reading-icon"></span>
-						</div>
-						<div class="medium-3 columns title">
-							<strong>Planning to go out</strong> <br>
-							出て行く予定
-						</div>
-						<div class="medium-3 medium-offset-1 columns">日常生活 <br> 食事</div>
-						<div class="medium-2 columns">Self Study</div>
-						<div class="medium-2 small-collapse large-uncollapse columns align-right">
-							<span data-tooltip aria-haspopup="true" class="has-tip top" data-disable-hover="true" tabindex="2" title="To take this lesson, please open Pe6 from your Mypage, and search for this lesson.">
+							<div class="medium-3 columns">日常生活 <br> 食事</div>
+							<div class="medium-2 columns">Supplement</div>
+							<div class="medium-1 small-collapse large-uncollapse columns align-right">
 								<a href="#" class="button small circle white alt help right"></a>
-							</span>
-						</div>
-					</div>
-		
-					<div class="panel-white radius row medium-unstack small-collapse medium-uncollapse lesson-row align-middle">
-						<div class="medium-1 columns">
-							<span class="speaking-icon"></span>
-						</div>
-						<div class="medium-3 columns title"><strong>Good Food</strong></div>
-						<div class="medium-2 medium-offset-4 columns">Speaking</div>
-						<div class="medium-2 small-collapse large-uncollapse columns align-right align-middle row">
-							<div class="small-3 columns">
-								<a href="#" class="bold">PDF</a>
-							</div>
-							<div class="small-3 columns">
-								<span class="download-icon"></span>
 							</div>
 						</div>
 					</div>
-					<div class="panel-white radius row medium-unstack small-collapse medium-uncollapse lesson-row align-middle">
-						<div class="medium-2 medium-offset-1 columns">
-							<img class="avatar" src="assets/images/avatar.png">
-							Simon
+					<div class="lesson-set unbooked">
+						<div class="row">
+							<div class="shrink columns lesson-label">Lesson 2</div>
 						</div>
-						<div class="medium-4 medium-offset-3 columns">
-							<div class="calendar-icon"></div>
-							<time>14:30pm <strong>Fri 2 July 2016</strong></time>
-						</div>
-						<div class="medium-1 medium-offset-1 small-collapse large-uncollapse columns align-right">
-							<a href="#" class="grey underline bold">Cancel</a>
-						</div>
-					</div>
-					<div class="panel-white radius row medium-unstack small-collapse medium-uncollapse lesson-row align-middle">
-						<div class="medium-1 columns">
-							<span class="grammar-icon"></span>
-						</div>
-						<div class="medium-3 columns title">
-							<strong>Caring for pets</strong> <br>
-							ペットのお手入れ
-						</div>
-						<div class="medium-3 medium-offset-1 columns">日常生活 <br> 食事</div>
-						<div class="medium-2 columns">Supplement</div>
-						<div class="medium-2 small-collapse large-uncollapse columns align-right">
-							<a href="#" class="button small circle white alt help right"></a>
-						</div>
-					</div>
-				</div>
-				<div class="lesson-set unbooked">
-					<div class="row">
-						<div class="shrink columns lesson-label">Lesson 2</div>
-					</div>
-					<div class="panel-white radius row medium-unstack small-collapse medium-uncollapse lesson-row align-middle">
-						<div class="medium-1 columns">
-							<span class="listening-icon"></span>
-						</div>
-						<div class="medium-3 columns title">
-							<strong>Planning to go out</strong> <br>
-							出て行く予定
-						</div>
-						<div class="medium-3 medium-offset-1 columns">日常生活 <br> 食事</div>
-						<div class="medium-2 columns">Self Study</div>
-						<div class="medium-2 small-collapse large-uncollapse columns align-right">
-							<a href="#" class="button small circle white alt help right"></a>
-						</div>
-					</div>
-		
-					<div class="panel-white radius row medium-unstack small-collapse medium-uncollapse lesson-row align-middle speaking">
-						<div class="medium-1 columns">
-							<span class="speaking-icon"></span>
-						</div>
-						<div class="medium-3 columns title"><strong>Good Food</strong></div>
-						<div class="medium-2 medium-offset-4 columns">Speaking</div>
-						<div class="medium-2 small-collapse large-uncollapse columns align-right row align-middle">
-							<div class="small-3 columns">
-								<a href="#" class="bold">PDF</a>
+						<div class="panel-white radius row medium-unstack small-collapse medium-uncollapse lesson-row align-middle">
+							<div class="medium-1 columns">
+								<span class="listening-icon"></span>
 							</div>
-							<div class="small-3 columns">
-								<span class="download-icon"></span>
+							<div class="medium-5 columns title">
+								<strong>Planning to go out</strong> <br>
+								出て行く予定
+							</div>
+							<div class="medium-3 columns">日常生活 <br> 食事</div>
+							<div class="medium-2 columns">Self Study</div>
+							<div class="medium-1 small-collapse large-uncollapse columns align-right">
+								<a href="#" class="button small circle white alt help right"></a>
 							</div>
 						</div>
-					</div>
-		
-					<div class="panel-white radius row medium-unstack small-collapse medium-uncollapse lesson-row align-middle">
-						<div class="medium-1 columns">
-							<span class="grammar-icon"></span>
+			
+						<div class="panel-white radius row medium-unstack small-collapse medium-uncollapse lesson-row align-middle speaking">
+							<div class="medium-1 columns">
+								<span class="speaking-icon"></span>
+							</div>
+							<div class="medium-5 columns title"><strong>Good Food</strong></div>
+							<div class="medium-2 medium-offset-3 columns">Speaking</div>
+							<div class="medium-1 small-collapse large-uncollapse columns align-right row align-middle">
+								<div class="small-6 columns">
+									<a href="#" class="bold">PDF</a>
+								</div>
+								<div class="small-6 columns">
+									<span class="download-icon"></span>
+								</div>
+							</div>
 						</div>
-						<div class="medium-3 columns title">
-							<strong>Caring for pets</strong> <br>
-							ペットのお手入れ
-						</div>
-						<div class="medium-3 medium-offset-1 columns">日常生活 <br> <strong>食事</strong></div>
-						<div class="medium-2 columns">Supplement</div>
-						<div class="medium-2 small-collapse large-uncollapse columns align-right">
-							<a href="#" class="button small circle white alt help right"></a>
+			
+						<div class="panel-white radius row medium-unstack small-collapse medium-uncollapse lesson-row align-middle">
+							<div class="medium-1 columns">
+								<span class="grammar-icon"></span>
+							</div>
+							<div class="medium-5 columns title">
+								<strong>Caring for pets</strong> <br>
+								ペットのお手入れ
+							</div>
+							<div class="medium-3 columns">日常生活 <br> <strong>食事</strong></div>
+							<div class="medium-2 columns">Supplement</div>
+							<div class="medium-1 small-collapse large-uncollapse columns align-right">
+								<a href="#" class="button small circle white alt help right"></a>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
 		</div>
 	</div>
 	<footer class="footer">

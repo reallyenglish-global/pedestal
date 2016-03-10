@@ -47,9 +47,52 @@ header {
 			padding: $button-padding;
 		}
 	}
+
+	%tab-icon {
+		background-size: 1rem 1rem;
+			height: 1rem;
+			width: 1rem;
+			display: inline-block;
+			background-repeat: no-repeat;
+			margin-right: 0.5rem;
+	}
+
+	#get-started-button {
+		text-align: left;
+
+		.get-started-icon {
+			@extend %tab-icon;
+			background-image: url(../images/icons/get-started.svg);
+		}
+	}
+
+	#faq-button {
+		text-align: left;
+
+		.faq-icon {
+			@extend %tab-icon;
+			background-image: url(../images/icons/faq-question.svg);
+		}
+	}
+
+	#booked-lessons-button {
+		text-align: left;
+
+		.bookmark-icon {
+			@extend %tab-icon;
+			background-image: url(../images/icons/bookmark.svg);
+		}
+	}
+
+	#study-tasks-button {
+		text-align: left;
+
+		.lamp-icon {
+			@extend %tab-icon;
+			background-image: url(../images/icons/lamp.svg);
+		}
+	}
 }
-
-
 
 .tabs-content {
 	&.callout {
