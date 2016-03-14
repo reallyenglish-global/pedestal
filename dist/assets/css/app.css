@@ -5212,7 +5212,7 @@ div[id^="skypeModal"] .progress .progress-img.disabled h5 {
   float: right;
 }
 .lesson-table .lesson-row.highlight-green .show-feedback .arrow-down {
-  margin: 0.25rem;
+  margin-left: 0.25rem;
 }
 .lesson-table .lesson-row.highlight-orange {
   background-color: #f4e9e2;
