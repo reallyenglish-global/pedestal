@@ -5209,6 +5209,7 @@ div[id^="skypeModal"] .progress .progress-img.disabled h5 {
   padding-bottom: 0.75rem;
   margin-top: 0.8rem;
   font-size: 0.8rem;
+  float: right;
 }
 .lesson-table .lesson-row.highlight-orange {
   background-color: #f4e9e2;
