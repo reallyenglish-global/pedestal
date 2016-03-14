@@ -5145,14 +5145,6 @@ div[id^="skypeModal"] .progress .progress-img.disabled h5 {
   display: inline-block;
   margin: 0 0 0 0.5rem;
 }
-.lesson-table .lesson-row .show-feedback {
-  border-top-right-radius: 5px;
-  border-top-left-radius: 5px;
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-  margin-top: 1.25rem;
-  font-size: 0.8rem;
-}
 .lesson-table .lesson-row .assessment-feedback {
   background-color: #fffcef;
   padding: 1rem;
@@ -5198,13 +5190,25 @@ div[id^="skypeModal"] .progress .progress-img.disabled h5 {
 }
 .lesson-table .lesson-row.highlight-green {
   background-color: #ecf7f2;
-  padding: 0;
+  padding: 0 0.5rem;
 }
-.lesson-table .lesson-row.highlight-green time {
+.lesson-table .lesson-row.highlight-green time,
+.lesson-table .lesson-row.highlight-green .avatar,
+.lesson-table .lesson-row.highlight-green p {
   display: inline-block;
   margin-top: 1rem;
   margin-bottom: 1rem;
+}
+.lesson-table .lesson-row.highlight-green time {
   color: #7dbaa7;
+}
+.lesson-table .lesson-row.highlight-green .show-feedback {
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  margin-top: 0.8rem;
+  font-size: 0.8rem;
 }
 .lesson-table .lesson-row.highlight-orange {
   background-color: #f4e9e2;
