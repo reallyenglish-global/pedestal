@@ -1,11 +1,7 @@
 @import "settings";
 @import "foundation";
 
-.lt-ie10{
-	@include foundation-grid;
-}
-
-@include foundation-everything(true);
+@include foundation-everything;
 
 @import "base/fonts";
 @import "base/layout.scss";

@@ -69,15 +69,6 @@ $booked-lesson-color: #e0f0f3;
 			}
 		}
 
-		.show-feedback {
-			border-top-right-radius: 5px;
-			border-top-left-radius: 5px;
-			padding-top: 0.75rem;
-			padding-bottom: 0.75rem;
-			margin-top: 1.25rem;
-			font-size: 0.8rem;
-		}
-
 		.assessment-feedback {
 			background-color: #fffcef;
 			padding: 1rem;
@@ -133,13 +124,28 @@ $booked-lesson-color: #e0f0f3;
 
 		&.highlight-green {
 			background-color: #ecf7f2;
-			padding: 0;
+			padding: 0 0.5rem;
 
-			time {
+			time,
+			.avatar,
+			p {
 				display: inline-block;
 				margin-top: 1rem;
 				margin-bottom: 1rem;
+			}
+
+			time {
 				color: #7dbaa7;
+			}
+
+			.show-feedback {
+				border-top-right-radius: 5px;
+				border-top-left-radius: 5px;
+				padding-top: 0.75rem;
+				padding-bottom: 0.75rem;
+				margin-top: 0.8rem;
+				font-size: 0.8rem;
+				float: right;
 			}
 		}
 
