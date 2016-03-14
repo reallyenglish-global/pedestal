@@ -80,12 +80,12 @@ $booked-lesson-color: #e0f0f3;
 		.calendar-icon,
 		.incomplete-icon,
 		.cancel-icon {
-			background-size: 0.8rem 0.8rem;
 			background-repeat: no-repeat;
 			background-position: 50% 50%;
-			display: inline-block;
 			height: 0.9rem;
-			width: 0.9rem;
+			width: 1rem;
+			background-size: contain;
+			display: inline-block;
 			margin-right: 0.5rem;
 		}
 
@@ -141,11 +141,15 @@ $booked-lesson-color: #e0f0f3;
 			.show-feedback {
 				border-top-right-radius: 5px;
 				border-top-left-radius: 5px;
-				padding-top: 0.75rem;
-				padding-bottom: 0.75rem;
+				padding-top: 0.65rem;
+				padding-bottom: 0.65rem;
 				margin-top: 0.8rem;
 				font-size: 0.8rem;
 				float: right;
+
+				.arrow-down {
+					margin: 0.25rem;
+				}
 			}
 		}
 
