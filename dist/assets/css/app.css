@@ -4749,8 +4749,8 @@ header .top-bar {
 header .top-bar .menu li {
   height: 2.5rem;
 }
-header .top-bar .menu li.current {
-  background-color: #888;
+header .top-bar .menu li:hover {
+  background-color: #555;
 }
 header .top-bar .menu-text,
 header .top-bar a {
