@@ -17,15 +17,17 @@
 			<nav class="top-bar" id="main-menu">
 				<div class="top-bar-left">
 					<ul class="dropdown menu" data-dropdown-menu>
-						<li class="menu-text"><a href="/">Reallyenglish</a></li>
+						<li class="menu-text">Reallyenglish</li>
 					</ul>
 				</div>
 				<div class="top-bar-right">
 					<ul class="menu" data-responsive-menu="drilldown extramedium-dropdown">
+						<li class="active"><a href="/">Home</a></li>
 						<li><a data-open="skypeModal1">Orientation</a></li>
 						<li><a href="booking.html">Book a lesson</a></li>
 						<li><a href="how-to-study.html">How to study</a></li>
 						<li><a href="#">Change Skype ID</a></li>
+						<li><a data-open="feedbackModal">Send Feedback</a></li>
 						<li><a href="#">My page</a></li>
 					</ul>
 				</div>
@@ -188,6 +190,30 @@
 				</div>
 			</div>
 		</form>
+	</div>
+	<div class="reveal" id="feedbackModal" data-reveal >
+		<div class="row medium-unstack">
+			<div class="small-12 columns">
+				<h3 class="blue">Help us improve the quality of your service</h3>
+			</div>
+			<div class="small-6 columns">
+				<label for="mobile-number" class="middle"><strong>Type of enquiry:</strong></label>
+			</div>
+			<div class="small-6 columns">
+				<div class="input-group">
+					<input class="input-group-field" type="text" placeholder="Design Suggestion">
+					<div class="input-group-button">
+						<a class="button arrow-down center light-grey"></a>
+					</div>
+				</div>
+			</div>
+			<div class="small-12 columns">
+				<textarea placeholder="add your comment here"></textarea>
+			</div>
+			<div class="medium-3 columns">
+				<button class="button round expanded">Leave Feedback</button>
+			</div>
+		</div>
 	</div>
 	<div id="body">
 		<div class="reveal" id="bookModal" data-reveal>
@@ -566,30 +592,6 @@
 	<!-- 		<div class="small-12 medium-3 medium-offset-3 columns">
 				<button class="button round dark-grey expanded" type="button" data-open="feedbackModal">Leave Feedback</button>
 			</div> -->
-		</div>
-		<div class="reveal" id="feedbackModal" data-reveal >
-			<div class="row medium-unstack">
-				<div class="medium-9 columns">
-					<h3 class="blue">Help us improve the quality of your service</h3>
-					<div class="row">
-						<div class="small-6 medium-3 columns">
-							<label for="mobile-number" class="middle"><strong>Type of enquiry:</strong></label>
-						</div>
-						<div class="small-6 medium-6 columns">
-							<div class="input-group">
-								<input class="input-group-field" type="text" placeholder="Design Suggestion">
-								<div class="input-group-button">
-									<a class="button arrow-down center light-grey"></a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<textarea placeholder="add your comment here"></textarea>
-				</div>
-				<div class="medium-3 align-bottom columns">
-					<button class="button round expanded">Leave Feedback</button>
-				</div>
-			</div>
 		</div>
 	</footer>
 	<script src="assets/js/app.js"></script>

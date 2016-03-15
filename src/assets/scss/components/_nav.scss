@@ -19,8 +19,8 @@ header {
 		.menu li {
 			height: 2.5rem;
 
-			&.current {
-				background-color: #888;
+			&:hover {
+				background-color: #555;
 			}
 		}
 
