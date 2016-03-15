@@ -16,12 +16,16 @@ header {
 		font-size: 0.75rem;
 		font-weight: bold;
 
+		.top-bar-right {
+			li {
+				&:hover {
+					background-color: #555;
+				}
+			}
+		}
+
 		.menu li {
 			height: 2.5rem;
-
-			&:hover {
-				background-color: #555;
-			}
 		}
 
 		.menu-text,

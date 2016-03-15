@@ -4746,11 +4746,11 @@ header .top-bar {
   font-size: 0.75rem;
   font-weight: bold;
 }
+header .top-bar .top-bar-right li:hover {
+  background-color: #555;
+}
 header .top-bar .menu li {
   height: 2.5rem;
-}
-header .top-bar .menu li:hover {
-  background-color: #555;
 }
 header .top-bar .menu-text,
 header .top-bar a {
