@@ -20,7 +20,10 @@
 			text-align: center;
 			color: #939598;
 		}
+	}
 
+	.early-bookings {
+		display: none;
 	}
 
 	.booking-row {
@@ -35,13 +38,12 @@
 			padding: 0.25rem 1rem;
 		}
 
-		&:nth-child(odd) {
+		&:nth-child(even) {
 			background-color: #f1f2f2;
 		}
 
-		&:nth-child(even) {
+		&:nth-child(odd) {
 			background-color: $white;
 		}
 	}
-
 }

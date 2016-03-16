@@ -9,6 +9,11 @@ a {
 	&.grey {
 		color: #717576;
 	}
+
+	&.block-link {
+		margin-bottom: 1rem;
+		display: inline-block;
+	}
 }
 
 .bold {
