@@ -2,6 +2,14 @@
 <!-- Generator: Adobe Illustrator 19.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 412.5 417" style="enable-background:new 0 0 412.5 417;" xml:space="preserve">
+<defs>
+	<style type="text/css">
+		@font-face {
+		  font-family: "ProximaNova-Semibold";
+		  src: url('../fonts/Proxima-Nova/Proxima-Nova-Semibold.otf') format("opentype");
+		}
+	</style>
+</defs>
 <style type="text/css">
 	.st0{display:none;}
 	.st1{display:inline;}
@@ -46,7 +54,7 @@
 	.st40{clip-path:url(#XMLID_648_);fill:#5B8BA3;}
 	.st41{clip-path:url(#XMLID_648_);fill:#84A8BA;}
 	.st42{clip-path:url(#XMLID_648_);fill:#91CCBB;}
-	
+
 		.st43{clip-path:url(#XMLID_652_);fill:none;stroke:#91CCBB;stroke-width:4.279;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
 	.st44{fill:none;stroke:#91CCBB;stroke-width:4.279;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
 	.st45{fill:#91CCBB;}
@@ -88,7 +96,7 @@
 	.st81{clip-path:url(#XMLID_692_);fill:#5B8BA3;}
 	.st82{clip-path:url(#XMLID_692_);fill:#84A8BA;}
 	.st83{clip-path:url(#XMLID_692_);fill:#91CCBB;}
-	
+
 		.st84{clip-path:url(#XMLID_696_);fill:none;stroke:#91CCBB;stroke-width:3.6954;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
 	.st85{fill:none;stroke:#91CCBB;stroke-width:3.6954;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
 	.st86{clip-path:url(#SVGID_6_);fill:#F59964;}
@@ -121,7 +129,7 @@
 	.st113{clip-path:url(#XMLID_728_);fill:#5B8BA3;}
 	.st114{clip-path:url(#XMLID_728_);fill:#84A8BA;}
 	.st115{clip-path:url(#XMLID_728_);fill:#91CCBB;}
-	
+
 		.st116{clip-path:url(#XMLID_732_);fill:none;stroke:#91CCBB;stroke-width:3.6954;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
 	.st117{clip-path:url(#SVGID_12_);fill:#F59964;}
 	.st118{clip-path:url(#SVGID_12_);}

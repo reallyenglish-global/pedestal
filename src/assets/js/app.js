@@ -46,4 +46,10 @@
             }
         });
     });
+
+    $(".show-bookings").click(function() {
+        $(".early-bookings").toggle();
+        var defaultText = "Display all bookings";
+        $(this).text($(this).text() == defaultText ? "Hide early bookings" : defaultText);
+    });
 })();

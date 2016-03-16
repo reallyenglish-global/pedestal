@@ -4490,6 +4490,10 @@ a {
 a.grey {
   color: #717576;
 }
+a.block-link {
+  margin-bottom: 1rem;
+  display: inline-block;
+}
 
 .bold {
   font-weight: 700;
@@ -5332,6 +5336,9 @@ div[id^="skypeModal"] .progress .progress-img.disabled h5 {
   border-radius: 50%;
   margin-bottom: 0.5rem;
 }
+.teacher-panel .early-bookings {
+  display: none;
+}
 .teacher-panel .booking-row {
   padding: 0.5rem 0;
   margin: 0 1rem;
@@ -5342,10 +5349,10 @@ div[id^="skypeModal"] .progress .progress-img.disabled h5 {
 .teacher-panel .booking-row .button {
   padding: 0.25rem 1rem;
 }
-.teacher-panel .booking-row:nth-child(odd) {
+.teacher-panel .booking-row:nth-child(even) {
   background-color: #f1f2f2;
 }
-.teacher-panel .booking-row:nth-child(even) {
+.teacher-panel .booking-row:nth-child(odd) {
   background-color: #FFF;
 }
 
