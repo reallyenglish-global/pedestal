@@ -4663,6 +4663,7 @@ button.button .sub-text {
   background-repeat: no-repeat;
   background-position: 50% 50%;
   display: inline-block;
+  cursor: pointer;
 }
 
 .grammar-icon {
@@ -4678,6 +4679,7 @@ button.button .sub-text {
 }
 
 .speaking-icon {
+  cursor: auto;
   height: 1.4rem;
   background-size: 2.2rem 1.4rem;
   background-image: url("../images/icons/speaking.svg");
@@ -5095,6 +5097,15 @@ div[id^="skypeModal"] .progress .progress-img.disabled h5 {
 
 .tooltip {
   box-shadow: 3px 3px 2px #cbcbcb;
+}
+.tooltip.grammar {
+  color: #1f7ec5;
+}
+.tooltip.listening {
+  color: #e632bc;
+}
+.tooltip.reading {
+  color: #59862d;
 }
 
 .lesson-table .row, .lesson-table .panel-white {

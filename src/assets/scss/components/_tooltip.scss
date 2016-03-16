@@ -1,3 +1,16 @@
 .tooltip {
 	box-shadow: 3px 3px 2px #cbcbcb;
+
+	&.grammar {
+		color: #1f7ec5;
+	}
+
+	&.listening {
+		color: #e632bc;
+	}
+
+	&.reading {
+		color: #59862d;
+	}
 }
+
