@@ -14,6 +14,12 @@ git clone https://github.com/reallyenglish/booking-system-template.git
 * [bower](http://bower.io): `npm install bower -g`
 * [Gulp](http://gulpjs.com/): `npm install -g gulp-cli`
 
+#### Install ruby gems(compass and friends)
+
+```bash
+bundle install
+```
+
 #### We should then install our bower components using the following command:
 
 ```bash
