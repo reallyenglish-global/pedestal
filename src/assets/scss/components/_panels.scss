@@ -124,4 +124,16 @@ $comment-header-height: 3rem;
       display: block;
     }
   }
+
+  .credit-status-panel {
+    max-width: none;
+
+    h6 {
+      line-height: 1.2;
+    }
+
+    .status {
+      font-size: 1rem;
+    }
+  }
 }

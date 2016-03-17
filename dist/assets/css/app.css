@@ -4475,6 +4475,10 @@ body {
     margin-bottom: 1rem;
   }
 
+  .header-row > .row {
+    padding: 1rem 1rem;
+  }
+
   .progress {
     margin-bottom: 1rem;
   }
@@ -4987,6 +4991,16 @@ header .top-bar .menu-text a {
 
   .panel-booking .lesson-title {
     display: block;
+  }
+
+  .credit-status-panel {
+    max-width: none;
+  }
+  .credit-status-panel h6 {
+    line-height: 1.2;
+  }
+  .credit-status-panel .status {
+    font-size: 1rem;
   }
 }
 .reveal-modal-bg {
