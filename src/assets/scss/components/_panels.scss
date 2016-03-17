@@ -110,18 +110,20 @@ $comment-header-height: 3rem;
   }
 }
 
+@include breakpoint(extramedium down) {
+  .panel-booking {
+    strong {
+      display: block;
+    }
+  }
+}
+
 @include breakpoint(small only) {
   .comment-box {
     .comment-section {
       .score h5 {
         text-align: left;
       }
-    }
-  }
-
-  .panel-booking {
-    .lesson-title {
-      display: block;
     }
   }
 
