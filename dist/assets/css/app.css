@@ -5347,9 +5347,6 @@ div[id^="skypeModal"] .progress .progress-img.disabled h5 {
   border-radius: 50%;
   margin-bottom: 0.5rem;
 }
-.teacher-panel .early-bookings {
-  display: none;
-}
 .teacher-panel .booking-row {
   padding: 0.5rem 0;
   margin: 0 1rem;

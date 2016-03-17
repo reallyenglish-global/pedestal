@@ -47,9 +47,13 @@
         });
     });
 
-    $(".show-bookings").click(function() {
-        $(".early-bookings").toggle();
-        var defaultText = "Display all bookings";
-        $(this).text($(this).text() == defaultText ? "Hide early bookings" : defaultText);
-    });
+    var toggleBookings = function() {
+
+        $(".early-bookings").toggleClass("hide");
+        $(".show-bookings").toggleClass("hide");
+        $(".hide-bookings").toggleClass("hide");
+    };
+
+    $(".show-bookings").click(toggleBookings);
+    $(".hide-bookings").click(toggleBookings);
 })();
