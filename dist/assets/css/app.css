@@ -5144,9 +5144,6 @@ div[id^="skypeModal"] .progress .progress-img.disabled h5 {
   background-color: #F3F3F3;
   margin-bottom: 1.5rem;
 }
-.lesson-table .lesson-button-row div.tabs-title:first-child {
-  padding-left: 0;
-}
 .lesson-table .lesson-label {
   padding: 0.5rem 1.25rem;
 }
