@@ -5266,6 +5266,11 @@ div[id^="skypeModal"] .progress .progress-img.disabled h5 {
   .lesson-table .lesson-row .columns:last-child {
     margin-bottom: 0;
   }
+  .lesson-table .lesson-row.highlight-green time {
+    display: block;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 }
 .day-picker .previous-week,
 .day-picker .next-week {

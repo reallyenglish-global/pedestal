@@ -187,6 +187,14 @@ $booked-lesson-color: #e0f0f3;
 					margin-bottom: 0;
 				}
 			}
+
+			&.highlight-green {
+				time {
+					display: block;
+					margin-top: 0;
+					margin-bottom: 0;
+				}
+			}
 		}
 	}
 }
