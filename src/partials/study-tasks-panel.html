@@ -13,52 +13,9 @@
 		</div>
 	</div>
 	<div class="lesson-table">
-		{{> study-task}}
-		<div class="lesson-set unbooked">
-			<div class="row">
-				<div class="shrink columns lesson-label">Lesson 2</div>
-			</div>
-			<div class="panel-white radius row small-collapse medium-uncollapse lesson-row">
-				<div class="small-2 medium-1 columns">
-					<span data-tooltip aria-haspopup="true" class="has-tip top" data-tooltip-class="listening tooltip" title="Listening">
-						<span class="listening-icon"></span>
-					</span>
-				</div>
-				<div class="small-9 medium-5 columns title">
-					<strong>Planning to go out</strong> <br>
-					出て行く予定
-				</div>
-				<div class="small-3 small-offset-2 medium-offset-0 medium-3 columns">日常生活 <br> 食事</div>
-				<div class="small-3 medium-2 columns">Self Study</div>
-				<div class="small-offset-10 medium-offset-0 small-2 medium-1 small-collapse large-uncollapse columns">
-					<a href="#" class="button small circle white alt help right"></a>
-				</div>
-			</div>
-			<div class="panel-white radius row small-collapse medium-uncollapse lesson-row speaking">
-				<div class="small-2 medium-1 columns">
-					<span class="speaking-icon"></span>
-				</div>
-				<div class="small-6 medium-5 columns title"><strong>Good Food</strong></div>
-				<div class="small-6 medium-offset-3 medium-2 columns">Speaking</div>
-				<div class="small-offset-10 medium-offset-0 small-2 medium-1 small-collapse large-uncollapse columns">
-					<a href="#" class="bold">PDF</a>
-					<span class="download-icon show-for-large"></span>
-				</div>
-			</div>
-			<div class="panel-white radius row small-collapse medium-uncollapse lesson-row">
-				<div class="small-2 medium-1 columns">
-					<span class="grammar-icon"></span>
-				</div>
-				<div class="small-9 medium-5 columns title">
-					<strong>Caring for pets</strong> <br>
-					ペットのお手入れ
-				</div>
-				<div class="small-3 small-offset-2 medium-offset-0 medium-3 columns">日常生活 <br> <strong>食事</strong></div>
-				<div class="small-3 medium-2 columns">Supplement</div>
-				<div class="small-offset-10 small-2 medium-offset-0 medium-1 small-collapse large-uncollapse columns">
-					<a href="#" class="button small circle white alt help right"></a>
-				</div>
-			</div>
+		{{# each lesson-list}}
+			{{> study-task}}
+		{{/each}}
 		</div>
 	</div>
 </div>
