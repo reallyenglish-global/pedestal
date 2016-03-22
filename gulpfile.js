@@ -88,7 +88,8 @@ gulp.task('compass', function() {
       css: 'dist/assets/css',
       sass: 'src/assets/scss',
       relative: false
-    }));
+    }))
+    .on('finish', browser.reload);;
 });
 
 // Combine JavaScript into one file

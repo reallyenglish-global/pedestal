@@ -12,6 +12,7 @@ body {
 //TODO: move to grid scss
 .row {
 	.column {
+
 		&.align-center {
 			text-align: center;
 		}
@@ -67,6 +68,9 @@ body {
 		}
 	}
 
+	.header-row > .row {
+		padding: 1rem 1rem;
+	}
 
 	.progress {
 		margin-bottom: 1rem;

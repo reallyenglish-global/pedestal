@@ -43,3 +43,13 @@
 		}
 	}
 }
+
+@include breakpoint(medium down) {
+	.teacher-panel {
+		.booking-row {
+			.button {
+				padding: 0.25rem 0.5rem;
+			}
+		}
+	}
+}

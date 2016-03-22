@@ -15,144 +15,34 @@
 			</div>
 		</div>
 		<div class="tabs-content" data-tabs-content="lesson-table-tabs">
-			<div id="current-bookings-panel" class="tabs-panel lesson-set is-active">
-				<div class="row">
-					<div class="shrink columns lesson-label">Lesson 1</div>
-				</div>
-				<div class="panel-white radius row small-collapse medium-uncollapse lesson-row">
-					<div class="medium-1 columns">
-						<span class="speaking-icon"></span>
+			<div id="current-bookings-panel" class="tabs-panel is-active">
+				{{#each current-bookings}}
+					<div class="lesson-set">
+						{{> lesson current=true highlightClass="highlight-blue" iconClass="calendar-icon"}}
 					</div>
-					<div class="medium-5 columns title"><strong>Good Food</strong></div>
-					<div class="medium-2 medium-offset-3 columns">Grammar</div>
-					<div class="medium-1 small-collapse large-uncollapse columns">
-						<a href="#" class="bold">PDF</a>
-						<span class="download-icon"></span>
-					</div>
-				</div>
-				<div class="panel-white radius row small-collapse medium-uncollapse lesson-row highlight-blue">
-					<div class="medium-2 medium-offset-1 columns">
-						<img class="avatar" src="assets/images/avatar.png">
-						Simon
-					</div>
-					<div class="medium-3 columns title"></div>
-					<div class="medium-4 columns">
-						<span class="calendar-icon"></span>
-						<time>14:30pm <strong>Fri 2 July 2016</strong></time>
-					</div>
-					<div class="medium-3 small-collapse large-uncollapse columns">
-						<a href="#" class="grey underline bold">Cancel</a>
-					</div>
-				</div>
+				{{/each}}
 			</div>
-			<div id="completed-lessons-panel" class="tabs-panel lesson-set">
-				<div class="row">
-					<div class="shrink columns lesson-label">Lesson 1</div>
-				</div>
-				<div class="panel-white radius row small-collapse medium-uncollapse lesson-row">
-					<div class="medium-1 columns">
-						<span class="speaking-icon"></span>
-					</div>
-					<div class="medium-5 columns title"><strong>Good Food</strong></div>
-					<div class="medium-2 medium-offset-3 columns">Grammar</div>
-					<div class="medium-1 small-collapse large-uncollapse columns">
-						<a href="#" class="bold">PDF</a>
-						<span class="download-icon"></span>
-					</div>
-				</div>
-				<div class="panel-white radius row small-collapse medium-uncollapse lesson-row highlight-green">
-					<div class="medium-2 medium-offset-1 columns">
-						<img class="avatar" src="assets/images/avatar.png">
-						Simon
-					</div>
-					<div class="medium-3 medium-offset-3 columns">
-						<span class="tick-icon"></span>
-						<time>Fri 2 July 2016</time>
-					</div>
-					<div class="medium-3 columns">
-						<button type="button" class="button yellow show-feedback rating right">
-							<span class="star"></span>
-							<span class="star"></span>
-							<span class="star"></span>
-							<p class="comment">Excellent</p>
-							<span class="arrow-down"></span>
-						</button>
-					</div>
-					<div class="medium-12 columns">
-						<div class="assessment-feedback">
-							Book/Topic:ReallyEnglish - EZ to Talk Basic.5 - Taking Business Trips Vocabulary/Expressions: 1. Nigel is staying at the Holiday Inn. 2. My assistant is meeting our client at the airport now. 3. Your secretary is booking your tickets now. 4. Our clients are taking us out to dinner now. 5. She is traveling to London at the moment. Focus: 1. Present Continuous: be + verb + -ing for actions happening now or around now 2. Expressing ideas based on the language focus 3. Constructing sentences using the expressions 4. Practice the expressions in different situations Next topic:EZ to Talk – Basic.6 Good food Evaluation: Remarks: Book/Topic:ReallyEnglish - EZ to Talk Basic.6 - Good food Vocabulary/Expressions: 1. delicious: >> This cake is delicious. 2. fresh: >> I like to eat fresh food. 3. healthy: >> That meal looks healthy. 4. fried: >> I am trying not to eat fried food. 5. boiled: >> I have heard that boiled carrots are healthier than raw carrots. 6. plate: >> That plate of food looks wonderful. 7. taste: >> How does it taste? 8. fast food: >> Sometimes fast food is the only option for lunch. 9. microwave meal: >> I bought a microwave meal for dinner. 10. drink: >> What drink would you like? Focus: 1. Expressing ideas based on the language focus 2. Constructing sentences using the expressions 3. Practice the expressions in different situations Next topic:EZ to Talk – Basic.7 Healthy habits Evaluation: Remarks:
-						</div>
-					</div>
-				</div>
-				<div class="panel-white radius row small-collapse medium-uncollapse lesson-row">
-					<div class="medium-1 columns">
-						<span class="speaking-icon"></span>
-					</div>
-					<div class="medium-5 columns title"><strong>Good Food</strong></div>
-					<div class="medium-2 medium-offset-3 columns">Grammar</div>
-					<div class="medium-1 small-collapse large-uncollapse columns">
-						<a href="#" class="bold">PDF</a>
-						<span class="download-icon"></span>
-					</div>
-				</div>
-				<div class="panel-white radius row small-collapse medium-uncollapse lesson-row highlight-green">
-					<div class="medium-2 medium-offset-1 columns">
-						<img class="avatar" src="assets/images/avatar.png">
-						Simon
-					</div>
-					<div class="medium-3 medium-offset-3 columns">
-						<span class="icon tick-icon"></span>
-						<time>Fri 2 July 2016</time>
-					</div>
-					<div class="medium-3 columns right">
-						<p>Awaiting Feedback</p>
-					</div>
-				</div>
-			</div>
-			<div id="incompleted-lessons-panel" class="tabs-panel lesson-set">
-				<div class="panel-white radius row small-collapse medium-uncollapse lesson-row">
-					<div class="medium-1 columns">
-						<span class="speaking-icon"></span>
-					</div>
-					<div class="medium-11 columns">
-						[Consumed ticket] Canceled before 23 minutes (by student)
-					</div>
-				</div>
-				<div class="panel-white radius row small-collapse medium-uncollapse lesson-row highlight-orange">
-					<div class="medium-4 medium-offset-1 columns">
-						<img class="avatar" src="assets/images/avatar.png">
-						Lesson with Simon
-					</div>
-					<div class="medium-4 columns">
-						<span class="incomplete-icon"></span>
-						<time>Mon 25 June 2016</time>
-					</div>
-					<div class="medium-3 remark columns">Student absent</div>
-				</div>
-			</div>
-			<div id="cancelled-lessons-panel" class="tabs-panel lesson-set">
-				<div class="panel-white radius row small-collapse medium-uncollapse lesson-row">
-					<div class="medium-1 columns">
-						<span class="speaking-icon"></span>
-					</div>
-					<div class="medium-11 columns">
-						[Consumed ticket] Canceled before 23 minutes (by student)
-					</div>
-				</div>
-				<div class="panel-white radius row small-collapse medium-uncollapse lesson-row highlight-purple">
-					<div class="medium-offset-1 medium-4 columns">
-						<img class="avatar" src="assets/images/avatar.png">
-						Lesson with Simon
-					</div>
-					<div class="medium-4 columns">
-						<span class="cancel-icon"></span>
-						<time>Mon 25 June 2016</time>
-					</div>
-					<div class="medium-3 remark columns">Student absent</div>
-				</div>
-			</div>
-
 		</div>
-
+		<div id="completed-lessons-panel" class="tabs-panel">
+			{{#each current-bookings}}
+				<div class="lesson-set">
+					{{> lesson completed=true highlightClass="highlight-green" iconClass="tick-icon"}}
+				</div>
+			{{/each}}
+		</div>
+		<div id="incompleted-lessons-panel" class="tabs-panel lesson-set">
+			{{#each current-bookings}}
+				<div class="lesson-set">
+					{{> lesson incomplete=true highlightClass="highlight-orange" iconClass="incomplete-icon"}}
+				</div>
+			{{/each}}
+		</div>
+		<div id="cancelled-lessons-panel" class="tabs-panel lesson-set">
+			{{#each current-bookings}}
+				<div class="lesson-set">
+					{{> lesson cancelled=true highlightClass="highlight-purple" iconClass="cancel-icon"}}
+				</div>
+			{{/each}}
+		</div>
 	</div>
 </div>

@@ -211,7 +211,7 @@ th {
 }
 
 .foundation-mq {
-  font-family: "small=0em&medium=40em&extramedium=47.375em&large=64em&xlarge=75em&xxlarge=90em";
+  font-family: "small=0em&medium=40em&extramedium=51.875em&large=64em&xlarge=75em&xxlarge=90em";
 }
 
 html {
@@ -1048,7 +1048,7 @@ button {
     float: left;
   }
 }
-@media screen and (min-width: 47.375em) {
+@media screen and (min-width: 51.875em) {
   .extramedium-1 {
     width: 8.33333%;
   }
@@ -2001,7 +2001,7 @@ p + .stat {
     text-align: justify;
   }
 }
-@media screen and (min-width: 47.375em) {
+@media screen and (min-width: 51.875em) {
   .extramedium-text-left {
     text-align: left;
   }
@@ -2548,37 +2548,37 @@ select[multiple] {
   }
 }
 
-@media screen and (min-width: 40em) and (max-width: 47.3125em) {
+@media screen and (min-width: 40em) and (max-width: 51.8125em) {
   .hide-for-medium-only {
     display: none !important;
   }
 }
 
-@media screen and (max-width: 39.9375em), screen and (min-width: 47.375em) {
+@media screen and (max-width: 39.9375em), screen and (min-width: 51.875em) {
   .show-for-medium-only {
     display: none !important;
   }
 }
 
-@media screen and (min-width: 47.375em) {
+@media screen and (min-width: 51.875em) {
   .hide-for-extramedium {
     display: none !important;
   }
 }
 
-@media screen and (max-width: 47.3125em) {
+@media screen and (max-width: 51.8125em) {
   .show-for-extramedium {
     display: none !important;
   }
 }
 
-@media screen and (min-width: 47.375em) and (max-width: 63.9375em) {
+@media screen and (min-width: 51.875em) and (max-width: 63.9375em) {
   .hide-for-extramedium-only {
     display: none !important;
   }
 }
 
-@media screen and (max-width: 47.3125em), screen and (min-width: 64em) {
+@media screen and (max-width: 51.8125em), screen and (min-width: 64em) {
   .show-for-extramedium-only {
     display: none !important;
   }
@@ -3300,7 +3300,7 @@ select[multiple] {
     display: block;
   }
 }
-@media screen and (min-width: 47.375em) {
+@media screen and (min-width: 51.875em) {
   .menu.extramedium-horizontal > li {
     display: table-cell;
   }
@@ -3455,7 +3455,7 @@ body {
     margin-right: 250px;
   }
 }
-@media screen and (min-width: 47.375em) {
+@media screen and (min-width: 51.875em) {
   .position-left.reveal-for-extramedium {
     left: 0;
     z-index: auto;
@@ -4044,7 +4044,7 @@ tbody td {
   padding: 0.5rem 0.625rem 0.625rem;
 }
 
-@media screen and (max-width: 47.3125em) {
+@media screen and (max-width: 51.8125em) {
   table.stack thead {
     display: none;
   }
@@ -4351,7 +4351,7 @@ table.hover tr:nth-of-type(even):hover {
   }
 }
 
-@media screen and (max-width: 47.3125em) {
+@media screen and (max-width: 51.8125em) {
   .stacked-for-medium .top-bar-title {
     width: 100%;
   }
@@ -4473,6 +4473,10 @@ body {
   }
   #body .col-wrap-margin {
     margin-bottom: 1rem;
+  }
+
+  .header-row > .row {
+    padding: 1rem 1rem;
   }
 
   .progress {
@@ -4816,7 +4820,7 @@ header .top-bar .menu-text a {
   padding: 0;
 }
 
-@media screen and (max-width: 47.3125em) {
+@media screen and (max-width: 51.8125em) {
   .title-bar {
     padding-left: 3rem;
     padding-right: 3rem;
@@ -4980,13 +4984,24 @@ header .top-bar .menu-text a {
   border-right: 1px solid #e7e8e9;
 }
 
+@media screen and (max-width: 63.9375em) {
+  .panel-booking strong {
+    display: block;
+  }
+}
 @media screen and (min-width: 0em) and (max-width: 39.9375em) {
   .comment-box .comment-section .score h5 {
     text-align: left;
   }
 
-  .panel-booking .lesson-title {
-    display: block;
+  .credit-status-panel {
+    max-width: none;
+  }
+  .credit-status-panel h6 {
+    line-height: 1.2;
+  }
+  .credit-status-panel .status {
+    font-size: 1.5rem;
   }
 }
 .reveal-modal-bg {
@@ -5129,9 +5144,6 @@ div[id^="skypeModal"] .progress .progress-img.disabled h5 {
   background-color: #F3F3F3;
   margin-bottom: 1.5rem;
 }
-.lesson-table .lesson-button-row div.tabs-title:first-child {
-  padding-left: 0;
-}
 .lesson-table .lesson-label {
   padding: 0.5rem 1.25rem;
 }
@@ -5149,7 +5161,7 @@ div[id^="skypeModal"] .progress .progress-img.disabled h5 {
   margin-right: 0.5rem;
 }
 .lesson-table .lesson-row time strong {
-  margin-left: 0.75rem;
+  margin-left: 0.5rem;
 }
 .lesson-table .lesson-row .rating {
   display: inline-block;
@@ -5252,6 +5264,11 @@ div[id^="skypeModal"] .progress .progress-img.disabled h5 {
 
 @media screen and (min-width: 0em) and (max-width: 39.9375em) {
   .lesson-table .lesson-row .columns:last-child {
+    margin-bottom: 0;
+  }
+  .lesson-table .lesson-row.highlight-green time {
+    display: block;
+    margin-top: 0;
     margin-bottom: 0;
   }
 }
@@ -5364,6 +5381,11 @@ div[id^="skypeModal"] .progress .progress-img.disabled h5 {
   background-color: #FFF;
 }
 
+@media screen and (max-width: 51.8125em) {
+  .teacher-panel .booking-row .button {
+    padding: 0.25rem 0.5rem;
+  }
+}
 #get-started img.bordered {
   border: 2px solid #929497;
 }

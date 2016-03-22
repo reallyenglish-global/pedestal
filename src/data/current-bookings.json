@@ -1,0 +1,62 @@
+[
+  {
+    "unit": 1,
+    "kind": "prep",
+    "cms_id": 1769435,
+    "lang": "en",
+    "category": "Grammar",
+    "level": 2,
+    "type": "training",
+    "name_en": "Talking about a trip",
+    "name_ja": "初対面の人との会話",
+    "topic_en": "Questions",
+    "topic_ja": "疑問文",
+    "subtopic_en": "Yes/No questions",
+    "subtopic_ja": "Yes/No疑問文"
+  },
+  {
+    "unit": 1,
+    "kind": "review",
+    "cms_id": 1618601,
+    "lang": "en",
+    "category": "Listening",
+    "level": 2,
+    "type": "training",
+    "name_en": "Planning to go out",
+    "name_ja": "一緒に出かける約束",
+    "topic_en": "People and relationships",
+    "topic_ja": "社交と対人関係",
+    "subtopic_en": "Social arrangements",
+    "subtopic_ja": "コミュニケーション"
+  },
+  {
+    "unit": 2,
+    "kind": "prep",
+    "cms_id": 1713914,
+    "lang": "en",
+    "category": "Reading",
+    "level": 2,
+    "type": "training",
+    "name_en": "Enjoying yourself",
+    "name_ja": "心から楽しめるもの",
+    "topic_en": "Leisure and entertainment",
+    "topic_ja": "余暇と娯楽",
+    "subtopic_en": "Leisure time",
+    "subtopic_ja": "余暇"
+  },
+  {
+    "unit": 2,
+    "kind": "review",
+    "cms_id": 1714442,
+    "lang": "en",
+    "category": "Reading",
+    "level": 2,
+    "type": "training",
+    "name_en": "Going out",
+    "name_ja": "週末の楽しみ",
+    "topic_en": "Leisure and entertainment",
+    "topic_ja": "余暇と娯楽",
+    "subtopic_en": "Leisure time",
+    "subtopic_ja": "余暇"
+  }
+]
