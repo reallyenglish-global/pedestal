@@ -1,76 +1,49 @@
-{{#ifCond current '||' completed}}
+
 <div class="panel-white radius row small-collapse medium-uncollapse lesson-row">
 	<div class="small-2 medium-1 columns">
 		<span class="speaking-icon"></span>
 	</div>
-	<div class="small-6 medium-5 columns title"><strong>{{this.name_en}}</strong></div>
-	<div class="small-6 medium-offset-3 medium-2 columns">スピーキング</div>
-	<div class="small-offset-10 small-2 medium-offset-0 medium-1 small-collapse large-uncollapse columns">
-		<a href="#" class="bold">PDF</a>
-		<span class="download-icon hide-for-medium"></span>
-	</div>
-</div>
-{{/ifCond}}
-{{#ifCond incomplete '||' cancelled}}
-<div class="panel-white radius row small-collapse medium-uncollapse lesson-row">
-	<div class="medium-1 columns">
-		<span class="speaking-icon"></span>
-	</div>
-	<div class="medium-11 columns">
-		[Consumed ticket] Canceled before 23 minutes (by student)
-	</div>
-</div>
-{{/ifCond}}
-{{#if current}}
-<div class="panel-white radius row small-collapse medium-uncollapse lesson-row highlight-blue">
-	<div class="small-offset-2 small-10 medium-3 medium-offset-1 columns">
-		<img class="avatar hide-for-small-only" src="assets/images/avatar.png">
-		Simon
-	</div>
-	<div class="small-offset-2 small-10 medium-4 medium-offset-2 columns">
-		<span class="calendar-icon hide-for-small-only"></span>
-		<time>11:30pm <strong> 02/07/2016</strong></time>
-	</div>
-	<div class="medium-2 large-1 large-offset-1 small-collapse large-uncollapse columns text-right">
-		<a href="#" class="grey underline bold">Cancel</a>
-	</div>
-</div>
-{{/if}}
-{{#if this.completed}}
-<div class="panel-white radius row small-collapse medium-uncollapse lesson-row highlight-green">
-	<div class="medium-2 medium-offset-1 columns">
-		<img class="avatar" src="assets/images/avatar.png">
-		Simon
-	</div>
-	<div class="medium-3 medium-offset-3 columns">
-		<span class="tick-icon"></span>
-		<time>Fri 2 July 2016</time>
-	</div>
-	<div class="medium-3 columns">
-		<button type="button" class="button yellow show-feedback rating right">
-			<span class="star"></span>
-			<span class="star"></span>
-			<span class="star"></span>
-			<p class="comment">Excellent</p>
-			<span class="arrow-down"></span>
-		</button>
-	</div>
-	<div class="medium-12 columns">
-		<div class="assessment-feedback">
-			Book/Topic:ReallyEnglish - EZ to Talk Basic.5 - Taking Business Trips Vocabulary/Expressions: 1. Nigel is staying at the Holiday Inn. 2. My assistant is meeting our client at the airport now. 3. Your secretary is booking your tickets now. 4. Our clients are taking us out to dinner now. 5. She is traveling to London at the moment. Focus: 1. Present Continuous: be + verb + -ing for actions happening now or around now 2. Expressing ideas based on the language focus 3. Constructing sentences using the expressions 4. Practice the expressions in different situations Next topic:EZ to Talk – Basic.6 Good food Evaluation: Remarks: Book/Topic:ReallyEnglish - EZ to Talk Basic.6 - Good food Vocabulary/Expressions: 1. delicious: >> This cake is delicious. 2. fresh: >> I like to eat fresh food. 3. healthy: >> That meal looks healthy. 4. fried: >> I am trying not to eat fried food. 5. boiled: >> I have heard that boiled carrots are healthier than raw carrots. 6. plate: >> That plate of food looks wonderful. 7. taste: >> How does it taste? 8. fast food: >> Sometimes fast food is the only option for lunch. 9. microwave meal: >> I bought a microwave meal for dinner. 10. drink: >> What drink would you like? Focus: 1. Expressing ideas based on the language focus 2. Constructing sentences using the expressions 3. Practice the expressions in different situations Next topic:EZ to Talk – Basic.7 Healthy habits Evaluation: Remarks:
+	{{#ifCond incomplete '||' cancelled}}
+		<div class="medium-11 columns">
+			[Consumed ticket] Canceled before 23 minutes (by student)
 		</div>
-	</div>
+	{{else}}
+		<div class="small-6 medium-5 columns title"><strong>{{this.name_en}}</strong></div>
+		<div class="small-6 medium-offset-3 medium-2 columns">スピーキング</div>
+		<div class="small-offset-10 small-2 medium-offset-0 medium-1 small-collapse large-uncollapse columns">
+			<a href="#" class="bold">PDF</a>
+			<span class="download-icon hide-for-medium"></span>
+		</div>
+	{{/ifCond}}
 </div>
-{{/if}}
-{{#ifCond incomplete '||' cancelled}}
 <div class="panel-white radius row small-collapse medium-uncollapse lesson-row {{this.highlightClass}}">
 	<div class="small-offset-2 small-10 medium-3 medium-offset-1 columns">
 		<img class="avatar hide-for-small-only" src="assets/images/avatar.png">
 		Simon
 	</div>
-	<div class="small-offset-2 small-10 medium-4 medium-offset-2 columns">
+	<div class="small-offset-2 small-10 medium-3 medium-offset-2 columns end">
 		<span class="calendar-icon hide-for-small-only"></span>
 		<time>11:30pm <strong> 02/07/2016</strong></time>
 	</div>
+	{{#ifCond incomplete '||' cancelled}}
+	{{else if this.completed}}
+		<div class="medium-3 columns">
+			<button type="button" class="button yellow show-feedback rating right">
+				<span class="star"></span>
+				<span class="star"></span>
+				<span class="star"></span>
+				<p class="comment">Excellent</p>
+				<span class="arrow-down"></span>
+			</button>
+		</div>
+		<div class="medium-12 columns">
+			<div class="assessment-feedback">
+				Book/Topic:ReallyEnglish - EZ to Talk Basic.5 - Taking Business Trips Vocabulary/Expressions: 1. Nigel is staying at the Holiday Inn. 2. My assistant is meeting our client at the airport now. 3. Your secretary is booking your tickets now. 4. Our clients are taking us out to dinner now. 5. She is traveling to London at the moment. Focus: 1. Present Continuous: be + verb + -ing for actions happening now or around now 2. Expressing ideas based on the language focus 3. Constructing sentences using the expressions 4. Practice the expressions in different situations Next topic:EZ to Talk – Basic.6 Good food Evaluation: Remarks: Book/Topic:ReallyEnglish - EZ to Talk Basic.6 - Good food Vocabulary/Expressions: 1. delicious: >> This cake is delicious. 2. fresh: >> I like to eat fresh food. 3. healthy: >> That meal looks healthy. 4. fried: >> I am trying not to eat fried food. 5. boiled: >> I have heard that boiled carrots are healthier than raw carrots. 6. plate: >> That plate of food looks wonderful. 7. taste: >> How does it taste? 8. fast food: >> Sometimes fast food is the only option for lunch. 9. microwave meal: >> I bought a microwave meal for dinner. 10. drink: >> What drink would you like? Focus: 1. Expressing ideas based on the language focus 2. Constructing sentences using the expressions 3. Practice the expressions in different situations Next topic:EZ to Talk – Basic.7 Healthy habits Evaluation: Remarks:
+			</div>
+		</div>
+	{{else}}
+		<div class="medium-2 large-1 large-offset-1 small-collapse large-uncollapse columns text-right">
+			<a href="#" class="grey underline bold">Cancel</a>
+		</div>
+	{{/ifCond}}
 </div>
-{{/ifCond}}

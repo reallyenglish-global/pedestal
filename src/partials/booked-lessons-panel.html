@@ -18,7 +18,7 @@
 			<div id="current-bookings-panel" class="tabs-panel is-active">
 				{{#each current-bookings}}
 					<div class="lesson-set">
-						{{> lesson current=true}}
+						{{> lesson current=true highlightClass="highlight-blue"}}
 					</div>
 				{{/each}}
 			</div>
@@ -26,7 +26,7 @@
 		<div id="completed-lessons-panel" class="tabs-panel">
 			{{#each current-bookings}}
 				<div class="lesson-set">
-					{{> lesson completed=true}}
+					{{> lesson completed=true highlightClass="highlight-green"}}
 				</div>
 			{{/each}}
 		</div>
