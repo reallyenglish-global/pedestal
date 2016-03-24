@@ -4433,7 +4433,7 @@ body {
 }
 
 .header-row > .row,
-#body {
+.body-wrapper {
   padding: 1rem 3rem;
   max-width: 70.5rem;
   margin: 0 auto;
