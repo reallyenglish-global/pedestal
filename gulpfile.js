@@ -8,6 +8,7 @@ var sequence     = require('run-sequence');
 var sherpa       = require('style-sherpa');
 var compass      = require('gulp-compass');
 var scsslint     = require('gulp-scss-lint');
+var gutil        = require('gulp-util');
 var autoprefixer = require('gulp-autoprefixer');
 
 // Port to use for the development server.
@@ -55,6 +56,20 @@ var PATHS = {
 	]
 };
 
+var colors = gutil.colors;
+var customReporter = function(file, stream) {
+	if (!file.scsslint.success) {
+		file.scsslint.issues.forEach(function (issue) {
+			var severity = issue.severity === 'warning' ? colors.yellow(' [W] ') : colors.red(' [E] ');
+      var linter = issue.linter ? (issue.linter + ': ') : '';
+      var logMsg =
+        colors.cyan(file.relative) + ':' + colors.magenta(issue.line) + severity + colors.green(linter) + issue.reason;
+
+			stream.emit('error', new gutil.PluginError("scss-lint", logMsg));
+		})
+	}
+};
+
 gulp.task('clean', function(done) {
 	rimraf('dist', done);
 });
@@ -88,6 +103,17 @@ gulp.task('scss-lint', function() {
 		'bundleExec': true,
 		'config': 'scss-lint.yml',
 		'filePipeOutput': 'scss-report.json'
+	}))
+	.pipe(gulp.dest('./'));
+});
+
+gulp.task('scss-lint-check', function() {
+	return gulp.src('./src/assets/scss/**/*.scss')
+	.pipe(scsslint({
+		'bundleExec': true,
+		'config': 'scss-lint.yml',
+		'filePipeOutput': 'scss-report.json',
+		'customReport': customReporter
 	}))
 	.pipe(gulp.dest('./'));
 });

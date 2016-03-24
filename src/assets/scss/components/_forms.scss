@@ -1,8 +1,29 @@
 form {
   .is-invalid-input:not(:focus) {
     box-shadow: 0 0 0 1px #f7ada9,
-          0 0 0 2px #f0726d,
-          0 0 0 3px #f4c6c5;
+    0 0 0 2px #f0726d,
+    0 0 0 3px #f4c6c5;
+  }
+}
+
+.button-file {
+  position: relative;
+  overflow: hidden;
+
+  [type='file'] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity = 0);
+    opacity: 0;
+    outline: none;
+    background: #fff;
+    cursor: inherit;
+    display: block;
   }
 }
 
