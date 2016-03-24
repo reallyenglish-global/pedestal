@@ -1,29 +1,27 @@
 body {
-	background-color: #E5E5E5;
+  background-color: #e5e5e5;
 }
 
 .header-row > .row,
 #body {
-	padding: 1rem 3rem;
-	max-width: $global-max-width;
-	margin: 0 auto;
+  padding: 1rem 3rem;
+  max-width: $global-max-width;
+  margin: 0 auto;
 }
 
 //TODO: move to grid scss
 .row {
-	.column {
+  .align-center {
+    text-align: center;
+  }
 
-		&.align-center {
-			text-align: center;
-		}
-		&.align-right {
-			text-align: right;
-		}
-	}
+  .align-right {
+    text-align: right;
+  }
 
-	&.white {
-		background-color: #fff;
-	}
+  &.white {
+    background-color: #fff;
+  }
 }
 
 //Move to mixins
@@ -35,44 +33,44 @@ body {
 
 //Move to progress
 .progress {
-	&[aria-valuenow="10"] {
-		.progress-meter {
-			width: 10%;
-		}
-	}
+  &[aria-valuenow="10"] {
+    .progress-meter {
+      width: 10%;
+    }
+  }
 
-	&[aria-valuenow="60"] {
-		.progress-meter {
-			width: 60%;
-		}
-	}
+  &[aria-valuenow="60"] {
+    .progress-meter {
+      width: 60%;
+    }
+  }
 
-	&[aria-valuenow="90"] {
-		.progress-meter {
-			width: 90%;
-		}
-	}
+  &[aria-valuenow="90"] {
+    .progress-meter {
+      width: 90%;
+    }
+  }
 }
 
 @include breakpoint(small only) {
-	#body {
-		max-width: 100%;
-		padding: 1rem 0;
+  #body {
+    max-width: 100%;
+    padding: 1rem 0;
 
-		& > h2 {
-			margin: 0 1.5rem 1rem 1.5rem;
-		}
+    > h2 {
+      margin: 0 1.5rem 1rem;
+    }
 
-		.col-wrap-margin {
-			margin-bottom: 1rem;
-		}
-	}
+    .col-wrap-margin {
+      margin-bottom: 1rem;
+    }
+  }
 
-	.header-row > .row {
-		padding: 1rem 1rem;
-	}
+  .header-row > .row {
+    padding: 1rem;
+  }
 
-	.progress {
-		margin-bottom: 1rem;
-	}
+  .progress {
+    margin-bottom: 1rem;
+  }
 }
