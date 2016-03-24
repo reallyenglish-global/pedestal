@@ -102,6 +102,16 @@ gulp.task('scss-lint', function() {
 	.pipe(scsslint({
 		'bundleExec': true,
 		'config': 'scss-lint.yml',
+		'filePipeOutput': 'scss-report.json'
+	}))
+	.pipe(gulp.dest('./'));
+});
+
+gulp.task('scss-lint-check', function() {
+	return gulp.src('./src/assets/scss/**/*.scss')
+	.pipe(scsslint({
+		'bundleExec': true,
+		'config': 'scss-lint.yml',
 		'filePipeOutput': 'scss-report.json',
 		'customReport': customReporter
 	}))
