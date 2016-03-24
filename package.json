@@ -17,14 +17,17 @@
     "gulp-load-plugins": "^1.2.0",
     "gulp-sass": "^2.2.0",
     "gulp-scss-lint": "^0.3.9",
+    "gulp-util": "^3.0.7",
     "panini": "^1.2.0",
+    "precommit-hook": "^3.0.0",
     "rimraf": "^2.5.2",
     "run-sequence": "^1.1.5",
     "style-sherpa": "^1.0.1",
     "yargs": "^4.1.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "gulp scss-lint"
   },
   "repository": {
     "type": "git",
@@ -35,5 +38,8 @@
   "bugs": {
     "url": "https://github.com/reallyenglish/booking-system-template/issues"
   },
-  "homepage": "https://github.com/reallyenglish/booking-system-template#readme"
+  "homepage": "https://github.com/reallyenglish/booking-system-template#readme",
+  "pre-commit": [
+    "lint"
+  ]
 }
