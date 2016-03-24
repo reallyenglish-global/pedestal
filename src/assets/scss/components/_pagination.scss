@@ -1,12 +1,10 @@
 .pagination {
-	li {
-		&.current {
-			border-radius: 5px;
+  &.current {
+    border-radius: 5px;
 
-			a {
-				padding: 0;
-				color: $white;
-			}
-		}
-	}
+    a {
+      padding: 0;
+      color: $white;
+    }
+  }
 }

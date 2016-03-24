@@ -1,108 +1,108 @@
 .close {
-	background-image: url(../images/icons/close-icon.svg);
-	background-size: 0.75rem 0.75rem;
-	background-repeat: no-repeat;
-	background-position: 50% 50%;
+  background-image: url('../images/icons/close-icon.svg');
+  background-size: 0.75rem 0.75rem;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
 
 .help {
-	background-image: url(../images/icons/question.svg);
-	background-size: 0.75rem 0.75rem;
-	background-repeat: no-repeat;
-	background-position: 50% 50%;
-	padding: 0.75rem;
+  background-image: url('../images/icons/question.svg');
+  background-size: 0.75rem 0.75rem;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  padding: 0.75rem;
 }
 
 .star {
-	background-image: url(../images/icons/star.svg);
-	display: inline-block;
-	background-size: 0.75rem 0.75rem;
-	background-repeat: no-repeat;
-	background-position: 50% 50%;
-	height: 0.8rem;
-	width: 0.9rem;
+  background-image: url('../images/icons/star.svg');
+  display: inline-block;
+  background-size: 0.75rem 0.75rem;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  height: 0.8rem;
+  width: 0.9rem;
 }
 
 .arrow-down {
-	background-image: url(../images/icons/arrow-down.svg);
-	background-size: 0.5rem 0.5rem;
-	background-repeat: no-repeat;
-	background-position: 50% 50%;
-	height: 0.7rem;
-	width: 1rem;
-	display: inline-block;
+  background-image: url('../images/icons/arrow-down.svg');
+  background-size: 0.5rem 0.5rem;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  height: 0.7rem;
+  width: 1rem;
+  display: inline-block;
 }
 
 .tick {
-	background-image: url(../images/icons/white-tick.svg);
-	background-size: 1rem 1rem;
-	background-repeat: no-repeat;
-	background-position: 50% 50%;
-	height: 0.8rem;
-	width: 1rem;
-	display: inline-block;
+  background-image: url('../images/icons/white-tick.svg');
+  background-size: 1rem 1rem;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  height: 0.8rem;
+  width: 1rem;
+  display: inline-block;
 }
 
 %lesson-icon {
-	height: 2.3rem;
-	width: 2.3rem;
-	background-size: 2.2rem 2.2rem;
-	background-repeat: no-repeat;
-	background-position: 50% 50%;
-	display: inline-block;
-	cursor: pointer;
+  height: 2.3rem;
+  width: 2.3rem;
+  background-size: 2.2rem 2.2rem;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  display: inline-block;
+  cursor: pointer;
 }
 
 .grammar-icon {
-	@extend %lesson-icon;
-	background-image: url("../images/icons/grammar.svg");
+  @extend %lesson-icon;
+  background-image: url('../images/icons/grammar.svg');
 }
 
 .listening-icon {
-	@extend %lesson-icon;
-	background-image: url("../images/icons/listening.svg");
+  @extend %lesson-icon;
+  background-image: url('../images/icons/listening.svg');
 }
 
 .reading-icon {
-	@extend %lesson-icon;
-	background-image: url("../images/icons/reading.svg");
+  @extend %lesson-icon;
+  background-image: url('../images/icons/reading.svg');
 }
 
 .speaking-icon {
-	@extend %lesson-icon;
-	cursor: auto;
-	height: 1.4rem;
-	background-size: 2.2rem 1.4rem;
-	background-image: url("../images/icons/speaking.svg");
+  @extend %lesson-icon;
+  cursor: auto;
+  height: 1.4rem;
+  background-size: 2.2rem 1.4rem;
+  background-image: url('../images/icons/speaking.svg');
 }
 
 .download-icon {
-	height: 1rem;
-	width: 1rem;
-	background-size: 1rem 1rem;
-	background-repeat: no-repeat;
-	background-position: 50% 50%;
-	display: inline-block;
-	background-image: url("../images/icons/download.svg");
+  height: 1rem;
+  width: 1rem;
+  background-size: 1rem 1rem;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  display: inline-block;
+  background-image: url('../images/icons/download.svg');
 }
 
 %answer {
-	display: block;
-	background-size: 1.5rem 1.5rem;
-	background-repeat: no-repeat;
-	background-position: 50% 50%;
-	height: 1.5rem;
-	width: 1.5rem;
-	cursor: pointer;
+  display: block;
+  background-size: 1.5rem 1.5rem;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  height: 1.5rem;
+  width: 1.5rem;
+  cursor: pointer;
 }
 
 .show-answer {
-	@extend %answer;
-	background-image: url("../../assets/images/icons/plus.svg");
+  @extend %answer;
+  background-image: url('../../assets/images/icons/plus.svg');
 }
 
 .hide-answer {
-	@extend %answer;
-	background-image: url("../../assets/images/icons/minus.svg");
+  @extend %answer;
+  background-image: url('../../assets/images/icons/minus.svg');
 }
 

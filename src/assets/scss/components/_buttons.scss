@@ -1,90 +1,89 @@
-a.button,
-button.button {
-	font-size: 0.9rem;
-	text-decoration: none;
+.button {
+  font-size: 0.9rem;
+  text-decoration: none;
 
-	&.light-grey {
-		background-color: #F3F3F3;
-		color: $body-font-color;
+  &.light-grey {
+    background-color: #f3f3f3;
+    color: $body-font-color;
 
-		&.selected,
-		&[aria-selected="true"] {
-			background-color: #C7C7C7;
-			box-shadow: inset 1px 1px 3px #8E8C8C;
-		}
+    &.selected,
+    &[aria-selected="true"] {
+      background-color: #c7c7c7;
+      box-shadow: inset 1px 1px 3px #8e8c8c;
+    }
 
-		&:hover {
-			background-color: darken(#E8E8E8, 10%);
-		}
-	}
+    &:hover {
+      background-color: darken(#e8e8e8, 10%);
+    }
+  }
 
-	&.yellow {
-		background-color: #fffcef;
-		color: $body-font-color;
-	}
+  &.yellow {
+    background-color: #fffcef;
+    color: $body-font-color;
+  }
 
-	&.disabled {
-		background-color: $button-disabled-color;
-	}
+  &.disabled {
+    background-color: $button-disabled-color;
+  }
 
-	&.radius {
-		border-radius: 5px;
-	}
+  &.radius {
+    border-radius: 5px;
+  }
 
-	&.round {
-		border-radius: 1000px;
-	}
+  &.round {
+    border-radius: 1000px;
+  }
 
-	&.small {
-		padding: 1rem;
-		height: 1rem;
-		width: 1rem;
-		display: inline-block;
-	}
+  &.small {
+    padding: 1rem;
+    height: 1rem;
+    width: 1rem;
+    display: inline-block;
+  }
 
-	&.circle {
-		border-radius: 50%;
-	}
+  &.circle {
+    border-radius: 50%;
+  }
 
-	&.grey {
-		background-color: $grey;
-	}
+  &.grey {
+    background-color: $grey;
+  }
 
-	&.dark-grey {
-		background-color: $darker-grey;
-	}
+  &.dark-grey {
+    background-color: $darker-grey;
+  }
 
-	&.white {
-		background-color: $white;
-		color: #989898;
+  &.white {
+    background-color: $white;
+    color: #989898;
 
-		&[aria-selected="true"] {
-			color: #58595b;
-			border: 2px solid #bbbdbf;
-		}
+    &[aria-selected="true"] {
+      color: #58595b;
+      border: 2px solid #bbbdbf;
+    }
 
-		&.alt {
-			color: #3babde;
-			border: 2px solid #3babde;
-		}
-	}
+    &.alt {
+      color: #3babde;
+      border: 2px solid #3babde;
+    }
+  }
 
-	&.blue {
-		background-color: #9bcbde;
-		color: $white;
-	}
+  &.blue {
+    background-color: #9bcbde;
+    color: $white;
+  }
 
-	.title,
-	.sub-text {
-		display: block;
-	}
+  .title,
+  .sub-text {
+    display: block;
+  }
 
-	.title {
-		font-size: 1rem;
-		margin-bottom: 0.25rem;
-	}
+  .title {
+    font-size: 1rem;
+    margin-bottom: 0.25rem;
+  }
 
-	.sub-text {
-		font-size: 0.75rem;
-	}
+  .sub-text {
+    font-size: 0.75rem;
+  }
 }

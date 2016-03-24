@@ -2,199 +2,198 @@ $booked-lesson-color: #e0f0f3;
 
 .lesson-table {
 
-	.row, .panel-white {
-		margin: 0;
-	}
+  .row,
+  .panel-white {
+    margin: 0;
+  }
 
-	.panel-white {
-		padding: 0.8rem 0.5rem;
-		color: #989898;
-	}
+  .panel-white {
+    padding: 0.8rem 0.5rem;
+    color: #989898;
+  }
 
-	.lesson-set {
-		margin-bottom: 1rem;
+  .lesson-set {
+    margin-bottom: 1rem;
 
-		&.unbooked div.lesson-row:nth-child(3) {
-			box-shadow: inset 0 -6px 0 -2px $booked-lesson-color,
-			inset 0 -7px 0 -2px #edf6f8;
-		}
+    &.unbooked .lesson-row:nth-child(3) {
+      box-shadow: inset 0 -6px 0 -2px $booked-lesson-color,
+      inset 0 -7px 0 -2px #edf6f8;
+    }
 
-		&.booked div.lesson-row:nth-child(4) {
-			background-color: $booked-lesson-color;
-			border-top: none;
-		}
-	}
+    &.booked .lesson-row:nth-child(4) {
+      background-color: $booked-lesson-color;
+      border-top: none;
+    }
+  }
 
-	.lesson-button-row {
-		background-color: $callout-background;
-		margin-bottom: 1.5rem;
-	}
+  .lesson-button-row {
+    background-color: $callout-background;
+    margin-bottom: 1.5rem;
+  }
 
-	.lesson-label {
-		padding: 0.5rem 1.25rem;
-	}
+  .lesson-label {
+    padding: 0.5rem 1.25rem;
+  }
 
-	.lesson-row {
-		border: 1px solid #e7e7e7;
-		border-bottom: none;
+  .lesson-row {
+    border: 1px solid #e7e7e7;
+    border-bottom: none;
 
-		.title {
-			color: $body-font-color;
-		}
+    .title {
+      color: $body-font-color;
+    }
 
-		.avatar {
-			height: 1.5rem;
-			width: 1.5rem;
-			border-radius: 50%;
-			margin-right: 0.5rem;
-		}
+    .avatar {
+      height: 1.5rem;
+      width: 1.5rem;
+      border-radius: 50%;
+      margin-right: 0.5rem;
+    }
 
-		time {
-			strong {
-				margin-left: 0.5rem;
-			}
-		}
+    .lesson-date {
+      margin-left: 0.5rem;
+    }
 
-		.rating {
-			display: inline-block;
-			vertical-align: top;
+    .rating {
+      display: inline-block;
+      vertical-align: top;
+    }
 
-			.comment {
-				display: inline-block;
-				margin: 0 0 0 0.5rem;
-			}
-		}
+    .comment {
+      display: inline-block;
+      margin: 0 0 0 0.5rem;
+    }
 
-		.assessment-feedback {
-			background-color: #fffcef;
-			padding: 1rem;
-			display: none;
-			margin-bottom: 1rem;
-		}
+    .assessment-feedback {
+      background-color: #fffcef;
+      padding: 1rem;
+      display: none;
+      margin-bottom: 1rem;
+    }
 
-		.tick-icon,
-		.calendar-icon,
-		.incomplete-icon,
-		.cancel-icon {
-			background-repeat: no-repeat;
-			background-position: 50% 50%;
-			height: 0.9rem;
-			width: 1rem;
-			background-size: contain;
-			display: inline-block;
-			margin-right: 0.5rem;
-		}
+    .tick-icon,
+    .calendar-icon,
+    .incomplete-icon,
+    .cancel-icon {
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      height: 0.9rem;
+      width: 1rem;
+      background-size: contain;
+      display: inline-block;
+      margin-right: 0.5rem;
+    }
 
-		.calendar-icon {
-			background-image: url(../images/icons/calendar.svg);
-		}
+    .calendar-icon {
+      background-image: url('../images/icons/calendar.svg');
+    }
 
-		.tick-icon {
-			background-image: url(../images/icons/tick.svg);
-		}
+    .tick-icon {
+      background-image: url('../images/icons/tick.svg');
+    }
 
-		.incomplete-icon {
-			background-image: url(../images/icons/incomplete.svg);
-		}
+    .incomplete-icon {
+      background-image: url('../images/icons/incomplete.svg');
+    }
 
-		.cancel-icon {
-			background-image: url(../images/icons/cancelled.svg);
-		}
+    .cancel-icon {
+      background-image: url('../images/icons/cancelled.svg');
+    }
 
-		&[class*='highlight']{
-			color: $body-font-color;
-		}
+    &[class*='highlight'] {
+      color: $body-font-color;
+    }
 
-		&.lesson-row + [class*='highlight'] {
-			border-top: none;
-		}
+    &.lesson-row + [class*='highlight'] {
+      border-top: none;
+    }
 
-		&.highlight-blue {
-			background-color: $booked-lesson-color;
+    .lesson-row:last-child {
+      border-bottom: 1px solid #e7e7e7;
+    }
+  }
 
-			&.bordered {
-				border: 2px solid #9bcbde;
-				border-bottom: none;
-			}
-		}
+  .highlight-blue {
+    background-color: $booked-lesson-color;
 
-		&.highlight-green {
-			background-color: #ecf7f2;
-			padding: 0 0.5rem;
+    &.bordered {
+      border: 2px solid #9bcbde;
+      border-bottom: none;
+    }
+  }
 
-			time,
-			.avatar,
-			p {
-				display: inline-block;
-				margin-top: 1rem;
-				margin-bottom: 1rem;
-			}
+  .highlight-green {
+    background-color: #ecf7f2;
+    padding: 0 0.5rem;
 
-			time {
-				color: #7dbaa7;
-			}
+    time,
+    .avatar,
+    p {
+      display: inline-block;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
 
-			.show-feedback {
-				border-top-right-radius: 5px;
-				border-top-left-radius: 5px;
-				padding-top: 0.75rem;
-				padding-bottom: 0.75rem;
-				margin-top: 0.8rem;
-				font-size: 0.8rem;
-				float: right;
+    time {
+      color: #7dbaa7;
+    }
+  }
 
-				.arrow-down {
-					margin-left: 0.25rem;
-				}
-			}
-		}
+  .show-feedback {
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    margin-top: 0.8rem;
+    font-size: 0.8rem;
+    float: right;
 
-		&.highlight-orange {
-			background-color: #f4e9e2;
+    .arrow-down {
+      margin-left: 0.25rem;
+    }
+  }
 
-			time {
-				color: #dda989;
-			}
+  .highlight-orange {
+    background-color: #f4e9e2;
 
-			.remark {
-				color: #a39e9e;
-			}
-		}
+    time {
+      color: #dda989;
+    }
 
-		&.highlight-purple {
-			background-color: #eee1e6;
+    .remark {
+      color: #a39e9e;
+    }
+  }
 
-			time {
-				color: #d09baf;
-			}
+  .highlight-purple {
+    background-color: #eee1e6;
 
-			.remark {
-				color: #a39e9e;
-			}
-		}
-	}
+    time {
+      color: #d09baf;
+    }
 
-	.lesson-row:last-child {
-		border-bottom: 1px solid #e7e7e7;
-	}
+    .remark {
+      color: #a39e9e;
+    }
+  }
 }
 
 @include breakpoint(small only) {
-	.lesson-table {
-		.lesson-row {
-			.columns {
-				&:last-child {
-					margin-bottom: 0;
-				}
-			}
 
-			&.highlight-green {
-				time {
-					display: block;
-					margin-top: 0;
-					margin-bottom: 0;
-				}
-			}
-		}
-	}
+  .lesson-row {
+    .columns {
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    &.highlight-green {
+      time {
+        display: block;
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+    }
+  }
+
 }

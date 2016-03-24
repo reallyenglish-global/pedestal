@@ -1,56 +1,56 @@
-#get-started {
-	img {
-		&.bordered {
-			border: 2px solid #929497;
-		}
-	}
+.get-started-page {
+  img {
+    &.bordered {
+      border: 2px solid #929497;
+    }
+  }
 }
 
-#faq {
-	color: $body-font-color;
+.faq-page {
+  color: $body-font-color;
 
-	.faq-heading {
-		margin-bottom: 0;
-	}
+  .faq-heading {
+    margin-bottom: 0;
+  }
 
-	.faq-contents {
-		list-style: none;
-		margin: 0 0 0 1.5rem;
-	}
+  .faq-contents {
+    list-style: none;
+    margin: 0 0 0 1.5rem;
+  }
 
-	.question {
-		color: #167AA2;
-		font-weight: 600;
-		margin-bottom: 0;
-	}
+  .question {
+    color: #167aa2;
+    font-weight: 600;
+    margin-bottom: 0;
+  }
 
-	.faq-answer {
-		display: none;
-		margin-top: 1rem;
-	}
+  .faq-answer {
+    display: none;
+    margin-top: 1rem;
+  }
 
-	.steps-list {
-		.step-heading {
-			margin-bottom: 0.5rem;
-			font-size: 1rem;
-			font-weight: 600;
-		}
+  .steps-list {
+    .step-heading {
+      margin-bottom: 0.5rem;
+      font-size: 1rem;
+      font-weight: 600;
+    }
 
-		.steps {
-			margin-bottom: 1.5rem;
-		}
-	}
+    .steps {
+      margin-bottom: 1.5rem;
+    }
+  }
 
-	.dash-list {
-		list-style-type: none;
-		margin-left: 0;
-		padding-left: 1.25rem;
+  .dash-list {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 1.25rem;
 
-		> li:before {
-			display: inline-block;
-			content: "-";
-			width: 1rem;
-			margin-left: -1rem;
-		}
-	}
+    > li::before {
+      display: inline-block;
+      content: '-';
+      width: 1rem;
+      margin-left: -1rem;
+    }
+  }
 }

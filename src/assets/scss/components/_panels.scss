@@ -1,15 +1,15 @@
 $comment-header-height: 3rem;
 
 .callout {
-  margin: 0 0 $callout-padding 0;
+  margin: 0 0 $callout-padding;
 
   &.alert {
-    background-color: #F4C6C8;
+    background-color: #f4c6c8;
     margin-top: $callout-padding;
     margin-bottom: 0;
 
     h4 {
-      color: #4E4E4E;
+      color: #4e4e4e;
       margin: 0;
     }
   }
@@ -35,13 +35,14 @@ $comment-header-height: 3rem;
   padding-bottom: 0.5rem;
 
   .comment-header {
-  	min-height: $comment-header-height;
+    min-height: $comment-header-height;
 
     h5 {
       margin-bottom: 0;
     }
 
-    .avatar, .name {
+    .avatar,
+    .name {
       display: inline-block;
     }
 
@@ -51,12 +52,12 @@ $comment-header-height: 3rem;
       margin-right: 0.3rem;
     }
 
-    .title h5 {
+    .title {
       color: $primary-color;
     }
 
-    .score h5 {
-      color: #E59C3C;
+    .score {
+      color: #e59c3c;
     }
   }
 }
@@ -80,7 +81,7 @@ $comment-header-height: 3rem;
   }
 
   &.bordered {
-    border: 1px solid #E5E5E4;
+    border: 1px solid #e5e5e4;
   }
 }
 
@@ -121,7 +122,7 @@ $comment-header-height: 3rem;
 @include breakpoint(small only) {
   .comment-box {
     .comment-section {
-      .score h5 {
+      .score {
         text-align: left;
       }
     }

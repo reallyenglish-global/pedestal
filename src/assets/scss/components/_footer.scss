@@ -1,14 +1,12 @@
 .footer {
-	// background-color: #F7F7F7;
-	padding-bottom: 2rem;
-	// box-shadow: 0 0 10px 3px #D5D5D5;
-	max-width: $global-max-width;
-	margin: 0 auto;
+  padding-bottom: 2rem;
+  max-width: $global-max-width;
+  margin: 0 auto;
 
-	small {
-		color: #666;
-		font-size: 0.8rem;
-		display: block;
-		text-align: center;
-	}
+  small {
+    color: #666;
+    font-size: 0.8rem;
+    display: block;
+    text-align: center;
+  }
 }

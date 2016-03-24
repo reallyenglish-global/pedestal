@@ -1,148 +1,146 @@
-header {
-	.header-row {
-		background-color: #FFF;
-		border-bottom: 1px solid #dcdcdc;
-	}
+.header-row {
+  background-color: #fff;
+  border-bottom: 1px solid #dcdcdc;
+}
 
-	.primary-nav,
-	.title-bar {
-		background-color: $topbar-background;
-	}
+.primary-nav,
+.title-bar {
+  background-color: $topbar-background;
+}
 
-	.top-bar {
-		padding: 0 3rem;
-		max-width: $global-max-width;
-		margin: 0 auto;
-		font-size: 0.75rem;
-		font-weight: bold;
+.top-bar {
+  padding: 0 3rem;
+  max-width: $global-max-width;
+  margin: 0 auto;
+  font-size: 0.75rem;
+  font-weight: bold;
 
-		.top-bar-right {
-			li {
-				&:hover {
-					background-color: #555;
-				}
-			}
-		}
+  .menu-text,
+  a {
+    color: $white;
+  }
+}
 
-		.menu li {
-			height: 2.5rem;
-		}
+.menu-text {
+  font-weight: 400;
+  font-size: 1rem;
 
-		.menu-text,
-		a {
-			color: $white;
-		}
+  a {
+    padding: 0;
+  }
+}
 
-		.menu-text {
-			font-weight: 400;
-			font-size: 1rem;
-			a {
-				padding: 0;
-			}
-		}
-	}
+
+.top-bar-right {
+  li {
+    height: 2.5rem;
+
+    &:hover {
+      background-color: #555;
+    }
+  }
 }
 
 .tabs {
-	margin-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
 
-	.tabs-title {
-		> a.button {
-			padding: $button-padding;
-		}
-	}
+  .tabs-title {
+    > .button {
+      padding: $button-padding;
+    }
+  }
 
-	%tab-icon {
-		background-size: 1rem 1rem;
-		height: 1rem;
-		width: 1rem;
-		display: inline-block;
-		background-repeat: no-repeat;
-		margin-right: 0.5rem;
-	}
+  %tab-icon {
+    background-size: 1rem 1rem;
+    height: 1rem;
+    width: 1rem;
+    display: inline-block;
+    background-repeat: no-repeat;
+    margin-right: 0.5rem;
+  }
 
-	#get-started-button {
-		text-align: left;
+  .get-started-tab {
+    text-align: left;
 
-		.get-started-icon {
-			@extend %tab-icon;
-			background-image: url(../images/icons/get-started.svg);
-		}
-	}
+    .get-started-icon {
+      @extend %tab-icon;
+      background-image: url('../images/icons/get-started.svg');
+    }
+  }
 
-	#faq-button {
-		text-align: left;
+  .faq-tab {
+    text-align: left;
 
-		.faq-icon {
-			@extend %tab-icon;
-			background-image: url(../images/icons/faq-question.svg);
-		}
-	}
+    .faq-icon {
+      @extend %tab-icon;
+      background-image: url('../images/icons/faq-question.svg');
+    }
+  }
 
-	#booked-lessons-button {
-		text-align: left;
+  .booked-lessons-tab {
+    text-align: left;
 
-		.bookmark-icon {
-			@extend %tab-icon;
-			background-image: url(../images/icons/bookmark.svg);
-		}
-	}
+    .bookmark-icon {
+      @extend %tab-icon;
+      background-image: url('../images/icons/bookmark.svg');
+    }
+  }
 
-	#study-tasks-button {
-		text-align: left;
+  .study-tasks-tab {
+    text-align: left;
 
-		.lamp-icon {
-			@extend %tab-icon;
-			background-image: url(../images/icons/lamp.svg);
-		}
-	}
+    .lamp-icon {
+      @extend %tab-icon;
+      background-image: url('../images/icons/lamp.svg');
+    }
+  }
 }
 
 .tabs-content {
-	&.callout {
-		background-color: $callout-background;
-	}
+  &.callout {
+    background-color: $callout-background;
+  }
 
-	.tabs-panel {
-		padding: 0;
-	}
+  .tabs-panel {
+    padding: 0;
+  }
 }
 
 @include breakpoint(medium down) {
-	.title-bar {
-		padding-left: 3rem;
-		padding-right: 3rem;
-	}
+  .title-bar {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
 
-	.top-bar {
-		.top-bar-left {
-			display: none;
-		}
+  .top-bar {
+    .top-bar-left {
+      display: none;
+    }
+  }
 
-		.top-bar-right {
-			float: none;
-			.menu {
-				> li[role="menuitem"] {
-					display: block;
-					padding-left: 2rem;
-				}
-			}
-		}
-	}
+  .top-bar-right {
+    float: none;
+
+    .menu {
+      > [role="menuitem"] {
+        display: block;
+        padding-left: 2rem;
+      }
+    }
+  }
 }
 
 @include breakpoint(small only) {
-	.title-bar {
-		padding-left: 1.25rem;
-		padding-right: 1.25rem;
-	}
-	.top-bar {
-		.top-bar-right {
-			.menu {
-				> li[role="menuitem"] {
-					padding-left: 0;
-				}
-			}
-		}
-	}
+  .title-bar {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  .top-bar-right {
+    .menu {
+      > [role="menuitem"] {
+        padding-left: 0;
+      }
+    }
+  }
 }

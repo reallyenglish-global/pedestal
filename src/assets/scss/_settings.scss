@@ -48,11 +48,11 @@ $global-font-size: 100%;
 $global-width: rem-calc(1200);
 $global-lineheight: 1.5;
 $global-max-width: 70.5rem;
-$primary-color: #48AADF;
+$primary-color: #48aadf;
 $secondary-color: #777;
 $success-color: #3adb76;
 $warning-color: #ffae00;
-$alert-color: #F35B52;
+$alert-color: #f35b52;
 $light-gray: #e6e6e6;
 $medium-gray: #cacaca;
 $dark-gray: #8a8a8a;
@@ -62,7 +62,7 @@ $dark-grey: #727272;
 $grey: #878787;
 
 // $black: #0a0a0a;
-$white: #FFF;
+$white: #fff;
 $body-background: $white;
 $body-font-color: #4e4e4e;
 $body-font-family: "ProximaNova", "Helvetica Neue", 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', Helvetica, Roboto, Arial, sans-serif;
@@ -236,7 +236,7 @@ $form-label-color-invalid: $body-font-color;
 // 11. Button
 // ----------
 
-$button-padding: 0.50em 1em;
+$button-padding: 0.5em 1em;
 $button-margin: 0;
 // $button-fill: solid;
 // $button-background: $primary-color;
@@ -251,7 +251,7 @@ $button-sizes: (
   large: 1.25rem,
 );
 $button-opacity-disabled: 1;
-$button-disabled-color: #D2D2D2;
+$button-disabled-color: #d2d2d2;
 
 // 12. Button Group
 // ----------------
@@ -265,7 +265,7 @@ $button-disabled-color: #D2D2D2;
 // 13. Callout
 // -----------
 
-$callout-background: #F3F3F3; //#dff0f4;
+$callout-background: #f3f3f3; //#dff0f4;
 $callout-background-fade: 0%;
 $callout-border: none;
 //$callout-margin: 0 0 1rem 0;
@@ -421,7 +421,7 @@ $menu-item-padding: 0.7rem 0.6rem;
 
 // $pagination-font-size: rem-calc(14);
 // $pagination-margin-bottom: $global-margin;
-$pagination-item-color: #A2A2A2;
+$pagination-item-color: #a2a2a2;
 // $pagination-item-padding: rem-calc(3 10);
 // $pagination-item-spacing: rem-calc(1);
 // $pagination-radius: $global-radius;

@@ -1,43 +1,48 @@
 .blue {
-	color: $primary-color;
+  color: $primary-color;
 }
 
 a {
-	text-decoration: none;
-	color: #167aa2;
+  text-decoration: none;
+  color: #167aa2;
 
-	&.grey {
-		color: #717576;
-	}
+  &.grey {
+    color: #717576;
+  }
 
-	&.block-link {
-		margin-bottom: 1rem;
-		display: inline-block;
-	}
+  &.block-link {
+    margin-bottom: 1rem;
+    display: inline-block;
+  }
 }
 
 .bold {
-	font-weight: 700;
+  font-weight: 700;
 }
 
 .underline {
-	text-decoration: underline;
+  text-decoration: underline;
 }
 
 .center {
-	text-align: center;
+  text-align: center;
 }
 
 .right {
-	text-align: right;
+  text-align: right;
 }
 
-p.intro {
-	font-size: 1.2rem;
+.intro {
+  font-size: 1.2rem;
 }
 
-h1, h2, h3, h4, h5, h6 {
-	&.alt {
-		color: $header-alt-color;
-	}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  &.alt {
+    color: $header-alt-color;
+  }
 }
