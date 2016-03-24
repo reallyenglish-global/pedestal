@@ -4764,7 +4764,7 @@ textarea {
 .tabs .tabs-title > .button {
   padding: 0.5em 1em;
 }
-.tabs #get-started-button .get-started-icon, .tabs #faq-button .faq-icon, .tabs #booked-lessons-button .bookmark-icon, .tabs #study-tasks-button .lamp-icon {
+.tabs .get-started-tab .get-started-icon, .tabs .faq-tab .faq-icon, .tabs .booked-lessons-tab .bookmark-icon, .tabs .study-tasks-tab .lamp-icon {
   background-size: 1rem 1rem;
   height: 1rem;
   width: 1rem;
@@ -4772,28 +4772,28 @@ textarea {
   background-repeat: no-repeat;
   margin-right: 0.5rem;
 }
-.tabs #get-started-button {
+.tabs .get-started-tab {
   text-align: left;
 }
-.tabs #get-started-button .get-started-icon {
+.tabs .get-started-tab .get-started-icon {
   background-image: url("../images/icons/get-started.svg");
 }
-.tabs #faq-button {
+.tabs .faq-tab {
   text-align: left;
 }
-.tabs #faq-button .faq-icon {
+.tabs .faq-tab .faq-icon {
   background-image: url("../images/icons/faq-question.svg");
 }
-.tabs #booked-lessons-button {
+.tabs .booked-lessons-tab {
   text-align: left;
 }
-.tabs #booked-lessons-button .bookmark-icon {
+.tabs .booked-lessons-tab .bookmark-icon {
   background-image: url("../images/icons/bookmark.svg");
 }
-.tabs #study-tasks-button {
+.tabs .study-tasks-tab {
   text-align: left;
 }
-.tabs #study-tasks-button .lamp-icon {
+.tabs .study-tasks-tab .lamp-icon {
   background-image: url("../images/icons/lamp.svg");
 }
 
@@ -5012,11 +5012,12 @@ textarea {
 [id^="skypeModal"] .nav-row {
   margin-top: 1.5rem;
 }
-[id^="skypeModal"] .progress {
+
+.progress {
   margin: 2rem 3rem 6rem;
   position: relative;
 }
-[id^="skypeModal"] .progress .progress-img {
+.progress .progress-img {
   background-size: 1.75rem 1.75rem;
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -5028,38 +5029,34 @@ textarea {
   top: -1.5rem;
   text-align: center;
 }
-[id^="skypeModal"] .progress h5 {
+.progress h5 {
   color: #48aadf;
   font-size: 0.8rem;
   position: absolute;
   top: 3.5rem;
 }
-[id^="skypeModal"] .progress .rocket {
+.progress .rocket {
   background-image: url("../images/rocket.svg");
 }
-[id^="skypeModal"] .progress .skype {
+.progress .skype {
   background-image: url("../images/skype.svg");
 }
-[id^="skypeModal"] .progress .enter {
+.progress .enter {
   background-image: url("../images/enter.svg");
 }
-[id^="skypeModal"] .progress .progress-0 {
+.progress .progress-0 {
   left: -1.75rem;
 }
-[id^="skypeModal"] .progress .progress-50 {
-  left: -webkit-calc(50% - 3.5rem / 2);
-  left: -moz-calc(50% - 3.5rem / 2);
+.progress .progress-50 {
   left: calc(50% - 3.5rem / 2);
 }
-[id^="skypeModal"] .progress .progress-100 {
-  left: -webkit-calc(100% - 3.5rem / 2);
-  left: -moz-calc(100% - 3.5rem / 2);
+.progress .progress-100 {
   left: calc(100% - 3.5rem / 2);
 }
-[id^="skypeModal"] .disabled {
+.progress .disabled {
   background-color: #cacaca;
 }
-[id^="skypeModal"] .disabled h5 {
+.progress .disabled h5 {
   color: #888;
 }
 

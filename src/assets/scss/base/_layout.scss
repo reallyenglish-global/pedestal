@@ -24,13 +24,6 @@ body {
   }
 }
 
-//Move to mixins
-@mixin calc($key, $value) {
-  #{$key}: -webkit-calc(#{$value});
-  #{$key}: -moz-calc(#{$value});
-  #{$key}: calc(#{$value});
-}
-
 //Move to progress
 .progress {
   &[aria-valuenow="10"] {
