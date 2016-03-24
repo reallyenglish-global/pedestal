@@ -9,11 +9,11 @@
     &.selected,
     &[aria-selected="true"] {
       background-color: #c7c7c7;
-      box-shadow: inset 1px 1px 3px #8E8C8C;
+      box-shadow: inset 1px 1px 3px #8e8c8c;
     }
 
     &:hover {
-      background-color: darken(#E8E8E8, 10%);
+      background-color: darken(#e8e8e8, 10%);
     }
   }
 

@@ -1,8 +1,8 @@
 form {
   .is-invalid-input:not(:focus) {
-    box-shadow: 0 0 0 1px #F7ADA9,
-          0 0 0 2px #F0726D,
-          0 0 0 3px #F4C6C5;
+    box-shadow: 0 0 0 1px #f7ada9,
+          0 0 0 2px #f0726d,
+          0 0 0 3px #f4c6c5;
   }
 }
 
@@ -10,7 +10,7 @@ textarea {
   min-height: rem-calc(120);
 }
 
-$input-border-style: 1px solid #BBB;
+$input-border-style: 1px solid #bbb;
 
 .input-group {
 
@@ -22,6 +22,7 @@ $input-border-style: 1px solid #BBB;
     border-radius: 5px 0 0 5px;
     height: 2rem;
   }
+
   .input-group-button {
     .button {
       height: 2rem;

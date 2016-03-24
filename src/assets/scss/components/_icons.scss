@@ -1,12 +1,12 @@
 .close {
-  background-image: url(../images/icons/close-icon.svg);
+  background-image: url('../images/icons/close-icon.svg');
   background-size: 0.75rem 0.75rem;
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
 
 .help {
-  background-image: url(../images/icons/question.svg);
+  background-image: url('../images/icons/question.svg');
   background-size: 0.75rem 0.75rem;
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -14,7 +14,7 @@
 }
 
 .star {
-  background-image: url(../images/icons/star.svg);
+  background-image: url('../images/icons/star.svg');
   display: inline-block;
   background-size: 0.75rem 0.75rem;
   background-repeat: no-repeat;
@@ -24,7 +24,7 @@
 }
 
 .arrow-down {
-  background-image: url(../images/icons/arrow-down.svg);
+  background-image: url('../images/icons/arrow-down.svg');
   background-size: 0.5rem 0.5rem;
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -34,7 +34,7 @@
 }
 
 .tick {
-  background-image: url(../images/icons/white-tick.svg);
+  background-image: url('../images/icons/white-tick.svg');
   background-size: 1rem 1rem;
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -55,17 +55,17 @@
 
 .grammar-icon {
   @extend %lesson-icon;
-  background-image: url("../images/icons/grammar.svg");
+  background-image: url('../images/icons/grammar.svg');
 }
 
 .listening-icon {
   @extend %lesson-icon;
-  background-image: url("../images/icons/listening.svg");
+  background-image: url('../images/icons/listening.svg');
 }
 
 .reading-icon {
   @extend %lesson-icon;
-  background-image: url("../images/icons/reading.svg");
+  background-image: url('../images/icons/reading.svg');
 }
 
 .speaking-icon {
@@ -73,7 +73,7 @@
   cursor: auto;
   height: 1.4rem;
   background-size: 2.2rem 1.4rem;
-  background-image: url("../images/icons/speaking.svg");
+  background-image: url('../images/icons/speaking.svg');
 }
 
 .download-icon {
@@ -83,7 +83,7 @@
   background-repeat: no-repeat;
   background-position: 50% 50%;
   display: inline-block;
-  background-image: url("../images/icons/download.svg");
+  background-image: url('../images/icons/download.svg');
 }
 
 %answer {
@@ -98,11 +98,11 @@
 
 .show-answer {
   @extend %answer;
-  background-image: url("../../assets/images/icons/plus.svg");
+  background-image: url('../../assets/images/icons/plus.svg');
 }
 
 .hide-answer {
   @extend %answer;
-  background-image: url("../../assets/images/icons/minus.svg");
+  background-image: url('../../assets/images/icons/minus.svg');
 }
 

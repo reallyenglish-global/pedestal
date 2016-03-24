@@ -1,4 +1,4 @@
-#get-started {
+.get-started-page {
   img {
     &.bordered {
       border: 2px solid #929497;
@@ -6,7 +6,7 @@
   }
 }
 
-#faq {
+.faq-page {
   color: $body-font-color;
 
   .faq-heading {
@@ -19,7 +19,7 @@
   }
 
   .question {
-    color: #167AA2;
+    color: #167aa2;
     font-weight: 600;
     margin-bottom: 0;
   }
@@ -46,9 +46,9 @@
     margin-left: 0;
     padding-left: 1.25rem;
 
-    > li:before {
+    > li::before {
       display: inline-block;
-      content: "-";
+      content: '-';
       width: 1rem;
       margin-left: -1rem;
     }

@@ -1,44 +1,42 @@
-header {
-  .header-row {
-    background-color: #FFF;
-    border-bottom: 1px solid #dcdcdc;
+.header-row {
+  background-color: #fff;
+  border-bottom: 1px solid #dcdcdc;
+}
+
+.primary-nav,
+.title-bar {
+  background-color: $topbar-background;
+}
+
+.top-bar {
+  padding: 0 3rem;
+  max-width: $global-max-width;
+  margin: 0 auto;
+  font-size: 0.75rem;
+  font-weight: bold;
+
+  .menu-text,
+  a {
+    color: $white;
   }
+}
 
-  .primary-nav,
-  .title-bar {
-    background-color: $topbar-background;
+.menu-text {
+  font-weight: 400;
+  font-size: 1rem;
+
+  a {
+    padding: 0;
   }
+}
 
-  .top-bar {
-    padding: 0 3rem;
-    max-width: $global-max-width;
-    margin: 0 auto;
-    font-size: 0.75rem;
-    font-weight: bold;
 
-    .top-bar-right {
-      li {
-        &:hover {
-          background-color: #555;
-        }
-      }
-    }
+.top-bar-right {
+  li {
+    height: 2.5rem;
 
-    .menu li {
-      height: 2.5rem;
-    }
-
-    .menu-text,
-    a {
-      color: $white;
-    }
-
-    .menu-text {
-      font-weight: 400;
-      font-size: 1rem;
-      a {
-        padding: 0;
-      }
+    &:hover {
+      background-color: #555;
     }
   }
 }
@@ -47,7 +45,7 @@ header {
   margin-bottom: 1.5rem;
 
   .tabs-title {
-    > a.button {
+    > .button {
       padding: $button-padding;
     }
   }
@@ -66,7 +64,7 @@ header {
 
     .get-started-icon {
       @extend %tab-icon;
-      background-image: url(../images/icons/get-started.svg);
+      background-image: url('../images/icons/get-started.svg');
     }
   }
 
@@ -75,7 +73,7 @@ header {
 
     .faq-icon {
       @extend %tab-icon;
-      background-image: url(../images/icons/faq-question.svg);
+      background-image: url('../images/icons/faq-question.svg');
     }
   }
 
@@ -84,7 +82,7 @@ header {
 
     .bookmark-icon {
       @extend %tab-icon;
-      background-image: url(../images/icons/bookmark.svg);
+      background-image: url('../images/icons/bookmark.svg');
     }
   }
 
@@ -93,7 +91,7 @@ header {
 
     .lamp-icon {
       @extend %tab-icon;
-      background-image: url(../images/icons/lamp.svg);
+      background-image: url('../images/icons/lamp.svg');
     }
   }
 }
@@ -118,14 +116,15 @@ header {
     .top-bar-left {
       display: none;
     }
+  }
 
-    .top-bar-right {
-      float: none;
-      .menu {
-        > li[role="menuitem"] {
-          display: block;
-          padding-left: 2rem;
-        }
+  .top-bar-right {
+    float: none;
+
+    .menu {
+      > [role="menuitem"] {
+        display: block;
+        padding-left: 2rem;
       }
     }
   }
@@ -136,12 +135,11 @@ header {
     padding-left: 1.25rem;
     padding-right: 1.25rem;
   }
-  .top-bar {
-    .top-bar-right {
-      .menu {
-        > li[role="menuitem"] {
-          padding-left: 0;
-        }
+
+  .top-bar-right {
+    .menu {
+      > [role="menuitem"] {
+        padding-left: 0;
       }
     }
   }

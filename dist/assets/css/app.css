@@ -4460,14 +4460,14 @@ body {
 }
 
 @media screen and (min-width: 0em) and (max-width: 39.9375em) {
-  #body {
+  .body-wrapper {
     max-width: 100%;
     padding: 1rem 0;
   }
-  #body > h2 {
+  .body-wrapper > h2 {
     margin: 0 1.5rem 1rem;
   }
-  #body .col-wrap-margin {
+  .body-wrapper .col-wrap-margin {
     margin-bottom: 1rem;
   }
 
@@ -4534,7 +4534,7 @@ h6.alt {
 }
 .button.light-grey.selected, .button.light-grey[aria-selected="true"] {
   background-color: #c7c7c7;
-  box-shadow: inset 1px 1px 3px #8E8C8C;
+  box-shadow: inset 1px 1px 3px #8e8c8c;
 }
 .button.light-grey:hover {
   background-color: #cfcfcf;
@@ -4596,14 +4596,14 @@ h6.alt {
 }
 
 .close {
-  background-image: url(../images/icons/close-icon.svg);
+  background-image: url("../images/icons/close-icon.svg");
   background-size: 0.75rem 0.75rem;
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
 
 .help {
-  background-image: url(../images/icons/question.svg);
+  background-image: url("../images/icons/question.svg");
   background-size: 0.75rem 0.75rem;
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -4611,7 +4611,7 @@ h6.alt {
 }
 
 .star {
-  background-image: url(../images/icons/star.svg);
+  background-image: url("../images/icons/star.svg");
   display: inline-block;
   background-size: 0.75rem 0.75rem;
   background-repeat: no-repeat;
@@ -4621,7 +4621,7 @@ h6.alt {
 }
 
 .arrow-down {
-  background-image: url(../images/icons/arrow-down.svg);
+  background-image: url("../images/icons/arrow-down.svg");
   background-size: 0.5rem 0.5rem;
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -4631,7 +4631,7 @@ h6.alt {
 }
 
 .tick {
-  background-image: url(../images/icons/white-tick.svg);
+  background-image: url("../images/icons/white-tick.svg");
   background-size: 1rem 1rem;
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -4698,7 +4698,7 @@ h6.alt {
 }
 
 form .is-invalid-input:not(:focus) {
-  box-shadow: 0 0 0 1px #F7ADA9, 0 0 0 2px #F0726D, 0 0 0 3px #F4C6C5;
+  box-shadow: 0 0 0 1px #f7ada9, 0 0 0 2px #f0726d, 0 0 0 3px #f4c6c5;
 }
 
 textarea {
@@ -4707,57 +4707,61 @@ textarea {
 
 .input-group .input-group-field {
   border: none;
-  border-left: 1px solid #BBB;
-  border-top: 1px solid #BBB;
-  border-bottom: 1px solid #BBB;
+  border-left: 1px solid #bbb;
+  border-top: 1px solid #bbb;
+  border-bottom: 1px solid #bbb;
   border-radius: 5px 0 0 5px;
   height: 2rem;
 }
 .input-group .input-group-button .button {
   height: 2rem;
-  border-right: 1px solid #BBB;
-  border-top: 1px solid #BBB;
-  border-bottom: 1px solid #BBB;
+  border-right: 1px solid #bbb;
+  border-top: 1px solid #bbb;
+  border-bottom: 1px solid #bbb;
   border-radius: 0 5px 5px 0;
 }
 
-header .header-row {
-  background-color: #FFF;
+.header-row {
+  background-color: #fff;
   border-bottom: 1px solid #dcdcdc;
 }
-header .primary-nav,
-header .title-bar {
+
+.primary-nav,
+.title-bar {
   background-color: #676767;
 }
-header .top-bar {
+
+.top-bar {
   padding: 0 3rem;
   max-width: 70.5rem;
   margin: 0 auto;
   font-size: 0.75rem;
   font-weight: bold;
 }
-header .top-bar .top-bar-right li:hover {
-  background-color: #555;
-}
-header .top-bar .menu li {
-  height: 2.5rem;
-}
-header .top-bar .menu-text,
-header .top-bar a {
+.top-bar .menu-text,
+.top-bar a {
   color: #fff;
 }
-header .top-bar .menu-text {
+
+.menu-text {
   font-weight: 400;
   font-size: 1rem;
 }
-header .top-bar .menu-text a {
+.menu-text a {
   padding: 0;
+}
+
+.top-bar-right li {
+  height: 2.5rem;
+}
+.top-bar-right li:hover {
+  background-color: #555;
 }
 
 .tabs {
   margin-bottom: 1.5rem;
 }
-.tabs .tabs-title > a.button {
+.tabs .tabs-title > .button {
   padding: 0.5em 1em;
 }
 .tabs #get-started-button .get-started-icon, .tabs #faq-button .faq-icon, .tabs #booked-lessons-button .bookmark-icon, .tabs #study-tasks-button .lamp-icon {
@@ -4772,25 +4776,25 @@ header .top-bar .menu-text a {
   text-align: left;
 }
 .tabs #get-started-button .get-started-icon {
-  background-image: url(../images/icons/get-started.svg);
+  background-image: url("../images/icons/get-started.svg");
 }
 .tabs #faq-button {
   text-align: left;
 }
 .tabs #faq-button .faq-icon {
-  background-image: url(../images/icons/faq-question.svg);
+  background-image: url("../images/icons/faq-question.svg");
 }
 .tabs #booked-lessons-button {
   text-align: left;
 }
 .tabs #booked-lessons-button .bookmark-icon {
-  background-image: url(../images/icons/bookmark.svg);
+  background-image: url("../images/icons/bookmark.svg");
 }
 .tabs #study-tasks-button {
   text-align: left;
 }
 .tabs #study-tasks-button .lamp-icon {
-  background-image: url(../images/icons/lamp.svg);
+  background-image: url("../images/icons/lamp.svg");
 }
 
 .tabs-content.callout {
@@ -4809,10 +4813,11 @@ header .top-bar .menu-text a {
   .top-bar .top-bar-left {
     display: none;
   }
-  .top-bar .top-bar-right {
+
+  .top-bar-right {
     float: none;
   }
-  .top-bar .top-bar-right .menu > li[role="menuitem"] {
+  .top-bar-right .menu > [role="menuitem"] {
     display: block;
     padding-left: 2rem;
   }
@@ -4823,20 +4828,20 @@ header .top-bar .menu-text a {
     padding-right: 1.25rem;
   }
 
-  .top-bar .top-bar-right .menu > li[role="menuitem"] {
+  .top-bar-right .menu > [role="menuitem"] {
     padding-left: 0;
   }
 }
 .callout {
-  margin: 0 0 1.25rem 0;
+  margin: 0 0 1.25rem;
 }
 .callout.alert {
-  background-color: #F4C6C8;
+  background-color: #f4c6c8;
   margin-top: 1.25rem;
   margin-bottom: 0;
 }
 .callout.alert h4 {
-  color: #4E4E4E;
+  color: #4e4e4e;
   margin: 0;
 }
 .callout.warning {
@@ -4874,7 +4879,8 @@ header .top-bar .menu-text a {
 .comment-box .comment-header h5 {
   margin-bottom: 0;
 }
-.comment-box .comment-header .avatar, .comment-box .comment-header .name {
+.comment-box .comment-header .avatar,
+.comment-box .comment-header .name {
   display: inline-block;
 }
 .comment-box .comment-header .avatar {
@@ -4882,11 +4888,11 @@ header .top-bar .menu-text a {
   border-radius: 50%;
   margin-right: 0.3rem;
 }
-.comment-box .comment-header .title h5 {
+.comment-box .comment-header .title {
   color: #48aadf;
 }
-.comment-box .comment-header .score h5 {
-  color: #E59C3C;
+.comment-box .comment-header .score {
+  color: #e59c3c;
 }
 
 .panel-booking {
@@ -4929,7 +4935,7 @@ header .top-bar .menu-text a {
   border-radius: 2px;
 }
 .panel-white.bordered {
-  border: 1px solid #E5E5E4;
+  border: 1px solid #e5e5e4;
 }
 
 .credit-status-panel {
@@ -4970,7 +4976,7 @@ header .top-bar .menu-text a {
   }
 }
 @media screen and (min-width: 0em) and (max-width: 39.9375em) {
-  .comment-box .comment-section .score h5 {
+  .comment-box .comment-section .score {
     text-align: left;
   }
 
@@ -4988,29 +4994,29 @@ header .top-bar .menu-text a {
   position: fixed;
 }
 
-div[id^="bookModal"] .modal-title {
+[id^="bookModal"] .modal-title {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
 }
-div[id^="bookModal"] .teacher-avatar {
+[id^="bookModal"] .teacher-avatar {
   border-radius: 50%;
   margin-bottom: 1rem;
 }
-div[id^="bookModal"] .teacher-name {
+[id^="bookModal"] .teacher-name {
   color: #939598;
 }
 
-div[id^="skypeModal"] {
+[id^="skypeModal"] {
   max-width: 70.5rem;
 }
-div[id^="skypeModal"] .nav-row {
+[id^="skypeModal"] .nav-row {
   margin-top: 1.5rem;
 }
-div[id^="skypeModal"] .progress {
-  margin: 2rem 3rem 6rem 3rem;
+[id^="skypeModal"] .progress {
+  margin: 2rem 3rem 6rem;
   position: relative;
 }
-div[id^="skypeModal"] .progress .progress-img {
+[id^="skypeModal"] .progress .progress-img {
   background-size: 1.75rem 1.75rem;
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -5022,48 +5028,49 @@ div[id^="skypeModal"] .progress .progress-img {
   top: -1.5rem;
   text-align: center;
 }
-div[id^="skypeModal"] .progress .progress-img h5 {
+[id^="skypeModal"] .progress h5 {
   color: #48aadf;
   font-size: 0.8rem;
   position: absolute;
   top: 3.5rem;
 }
-div[id^="skypeModal"] .progress .progress-img.rocket {
-  background-image: url(../images/rocket.svg);
+[id^="skypeModal"] .progress .rocket {
+  background-image: url("../images/rocket.svg");
 }
-div[id^="skypeModal"] .progress .progress-img.skype {
-  background-image: url(../images/skype.svg);
+[id^="skypeModal"] .progress .skype {
+  background-image: url("../images/skype.svg");
 }
-div[id^="skypeModal"] .progress .progress-img.enter {
-  background-image: url(../images/enter.svg);
+[id^="skypeModal"] .progress .enter {
+  background-image: url("../images/enter.svg");
 }
-div[id^="skypeModal"] .progress .progress-img.progress-0 {
+[id^="skypeModal"] .progress .progress-0 {
   left: -1.75rem;
 }
-div[id^="skypeModal"] .progress .progress-img.progress-50 {
+[id^="skypeModal"] .progress .progress-50 {
   left: -webkit-calc(50% - 3.5rem / 2);
   left: -moz-calc(50% - 3.5rem / 2);
   left: calc(50% - 3.5rem / 2);
 }
-div[id^="skypeModal"] .progress .progress-img.progress-100 {
+[id^="skypeModal"] .progress .progress-100 {
   left: -webkit-calc(100% - 3.5rem / 2);
   left: -moz-calc(100% - 3.5rem / 2);
   left: calc(100% - 3.5rem / 2);
 }
-div[id^="skypeModal"] .progress .progress-img.disabled {
+[id^="skypeModal"] .disabled {
   background-color: #cacaca;
 }
-div[id^="skypeModal"] .progress .progress-img.disabled h5 {
-  color: #888888;
+[id^="skypeModal"] .disabled h5 {
+  color: #888;
 }
 
 @media screen and (min-width: 0em) and (max-width: 39.9375em) {
-  div[id^="skypeModal"] .row.medium-unstack > .column, div[id^="skypeModal"] .row.medium-unstack > .columns, div[id^="skypeModal"] .row.medium-unstack > .columns {
+  [id^="skypeModal"].medium-unstack > .column, [id^="skypeModal"].medium-unstack > .columns,
+  [id^="skypeModal"].medium-unstack > .columns {
     margin-top: 1rem;
   }
 
-  label[for="skype-name"],
-  label[for="mobile-number"] {
+  [for="skype-name"],
+  [for="mobile-number"] {
     padding: 0;
     margin: 0;
   }
@@ -5103,7 +5110,8 @@ div[id^="skypeModal"] .progress .progress-img.disabled h5 {
   color: #59862d;
 }
 
-.lesson-table .row, .lesson-table .panel-white {
+.lesson-table .row,
+.lesson-table .panel-white {
   margin: 0;
 }
 .lesson-table .panel-white {
@@ -5113,10 +5121,10 @@ div[id^="skypeModal"] .progress .progress-img.disabled h5 {
 .lesson-table .lesson-set {
   margin-bottom: 1rem;
 }
-.lesson-table .lesson-set.unbooked div.lesson-row:nth-child(3) {
+.lesson-table .lesson-set.unbooked .lesson-row:nth-child(3) {
   box-shadow: inset 0 -6px 0 -2px #e0f0f3, inset 0 -7px 0 -2px #edf6f8;
 }
-.lesson-table .lesson-set.booked div.lesson-row:nth-child(4) {
+.lesson-table .lesson-set.booked .lesson-row:nth-child(4) {
   background-color: #e0f0f3;
   border-top: none;
 }
@@ -5140,14 +5148,14 @@ div[id^="skypeModal"] .progress .progress-img.disabled h5 {
   border-radius: 50%;
   margin-right: 0.5rem;
 }
-.lesson-table .lesson-row time strong {
+.lesson-table .lesson-row .lesson-date {
   margin-left: 0.5rem;
 }
 .lesson-table .lesson-row .rating {
   display: inline-block;
   vertical-align: top;
 }
-.lesson-table .lesson-row .rating .comment {
+.lesson-table .lesson-row .comment {
   display: inline-block;
   margin: 0 0 0 0.5rem;
 }
@@ -5170,16 +5178,16 @@ div[id^="skypeModal"] .progress .progress-img.disabled h5 {
   margin-right: 0.5rem;
 }
 .lesson-table .lesson-row .calendar-icon {
-  background-image: url(../images/icons/calendar.svg);
+  background-image: url("../images/icons/calendar.svg");
 }
 .lesson-table .lesson-row .tick-icon {
-  background-image: url(../images/icons/tick.svg);
+  background-image: url("../images/icons/tick.svg");
 }
 .lesson-table .lesson-row .incomplete-icon {
-  background-image: url(../images/icons/incomplete.svg);
+  background-image: url("../images/icons/incomplete.svg");
 }
 .lesson-table .lesson-row .cancel-icon {
-  background-image: url(../images/icons/cancelled.svg);
+  background-image: url("../images/icons/cancelled.svg");
 }
 .lesson-table .lesson-row[class*='highlight'] {
   color: #4e4e4e;
@@ -5187,28 +5195,31 @@ div[id^="skypeModal"] .progress .progress-img.disabled h5 {
 .lesson-table .lesson-row.lesson-row + [class*='highlight'] {
   border-top: none;
 }
-.lesson-table .lesson-row.highlight-blue {
+.lesson-table .lesson-row .lesson-row:last-child {
+  border-bottom: 1px solid #e7e7e7;
+}
+.lesson-table .highlight-blue {
   background-color: #e0f0f3;
 }
-.lesson-table .lesson-row.highlight-blue.bordered {
+.lesson-table .highlight-blue.bordered {
   border: 2px solid #9bcbde;
   border-bottom: none;
 }
-.lesson-table .lesson-row.highlight-green {
+.lesson-table .highlight-green {
   background-color: #ecf7f2;
   padding: 0 0.5rem;
 }
-.lesson-table .lesson-row.highlight-green time,
-.lesson-table .lesson-row.highlight-green .avatar,
-.lesson-table .lesson-row.highlight-green p {
+.lesson-table .highlight-green time,
+.lesson-table .highlight-green .avatar,
+.lesson-table .highlight-green p {
   display: inline-block;
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
-.lesson-table .lesson-row.highlight-green time {
+.lesson-table .highlight-green time {
   color: #7dbaa7;
 }
-.lesson-table .lesson-row.highlight-green .show-feedback {
+.lesson-table .show-feedback {
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
   padding-top: 0.75rem;
@@ -5217,36 +5228,33 @@ div[id^="skypeModal"] .progress .progress-img.disabled h5 {
   font-size: 0.8rem;
   float: right;
 }
-.lesson-table .lesson-row.highlight-green .show-feedback .arrow-down {
+.lesson-table .show-feedback .arrow-down {
   margin-left: 0.25rem;
 }
-.lesson-table .lesson-row.highlight-orange {
+.lesson-table .highlight-orange {
   background-color: #f4e9e2;
 }
-.lesson-table .lesson-row.highlight-orange time {
+.lesson-table .highlight-orange time {
   color: #dda989;
 }
-.lesson-table .lesson-row.highlight-orange .remark {
+.lesson-table .highlight-orange .remark {
   color: #a39e9e;
 }
-.lesson-table .lesson-row.highlight-purple {
+.lesson-table .highlight-purple {
   background-color: #eee1e6;
 }
-.lesson-table .lesson-row.highlight-purple time {
+.lesson-table .highlight-purple time {
   color: #d09baf;
 }
-.lesson-table .lesson-row.highlight-purple .remark {
+.lesson-table .highlight-purple .remark {
   color: #a39e9e;
-}
-.lesson-table .lesson-row:last-child {
-  border-bottom: 1px solid #e7e7e7;
 }
 
 @media screen and (min-width: 0em) and (max-width: 39.9375em) {
-  .lesson-table .lesson-row .columns:last-child {
+  .lesson-row .columns:last-child {
     margin-bottom: 0;
   }
-  .lesson-table .lesson-row.highlight-green time {
+  .lesson-row.highlight-green time {
     display: block;
     margin-top: 0;
     margin-bottom: 0;
@@ -5264,7 +5272,7 @@ div[id^="skypeModal"] .progress .progress-img.disabled h5 {
   text-align: right;
   margin-right: 0.25rem;
   float: left;
-  background-image: url(../images/icons/scroll-arrow-left.svg);
+  background-image: url("../images/icons/scroll-arrow-left.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: 1.75rem 1.75rem;
@@ -5273,24 +5281,25 @@ div[id^="skypeModal"] .progress .progress-img.disabled h5 {
   text-align: left;
   margin-left: 0.25rem;
   float: right;
-  background-image: url(../images/icons/scroll-arrow-right.svg);
+  background-image: url("../images/icons/scroll-arrow-right.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: 1.75rem 1.75rem;
 }
-.day-picker .day-picker-frame {
+
+.day-picker-frame {
   height: 4rem;
-  margin: 0 auto 1.5rem auto;
+  margin: 0 auto 1.5rem;
   width: 74%;
   padding: 0;
 }
-.day-picker .day-picker-frame ul.days {
+.day-picker-frame .days {
   margin: 0;
   padding: 0;
   height: 100%;
   list-style: none;
 }
-.day-picker .day-picker-frame ul.days li {
+.day-picker-frame .days li {
   float: left;
   margin: 0 0.25rem 0 0;
   height: 100%;
@@ -5298,51 +5307,39 @@ div[id^="skypeModal"] .progress .progress-img.disabled h5 {
   width: 5.61rem;
   cursor: pointer;
 }
-.day-picker .day-picker-frame ul.days li.day {
+.day-picker-frame .day {
   background-color: #d3ebee;
   text-align: center;
   color: #939598;
 }
-.day-picker .day-picker-frame ul.days li.day.weekend {
+.day-picker-frame .day.weekend {
   background-color: #cfdfee;
 }
-.day-picker .day-picker-frame ul.days li.day.active {
+.day-picker-frame .day.active {
   color: #fff;
   background-color: #3babde;
 }
-.day-picker .day-picker-frame ul.days li.day.disabled {
+.day-picker-frame .day.disabled {
   background-color: #e5e5e5;
   color: #939598;
 }
 
-.pagination li.current {
+.pagination.current {
   border-radius: 5px;
 }
-.pagination li.current a {
+.pagination.current a {
   padding: 0;
   color: #fff;
 }
 
 .teacher-panel {
   border: 1px solid #e5e5e4;
-  padding: 0 0 1rem 0;
+  padding: 0 0 1rem;
   background-color: #fff;
 }
 .teacher-panel .pagination {
   background-color: #f7f7f7;
   padding: 0.5rem 0;
-}
-.teacher-panel .teacher-row {
-  background-color: #fff;
-  padding: 0.5rem 0;
-}
-.teacher-panel .teacher-row .teacher-avatar {
-  text-align: center;
-  color: #939598;
-}
-.teacher-panel .teacher-row .teacher-avatar img {
-  border-radius: 50%;
-  margin-bottom: 0.5rem;
 }
 .teacher-panel .booking-row {
   padding: 0.5rem 0;
@@ -5361,50 +5358,63 @@ div[id^="skypeModal"] .progress .progress-img.disabled h5 {
   background-color: #fff;
 }
 
+.teacher-row {
+  background-color: #fff;
+  padding: 0.5rem 0;
+}
+.teacher-row .teacher-avatar {
+  text-align: center;
+  color: #939598;
+}
+.teacher-row .teacher-avatar img {
+  border-radius: 50%;
+  margin-bottom: 0.5rem;
+}
+
 @media screen and (max-width: 51.8125em) {
   .teacher-panel .booking-row .button {
     padding: 0.25rem 0.5rem;
   }
 }
-#get-started img.bordered {
+.get-started-page img.bordered {
   border: 2px solid #929497;
 }
 
-#faq {
+.faq-page {
   color: #4e4e4e;
 }
-#faq .faq-heading {
+.faq-page .faq-heading {
   margin-bottom: 0;
 }
-#faq .faq-contents {
+.faq-page .faq-contents {
   list-style: none;
   margin: 0 0 0 1.5rem;
 }
-#faq .question {
-  color: #167AA2;
+.faq-page .question {
+  color: #167aa2;
   font-weight: 600;
   margin-bottom: 0;
 }
-#faq .faq-answer {
+.faq-page .faq-answer {
   display: none;
   margin-top: 1rem;
 }
-#faq .steps-list .step-heading {
+.faq-page .steps-list .step-heading {
   margin-bottom: 0.5rem;
   font-size: 1rem;
   font-weight: 600;
 }
-#faq .steps-list .steps {
+.faq-page .steps-list .steps {
   margin-bottom: 1.5rem;
 }
-#faq .dash-list {
+.faq-page .dash-list {
   list-style-type: none;
   margin-left: 0;
   padding-left: 1.25rem;
 }
-#faq .dash-list > li:before {
+.faq-page .dash-list > li::before {
   display: inline-block;
-  content: "-";
+  content: '-';
   width: 1rem;
   margin-left: -1rem;
 }
