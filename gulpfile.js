@@ -7,6 +7,7 @@ var rimraf   = require('rimraf');
 var sequence = require('run-sequence');
 var sherpa   = require('style-sherpa');
 var compass  = require('gulp-compass');
+var scsslint = require('gulp-scss-lint');
 
 // Port to use for the development server.
 var PORT = 8000;
@@ -80,8 +81,18 @@ gulp.task('pages:reset', function(done) {
   done();
 });
 
+gulp.task('scss-lint', function() {
+  return gulp.src('./src/assets/scss/**/*.scss')
+    .pipe(scsslint({
+    	'bundleExec': true,
+    	'config': 'scss-lint.yml',
+    	'filePipeOutput': 'scss-report.json'
+    }))
+    .pipe(gulp.dest('./'));
+});
+
 gulp.task('compass', function() {
-  gulp.src('./src/assets/sccs/**/*.scss')
+  gulp.src('./src/assets/scss/**/*.scss')
     .pipe(compass({
       config_file: './config.rb',
       http_path: '/',
@@ -116,7 +127,7 @@ gulp.task('images', function() {
 
 // Build the "dist" folder by running all of the above tasks
 gulp.task('build', function(done) {
-	sequence('clean', ['pages', 'compass', 'javascript', 'images', 'copy'], done);
+	sequence('clean', ['pages', 'scss-lint', 'compass', 'javascript', 'images', 'copy'], done);
 	});
 
 // Start a server with LiveReload to preview the site in
