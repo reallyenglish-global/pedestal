@@ -1842,14 +1842,13 @@ h6 small {
   }
 }
 a {
-  color: #48aadf;
-  text-decoration: underline;
+  color: #167aa2;
+  text-decoration: none;
   line-height: inherit;
   cursor: pointer;
 }
 a:hover, a:focus {
-  color: #2699d8;
-  text-decoration: none;
+  color: #13698b;
 }
 a img {
   border: 0;
@@ -3100,7 +3099,7 @@ select[multiple] {
   width: 0;
   height: 0;
   border: inset 5px;
-  border-color: #48aadf transparent transparent;
+  border-color: #167aa2 transparent transparent;
   border-top-style: solid;
   border-bottom-width: 0;
   position: absolute;
@@ -3113,7 +3112,7 @@ select[multiple] {
   width: 0;
   height: 0;
   border: inset 5px;
-  border-color: transparent #48aadf transparent transparent;
+  border-color: transparent #167aa2 transparent transparent;
   border-right-style: solid;
   border-left-width: 0;
   float: left;
@@ -3126,7 +3125,7 @@ select[multiple] {
   width: 0;
   height: 0;
   border: inset 5px;
-  border-color: transparent transparent transparent #48aadf;
+  border-color: transparent transparent transparent #167aa2;
   border-left-style: solid;
   border-right-width: 0;
 }
@@ -4439,26 +4438,6 @@ body {
   margin: 0 auto;
 }
 
-.row .align-center {
-  text-align: center;
-}
-.row .align-right {
-  text-align: right;
-}
-.row.white {
-  background-color: #fff;
-}
-
-.progress[aria-valuenow="10"] .progress-meter {
-  width: 10%;
-}
-.progress[aria-valuenow="60"] .progress-meter {
-  width: 60%;
-}
-.progress[aria-valuenow="90"] .progress-meter {
-  width: 90%;
-}
-
 @media screen and (min-width: 0em) and (max-width: 39.9375em) {
   .body-wrapper {
     max-width: 100%;
@@ -4483,10 +4462,6 @@ body {
   color: #48aadf;
 }
 
-a {
-  text-decoration: none;
-  color: #167aa2;
-}
 a.grey {
   color: #717576;
 }
@@ -4522,6 +4497,16 @@ h4.alt,
 h5.alt,
 h6.alt {
   color: #678b9f;
+}
+
+.row .align-center {
+  text-align: center;
+}
+.row .align-right {
+  text-align: right;
+}
+.row.white {
+  background-color: #fff;
 }
 
 .button {
@@ -5439,4 +5424,14 @@ textarea {
   content: '-';
   width: 1rem;
   margin-left: -1rem;
+}
+
+.progress[aria-valuenow="10"] .progress-meter {
+  width: 10%;
+}
+.progress[aria-valuenow="60"] .progress-meter {
+  width: 60%;
+}
+.progress[aria-valuenow="90"] .progress-meter {
+  width: 90%;
 }

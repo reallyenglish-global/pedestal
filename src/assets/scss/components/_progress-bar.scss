@@ -1,0 +1,19 @@
+.progress {
+  &[aria-valuenow="10"] {
+    .progress-meter {
+      width: 10%;
+    }
+  }
+
+  &[aria-valuenow="60"] {
+    .progress-meter {
+      width: 60%;
+    }
+  }
+
+  &[aria-valuenow="90"] {
+    .progress-meter {
+      width: 90%;
+    }
+  }
+}

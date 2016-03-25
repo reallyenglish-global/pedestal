@@ -1,11 +1,13 @@
-@import 'settings';
+//Base Styles
+@import 'base/settings';
 @import 'foundation';
-
 @include foundation-everything;
-
-@import 'base/fonts';
-@import 'base/layout';
+@import 'base/base';
 @import 'base/typography';
+
+//Layout Styles
+@import 'layout/grid';
+
 @import 'components/buttons';
 @import 'components/icons';
 @import 'components/forms';
@@ -19,3 +21,4 @@
 @import 'components/pagination';
 @import 'components/teacher-panel';
 @import 'components/get-started-page';
+@import 'components/progress-bar';
