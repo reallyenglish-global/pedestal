@@ -5341,22 +5341,27 @@ textarea {
   color: #939598;
 }
 
-.pagination.current {
+.pagination {
+  background-color: #f7f7f7;
+  padding: 0.5rem 0;
+}
+.pagination .current {
   border-radius: 5px;
 }
-.pagination.current a {
+
+.current a {
   padding: 0;
   color: #fff;
+}
+.current a:hover {
+  background-color: #2392bb;
+  border-radius: 5px;
 }
 
 .teacher-panel {
   border: 1px solid #e5e5e4;
   padding: 0 0 1rem;
   background-color: #fff;
-}
-.teacher-panel .pagination {
-  background-color: #f7f7f7;
-  padding: 0.5rem 0;
 }
 .teacher-panel .booking-row {
   padding: 0.5rem 0;
