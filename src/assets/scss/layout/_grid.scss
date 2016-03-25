@@ -1,3 +1,9 @@
+.container {
+	padding: 1rem 3rem;
+  max-width: $global-max-width;
+  margin: 0 auto;
+}
+
 .row {
   .align-center {
     text-align: center;

@@ -4431,13 +4431,6 @@ body {
   background-color: #e5e5e5;
 }
 
-.header-row > .row,
-.body-wrapper {
-  padding: 1rem 3rem;
-  max-width: 70.5rem;
-  margin: 0 auto;
-}
-
 @media screen and (min-width: 0em) and (max-width: 39.9375em) {
   .body-wrapper {
     max-width: 100%;
@@ -4497,6 +4490,12 @@ h4.alt,
 h5.alt,
 h6.alt {
   color: #678b9f;
+}
+
+.container {
+  padding: 1rem 3rem;
+  max-width: 70.5rem;
+  margin: 0 auto;
 }
 
 .row .align-center {
@@ -4737,9 +4736,6 @@ textarea {
 }
 
 .top-bar {
-  padding: 0 3rem;
-  max-width: 70.5rem;
-  margin: 0 auto;
   font-size: 0.75rem;
   font-weight: bold;
 }

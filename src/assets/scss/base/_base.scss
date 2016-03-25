@@ -19,13 +19,6 @@ body {
   background-color: #e5e5e5;
 }
 
-.header-row > .row,
-.body-wrapper {
-  padding: 1rem 3rem;
-  max-width: $global-max-width;
-  margin: 0 auto;
-}
-
 @include breakpoint(small only) {
   .body-wrapper {
     max-width: 100%;
