@@ -11,8 +11,8 @@
     "**/.*",
     "node_modules",
     "bower_components",
-    "test",
-    "tests"
+    "src",
+    "scss-lint.yml"
   ],
   "dependencies": {
     "foundation-sites": "~6.1.0",
