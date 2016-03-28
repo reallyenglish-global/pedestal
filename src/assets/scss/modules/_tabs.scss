@@ -1,0 +1,64 @@
+.tabs {
+  margin: 1rem 0;
+
+  &.tabs-align-left {
+    .button {
+      text-align: left;
+    }
+  }
+
+  .button {
+    padding: $button-padding;
+  }
+}
+
+%tab-icon {
+  background-size: 1rem 1rem;
+  height: 1rem;
+  width: 1rem;
+  display: inline-block;
+  background-repeat: no-repeat;
+  margin-right: 0.5rem;
+}
+
+.get-started-tab {
+
+  .get-started-icon {
+    @extend %tab-icon;
+    background-image: url('../images/icons/get-started.svg');
+  }
+}
+
+.faq-tab {
+
+  .faq-icon {
+    @extend %tab-icon;
+    background-image: url('../images/icons/faq-question.svg');
+  }
+}
+
+.booked-lessons-tab {
+
+  .bookmark-icon {
+    @extend %tab-icon;
+    background-image: url('../images/icons/bookmark.svg');
+  }
+}
+
+.study-tasks-tab {
+
+  .lamp-icon {
+    @extend %tab-icon;
+    background-image: url('../images/icons/lamp.svg');
+  }
+}
+
+.tabs-content {
+  &.callout {
+    background-color: $callout-background;
+  }
+
+  .tabs-panel {
+    padding: 0;
+  }
+}

@@ -4511,6 +4511,48 @@ h6.alt {
   border-bottom: 1px solid #dcdcdc;
 }
 
+.tabs {
+  margin: 1rem 0;
+}
+.tabs.tabs-align-left .button {
+  text-align: left;
+}
+.tabs .button {
+  padding: 0.5em 1em;
+}
+
+.get-started-tab .get-started-icon, .faq-tab .faq-icon, .booked-lessons-tab .bookmark-icon, .study-tasks-tab .lamp-icon {
+  background-size: 1rem 1rem;
+  height: 1rem;
+  width: 1rem;
+  display: inline-block;
+  background-repeat: no-repeat;
+  margin-right: 0.5rem;
+}
+
+.get-started-tab .get-started-icon {
+  background-image: url("../images/icons/get-started.svg");
+}
+
+.faq-tab .faq-icon {
+  background-image: url("../images/icons/faq-question.svg");
+}
+
+.booked-lessons-tab .bookmark-icon {
+  background-image: url("../images/icons/bookmark.svg");
+}
+
+.study-tasks-tab .lamp-icon {
+  background-image: url("../images/icons/lamp.svg");
+}
+
+.tabs-content.callout {
+  background-color: #f3f3f3;
+}
+.tabs-content .tabs-panel {
+  padding: 0;
+}
+
 .button {
   font-size: 0.9rem;
   text-decoration: none;
@@ -4755,52 +4797,6 @@ textarea {
 }
 .top-bar-right li:hover {
   background-color: #555;
-}
-
-.tabs {
-  margin-bottom: 1.5rem;
-}
-.tabs .tabs-title > .button {
-  padding: 0.5em 1em;
-}
-.tabs .get-started-tab .get-started-icon, .tabs .faq-tab .faq-icon, .tabs .booked-lessons-tab .bookmark-icon, .tabs .study-tasks-tab .lamp-icon {
-  background-size: 1rem 1rem;
-  height: 1rem;
-  width: 1rem;
-  display: inline-block;
-  background-repeat: no-repeat;
-  margin-right: 0.5rem;
-}
-.tabs .get-started-tab {
-  text-align: left;
-}
-.tabs .get-started-tab .get-started-icon {
-  background-image: url("../images/icons/get-started.svg");
-}
-.tabs .faq-tab {
-  text-align: left;
-}
-.tabs .faq-tab .faq-icon {
-  background-image: url("../images/icons/faq-question.svg");
-}
-.tabs .booked-lessons-tab {
-  text-align: left;
-}
-.tabs .booked-lessons-tab .bookmark-icon {
-  background-image: url("../images/icons/bookmark.svg");
-}
-.tabs .study-tasks-tab {
-  text-align: left;
-}
-.tabs .study-tasks-tab .lamp-icon {
-  background-image: url("../images/icons/lamp.svg");
-}
-
-.tabs-content.callout {
-  background-color: #f3f3f3;
-}
-.tabs-content .tabs-panel {
-  padding: 0;
 }
 
 @media screen and (max-width: 51.8125em) {
