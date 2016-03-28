@@ -1,10 +1,11 @@
 .container {
-	padding: 1rem 3rem;
+  padding: 0 3rem;
   max-width: $global-max-width;
   margin: 0 auto;
 }
 
 .row {
+
   .align-center {
     text-align: center;
   }
@@ -13,7 +14,10 @@
     text-align: right;
   }
 
-  &.white {
+  &.row-alt {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     background-color: #fff;
+    border-bottom: 1px solid #dcdcdc;
   }
 }
