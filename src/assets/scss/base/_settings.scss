@@ -265,7 +265,11 @@ $button-disabled-color: #d2d2d2;
 // 13. Callout
 // -----------
 
-$callout-background: #f3f3f3; //#dff0f4;
+$callout-background: #f3f3f3;
+$callout-background-primary: #bce2ec;
+$callout-background-alert: #f4c6c8;
+$callout-background-warning: #f6dec1;
+$callout-background-success: #bbe9c5;
 $callout-background-fade: 0%;
 $callout-border: none;
 //$callout-margin: 0 0 1rem 0;

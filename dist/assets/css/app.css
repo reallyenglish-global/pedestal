@@ -4443,18 +4443,6 @@ a.block-link {
   display: inline-block;
 }
 
-.bold {
-  font-weight: 700;
-}
-
-.underline {
-  text-decoration: underline;
-}
-
-.center {
-  text-align: center;
-}
-
 .intro {
   font-size: 1.2rem;
 }
@@ -4470,6 +4458,14 @@ h6.alt {
 
 .text-left {
   text-align: left !important;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.underline {
+  text-decoration: underline;
 }
 
 .container {
@@ -4820,16 +4816,10 @@ textarea {
   }
 }
 .callout {
-  margin: 0 0 1.25rem;
+  margin: 1.25rem 0;
 }
 .callout.alert {
   background-color: #f4c6c8;
-  margin-top: 1.25rem;
-  margin-bottom: 0;
-}
-.callout.alert h4 {
-  color: #4e4e4e;
-  margin: 0;
 }
 .callout.warning {
   background-color: #f6dec1;
@@ -4840,107 +4830,20 @@ textarea {
 .callout.success {
   background-color: #bbe9c5;
 }
-
-.comment-box {
-  margin: 0 0 1rem 0;
-  padding: 1.25rem;
-  border: none;
-  border-radius: 0;
-  position: relative;
-  color: #4e4e4e;
-  background-color: #f3f3f3;
+.callout.info {
   background-color: #fff;
-  border-radius: 2px;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
 }
-.comment-box > :first-child {
-  margin-top: 0;
-}
-.comment-box > :last-child {
-  margin-bottom: 0;
-}
-.comment-box .comment-header {
-  min-height: 3rem;
-}
-.comment-box .comment-header h5 {
-  margin-bottom: 0;
-}
-.comment-box .comment-header .avatar,
-.comment-box .comment-header .name {
-  display: inline-block;
-}
-.comment-box .comment-header .avatar {
-  max-height: 2.5rem;
-  border-radius: 50%;
-  margin-right: 0.3rem;
-}
-.comment-box .comment-header .title {
-  color: #48aadf;
-}
-.comment-box .comment-header .score {
-  color: #e59c3c;
-}
-
-.panel-booking {
-  margin: 0 0 1rem 0;
-  padding: 1.25rem;
-  border: none;
-  border-radius: 0;
-  position: relative;
-  color: #4e4e4e;
-  background-color: #f3f3f3;
-}
-.panel-booking > :first-child {
-  margin-top: 0;
-}
-.panel-booking > :last-child {
-  margin-bottom: 0;
-}
-.panel-booking .booking-text {
-  margin: 0;
-}
-
-.panel-white {
-  margin: 0 0 1rem 0;
-  padding: 1.25rem;
-  border: none;
-  border-radius: 0;
-  position: relative;
-  color: #4e4e4e;
-  background-color: #f3f3f3;
-  background-color: #fff;
-  margin-top: 1.25rem;
-}
-.panel-white > :first-child {
-  margin-top: 0;
-}
-.panel-white > :last-child {
-  margin-bottom: 0;
-}
-.panel-white.radius {
-  border-radius: 2px;
-}
-.panel-white.bordered {
+.callout.bordered {
   border: 1px solid #e5e5e4;
+}
+.callout.radius {
+  border-radius: 2px;
 }
 
 .credit-status-panel {
-  margin: 0 0 1rem 0;
-  padding: 1.25rem;
-  border: none;
-  border-radius: 0;
-  position: relative;
-  color: #4e4e4e;
   background-color: #f3f3f3;
   margin: 0;
-  border: 1px solid #dddddc;
-}
-.credit-status-panel > :first-child {
-  margin-top: 0;
-}
-.credit-status-panel > :last-child {
-  margin-bottom: 0;
+  border: 1px solid #ddd;
 }
 .credit-status-panel h6 {
   margin: 0;
@@ -4957,16 +4860,7 @@ textarea {
   border-right: 1px solid #e7e8e9;
 }
 
-@media screen and (max-width: 63.9375em) {
-  .panel-booking strong {
-    display: block;
-  }
-}
 @media screen and (min-width: 0em) and (max-width: 39.9375em) {
-  .comment-box .comment-section .score {
-    text-align: left;
-  }
-
   .credit-status-panel {
     max-width: none;
   }
@@ -5095,10 +4989,10 @@ textarea {
 }
 
 .lesson-table .row,
-.lesson-table .panel-white {
+.lesson-table .callout.info {
   margin: 0;
 }
-.lesson-table .panel-white {
+.lesson-table .callout.info {
   padding: 0.8rem 0.5rem;
   color: #989898;
 }
