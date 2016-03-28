@@ -17,3 +17,9 @@
     }
   }
 }
+
+@include breakpoint(small only) {
+  .progress {
+    margin-bottom: 1rem;
+  }
+}

@@ -18,26 +18,3 @@ body {
 body {
   background-color: #e5e5e5;
 }
-
-@include breakpoint(small only) {
-  .body-wrapper {
-    max-width: 100%;
-    padding: 1rem 0;
-
-    > h2 {
-      margin: 0 1.5rem 1rem;
-    }
-
-    .col-wrap-margin {
-      margin-bottom: 1rem;
-    }
-  }
-
-  .header-row > .row {
-    padding: 1rem;
-  }
-
-  .progress {
-    margin-bottom: 1rem;
-  }
-}

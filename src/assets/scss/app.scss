@@ -4,10 +4,10 @@
 @include foundation-everything;
 @import 'base/base';
 @import 'base/typography';
+@import 'base/helpers';
 
 //Layout Styles
 @import 'layout/grid';
-@import 'layout/header';
 @import 'layout/main';
 
 @import 'modules/tabs';

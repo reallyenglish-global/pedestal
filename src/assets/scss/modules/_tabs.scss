@@ -1,12 +1,6 @@
 .tabs {
   margin: 1rem 0;
 
-  &.tabs-align-left {
-    .button {
-      text-align: left;
-    }
-  }
-
   .button {
     padding: $button-padding;
   }

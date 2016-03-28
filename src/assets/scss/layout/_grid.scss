@@ -21,3 +21,21 @@
     border-bottom: 1px solid #dcdcdc;
   }
 }
+
+@include breakpoint(small only) {
+  .container {
+    padding: 0;
+
+    .container-title {
+      margin: 0 1.5rem 1rem;
+    }
+
+    .col-wrap-margin {
+      margin-bottom: 1rem;
+    }
+  }
+
+  .row-alt {
+    padding: 0 1rem;
+  }
+}
