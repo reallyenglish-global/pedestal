@@ -4539,31 +4539,6 @@ a.block-link {
   border: 2px solid #bbbdbf;
 }
 
-.get-started-tab .get-started-icon, .faq-tab .faq-icon, .booked-lessons-tab .bookmark-icon, .study-tasks-tab .lamp-icon {
-  background-size: 1rem 1rem;
-  height: 1rem;
-  width: 1rem;
-  display: inline-block;
-  background-repeat: no-repeat;
-  margin-right: 0.5rem;
-}
-
-.get-started-tab .get-started-icon {
-  background-image: url("../images/icons/get-started.svg");
-}
-
-.faq-tab .faq-icon {
-  background-image: url("../images/icons/faq-question.svg");
-}
-
-.booked-lessons-tab .bookmark-icon {
-  background-image: url("../images/icons/bookmark.svg");
-}
-
-.study-tasks-tab .lamp-icon {
-  background-image: url("../images/icons/lamp.svg");
-}
-
 .tabs-content.callout {
   background-color: #f3f3f3;
 }
@@ -4574,7 +4549,6 @@ a.block-link {
 .button {
   font-size: 0.9rem;
   text-decoration: none;
-  border-radius: 1000px;
 }
 .button.is-disabled {
   background-color: #d2d2d2;
@@ -4603,20 +4577,17 @@ a.block-link {
   color: #4e4e4e;
 }
 
-.button
+.button-round {
+  border-radius: 1000px;
+}
+
 .button-radius {
   border-radius: 5px;
 }
 
-.button-small {
-  padding: 1rem;
-  height: 1rem;
-  width: 1rem;
-  display: inline-block;
-}
-
 .button-circle {
   border-radius: 50%;
+  padding: 0.25rem;
 }
 
 .button-file {
@@ -4639,106 +4610,123 @@ a.block-link {
   display: block;
 }
 
-.close {
-  background-image: url("../images/icons/close-icon.svg");
-  background-size: 0.75rem 0.75rem;
+.icon {
   background-repeat: no-repeat;
   background-position: 50% 50%;
-}
-
-.help {
-  background-image: url("../images/icons/question.svg");
-  background-size: 0.75rem 0.75rem;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  padding: 0.75rem;
-}
-
-.star {
-  background-image: url("../images/icons/star.svg");
+  background-size: contain;
   display: inline-block;
-  background-size: 0.75rem 0.75rem;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  height: 0.8rem;
-  width: 0.9rem;
 }
 
-.arrow-down {
+.icon-arrow-down {
   background-image: url("../images/icons/arrow-down.svg");
-  background-size: 0.5rem 0.5rem;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  height: 0.7rem;
-  width: 1rem;
-  display: inline-block;
+  height: 0.5rem;
+  width: 0.5rem;
 }
 
-.tick {
+.icon-star, .icon-tick {
+  height: 0.75rem;
+  width: 0.75rem;
+}
+
+.icon-star {
+  background-image: url("../images/icons/star.svg");
+}
+
+.icon-tick {
   background-image: url("../images/icons/white-tick.svg");
-  background-size: 1rem 1rem;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  height: 0.8rem;
-  width: 1rem;
-  display: inline-block;
 }
 
-.grammar-icon, .listening-icon, .reading-icon, .speaking-icon {
-  height: 2.3rem;
-  width: 2.3rem;
-  background-size: 2.2rem 2.2rem;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  display: inline-block;
-  cursor: pointer;
-}
-
-.grammar-icon {
-  background-image: url("../images/icons/grammar.svg");
-}
-
-.listening-icon {
-  background-image: url("../images/icons/listening.svg");
-}
-
-.reading-icon {
-  background-image: url("../images/icons/reading.svg");
-}
-
-.speaking-icon {
-  cursor: auto;
-  height: 1.4rem;
-  background-size: 2.2rem 1.4rem;
-  background-image: url("../images/icons/speaking.svg");
-}
-
-.download-icon {
+.icon-question-mark, .icon-download {
   height: 1rem;
   width: 1rem;
-  background-size: 1rem 1rem;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  display: inline-block;
+}
+
+.icon-question-mark {
+  background-image: url("../images/icons/question.svg");
+  margin: 0 2px;
+}
+
+.icon-download {
   background-image: url("../images/icons/download.svg");
 }
 
-.show-answer, .hide-answer {
-  display: block;
-  background-size: 1.5rem 1.5rem;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
+.icon-show-answer, .icon-hide-answer {
   height: 1.5rem;
   width: 1.5rem;
-  cursor: pointer;
 }
 
-.show-answer {
+.icon-show-answer {
   background-image: url("../../assets/images/icons/plus.svg");
 }
 
-.hide-answer {
+.icon-hide-answer {
   background-image: url("../../assets/images/icons/minus.svg");
+}
+
+.icon-grammar, .icon-listening, .icon-reading, .icon-speaking {
+  height: 2.3rem;
+  width: 2.3rem;
+}
+
+.icon-grammar {
+  background-image: url("../images/icons/grammar.svg");
+}
+
+.icon-listening {
+  background-image: url("../images/icons/listening.svg");
+}
+
+.icon-reading {
+  background-image: url("../images/icons/reading.svg");
+}
+
+.icon-speaking {
+  height: 1.25rem;
+  background-image: url("../images/icons/speaking.svg");
+}
+
+.icon-get-started, .icon-faq, .icon-bookmark, .icon-lamp {
+  height: 1rem;
+  width: 1rem;
+  margin-right: 0.5rem;
+}
+
+.icon-get-started {
+  background-image: url("../images/icons/get-started.svg");
+}
+
+.icon-faq {
+  background-image: url("../images/icons/faq-question.svg");
+}
+
+.icon-bookmark {
+  background-image: url("../images/icons/bookmark.svg");
+}
+
+.icon-lamp {
+  background-image: url("../images/icons/lamp.svg");
+}
+
+.icon-calendar, .icon-tick, .icon-incomplete, .icon-cancel {
+  height: 0.9rem;
+  width: 1rem;
+  margin-right: 0.5rem;
+}
+
+.icon-calendar {
+  background-image: url("../images/icons/calendar.svg");
+}
+
+.icon-tick {
+  background-image: url("../images/icons/tick.svg");
+}
+
+.icon-incomplete {
+  background-image: url("../images/icons/incomplete.svg");
+}
+
+.icon-cancel {
+  background-image: url("../images/icons/cancelled.svg");
 }
 
 .primary-nav,
@@ -4953,6 +4941,10 @@ a.block-link {
     width: 85%;
   }
 }
+.has-tip > * {
+  cursor: pointer;
+}
+
 .tooltip {
   box-shadow: 3px 3px 2px #cbcbcb;
 }
@@ -5020,30 +5012,6 @@ a.block-link {
   padding: 1rem;
   display: none;
   margin-bottom: 1rem;
-}
-.lesson-table .lesson-row .tick-icon,
-.lesson-table .lesson-row .calendar-icon,
-.lesson-table .lesson-row .incomplete-icon,
-.lesson-table .lesson-row .cancel-icon {
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  height: 0.9rem;
-  width: 1rem;
-  background-size: contain;
-  display: inline-block;
-  margin-right: 0.5rem;
-}
-.lesson-table .lesson-row .calendar-icon {
-  background-image: url("../images/icons/calendar.svg");
-}
-.lesson-table .lesson-row .tick-icon {
-  background-image: url("../images/icons/tick.svg");
-}
-.lesson-table .lesson-row .incomplete-icon {
-  background-image: url("../images/icons/incomplete.svg");
-}
-.lesson-table .lesson-row .cancel-icon {
-  background-image: url("../images/icons/cancelled.svg");
 }
 .lesson-table .lesson-row[class*='highlight'] {
   color: #4e4e4e;

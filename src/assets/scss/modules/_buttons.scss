@@ -1,7 +1,6 @@
 .button {
   font-size: 0.9rem;
   text-decoration: none;
-  border-radius: 1000px;
 
   &.is-disabled {
     background-color: $button-disabled-color;
@@ -35,21 +34,17 @@
   }
 }
 
-.button
+.button-round {
+  border-radius: 1000px;
+}
 
 .button-radius {
   border-radius: 5px;
 }
 
-.button-small {
-  padding: 1rem;
-  height: 1rem;
-  width: 1rem;
-  display: inline-block;
-}
-
 .button-circle {
   border-radius: 50%;
+  padding: 0.25rem;
 }
 
 .button-file {

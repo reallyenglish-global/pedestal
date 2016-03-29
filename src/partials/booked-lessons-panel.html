@@ -18,7 +18,7 @@
 			<div id="current-bookings-panel" class="tabs-panel is-active">
 				{{#each current-bookings}}
 					<div class="lesson-set">
-						{{> lesson current=true highlightClass="highlight-blue" iconClass="calendar-icon"}}
+						{{> lesson current=true highlightClass="highlight-blue" iconClass="icon-calendar"}}
 					</div>
 				{{/each}}
 			</div>
@@ -26,21 +26,21 @@
 		<div id="completed-lessons-panel" class="tabs-panel">
 			{{#each current-bookings}}
 				<div class="lesson-set">
-					{{> lesson completed=true highlightClass="highlight-green" iconClass="tick-icon"}}
+					{{> lesson completed=true highlightClass="highlight-green" iconClass="icon-tick"}}
 				</div>
 			{{/each}}
 		</div>
 		<div id="incompleted-lessons-panel" class="tabs-panel lesson-set">
 			{{#each current-bookings}}
 				<div class="lesson-set">
-					{{> lesson incomplete=true highlightClass="highlight-orange" iconClass="incomplete-icon"}}
+					{{> lesson incomplete=true highlightClass="highlight-orange" iconClass="icon-incomplete"}}
 				</div>
 			{{/each}}
 		</div>
 		<div id="cancelled-lessons-panel" class="tabs-panel lesson-set">
 			{{#each current-bookings}}
 				<div class="lesson-set">
-					{{> lesson cancelled=true highlightClass="highlight-purple" iconClass="cancel-icon"}}
+					{{> lesson cancelled=true highlightClass="highlight-purple" iconClass="icon-cancel"}}
 				</div>
 			{{/each}}
 		</div>

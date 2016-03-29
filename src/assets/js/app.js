@@ -37,15 +37,15 @@
     $(this).parent().siblings().find(".assessment-feedback").toggle();
   });
 
-  $(".show-answer").click(function() {
+  $(".icon-show-answer").click(function() {
 
     $(this).closest(".row").siblings(".faq-answer").toggleClass("hide");
 
     $(this).toggleClass(function() {
-      if($(this).hasClass("show-answer")) {
-        return "hide-answer";
+      if($(this).hasClass("icon-show-answer")) {
+        return "icon-hide-answer";
       } else {
-        return "show-answer";
+        return "icon-show-answer";
       }
     });
   });

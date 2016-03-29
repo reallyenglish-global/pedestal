@@ -71,35 +71,6 @@ $booked-lesson-color: #e0f0f3;
       margin-bottom: 1rem;
     }
 
-    .tick-icon,
-    .calendar-icon,
-    .incomplete-icon,
-    .cancel-icon {
-      background-repeat: no-repeat;
-      background-position: 50% 50%;
-      height: 0.9rem;
-      width: 1rem;
-      background-size: contain;
-      display: inline-block;
-      margin-right: 0.5rem;
-    }
-
-    .calendar-icon {
-      background-image: url('../images/icons/calendar.svg');
-    }
-
-    .tick-icon {
-      background-image: url('../images/icons/tick.svg');
-    }
-
-    .incomplete-icon {
-      background-image: url('../images/icons/incomplete.svg');
-    }
-
-    .cancel-icon {
-      background-image: url('../images/icons/cancelled.svg');
-    }
-
     &[class*='highlight'] {
       color: $body-font-color;
     }
