@@ -1,33 +1,33 @@
 .callout {
   margin-bottom: $callout-padding;
+}
 
-  &.callout-alert {
-    background-color: $callout-background-alert;
-  }
+.callout-alert {
+  background-color: $callout-background-alert;
+}
 
-  &.callout-warning {
-    background-color: $callout-background-warning;
-  }
+.callout-warning {
+  background-color: $callout-background-warning;
+}
 
-  &.callout-primary {
-    background-color: $callout-background-primary;
-  }
+.callout-primary {
+  background-color: $callout-background-primary;
+}
 
-  &.callout-success {
-    background-color: $callout-background-success;
-  }
+.callout-success {
+  background-color: $callout-background-success;
+}
 
-  &.callout-info {
-    background-color: $white;
-  }
+.callout-info {
+  background-color: $white;
+}
 
-  &.callout-bordered {
-    border: 1px solid #e5e5e4;
-  }
+.callout-bordered {
+  border: 1px solid #e5e5e4;
+}
 
-  &.callout-radius {
-    border-radius: 2px;
-  }
+.callout-radius {
+  border-radius: 2px;
 }
 
 .credit-status-panel {
