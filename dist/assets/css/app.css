@@ -4422,6 +4422,10 @@ body {
   background-color: #e5e5e5;
 }
 
+textarea {
+  min-height: 7.5rem;
+}
+
 @font-face {
   font-family: ProximaNova;
   src: url('/assets/fonts/Proxima-Nova/Proxima-Nova-Regular.otf') format("opentype");
@@ -4622,6 +4626,26 @@ h6.alt {
   border-radius: 50%;
 }
 
+.button-file {
+  position: relative;
+  overflow: hidden;
+}
+.button-file [type='file'] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  min-width: 100%;
+  min-height: 100%;
+  font-size: 100px;
+  text-align: right;
+  filter: alpha(opacity=0);
+  opacity: 0;
+  outline: none;
+  background: #fff;
+  cursor: inherit;
+  display: block;
+}
+
 .close {
   background-image: url("../images/icons/close-icon.svg");
   background-size: 0.75rem 0.75rem;
@@ -4722,50 +4746,6 @@ h6.alt {
 
 .hide-answer {
   background-image: url("../../assets/images/icons/minus.svg");
-}
-
-form .is-invalid-input:not(:focus) {
-  box-shadow: 0 0 0 1px #f7ada9, 0 0 0 2px #f0726d, 0 0 0 3px #f4c6c5;
-}
-
-.button-file {
-  position: relative;
-  overflow: hidden;
-}
-.button-file [type='file'] {
-  position: absolute;
-  top: 0;
-  right: 0;
-  min-width: 100%;
-  min-height: 100%;
-  font-size: 100px;
-  text-align: right;
-  filter: alpha(opacity=0);
-  opacity: 0;
-  outline: none;
-  background: #fff;
-  cursor: inherit;
-  display: block;
-}
-
-textarea {
-  min-height: 7.5rem;
-}
-
-.input-group .input-group-field {
-  border: none;
-  border-left: 1px solid #bbb;
-  border-top: 1px solid #bbb;
-  border-bottom: 1px solid #bbb;
-  border-radius: 5px 0 0 5px;
-  height: 2rem;
-}
-.input-group .input-group-button .button {
-  height: 2rem;
-  border-right: 1px solid #bbb;
-  border-top: 1px solid #bbb;
-  border-bottom: 1px solid #bbb;
-  border-radius: 0 5px 5px 0;
 }
 
 .primary-nav,
@@ -4908,7 +4888,7 @@ textarea {
   max-width: 70.5rem;
 }
 [id^="skypeModal"] .nav-row {
-  margin-top: 1.5rem;
+  margin: 1.5rem 0;
 }
 
 .progress {
