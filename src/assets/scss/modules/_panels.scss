@@ -1,31 +1,31 @@
 .callout {
-  margin: $callout-padding 0;
+  margin-bottom: $callout-padding;
 
-  &.alert {
+  &.callout-alert {
     background-color: $callout-background-alert;
   }
 
-  &.warning {
+  &.callout-warning {
     background-color: $callout-background-warning;
   }
 
-  &.primary {
+  &.callout-primary {
     background-color: $callout-background-primary;
   }
 
-  &.success {
+  &.callout-success {
     background-color: $callout-background-success;
   }
 
-  &.info {
+  &.callout-info {
     background-color: $white;
   }
 
-  &.bordered {
+  &.callout-bordered {
     border: 1px solid #e5e5e4;
   }
 
-  &.radius {
+  &.callout-radius {
     border-radius: 2px;
   }
 }

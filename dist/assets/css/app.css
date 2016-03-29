@@ -4816,27 +4816,27 @@ textarea {
   }
 }
 .callout {
-  margin: 1.25rem 0;
+  margin-bottom: 1.25rem;
 }
-.callout.alert {
+.callout.callout-alert {
   background-color: #f4c6c8;
 }
-.callout.warning {
+.callout.callout-warning {
   background-color: #f6dec1;
 }
-.callout.primary {
+.callout.callout-primary {
   background-color: #bce2ec;
 }
-.callout.success {
+.callout.callout-success {
   background-color: #bbe9c5;
 }
-.callout.info {
+.callout.callout-info {
   background-color: #fff;
 }
-.callout.bordered {
+.callout.callout-bordered {
   border: 1px solid #e5e5e4;
 }
-.callout.radius {
+.callout.callout-radius {
   border-radius: 2px;
 }
 
@@ -4989,10 +4989,10 @@ textarea {
 }
 
 .lesson-table .row,
-.lesson-table .callout.info {
+.lesson-table .callout-info {
   margin: 0;
 }
-.lesson-table .callout.info {
+.lesson-table .callout-info {
   padding: 0.8rem 0.5rem;
   color: #989898;
 }
