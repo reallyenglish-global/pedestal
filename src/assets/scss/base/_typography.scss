@@ -9,32 +9,9 @@
   font-weight: 700;
 }
 
-.blue {
-  color: $primary-color;
-}
-
 a {
-  &.grey {
-    color: #717576;
-  }
-
   &.block-link {
     margin-bottom: 1rem;
     display: inline-block;
-  }
-}
-
-.intro {
-  font-size: 1.2rem;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  &.alt {
-    color: $header-alt-color;
   }
 }

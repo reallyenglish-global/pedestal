@@ -17267,7 +17267,9 @@ Foundation.plugin(ResponsiveToggle, 'ResponsiveToggle');
   });
 
   $(".show-answer").click(function() {
-    $(this).closest(".row").siblings(".faq-answer").toggle();
+
+    $(this).closest(".row").siblings(".faq-answer").toggleClass("hide");
+
     $(this).toggleClass(function() {
       if($(this).hasClass("show-answer")) {
         return "hide-answer";

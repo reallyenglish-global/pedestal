@@ -232,7 +232,7 @@ body {
   font-weight: normal;
   line-height: 1.5;
   color: #4e4e4e;
-  background: #fff;
+  background: #e5e5e5;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -2178,11 +2178,11 @@ p + .stat {
   color: #fff;
 }
 .button.secondary {
-  background-color: #777;
+  background-color: #878787;
   color: #fff;
 }
 .button.secondary:hover, .button.secondary:focus {
-  background-color: #5f5f5f;
+  background-color: #6c6c6c;
   color: #fff;
 }
 .button.success {
@@ -2229,12 +2229,12 @@ p + .stat {
   color: #16597e;
 }
 .button.hollow.secondary {
-  border: 1px solid #777;
-  color: #777;
+  border: 1px solid #878787;
+  color: #878787;
 }
 .button.hollow.secondary:hover, .button.hollow.secondary:focus {
-  border-color: #3c3c3c;
-  color: #3c3c3c;
+  border-color: #444444;
+  color: #444444;
 }
 .button.hollow.success {
   border: 1px solid #3adb76;
@@ -2453,7 +2453,7 @@ legend {
   margin: 1.125rem 0;
 }
 .fieldset legend {
-  background: #fff;
+  background: #e5e5e5;
   padding: 0 0.1875rem;
   margin: 0;
   margin-left: -0.1875rem;
@@ -2753,7 +2753,7 @@ select[multiple] {
   color: #fff;
 }
 .badge.secondary {
-  background: #777;
+  background: #878787;
   color: #fff;
 }
 .badge.success {
@@ -2822,7 +2822,7 @@ select[multiple] {
   font-size: inherit;
 }
 .button-group .button:not(:last-child) {
-  border-right: 1px solid #fff;
+  border-right: 1px solid #e5e5e5;
 }
 .button-group.tiny {
   font-size: 0.6rem;
@@ -2854,11 +2854,11 @@ select[multiple] {
   color: #fff;
 }
 .button-group.secondary .button {
-  background-color: #777;
+  background-color: #878787;
   color: #fff;
 }
 .button-group.secondary .button:hover, .button-group.secondary .button:focus {
-  background-color: #5f5f5f;
+  background-color: #6c6c6c;
   color: #fff;
 }
 .button-group.success .button {
@@ -2896,7 +2896,7 @@ select[multiple] {
     width: auto;
   }
   .button-group.stacked-for-small .button:not(:last-child) {
-    border-right: 1px solid #fff;
+    border-right: 1px solid #e5e5e5;
   }
 }
 @media screen and (min-width: 0em) and (max-width: 39.9375em) {
@@ -2928,7 +2928,7 @@ select[multiple] {
   background-color: #48aadf;
 }
 .callout.secondary {
-  background-color: #777777;
+  background-color: #878787;
 }
 .callout.success {
   background-color: #3adb76;
@@ -3026,7 +3026,7 @@ select[multiple] {
 }
 
 .dropdown-pane {
-  background-color: #fff;
+  background-color: #e5e5e5;
   border: 1px solid #cacaca;
   border-radius: 0;
   display: block;
@@ -3201,7 +3201,7 @@ select[multiple] {
   color: #fff;
 }
 .label.secondary {
-  background: #777;
+  background: #878787;
   color: #fff;
 }
 .label.success {
@@ -3388,7 +3388,7 @@ body {
 .off-canvas-content,
 .off-canvas-content {
   min-height: 100%;
-  background: #fff;
+  background: #e5e5e5;
   transition: transform 0.5s ease;
   backface-visibility: hidden;
   z-index: 1;
@@ -3659,7 +3659,7 @@ body {
   background-color: #48aadf;
 }
 .progress.secondary .progress-meter {
-  background-color: #777;
+  background-color: #878787;
 }
 .progress.success .progress-meter {
   background-color: #3adb76;
@@ -4418,12 +4418,13 @@ body {
   line-height: 1.375rem;
 }
 
-body {
-  background-color: #e5e5e5;
-}
-
 textarea {
   min-height: 7.5rem;
+}
+
+ul {
+  list-style: none;
+  margin: 0 0 1.5rem 1.5rem;
 }
 
 @font-face {
@@ -4435,41 +4436,33 @@ textarea {
   src: url('/assets/fonts/Proxima-Nova/Proxima-Nova-Bold.otf') format("opentype");
   font-weight: 700;
 }
-.blue {
-  color: #48aadf;
-}
-
-a.grey {
-  color: #717576;
-}
 a.block-link {
   margin-bottom: 1rem;
   display: inline-block;
 }
 
-.intro {
-  font-size: 1.2rem;
-}
-
-h1.alt,
-h2.alt,
-h3.alt,
-h4.alt,
-h5.alt,
-h6.alt {
-  color: #678b9f;
-}
-
-.text-left {
-  text-align: left !important;
-}
-
-.bold {
+.font-weight-bold {
   font-weight: 700;
 }
 
-.underline {
+.text-align-left {
+  text-align: left !important;
+}
+
+.text-underline {
   text-decoration: underline;
+}
+
+.text-primary {
+  color: #48aadf;
+}
+
+.text-secondary {
+  color: #878787;
+}
+
+.text-header-alt {
+  color: #167aa2;
 }
 
 .container {
@@ -5242,49 +5235,6 @@ h6.alt {
     padding: 0.25rem 0.5rem;
   }
 }
-.get-started-page img.bordered {
-  border: 2px solid #929497;
-}
-
-.faq-page {
-  color: #4e4e4e;
-}
-.faq-page .faq-heading {
-  margin-bottom: 0;
-}
-.faq-page .faq-contents {
-  list-style: none;
-  margin: 0 0 0 1.5rem;
-}
-.faq-page .question {
-  color: #167aa2;
-  font-weight: 600;
-  margin-bottom: 0;
-}
-.faq-page .faq-answer {
-  display: none;
-  margin-top: 1rem;
-}
-.faq-page .steps-list .step-heading {
-  margin-bottom: 0.5rem;
-  font-size: 1rem;
-  font-weight: 600;
-}
-.faq-page .steps-list .steps {
-  margin-bottom: 1.5rem;
-}
-.faq-page .dash-list {
-  list-style-type: none;
-  margin-left: 0;
-  padding-left: 1.25rem;
-}
-.faq-page .dash-list > li::before {
-  display: inline-block;
-  content: '-';
-  width: 1rem;
-  margin-left: -1rem;
-}
-
 .progress[aria-valuenow="10"] .progress-meter {
   width: 10%;
 }

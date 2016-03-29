@@ -1,11 +1,23 @@
-.text-left {
-  text-align: left !important;
-}
-
-.bold {
+.font-weight-bold {
   font-weight: 700;
 }
 
-.underline {
+.text-align-left {
+  text-align: left !important;
+}
+
+.text-underline {
   text-decoration: underline;
+}
+
+.text-primary {
+  color: $primary-color;
+}
+
+.text-secondary {
+  color: $secondary-color;
+}
+
+.text-header-alt {
+  color: $header-alt-color;
 }

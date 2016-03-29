@@ -48,22 +48,16 @@ $global-font-size: 100%;
 $global-width: rem-calc(1200);
 $global-lineheight: 1.5;
 $global-max-width: 70.5rem;
+
 $primary-color: #48aadf;
-$secondary-color: #777;
+$secondary-color: #878787;
 $success-color: #3adb76;
 $warning-color: #ffae00;
 $alert-color: #f35b52;
-$light-gray: #e6e6e6;
-$medium-gray: #cacaca;
-$dark-gray: #8a8a8a;
-
-$darker-grey: #676767;
-$dark-grey: #727272;
-$grey: #878787;
 
 // $black: #0a0a0a;
 $white: #fff;
-$body-background: $white;
+$body-background: #e5e5e5;
 $body-font-color: #4e4e4e;
 $body-font-family: "ProximaNova", "Helvetica Neue", 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', Helvetica, Roboto, Arial, sans-serif;
 // $body-antialiased: true;
@@ -129,7 +123,7 @@ $header-sizes: (
 // $header-lineheight: 1.4;
 $header-margin-bottom: 1rem;
 // $header-text-rendering: optimizeLegibility;
-$header-alt-color: #678b9f;
+$header-alt-color: #167aa2;
 // $small-font-size: 80%;
 // $header-small-font-color: $medium-gray;
 $paragraph-lineheight: 1.4;
@@ -561,6 +555,6 @@ $tooltip-radius: 6px;
 // -----------
 
 $topbar-padding: 0 3rem;
-$topbar-background: $darker-grey;
+$topbar-background: #676767;
 // $topbar-title-spacing: 1rem;
 // $topbar-input-width: 200px;
