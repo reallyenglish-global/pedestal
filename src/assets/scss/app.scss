@@ -8,7 +8,10 @@
 
 //Layout Styles
 @import 'layout/grid';
+@import 'layout/footer';
 
+
+//Module Styles
 @import 'modules/tabs';
 @import 'modules/buttons';
 @import 'modules/icons';
@@ -16,7 +19,6 @@
 @import 'modules/nav';
 @import 'modules/panels';
 @import 'modules/modals';
-@import 'modules/footer';
 @import 'modules/tooltip';
 @import 'modules/lesson-table';
 @import 'modules/day-picker';
