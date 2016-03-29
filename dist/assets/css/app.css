@@ -4412,15 +4412,6 @@ table.hover tr:nth-of-type(even):hover {
   float: right;
 }
 
-@font-face {
-  font-family: ProximaNova;
-  src: url('/assets/fonts/Proxima-Nova/Proxima-Nova-Regular.otf') format("opentype");
-}
-@font-face {
-  font-family: ProximaNova;
-  src: url('/assets/fonts/Proxima-Nova/Proxima-Nova-Bold.otf') format("opentype");
-  font-weight: 700;
-}
 html,
 body {
   font-size: 100%;
@@ -4431,6 +4422,15 @@ body {
   background-color: #e5e5e5;
 }
 
+@font-face {
+  font-family: ProximaNova;
+  src: url('/assets/fonts/Proxima-Nova/Proxima-Nova-Regular.otf') format("opentype");
+}
+@font-face {
+  font-family: ProximaNova;
+  src: url('/assets/fonts/Proxima-Nova/Proxima-Nova-Bold.otf') format("opentype");
+  font-weight: 700;
+}
 .blue {
   color: #48aadf;
 }
@@ -4519,6 +4519,27 @@ h6.alt {
 }
 .tabs .button {
   padding: 0.5em 1em;
+  background-color: #f3f3f3;
+  color: #4e4e4e;
+}
+.tabs .button.selected, .tabs .button[aria-selected="true"] {
+  background-color: #c7c7c7;
+  box-shadow: inset 1px 1px 3px #8e8c8c;
+}
+.tabs .button:hover {
+  background-color: #cfcfcf;
+}
+
+.tabs-alt .button {
+  background-color: #fff;
+  color: #989898;
+  border-radius: 0;
+}
+.tabs-alt .button[aria-selected="true"] {
+  color: #58595b;
+  background-color: #fff;
+  box-shadow: none;
+  border: 2px solid #bbbdbf;
 }
 
 .get-started-tab .get-started-icon, .faq-tab .faq-icon, .booked-lessons-tab .bookmark-icon, .study-tasks-tab .lamp-icon {
@@ -4556,69 +4577,49 @@ h6.alt {
 .button {
   font-size: 0.9rem;
   text-decoration: none;
+  border-radius: 1000px;
 }
-.button.light-grey {
-  background-color: #f3f3f3;
-  color: #4e4e4e;
+.button.is-disabled {
+  background-color: #d2d2d2;
 }
-.button.light-grey.selected, .button.light-grey[aria-selected="true"] {
-  background-color: #c7c7c7;
-  box-shadow: inset 1px 1px 3px #8e8c8c;
+
+.button-secondary {
+  background-color: #878787;
 }
-.button.light-grey:hover {
-  background-color: #cfcfcf;
+
+.button-alt {
+  color: #3babde;
+  background-color: #fff;
+  border: 2px solid #3babde;
 }
-.button.yellow {
+.button-alt:hover, .button-alt:focus {
+  background-color: #e6e6e6;
+  color: #3babde;
+}
+
+.button-info {
   background-color: #fffcef;
   color: #4e4e4e;
 }
-.button.disabled {
-  background-color: #d2d2d2;
+.button-info:hover, .button-info:focus {
+  background-color: #fff2bc;
+  color: #4e4e4e;
 }
-.button.radius {
+
+.button
+.button-radius {
   border-radius: 5px;
 }
-.button.round {
-  border-radius: 1000px;
-}
-.button.small {
+
+.button-small {
   padding: 1rem;
   height: 1rem;
   width: 1rem;
   display: inline-block;
 }
-.button.circle {
+
+.button-circle {
   border-radius: 50%;
-}
-.button.grey {
-  background-color: #878787;
-}
-.button.white {
-  background-color: #fff;
-  color: #989898;
-}
-.button.white[aria-selected="true"] {
-  color: #58595b;
-  border: 2px solid #bbbdbf;
-}
-.button.white.alt {
-  color: #3babde;
-  border: 2px solid #3babde;
-}
-.button.blue {
-  background-color: #9bcbde;
-  color: #fff;
-}
-.button .title,
-.button .sub-text {
-  display: block;
-}
-.button .title {
-  font-size: 1rem;
-  margin-bottom: 0.25rem;
-}
-.button .sub-text {
-  font-size: 0.75rem;
 }
 
 .close {

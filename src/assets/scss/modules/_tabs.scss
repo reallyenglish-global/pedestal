@@ -3,6 +3,33 @@
 
   .button {
     padding: $button-padding;
+    background-color: #f3f3f3;
+    color: $body-font-color;
+
+    &.selected,
+    &[aria-selected="true"] {
+      background-color: #c7c7c7;
+      box-shadow: inset 1px 1px 3px #8e8c8c;
+    }
+
+    &:hover {
+      background-color: darken(#e8e8e8, 10%);
+    }
+  }
+}
+
+.tabs-alt {
+  .button {
+    background-color: $white;
+    color: #989898;
+    border-radius: 0;
+
+    &[aria-selected="true"] {
+      color: #58595b;
+      background-color: $white;
+      box-shadow: none;
+      border: 2px solid #bbbdbf;
+    }
   }
 }
 
