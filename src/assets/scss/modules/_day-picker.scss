@@ -35,39 +35,36 @@
   width: 74%;
   padding: 0;
 
-  .days {
+  .day-container {
     margin: 0;
     padding: 0;
     height: 100%;
     list-style: none;
-
-    li {
-      float: left;
-      margin: 0 0.25rem 0 0;
-      height: 100%;
-      padding: 0.5rem 0;
-      width: 5.61rem;
-      cursor: pointer;
-    }
   }
 
   .day {
     background-color: #d3ebee;
     text-align: center;
     color: #939598;
+    float: left;
+    margin: 0 0.25rem 0 0;
+    height: 100%;
+    padding: 0.5rem 0;
+    width: 5.61rem;
+    cursor: pointer;
 
-    &.weekend {
-      background-color: #cfdfee;
-    }
-
-    &.active {
-      color: $white;
-      background-color: #3babde;
-    }
-
-    &.disabled {
+    &.is-disabled {
       background-color: #e5e5e5;
       color: #939598;
     }
+  }
+
+  .day-weekend {
+    background-color: #cfdfee;
+  }
+
+  .day-active {
+    color: $white;
+    background-color: #3babde;
   }
 }

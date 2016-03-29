@@ -5176,13 +5176,16 @@ textarea {
   width: 74%;
   padding: 0;
 }
-.day-picker-frame .days {
+.day-picker-frame .day-container {
   margin: 0;
   padding: 0;
   height: 100%;
   list-style: none;
 }
-.day-picker-frame .days li {
+.day-picker-frame .day {
+  background-color: #d3ebee;
+  text-align: center;
+  color: #939598;
   float: left;
   margin: 0 0.25rem 0 0;
   height: 100%;
@@ -5190,21 +5193,16 @@ textarea {
   width: 5.61rem;
   cursor: pointer;
 }
-.day-picker-frame .day {
-  background-color: #d3ebee;
-  text-align: center;
-  color: #939598;
-}
-.day-picker-frame .day.weekend {
-  background-color: #cfdfee;
-}
-.day-picker-frame .day.active {
-  color: #fff;
-  background-color: #3babde;
-}
-.day-picker-frame .day.disabled {
+.day-picker-frame .day.is-disabled {
   background-color: #e5e5e5;
   color: #939598;
+}
+.day-picker-frame .day-weekend {
+  background-color: #cfdfee;
+}
+.day-picker-frame .day-active {
+  color: #fff;
+  background-color: #3babde;
 }
 
 .pagination {
