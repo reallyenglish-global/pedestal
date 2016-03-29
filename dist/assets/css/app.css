@@ -4872,53 +4872,6 @@ a.block-link {
   margin: 1.5rem 0;
 }
 
-.progress {
-  margin: 2rem 3rem 6rem;
-  position: relative;
-}
-.progress .progress-img {
-  background-size: 1.75rem 1.75rem;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-color: #48aadf;
-  border-radius: 50%;
-  height: 3.5rem;
-  width: 3.5rem;
-  position: absolute;
-  top: -1.5rem;
-  text-align: center;
-}
-.progress h5 {
-  color: #48aadf;
-  font-size: 0.8rem;
-  position: absolute;
-  top: 3.5rem;
-}
-.progress .rocket {
-  background-image: url("../images/rocket.svg");
-}
-.progress .skype {
-  background-image: url("../images/skype.svg");
-}
-.progress .enter {
-  background-image: url("../images/enter.svg");
-}
-.progress .progress-0 {
-  left: -1.75rem;
-}
-.progress .progress-50 {
-  left: calc(50% - 3.5rem / 2);
-}
-.progress .progress-100 {
-  left: calc(100% - 3.5rem / 2);
-}
-.progress .disabled {
-  background-color: #cacaca;
-}
-.progress .disabled h5 {
-  color: #888;
-}
-
 @media screen and (min-width: 0em) and (max-width: 39.9375em) {
   [id^="skypeModal"].medium-unstack > .column, [id^="skypeModal"].medium-unstack > .columns,
   [id^="skypeModal"].medium-unstack > .columns {
@@ -5217,4 +5170,50 @@ a.block-link {
   .progress {
     margin-bottom: 1rem;
   }
+}
+.progress {
+  margin: 2rem 3rem 6rem;
+  position: relative;
+}
+.progress .progress-img {
+  background-size: 1.75rem 1.75rem;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-color: #48aadf;
+  border-radius: 50%;
+  height: 3.5rem;
+  width: 3.5rem;
+  position: absolute;
+  top: -1.5rem;
+  text-align: center;
+}
+.progress h5 {
+  color: #48aadf;
+  font-size: 0.8rem;
+  position: absolute;
+  top: 3.5rem;
+}
+.progress .rocket {
+  background-image: url("../images/orientation/rocket.svg");
+}
+.progress .skype {
+  background-image: url("../images/orientation/skype.svg");
+}
+.progress .enter {
+  background-image: url("../images/orientation/enter.svg");
+}
+.progress .progress-0 {
+  left: -1.75rem;
+}
+.progress .progress-50 {
+  left: calc(50% - 3.5rem / 2);
+}
+.progress .progress-100 {
+  left: calc(100% - 3.5rem / 2);
+}
+.progress .disabled {
+  background-color: #cacaca;
+}
+.progress .disabled h5 {
+  color: #888;
 }
