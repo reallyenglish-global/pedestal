@@ -5,8 +5,29 @@
   display: inline-block;
 }
 
+%icon-progress {
+  height: $progress-checkpoint-size / 2;
+  width: $progress-checkpoint-size / 2;
+}
+
+.icon-rocket {
+  @extend %icon-progress;
+  background-image: url('../images/orientation/rocket.svg');
+}
+
+.icon-skype {
+  @extend %icon-progress;
+  background-image: url('../images/orientation/skype.svg');
+}
+
+.icon-enter {
+  @extend %icon-progress;
+  background-image: url('../images/orientation/enter.svg');
+}
+
 .icon-arrow-down {
   background-image: url('../images/icons/arrow-down.svg');
+  //TODO: Add square mixin
   height: 0.5rem;
   width: 0.5rem;
 }

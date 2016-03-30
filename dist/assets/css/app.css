@@ -4534,7 +4534,6 @@ a.block-link {
 .tabs-alt .button {
   background-color: #fff;
   color: #989898;
-  border-radius: 0;
 }
 .tabs-alt .button[aria-selected="true"] {
   color: #58595b;
@@ -4634,6 +4633,23 @@ a.block-link {
   background-position: 50% 50%;
   background-size: contain;
   display: inline-block;
+}
+
+.icon-rocket, .icon-skype, .icon-enter {
+  height: 1.75rem;
+  width: 1.75rem;
+}
+
+.icon-rocket {
+  background-image: url("../images/orientation/rocket.svg");
+}
+
+.icon-skype {
+  background-image: url("../images/orientation/skype.svg");
+}
+
+.icon-enter {
+  background-image: url("../images/orientation/enter.svg");
 }
 
 .icon-arrow-down {
@@ -5089,6 +5105,10 @@ a.block-link {
     padding: 0.25rem 0.5rem;
   }
 }
+.progress {
+  margin: 2rem 3rem 6rem;
+  position: relative;
+}
 .progress[aria-valuenow="10"] .progress-meter {
   width: 10%;
 }
@@ -5097,6 +5117,41 @@ a.block-link {
 }
 .progress[aria-valuenow="90"] .progress-meter {
   width: 90%;
+}
+
+.progress-checkpoint {
+  background-color: #48aadf;
+  height: 3.5rem;
+  width: 3.5rem;
+  padding-top: 0.875rem;
+  border-radius: 50%;
+  position: absolute;
+  top: -1.5rem;
+  text-align: center;
+}
+.progress-checkpoint > h5 {
+  color: #48aadf;
+  font-size: 0.8rem;
+  position: absolute;
+  top: 3.5rem;
+}
+.progress-checkpoint.is-disabled {
+  background-color: #cacaca;
+}
+.progress-checkpoint.is-disabled > h5 {
+  color: #888;
+}
+
+.progress-0 {
+  left: -1.75rem;
+}
+
+.progress-50 {
+  left: calc(50% - 3.5rem / 2);
+}
+
+.progress-100 {
+  left: calc(100% - 3.5rem / 2);
 }
 
 @media screen and (min-width: 0em) and (max-width: 39.9375em) {
@@ -5112,50 +5167,4 @@ a.block-link {
   .progress[aria-valuenow="90"] .progress-meter {
     width: 85%;
   }
-}
-.progress {
-  margin: 2rem 3rem 6rem;
-  position: relative;
-}
-.progress .progress-img {
-  background-size: 1.75rem 1.75rem;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-color: #48aadf;
-  border-radius: 50%;
-  height: 3.5rem;
-  width: 3.5rem;
-  position: absolute;
-  top: -1.5rem;
-  text-align: center;
-}
-.progress h5 {
-  color: #48aadf;
-  font-size: 0.8rem;
-  position: absolute;
-  top: 3.5rem;
-}
-.progress .rocket {
-  background-image: url("../images/orientation/rocket.svg");
-}
-.progress .skype {
-  background-image: url("../images/orientation/skype.svg");
-}
-.progress .enter {
-  background-image: url("../images/orientation/enter.svg");
-}
-.progress .progress-0 {
-  left: -1.75rem;
-}
-.progress .progress-50 {
-  left: calc(50% - 3.5rem / 2);
-}
-.progress .progress-100 {
-  left: calc(100% - 3.5rem / 2);
-}
-.progress .disabled {
-  background-color: #cacaca;
-}
-.progress .disabled h5 {
-  color: #888;
 }

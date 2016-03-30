@@ -1,4 +1,8 @@
 .progress {
+  margin: 2rem 3rem 6rem;
+  position: relative;
+
+//TODO:Make mixin for this too
   &[aria-valuenow="10"] {
     .progress-meter {
       width: 10%;
@@ -16,6 +20,45 @@
       width: 90%;
     }
   }
+}
+
+.progress-checkpoint {
+  background-color: $primary-color;
+  height: $progress-checkpoint-size;
+  width: $progress-checkpoint-size;
+  padding-top: $progress-checkpoint-size / 4;
+  border-radius: 50%;
+  position: absolute;
+  top: (-$progress-checkpoint-size / 2) + ($progress-height / 2);
+  text-align: center;
+
+  > h5 {
+    color: $primary-color;
+    font-size: 0.8rem;
+    position: absolute;
+    top: $progress-checkpoint-size;
+  }
+
+  &.is-disabled {
+    background-color: $progress-background;
+
+    > h5 {
+      color: #888;
+    }
+  }
+}
+
+//TODO: write this as a mixin
+.progress-0 {
+  left: $progress-checkpoint-size / -2;
+}
+
+.progress-50 {
+  left: calc(50% - #{$progress-checkpoint-size} / 2);
+}
+
+.progress-100 {
+  left: calc(100% - #{$progress-checkpoint-size} / 2);
 }
 
 @include breakpoint(small only) {
@@ -38,64 +81,6 @@
       .progress-meter {
         width: 85%;
       }
-    }
-  }
-}
-
-.progress {
-  margin: 2rem 3rem 6rem;
-  position: relative;
-  $progress-img-dimension: 3.5rem;
-
-  .progress-img {
-    background-size: ($progress-img-dimension / 2) ($progress-img-dimension / 2);
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-color: $primary-color;
-    border-radius: 50%;
-    height: $progress-img-dimension;
-    width: $progress-img-dimension;
-    position: absolute;
-    top: (-$progress-img-dimension / 2) + ($progress-height / 2);
-    text-align: center;
-  }
-
-  h5 {
-    color: $primary-color;
-    font-size: 0.8rem;
-    position: absolute;
-    top: $progress-img-dimension;
-  }
-
-  .rocket {
-    background-image: url('../images/orientation/rocket.svg');
-  }
-
-  .skype {
-    background-image: url('../images/orientation/skype.svg');
-  }
-
-  .enter {
-    background-image: url('../images/orientation/enter.svg');
-  }
-
-  .progress-0 {
-    left: $progress-img-dimension / -2;
-  }
-
-  .progress-50 {
-    left: calc(50% - #{$progress-img-dimension} / 2);
-  }
-
-  .progress-100 {
-    left: calc(100% - #{$progress-img-dimension} / 2);
-  }
-
-  .disabled {
-    background-color: $progress-background;
-
-    h5 {
-      color: #888;
     }
   }
 }
