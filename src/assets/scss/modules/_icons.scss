@@ -57,6 +57,21 @@
   background-image: url('../../assets/images/icons/minus.svg');
 }
 
+%icon-extra-large {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.icon-left-arrow {
+  @extend %icon-extra-large;
+  background-image: url('../images/icons/scroll-arrow-left.svg');
+}
+
+.icon-right-arrow {
+  @extend %icon-extra-large;
+  background-image: url('../images/icons/scroll-arrow-right.svg');
+}
+
 %lesson-icon {
   height: 2.3rem;
   width: 2.3rem;
@@ -122,7 +137,7 @@
 
 .icon-tick {
   @extend %task-icon;
-  background-image: url('../images/icons/tick.svg');
+  background-image: url('../images/icons/white-tick.svg');
 }
 
 .icon-incomplete {

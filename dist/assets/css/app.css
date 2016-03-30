@@ -4663,6 +4663,19 @@ a.block-link {
   background-image: url("../../assets/images/icons/minus.svg");
 }
 
+.icon-left-arrow, .icon-right-arrow {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.icon-left-arrow {
+  background-image: url("../images/icons/scroll-arrow-left.svg");
+}
+
+.icon-right-arrow {
+  background-image: url("../images/icons/scroll-arrow-right.svg");
+}
+
 .icon-grammar, .icon-listening, .icon-reading, .icon-speaking {
   height: 2.3rem;
   width: 2.3rem;
@@ -4718,7 +4731,7 @@ a.block-link {
 }
 
 .icon-tick {
-  background-image: url("../images/icons/tick.svg");
+  background-image: url("../images/icons/white-tick.svg");
 }
 
 .icon-incomplete {
@@ -5041,27 +5054,15 @@ a.block-link {
 .day-picker .next-week {
   background-color: #e5e5e5;
   padding: 1.25rem 0.75rem;
-  height: 4rem;
   width: 11.5555%;
   cursor: pointer;
+  text-align: center;
 }
 .day-picker .previous-week {
-  text-align: right;
-  margin-right: 0.25rem;
   float: left;
-  background-image: url("../images/icons/scroll-arrow-left.svg");
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-size: 1.75rem 1.75rem;
 }
 .day-picker .next-week {
-  text-align: left;
-  margin-left: 0.25rem;
   float: right;
-  background-image: url("../images/icons/scroll-arrow-right.svg");
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-size: 1.75rem 1.75rem;
 }
 
 .day-picker-frame {
