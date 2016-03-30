@@ -1,7 +1,30 @@
+@charset 'utf-8';
+
 //Base Styles
 @import 'base/settings';
 @import 'foundation';
-@include foundation-everything;
+// @import 'motion-ui';
+
+@include foundation-global-styles;
+@include foundation-grid;
+@include foundation-typography;
+@include foundation-button;
+@include foundation-forms;
+@include foundation-visibility-classes;
+@include foundation-float-classes;
+@include foundation-callout;
+@include foundation-close-button;
+@include foundation-label;
+@include foundation-menu;
+@include foundation-pagination;
+@include foundation-progress-bar;
+@include foundation-reveal;
+@include foundation-tabs;
+@include foundation-title-bar;
+@include foundation-tooltip;
+@include foundation-top-bar;
+
+
 @import 'base/base';
 @import 'base/typography';
 @import 'base/helpers';
