@@ -21,6 +21,24 @@
 @include breakpoint(small only) {
   .progress {
     margin-bottom: 1rem;
+
+    &[aria-valuenow="10"] {
+      .progress-meter {
+        width: 15%;
+      }
+    }
+
+    &[aria-valuenow="60"] {
+      .progress-meter {
+        width: 65%;
+      }
+    }
+
+    &[aria-valuenow="90"] {
+      .progress-meter {
+        width: 85%;
+      }
+    }
   }
 }
 

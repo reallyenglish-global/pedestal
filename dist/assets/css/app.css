@@ -4449,6 +4449,10 @@ a.block-link {
   text-align: left !important;
 }
 
+.text-align-center {
+  text-align: center !important;
+}
+
 .text-underline {
   text-decoration: underline;
 }
@@ -4877,51 +4881,10 @@ a.block-link {
     font-size: 1.5rem;
   }
 }
-.reveal-modal-bg {
-  position: fixed;
-}
-
-[id^="bookModal"] .modal-title {
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-}
-[id^="bookModal"] .teacher-avatar {
-  border-radius: 50%;
-  margin-bottom: 1rem;
-}
-[id^="bookModal"] .teacher-name {
-  color: #939598;
-}
-
-[id^="skypeModal"] {
+.reveal-large {
   max-width: 70.5rem;
 }
-[id^="skypeModal"] .nav-row {
-  margin: 1.5rem 0;
-}
 
-@media screen and (min-width: 0em) and (max-width: 39.9375em) {
-  [id^="skypeModal"].medium-unstack > .column, [id^="skypeModal"].medium-unstack > .columns,
-  [id^="skypeModal"].medium-unstack > .columns {
-    margin-top: 1rem;
-  }
-
-  [for="skype-name"],
-  [for="mobile-number"] {
-    padding: 0;
-    margin: 0;
-  }
-
-  .progress[aria-valuenow="10"] .progress-meter {
-    width: 15%;
-  }
-  .progress[aria-valuenow="60"] .progress-meter {
-    width: 65%;
-  }
-  .progress[aria-valuenow="90"] .progress-meter {
-    width: 85%;
-  }
-}
 .has-tip > * {
   cursor: pointer;
 }
@@ -5146,6 +5109,15 @@ a.block-link {
 @media screen and (min-width: 0em) and (max-width: 39.9375em) {
   .progress {
     margin-bottom: 1rem;
+  }
+  .progress[aria-valuenow="10"] .progress-meter {
+    width: 15%;
+  }
+  .progress[aria-valuenow="60"] .progress-meter {
+    width: 65%;
+  }
+  .progress[aria-valuenow="90"] .progress-meter {
+    width: 85%;
   }
 }
 .progress {
