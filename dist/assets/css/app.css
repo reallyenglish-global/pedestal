@@ -4436,11 +4436,6 @@ ul {
   src: url('/assets/fonts/Proxima-Nova/Proxima-Nova-Bold.otf') format("opentype");
   font-weight: 700;
 }
-a.block-link {
-  margin-bottom: 1rem;
-  display: inline-block;
-}
-
 .font-weight-bold {
   font-weight: 700;
 }
@@ -4480,6 +4475,7 @@ a.block-link {
   padding-bottom: 1rem;
   background-color: #fff;
   border-bottom: 1px solid #dcdcdc;
+  margin-bottom: 1rem;
 }
 
 @media screen and (min-width: 0em) and (max-width: 39.9375em) {
@@ -4539,7 +4535,7 @@ a.block-link {
 }
 
 .button {
-  font-size: 0.9rem;
+  font-size: 1rem;
   text-decoration: none;
 }
 .button.is-disabled {
@@ -4588,6 +4584,11 @@ a.block-link {
   border-radius: 1000px;
 }
 
+.button-small {
+  font-size: 0.9rem;
+  padding: 0.25rem 1rem;
+}
+
 .button-radius {
   border-radius: 5px;
 }
@@ -4617,6 +4618,11 @@ a.block-link {
   display: block;
 }
 
+@media screen and (max-width: 51.8125em) {
+  .button-small {
+    padding: 0.25rem 0.5rem;
+  }
+}
 .icon {
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -4879,6 +4885,14 @@ a.block-link {
     font-size: 1.5rem;
   }
 }
+.image-bordered {
+  border: 2px solid #929497;
+}
+
+.image-circle {
+  border-radius: 50%;
+}
+
 .reveal-large {
   max-width: 70.5rem;
 }
@@ -5017,7 +5031,7 @@ a.block-link {
 .day-picker-frame .day {
   background-color: #d3ebee;
   text-align: center;
-  color: #939598;
+  color: #878787;
   float: left;
   margin: 0 0.25rem 0 0;
   height: 100%;
@@ -5054,46 +5068,13 @@ a.block-link {
   border-radius: 5px;
 }
 
-.teacher-panel {
-  border: 1px solid #e5e5e4;
-  padding: 0 0 1rem;
-  background-color: #fff;
-}
-.teacher-panel .booking-row {
+.booking-row {
   padding: 0.5rem 0;
-  margin: 0 1rem;
 }
-.teacher-panel .booking-row time {
-  color: #939598;
-}
-.teacher-panel .booking-row .button {
-  padding: 0.25rem 1rem;
-}
-.teacher-panel .booking-row:nth-child(even) {
+.booking-row:nth-child(even) {
   background-color: #f1f2f2;
 }
-.teacher-panel .booking-row:nth-child(odd) {
-  background-color: #fff;
-}
 
-.teacher-row {
-  background-color: #fff;
-  padding: 0.5rem 0;
-}
-.teacher-row .teacher-avatar {
-  text-align: center;
-  color: #939598;
-}
-.teacher-row .teacher-avatar img {
-  border-radius: 50%;
-  margin-bottom: 0.5rem;
-}
-
-@media screen and (max-width: 51.8125em) {
-  .teacher-panel .booking-row .button {
-    padding: 0.25rem 0.5rem;
-  }
-}
 .progress {
   margin: 2rem 3rem 6rem;
   position: relative;

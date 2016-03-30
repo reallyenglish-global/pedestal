@@ -1,5 +1,5 @@
 .button {
-  font-size: 0.9rem;
+  font-size: 1rem;
   text-decoration: none;
 
   &.is-disabled {
@@ -56,6 +56,11 @@
   border-radius: 1000px;
 }
 
+.button-small {
+  font-size: 0.9rem;
+  padding: 0.25rem 1rem;
+}
+
 .button-radius {
   border-radius: 5px;
 }
@@ -83,5 +88,11 @@
     background: #fff;
     cursor: inherit;
     display: block;
+  }
+}
+
+@include breakpoint(medium down) {
+  .button-small {
+    padding: 0.25rem 0.5rem;
   }
 }

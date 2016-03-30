@@ -8,10 +8,3 @@
   src: font-url('Proxima-Nova/Proxima-Nova-Bold.otf', false, false) format('opentype');
   font-weight: 700;
 }
-
-a {
-  &.block-link {
-    margin-bottom: 1rem;
-    display: inline-block;
-  }
-}

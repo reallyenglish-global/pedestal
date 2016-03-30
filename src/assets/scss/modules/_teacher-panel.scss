@@ -1,51 +1,7 @@
-.teacher-panel {
-  border: 1px solid #e5e5e4;
-  padding: 0 0 1rem;
-  background-color: $white;
-
-  .booking-row {
-    padding: 0.5rem 0;
-    margin: 0 1rem;
-
-    time {
-      color: #939598;
-    }
-
-    .button {
-      padding: 0.25rem 1rem;
-    }
-
-    &:nth-child(even) {
-      background-color: #f1f2f2;
-    }
-
-    &:nth-child(odd) {
-      background-color: $white;
-    }
-  }
-}
-
-.teacher-row {
-  background-color: $white;
+.booking-row {
   padding: 0.5rem 0;
 
-  .teacher-avatar {
-    text-align: center;
-    color: #939598;
-
-    img {
-      border-radius: 50%;
-      margin-bottom: 0.5rem;
-    }
-  }
-}
-
-@include breakpoint(medium down) {
-  .teacher-panel {
-    .booking-row {
-      .button {
-        padding: 0.25rem 0.5rem;
-      }
-    }
+  &:nth-child(even) {
+    background-color: #f1f2f2;
   }
 }
