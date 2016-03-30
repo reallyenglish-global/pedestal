@@ -1,48 +1,46 @@
 <div class="tabs-panel" id="booked-lessons">
-	<div class="lesson-table">
-		<div class="tabs tabs-alt lesson-button-row radius row" data-tabs="" id="lesson-table-tabs">
-			<div class="medium-3 columns is-active tabs-title">
-				<a href="#current-bookings-panel" aria-selected="true" id="current-bookings-button" class="button expanded">Current bookings</a>
-			</div>
-			<div class="medium-3 columns tabs-title">
-				<a href="#completed-lessons-panel" id="completed-lessons-button" class="button expanded">Completed</a>
-			</div>
-			<div class="medium-3 columns tabs-title">
-				<a href="#incompleted-lessons-panel" id="incompleted-lessons-button" class="button expanded">Incompleted</a>
-			</div>
-			<div class="medium-3 columns tabs-title">
-				<a href="#cancelled-lessons-panel" id="cancelled-lessons-button" class="button expanded">Cancelled</a>
-			</div>
+	<div class="tabs tabs-alt radius row" data-tabs="" id="lesson-table-tabs">
+		<div class="medium-3 columns is-active tabs-title">
+			<a href="#current-bookings-panel" aria-selected="true" id="current-bookings-button" class="button expanded">Current bookings</a>
 		</div>
-		<div class="tabs-content" data-tabs-content="lesson-table-tabs">
-			<div id="current-bookings-panel" class="tabs-panel is-active">
-				{{#each current-bookings}}
-					<div class="lesson-set">
-						{{> lesson current=true highlightClass="highlight-blue" iconClass="icon-calendar"}}
-					</div>
-				{{/each}}
-			</div>
+		<div class="medium-3 columns tabs-title">
+			<a href="#completed-lessons-panel" id="completed-lessons-button" class="button expanded">Completed</a>
 		</div>
-		<div id="completed-lessons-panel" class="tabs-panel">
+		<div class="medium-3 columns tabs-title">
+			<a href="#incompleted-lessons-panel" id="incompleted-lessons-button" class="button expanded">Incompleted</a>
+		</div>
+		<div class="medium-3 columns tabs-title">
+			<a href="#cancelled-lessons-panel" id="cancelled-lessons-button" class="button expanded">Cancelled</a>
+		</div>
+	</div>
+	<div class="tabs-content" data-tabs-content="lesson-table-tabs">
+		<div id="current-bookings-panel" class="tabs-panel is-active">
 			{{#each current-bookings}}
-				<div class="lesson-set">
-					{{> lesson completed=true highlightClass="highlight-green" iconClass="icon-tick"}}
-				</div>
+			<div class="lesson-set">
+				{{> lesson current=true highlightClass="is-booked" iconClass="icon-calendar"}}
+			</div>
 			{{/each}}
 		</div>
-		<div id="incompleted-lessons-panel" class="tabs-panel lesson-set">
-			{{#each current-bookings}}
-				<div class="lesson-set">
-					{{> lesson incomplete=true highlightClass="highlight-orange" iconClass="icon-incomplete"}}
-				</div>
-			{{/each}}
+	</div>
+	<div id="completed-lessons-panel" class="tabs-panel">
+		{{#each current-bookings}}
+		<div class="lesson-set">
+			{{> lesson completed=true highlightClass="is-complete" iconClass="icon-tick"}}
 		</div>
-		<div id="cancelled-lessons-panel" class="tabs-panel lesson-set">
-			{{#each current-bookings}}
-				<div class="lesson-set">
-					{{> lesson cancelled=true highlightClass="highlight-purple" iconClass="icon-cancel"}}
-				</div>
-			{{/each}}
+		{{/each}}
+	</div>
+	<div id="incompleted-lessons-panel" class="tabs-panel lesson-set">
+		{{#each current-bookings}}
+		<div class="lesson-set">
+			{{> lesson incomplete=true highlightClass="is-incomplete" iconClass="icon-incomplete"}}
 		</div>
+		{{/each}}
+	</div>
+	<div id="cancelled-lessons-panel" class="tabs-panel lesson-set">
+		{{#each current-bookings}}
+		<div class="lesson-set">
+			{{> lesson cancelled=true highlightClass="is-cancelled" iconClass="icon-cancel"}}
+		</div>
+		{{/each}}
 	</div>
 </div>

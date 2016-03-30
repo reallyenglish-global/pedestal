@@ -17263,7 +17263,7 @@ Foundation.plugin(ResponsiveToggle, 'ResponsiveToggle');
   });
 
   $(".show-feedback").click(function() {
-    $(this).parent().siblings().find(".assessment-feedback").toggle();
+    $(this).parent().siblings().find(".assessment-feedback").toggleClass("hide");
   });
 
   $(".icon-show-answer").click(function() {

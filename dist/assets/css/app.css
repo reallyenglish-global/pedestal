@@ -4512,7 +4512,7 @@ a.block-link {
 }
 
 .tabs {
-  margin: 1rem 0;
+  margin: 1.5rem 0;
 }
 .tabs .button {
   padding: 0.5em 1em;
@@ -4568,11 +4568,26 @@ a.block-link {
   color: #3babde;
 }
 
-.button-info {
+.button-rating {
   background-color: #fffcef;
   color: #4e4e4e;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  margin-top: 0.8rem;
+  font-size: 0.8rem;
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
 }
-.button-info:hover, .button-info:focus {
+.button-rating > .icon-arrow-down {
+  margin-left: 0.25rem;
+}
+.button-rating > .comment {
+  display: inline-block;
+  margin: 0 0 0 0.5rem;
+}
+.button-rating:hover, .button-rating:focus {
   background-color: #fff2bc;
   color: #4e4e4e;
 }
@@ -4924,127 +4939,88 @@ a.block-link {
   color: #59862d;
 }
 
-.lesson-table .row,
-.lesson-table .callout-info {
-  margin: 0;
-}
-.lesson-table .callout-info {
-  padding: 0.8rem 0.5rem;
-  color: #989898;
-}
-.lesson-table .lesson-set {
-  margin-bottom: 1rem;
-}
-.lesson-table .lesson-set.unbooked .lesson-row:nth-child(3) {
-  box-shadow: inset 0 -6px 0 -2px #e0f0f3, inset 0 -7px 0 -2px #edf6f8;
-}
-.lesson-table .lesson-set.booked .lesson-row:nth-child(4) {
-  background-color: #e0f0f3;
-  border-top: none;
-}
-.lesson-table .lesson-button-row {
-  background-color: #f3f3f3;
-  margin-bottom: 1.5rem;
-}
-.lesson-table .lesson-label {
-  padding: 0.5rem 1.25rem;
-}
-.lesson-table .lesson-row {
+.lesson {
   border: 1px solid #e7e7e7;
   border-bottom: none;
+  margin: 0;
+  padding: 0.8rem 0.5rem;
 }
-.lesson-table .lesson-row .title {
-  color: #4e4e4e;
+.lesson.is-booked {
+  background-color: #e0f0f3;
 }
-.lesson-table .lesson-row .avatar {
+.lesson.is-complete {
+  background-color: #ecf7f2;
+  padding: 0 0.5rem;
+}
+.lesson.is-complete time,
+.lesson.is-complete .lesson-avatar {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.lesson.is-complete time {
+  display: inline-block;
+  color: #7dbaa7;
+}
+.lesson.is-incomplete {
+  background-color: #f4e9e2;
+}
+.lesson.is-incomplete time {
+  color: #dda989;
+}
+.lesson.is-cancelled {
+  background-color: #eee1e6;
+}
+.lesson.is-cancelled time {
+  color: #d09baf;
+}
+
+.lesson + [class*='is'] {
+  border-top: none;
+}
+
+.lesson:last-child {
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.lesson-avatar {
   height: 1.5rem;
   width: 1.5rem;
   border-radius: 50%;
   margin-right: 0.5rem;
 }
-.lesson-table .lesson-row .lesson-date {
+
+.lesson-label {
+  font-size: 1rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.lesson-date {
   margin-left: 0.5rem;
 }
-.lesson-table .lesson-row .rating {
-  display: inline-block;
-  vertical-align: top;
-}
-.lesson-table .lesson-row .comment {
-  display: inline-block;
-  margin: 0 0 0 0.5rem;
-}
-.lesson-table .lesson-row .assessment-feedback {
+
+.lesson-assessment-feedback {
   background-color: #fffcef;
   padding: 1rem;
-  display: none;
   margin-bottom: 1rem;
 }
-.lesson-table .lesson-row[class*='highlight'] {
-  color: #4e4e4e;
+
+.lesson-set {
+  margin-bottom: 1rem;
 }
-.lesson-table .lesson-row.lesson-row + [class*='highlight'] {
-  border-top: none;
+.lesson-set.is-unbooked .lesson:nth-child(3) {
+  box-shadow: inset 0 -6px 0 -2px #e0f0f3, inset 0 -7px 0 -2px #edf6f8;
 }
-.lesson-table .lesson-row .lesson-row:last-child {
-  border-bottom: 1px solid #e7e7e7;
-}
-.lesson-table .highlight-blue {
+.lesson-set.is-booked .lesson:nth-child(4) {
   background-color: #e0f0f3;
-}
-.lesson-table .highlight-blue.bordered {
-  border: 2px solid #9bcbde;
-  border-bottom: none;
-}
-.lesson-table .highlight-green {
-  background-color: #ecf7f2;
-  padding: 0 0.5rem;
-}
-.lesson-table .highlight-green time,
-.lesson-table .highlight-green .avatar,
-.lesson-table .highlight-green p {
-  display: inline-block;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-.lesson-table .highlight-green time {
-  color: #7dbaa7;
-}
-.lesson-table .show-feedback {
-  border-top-right-radius: 5px;
-  border-top-left-radius: 5px;
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-  margin-top: 0.8rem;
-  font-size: 0.8rem;
-  float: right;
-}
-.lesson-table .show-feedback .arrow-down {
-  margin-left: 0.25rem;
-}
-.lesson-table .highlight-orange {
-  background-color: #f4e9e2;
-}
-.lesson-table .highlight-orange time {
-  color: #dda989;
-}
-.lesson-table .highlight-orange .remark {
-  color: #a39e9e;
-}
-.lesson-table .highlight-purple {
-  background-color: #eee1e6;
-}
-.lesson-table .highlight-purple time {
-  color: #d09baf;
-}
-.lesson-table .highlight-purple .remark {
-  color: #a39e9e;
+  border-top: none;
 }
 
 @media screen and (min-width: 0em) and (max-width: 39.9375em) {
-  .lesson-row .columns:last-child {
+  .lesson .columns:last-child {
     margin-bottom: 0;
   }
-  .lesson-row.highlight-green time {
+  .lesson.is-complete time {
     display: block;
     margin-top: 0;
     margin-bottom: 0;
