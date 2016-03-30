@@ -16,10 +16,6 @@
 .menu-text {
   font-weight: 400;
   font-size: 1rem;
-
-  a {
-    padding: 0;
-  }
 }
 
 
@@ -39,17 +35,15 @@
     padding-right: 3rem;
   }
 
-  .top-bar {
-    .top-bar-left {
-      display: none;
-    }
+  .top-bar-left {
+    display: none;
   }
 
   .top-bar-right {
     float: none;
 
     .menu {
-      > [role="menuitem"] {
+      > li {
         display: block;
         padding-left: 2rem;
       }
@@ -61,13 +55,5 @@
   .title-bar {
     padding-left: 1.25rem;
     padding-right: 1.25rem;
-  }
-
-  .top-bar-right {
-    .menu {
-      > [role="menuitem"] {
-        padding-left: 0;
-      }
-    }
   }
 }
