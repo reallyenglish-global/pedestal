@@ -504,18 +504,19 @@ $reveal-padding: 2rem;
 // // 31. Tabs
 // // --------
 
-// $tab-margin: 0;
+$tab-margin: 0 0 1.5rem 0;
 $tab-background: transparent;
-// $tab-background-active: $light-gray;
+$tab-background-active: $callout-background;
 // $tab-border: $light-gray;
-// $tab-item-color: foreground($tab-background, $primary-color);
-// $tab-item-background-hover: $white;
-// $tab-item-padding: 1.25rem 1.5rem;
+// $tab-item-font-size: 1rem;
+$tab-item-color: $body-font-color;
+$tab-item-background-hover: darken(#e8e8e8, 10%);
+$tab-item-padding: $button-padding;
 // $tab-expand-max: 6;
-$tab-content-background: transparent;
+$tab-content-background: $callout-background;
 $tab-content-border: none;
 // $tab-content-color: foreground($tab-background, $primary-color);
-// $tab-content-padding: 1rem;
+$tab-content-padding: 0;
 
 // // 32. Thumbnail
 // // -------------

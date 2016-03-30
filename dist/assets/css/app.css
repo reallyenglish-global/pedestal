@@ -4074,7 +4074,7 @@ table.hover tr:nth-of-type(even):hover {
 }
 
 .tabs {
-  margin: 0;
+  margin: 0 0 1.5rem 0;
   list-style-type: none;
   background: transparent;
   border: 1px solid none;
@@ -4115,20 +4115,20 @@ table.hover tr:nth-of-type(even):hover {
 }
 .tabs-title > a {
   display: block;
-  padding: 1.25rem 1.5rem;
+  padding: 0.5em 1em;
   line-height: 1;
   font-size: 12px;
-  color: #48aadf;
+  color: #4e4e4e;
 }
 .tabs-title > a:hover {
-  background: #fff;
+  background: #cfcfcf;
 }
 .tabs-title > a:focus, .tabs-title > a[aria-selected='true'] {
-  background: #e6e6e6;
+  background: #f3f3f3;
 }
 
 .tabs-content {
-  background: transparent;
+  background: #f3f3f3;
   transition: all 0.5s ease;
   border: 1px solid none;
   border-top: 0;
@@ -4141,7 +4141,7 @@ table.hover tr:nth-of-type(even):hover {
 
 .tabs-panel {
   display: none;
-  padding: 1rem;
+  padding: 0;
 }
 .tabs-panel.is-active {
   display: block;
@@ -4475,13 +4475,7 @@ a.block-link {
   margin: 0 auto;
 }
 
-.row .align-center {
-  text-align: center;
-}
-.row .align-right {
-  text-align: right;
-}
-.row.row-alt {
+.row-alt {
   padding-top: 1rem;
   padding-bottom: 1rem;
   background-color: #fff;
@@ -4515,38 +4509,33 @@ a.block-link {
   text-align: center;
 }
 
-.tabs {
-  margin: 1.5rem 0;
-}
-.tabs .button {
-  padding: 0.5em 1em;
+.tabs a {
   background-color: #f3f3f3;
-  color: #4e4e4e;
+  font-size: 0.9rem;
 }
-.tabs .button.selected, .tabs .button[aria-selected="true"] {
+.tabs .is-active a {
   background-color: #c7c7c7;
   box-shadow: inset 1px 1px 3px #8e8c8c;
 }
-.tabs .button:hover {
-  background-color: #cfcfcf;
+
+.tabs-rounded a {
+  border-radius: 1000px;
 }
 
-.tabs-alt .button {
+.tabs-alt a {
   background-color: #fff;
   color: #989898;
+  text-align: center;
 }
-.tabs-alt .button[aria-selected="true"] {
+.tabs-alt a:hover {
+  background-color: #e6e6e6;
+  color: #989898;
+}
+.tabs-alt .is-active a {
   color: #58595b;
   background-color: #fff;
   box-shadow: none;
   border: 2px solid #bbbdbf;
-}
-
-.tabs-content.callout {
-  background-color: #f3f3f3;
-}
-.tabs-content .tabs-panel {
-  padding: 0;
 }
 
 .button {

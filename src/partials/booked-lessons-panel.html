@@ -1,18 +1,18 @@
 <div class="tabs-panel" id="booked-lessons">
-	<div class="tabs tabs-alt radius row" data-tabs="" id="lesson-table-tabs">
-		<div class="medium-3 columns is-active tabs-title">
-			<a href="#current-bookings-panel" aria-selected="true" id="current-bookings-button" class="button expanded">Current bookings</a>
-		</div>
-		<div class="medium-3 columns tabs-title">
-			<a href="#completed-lessons-panel" id="completed-lessons-button" class="button expanded">Completed</a>
-		</div>
-		<div class="medium-3 columns tabs-title">
-			<a href="#incompleted-lessons-panel" id="incompleted-lessons-button" class="button expanded">Incompleted</a>
-		</div>
-		<div class="medium-3 columns tabs-title">
-			<a href="#cancelled-lessons-panel" id="cancelled-lessons-button" class="button expanded">Cancelled</a>
-		</div>
-	</div>
+	<ul class="tabs tabs-alt radius row" data-tabs="" id="lesson-table-tabs">
+		<li class="medium-3 columns is-active tabs-title">
+			<a href="#current-bookings-panel" aria-selected="true" id="current-bookings-button" class="expanded">Current bookings</a>
+		</li>
+		<li class="medium-3 columns tabs-title">
+			<a href="#completed-lessons-panel" id="completed-lessons-button" class="expanded">Completed</a>
+		</li>
+		<li class="medium-3 columns tabs-title">
+			<a href="#incompleted-lessons-panel" id="incompleted-lessons-button" class="expanded">Incompleted</a>
+		</li>
+		<li class="medium-3 columns tabs-title">
+			<a href="#cancelled-lessons-panel" id="cancelled-lessons-button" class="expanded">Cancelled</a>
+		</li>
+	</ul>
 	<div class="tabs-content" data-tabs-content="lesson-table-tabs">
 		<div id="current-bookings-panel" class="tabs-panel is-active">
 			{{#each current-bookings}}

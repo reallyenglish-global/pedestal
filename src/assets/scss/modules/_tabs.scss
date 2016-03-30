@@ -1,43 +1,37 @@
 .tabs {
-  margin: 1.5rem 0;
-
-  .button {
-    padding: $button-padding;
+  a {
     background-color: #f3f3f3;
-    color: $body-font-color;
+    font-size: 0.9rem;
+  }
 
-    &.selected,
-    &[aria-selected="true"] {
-      background-color: #c7c7c7;
-      box-shadow: inset 1px 1px 3px #8e8c8c;
-    }
+  .is-active a {
+    background-color: #c7c7c7;
+    box-shadow: inset 1px 1px 3px #8e8c8c;
+  }
+}
 
-    &:hover {
-      background-color: darken(#e8e8e8, 10%);
-    }
+.tabs-rounded {
+  a {
+    border-radius: 1000px;
   }
 }
 
 .tabs-alt {
-  .button {
+  a {
     background-color: $white;
     color: #989898;
+    text-align: center;
 
-    &[aria-selected="true"] {
-      color: #58595b;
-      background-color: $white;
-      box-shadow: none;
-      border: 2px solid #bbbdbf;
+    &:hover {
+      background-color: darken($white, 10%);
+      color: #989898;
     }
   }
-}
 
-.tabs-content {
-  &.callout {
-    background-color: $callout-background;
-  }
-
-  .tabs-panel {
-    padding: 0;
+  .is-active a {
+    color: #58595b;
+    background-color: $white;
+    box-shadow: none;
+    border: 2px solid #bbbdbf;
   }
 }

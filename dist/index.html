@@ -68,36 +68,36 @@
 		</section>
 	</header>
 	<div class="container">
-		<div class="row tabs medium-unstack" data-tabs="" id="task-lesson-tabs">
-			<div class="small-10 small-offset-1 medium-6 medium-offset-0 large-3 columns col-wrap-margin tabs-title is-active">
-				<a href="#study-tasks" class="button button-round active expanded text-align-left" id="study-tasks-button" aria-selected="true">
+		<ul class="row tabs tabs-rounded medium-unstack" data-tabs="" id="task-lesson-tabs">
+			<li class="small-10 small-offset-1 medium-6 medium-offset-0 large-3 columns col-wrap-margin tabs-title is-active">
+				<a href="#study-tasks" class="expanded" id="study-tasks-button" aria-selected="true">
 					<span class="icon icon-lamp"></span>
 					Study tasks
 				</a>
-			</div>
-			<div class="small-10 small-offset-1 medium-6 medium-offset-0 large-3 columns tabs-title end">
-				<a href="#booked-lessons" class="button button-round expanded text-align-left" id="booked-lessons-button">
+			</li>
+			<li class="small-10 small-offset-1 medium-6 medium-offset-0 large-3 columns tabs-title end">
+				<a href="#booked-lessons" class="expanded" id="booked-lessons-button">
 					<span class="icon icon-bookmark"></span>
 					Booked Lessons
 				</a>
-			</div>
-		</div>
+			</li>
+		</ul>
 		<div class="callout tabs-content" data-tabs-content="task-lesson-tabs">
 			<div class="tabs-panel" id="booked-lessons">
-				<div class="tabs tabs-alt radius row" data-tabs="" id="lesson-table-tabs">
-					<div class="medium-3 columns is-active tabs-title">
-						<a href="#current-bookings-panel" aria-selected="true" id="current-bookings-button" class="button expanded">Current bookings</a>
-					</div>
-					<div class="medium-3 columns tabs-title">
-						<a href="#completed-lessons-panel" id="completed-lessons-button" class="button expanded">Completed</a>
-					</div>
-					<div class="medium-3 columns tabs-title">
-						<a href="#incompleted-lessons-panel" id="incompleted-lessons-button" class="button expanded">Incompleted</a>
-					</div>
-					<div class="medium-3 columns tabs-title">
-						<a href="#cancelled-lessons-panel" id="cancelled-lessons-button" class="button expanded">Cancelled</a>
-					</div>
-				</div>
+				<ul class="tabs tabs-alt radius row" data-tabs="" id="lesson-table-tabs">
+					<li class="medium-3 columns is-active tabs-title">
+						<a href="#current-bookings-panel" aria-selected="true" id="current-bookings-button" class="expanded">Current bookings</a>
+					</li>
+					<li class="medium-3 columns tabs-title">
+						<a href="#completed-lessons-panel" id="completed-lessons-button" class="expanded">Completed</a>
+					</li>
+					<li class="medium-3 columns tabs-title">
+						<a href="#incompleted-lessons-panel" id="incompleted-lessons-button" class="expanded">Incompleted</a>
+					</li>
+					<li class="medium-3 columns tabs-title">
+						<a href="#cancelled-lessons-panel" id="cancelled-lessons-button" class="expanded">Cancelled</a>
+					</li>
+				</ul>
 				<div class="tabs-content" data-tabs-content="lesson-table-tabs">
 					<div id="current-bookings-panel" class="tabs-panel is-active">
 						<div class="lesson-set">
@@ -3998,12 +3998,12 @@
 				<textarea placeholder="add your comment here"></textarea>
 			</div>
 			<div class="medium-3 columns">
-				<span class="button button-secondary button-file expanded">
+				<span class="button button-rounded button-secondary button-file expanded">
 					Upload File <input type="file"></input>
 				</span>
 			</div>
 			<div class="medium-3 columns">
-				<button class="button  expanded">Leave Feedback</button>
+				<button class="button button-rounded expanded">Leave Feedback</button>
 			</div>
 		</div>
 	</div>

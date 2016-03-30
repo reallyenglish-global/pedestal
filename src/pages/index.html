@@ -1,17 +1,17 @@
-<div class="row tabs medium-unstack" data-tabs="" id="task-lesson-tabs">
-	<div class="small-10 small-offset-1 medium-6 medium-offset-0 large-3 columns col-wrap-margin tabs-title is-active">
-		<a href="#study-tasks" class="button button-round active expanded text-align-left" id="study-tasks-button" aria-selected="true">
+<ul class="row tabs tabs-rounded medium-unstack" data-tabs="" id="task-lesson-tabs">
+	<li class="small-10 small-offset-1 medium-6 medium-offset-0 large-3 columns col-wrap-margin tabs-title is-active">
+		<a href="#study-tasks" class="expanded" id="study-tasks-button" aria-selected="true">
 			<span class="icon icon-lamp"></span>
 			Study tasks
 		</a>
-	</div>
-	<div class="small-10 small-offset-1 medium-6 medium-offset-0 large-3 columns tabs-title end">
-		<a href="#booked-lessons" class="button button-round expanded text-align-left" id="booked-lessons-button">
+	</li>
+	<li class="small-10 small-offset-1 medium-6 medium-offset-0 large-3 columns tabs-title end">
+		<a href="#booked-lessons" class="expanded" id="booked-lessons-button">
 			<span class="icon icon-bookmark"></span>
 			Booked Lessons
 		</a>
-	</div>
-</div>
+	</li>
+</ul>
 <div class="callout tabs-content" data-tabs-content="task-lesson-tabs">
 	{{> booked-lessons-panel}}
 	{{> study-tasks-panel}}
