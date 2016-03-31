@@ -3721,6 +3721,10 @@ ul {
   color: #4e4e4e;
 }
 
+.button-booked {
+  background-color: #9bcbde;
+}
+
 .button-round {
   border-radius: 1000px;
 }
