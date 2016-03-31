@@ -4165,12 +4165,12 @@ ul {
   background-color: #e5e5e5;
   color: #939598;
 }
-.day-picker-frame .day-weekend {
-  background-color: #cfdfee;
-}
-.day-picker-frame .day-active {
+.day-picker-frame .day.is-active {
   color: #fff;
   background-color: #3babde;
+}
+.day-picker-frame .day.is-weekend {
+  background-color: #cfdfee;
 }
 
 .pagination {

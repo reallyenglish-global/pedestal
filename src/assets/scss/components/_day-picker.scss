@@ -45,14 +45,14 @@
       background-color: #e5e5e5;
       color: #939598;
     }
-  }
 
-  .day-weekend {
-    background-color: #cfdfee;
-  }
+    &.is-active {
+      color: $white;
+      background-color: #3babde;
+    }
 
-  .day-active {
-    color: $white;
-    background-color: #3babde;
+    &.is-weekend {
+      background-color: #cfdfee;
+    }
   }
 }
