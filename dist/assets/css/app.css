@@ -3585,6 +3585,26 @@ ul {
   color: #167aa2;
 }
 
+.margin-bottom-0 {
+  margin-bottom: 0 !important;
+}
+
+.margin-bottom-1 {
+  margin-bottom: 1rem !important;
+}
+
+.margin-bottom-2 {
+  margin-bottom: 2rem !important;
+}
+
+.margin-top-1 {
+  margin-top: 1rem !important;
+}
+
+.padding-top-1 {
+  padding-top: 1rem !important;
+}
+
 .container {
   padding: 0 3rem;
   max-width: 70.5rem;
