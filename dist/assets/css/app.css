@@ -4049,7 +4049,8 @@ ul {
   padding: 0 0.5rem;
 }
 .lesson.is-complete time,
-.lesson.is-complete .lesson-avatar {
+.lesson.is-complete .lesson-avatar,
+.lesson.is-complete .lesson-feedback-status {
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
