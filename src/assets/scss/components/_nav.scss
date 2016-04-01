@@ -1,17 +1,9 @@
-.header-row {
-  background-color: #fff;
-  border-bottom: 1px solid #dcdcdc;
-}
-
 .primary-nav,
 .title-bar {
   background-color: $topbar-background;
 }
 
 .top-bar {
-  padding: 0 3rem;
-  max-width: $global-max-width;
-  margin: 0 auto;
   font-size: 0.75rem;
   font-weight: bold;
 
@@ -24,10 +16,6 @@
 .menu-text {
   font-weight: 400;
   font-size: 1rem;
-
-  a {
-    padding: 0;
-  }
 }
 
 
@@ -41,88 +29,21 @@
   }
 }
 
-.tabs {
-  margin-bottom: 1.5rem;
-
-  .tabs-title {
-    > .button {
-      padding: $button-padding;
-    }
-  }
-
-  %tab-icon {
-    background-size: 1rem 1rem;
-    height: 1rem;
-    width: 1rem;
-    display: inline-block;
-    background-repeat: no-repeat;
-    margin-right: 0.5rem;
-  }
-
-  .get-started-tab {
-    text-align: left;
-
-    .get-started-icon {
-      @extend %tab-icon;
-      background-image: url('../images/icons/get-started.svg');
-    }
-  }
-
-  .faq-tab {
-    text-align: left;
-
-    .faq-icon {
-      @extend %tab-icon;
-      background-image: url('../images/icons/faq-question.svg');
-    }
-  }
-
-  .booked-lessons-tab {
-    text-align: left;
-
-    .bookmark-icon {
-      @extend %tab-icon;
-      background-image: url('../images/icons/bookmark.svg');
-    }
-  }
-
-  .study-tasks-tab {
-    text-align: left;
-
-    .lamp-icon {
-      @extend %tab-icon;
-      background-image: url('../images/icons/lamp.svg');
-    }
-  }
-}
-
-.tabs-content {
-  &.callout {
-    background-color: $callout-background;
-  }
-
-  .tabs-panel {
-    padding: 0;
-  }
-}
-
 @include breakpoint(medium down) {
   .title-bar {
     padding-left: 3rem;
     padding-right: 3rem;
   }
 
-  .top-bar {
-    .top-bar-left {
-      display: none;
-    }
+  .top-bar-left {
+    display: none;
   }
 
   .top-bar-right {
     float: none;
 
     .menu {
-      > [role="menuitem"] {
+      > li {
         display: block;
         padding-left: 2rem;
       }
@@ -134,13 +55,5 @@
   .title-bar {
     padding-left: 1.25rem;
     padding-right: 1.25rem;
-  }
-
-  .top-bar-right {
-    .menu {
-      > [role="menuitem"] {
-        padding-left: 0;
-      }
-    }
   }
 }

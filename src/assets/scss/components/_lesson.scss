@@ -1,0 +1,102 @@
+.lesson-set {
+  margin-bottom: 1rem;
+
+  &.is-unbooked .lesson:nth-child(3) {
+    box-shadow: inset 0 -6px 0 -2px $booked-lesson-color,
+    inset 0 -7px 0 -2px $booked-lesson-color;
+  }
+}
+
+.lesson {
+  border: 1px solid #e7e7e7;
+  border-bottom: none;
+  margin: 0;
+  padding: 0.8rem 0.5rem;
+
+  &.is-booked {
+    background-color: $booked-lesson-color;
+  }
+
+  &.is-complete {
+    background-color: #ecf7f2;
+    padding: 0 0.5rem;
+
+    time,
+    .lesson-avatar,
+    .lesson-feedback-status {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    time {
+      display: inline-block;
+      color: #7dbaa7;
+    }
+  }
+
+  &.is-incomplete {
+    background-color: #f4e9e2;
+
+    time {
+      color: #dda989;
+    }
+  }
+
+  &.is-cancelled {
+    background-color: #eee1e6;
+
+    time {
+      color: #d09baf;
+    }
+  }
+}
+
+.lesson + [class*='is'] {
+  border-top: none;
+}
+
+.lesson:last-child {
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.lesson-avatar {
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+
+.lesson-label {
+  font-size: 1rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.lesson-date {
+  margin-left: 0.5rem;
+}
+
+.lesson-assessment-feedback {
+  background-color: #fffcef;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+@include breakpoint(small only) {
+
+  .lesson {
+    .columns {
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    &.is-complete {
+      time {
+        display: block;
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+    }
+  }
+}

@@ -48,22 +48,17 @@ $global-font-size: 100%;
 $global-width: rem-calc(1200);
 $global-lineheight: 1.5;
 $global-max-width: 70.5rem;
+
 $primary-color: #48aadf;
-$secondary-color: #777;
+$secondary-color: #878787;
 $success-color: #3adb76;
 $warning-color: #ffae00;
 $alert-color: #f35b52;
-$light-gray: #e6e6e6;
-$medium-gray: #cacaca;
-$dark-gray: #8a8a8a;
-
-$darker-grey: #676767;
-$dark-grey: #727272;
-$grey: #878787;
+$booked-lesson-color: #e0f0f3;
 
 // $black: #0a0a0a;
 $white: #fff;
-$body-background: $white;
+$body-background: #e5e5e5;
 $body-font-color: #4e4e4e;
 $body-font-family: "ProximaNova", "Helvetica Neue", 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', Helvetica, Roboto, Arial, sans-serif;
 // $body-antialiased: true;
@@ -129,7 +124,7 @@ $header-sizes: (
 // $header-lineheight: 1.4;
 $header-margin-bottom: 1rem;
 // $header-text-rendering: optimizeLegibility;
-$header-alt-color: #678b9f;
+$header-alt-color: #167aa2;
 // $small-font-size: 80%;
 // $header-small-font-color: $medium-gray;
 $paragraph-lineheight: 1.4;
@@ -141,9 +136,9 @@ $paragraph-lineheight: 1.4;
 // $code-background: $light-gray;
 // $code-border: 1px solid $medium-gray;
 // $code-padding: rem-calc(2 5 1);
-// $anchor-color: $primary-color;
+$anchor-color: #167aa2;
 // $anchor-color-hover: scale-color($anchor-color, $lightness: -14%);
-$anchor-text-decoration: underline;
+$anchor-text-decoration: none;
 // $anchor-text-decoration-hover: none;
 // $hr-width: $global-width;
 // $hr-border: 1px solid $medium-gray;
@@ -265,7 +260,11 @@ $button-disabled-color: #d2d2d2;
 // 13. Callout
 // -----------
 
-$callout-background: #f3f3f3; //#dff0f4;
+$callout-background: #f3f3f3;
+$callout-background-primary: #bce2ec;
+$callout-background-alert: #f4c6c8;
+$callout-background-warning: #f6dec1;
+$callout-background-success: #bbe9c5;
 $callout-background-fade: 0%;
 $callout-border: none;
 //$callout-margin: 0 0 1rem 0;
@@ -441,6 +440,7 @@ $progress-height: 0.5rem;
 $progress-margin-bottom: 5rem;
 // $progress-meter-background: $primary-color;
 // $progress-radius: $global-radius;
+$progress-checkpoint-size: 3.5rem;
 
 // // 27. Reveal
 // // ----------
@@ -505,18 +505,19 @@ $reveal-padding: 2rem;
 // // 31. Tabs
 // // --------
 
-// $tab-margin: 0;
+$tab-margin: 0 0 1.5rem 0;
 $tab-background: transparent;
-// $tab-background-active: $light-gray;
+$tab-background-active: $callout-background;
 // $tab-border: $light-gray;
-// $tab-item-color: foreground($tab-background, $primary-color);
-// $tab-item-background-hover: $white;
-// $tab-item-padding: 1.25rem 1.5rem;
+// $tab-item-font-size: 1rem;
+$tab-item-color: $body-font-color;
+$tab-item-background-hover: darken(#e8e8e8, 10%);
+$tab-item-padding: $button-padding;
 // $tab-expand-max: 6;
-$tab-content-background: transparent;
+$tab-content-background: $callout-background;
 $tab-content-border: none;
 // $tab-content-color: foreground($tab-background, $primary-color);
-// $tab-content-padding: 1rem;
+$tab-content-padding: 0;
 
 // // 32. Thumbnail
 // // -------------
@@ -556,7 +557,7 @@ $tooltip-radius: 6px;
 // 35. Top Bar
 // -----------
 
-$topbar-padding: 0 3rem;
-$topbar-background: $darker-grey;
+$topbar-padding: 0;
+$topbar-background: #676767;
 // $topbar-title-spacing: 1rem;
 // $topbar-input-width: 200px;

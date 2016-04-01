@@ -1,89 +1,102 @@
 .button {
-  font-size: 0.9rem;
+  font-size: 1rem;
   text-decoration: none;
 
-  &.light-grey {
-    background-color: #f3f3f3;
-    color: $body-font-color;
-
-    &.selected,
-    &[aria-selected="true"] {
-      background-color: #c7c7c7;
-      box-shadow: inset 1px 1px 3px #8e8c8c;
-    }
-
-    &:hover {
-      background-color: darken(#e8e8e8, 10%);
-    }
-  }
-
-  &.yellow {
-    background-color: #fffcef;
-    color: $body-font-color;
-  }
-
-  &.disabled {
+  &.is-disabled {
     background-color: $button-disabled-color;
   }
+}
 
-  &.radius {
-    border-radius: 5px;
+.button-secondary {
+  background-color: $secondary-color;
+}
+
+.button-alt {
+  color: #3babde;
+  background-color: $white;
+  border: 2px solid #3babde;
+
+  &:hover,
+  &:focus {
+    background-color: darken($white, 10%);
+    color: #3babde;
+  }
+}
+
+//TODO: Add border radius mixin
+.button-rating {
+  background-color: #fffcef;
+  color: $body-font-color;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  margin-top: 0.8rem;
+  font-size: 0.8rem;
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+
+  > .icon-arrow-down {
+    margin-left: 0.25rem;
   }
 
-  &.round {
-    border-radius: 1000px;
-  }
-
-  &.small {
-    padding: 1rem;
-    height: 1rem;
-    width: 1rem;
+  > .comment {
     display: inline-block;
+    margin: 0 0 0 0.5rem;
   }
 
-  &.circle {
-    border-radius: 50%;
+  &:hover,
+  &:focus {
+    background-color: darken(#fffcef, 10%);
+    color: $body-font-color;
   }
+}
 
-  &.grey {
-    background-color: $grey;
-  }
+.button-booked {
+  background-color: #9bcbde;
+}
 
-  &.dark-grey {
-    background-color: $darker-grey;
-  }
+.button-round {
+  border-radius: 1000px;
+}
 
-  &.white {
-    background-color: $white;
-    color: #989898;
+.button-small {
+  font-size: 0.9rem;
+  padding: 0.25rem 1rem;
+}
 
-    &[aria-selected="true"] {
-      color: #58595b;
-      border: 2px solid #bbbdbf;
-    }
+.button-radius {
+  border-radius: 5px;
+}
 
-    &.alt {
-      color: #3babde;
-      border: 2px solid #3babde;
-    }
-  }
+.button-circle {
+  border-radius: 50%;
+  padding: 0.25rem;
+}
 
-  &.blue {
-    background-color: #9bcbde;
-    color: $white;
-  }
+.button-file {
+  position: relative;
+  overflow: hidden;
 
-  .title,
-  .sub-text {
+  [type='file'] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity = 0);
+    opacity: 0;
+    outline: none;
+    background: #fff;
+    cursor: inherit;
     display: block;
   }
+}
 
-  .title {
-    font-size: 1rem;
-    margin-bottom: 0.25rem;
-  }
-
-  .sub-text {
-    font-size: 0.75rem;
+@include breakpoint(medium down) {
+  .button-small {
+    padding: 0.25rem 0.5rem;
   }
 }

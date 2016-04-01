@@ -1,48 +1,10 @@
-.blue {
-  color: $primary-color;
+@font-face {
+  font-family: ProximaNova;
+  src: font-url('Proxima-Nova/Proxima-Nova-Regular.otf', false, false) format('opentype');
 }
 
-a {
-  text-decoration: none;
-  color: #167aa2;
-
-  &.grey {
-    color: #717576;
-  }
-
-  &.block-link {
-    margin-bottom: 1rem;
-    display: inline-block;
-  }
-}
-
-.bold {
+@font-face {
+  font-family: ProximaNova;
+  src: font-url('Proxima-Nova/Proxima-Nova-Bold.otf', false, false) format('opentype');
   font-weight: 700;
-}
-
-.underline {
-  text-decoration: underline;
-}
-
-.center {
-  text-align: center;
-}
-
-.right {
-  text-align: right;
-}
-
-.intro {
-  font-size: 1.2rem;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  &.alt {
-    color: $header-alt-color;
-  }
 }

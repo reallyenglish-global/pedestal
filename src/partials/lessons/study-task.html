@@ -1,8 +1,8 @@
-<div class="lesson-set booked">
+<section class="lesson-set">
 	<div class="row">
-		<div class="shrink columns lesson-label">Lesson {{this.unit}}</div>
+		<h1 class="shrink columns lesson-label">Lesson {{this.unit}}</h1>
 	</div>
 	{{> curriculum-lesson}}
-	{{> lesson}}
+	{{> lesson highlightClass="is-booked"}}
 	{{> curriculum-lesson}}
-</div>
+</section>
