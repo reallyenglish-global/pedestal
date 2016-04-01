@@ -1,60 +1,53 @@
 .lesson-set {
-  //TODO: Needs to overrive the lesson set styles
-  // scss-lint:disable NestingDepth
   margin-bottom: 1rem;
-
-  .lesson {
-    border: 1px solid #e7e7e7;
-    border-bottom: none;
-    margin: 0;
-    padding: 0.8rem 0.5rem;
-
-    &.is-booked {
-      background-color: $booked-lesson-color;
-    }
-
-    &.is-complete {
-      background-color: #ecf7f2;
-      padding: 0 0.5rem;
-
-      time,
-      .lesson-avatar,
-      .lesson-feedback-status {
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-      }
-
-      time {
-        display: inline-block;
-        color: #7dbaa7;
-      }
-    }
-
-    &.is-incomplete {
-      background-color: #f4e9e2;
-
-      time {
-        color: #dda989;
-      }
-    }
-
-    &.is-cancelled {
-      background-color: #eee1e6;
-
-      time {
-        color: #d09baf;
-      }
-    }
-  }
 
   &.is-unbooked .lesson:nth-child(3) {
     box-shadow: inset 0 -6px 0 -2px $booked-lesson-color,
-    inset 0 -7px 0 -2px #edf6f8;
+    inset 0 -7px 0 -2px $booked-lesson-color;
+  }
+}
+
+.lesson {
+  border: 1px solid #e7e7e7;
+  border-bottom: none;
+  margin: 0;
+  padding: 0.8rem 0.5rem;
+
+  &.is-booked {
+    background-color: $booked-lesson-color;
   }
 
-  &.is-booked .lesson:nth-child(4) {
-    background-color: $booked-lesson-color;
-    border-top: none;
+  &.is-complete {
+    background-color: #ecf7f2;
+    padding: 0 0.5rem;
+
+    time,
+    .lesson-avatar,
+    .lesson-feedback-status {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    time {
+      display: inline-block;
+      color: #7dbaa7;
+    }
+  }
+
+  &.is-incomplete {
+    background-color: #f4e9e2;
+
+    time {
+      color: #dda989;
+    }
+  }
+
+  &.is-cancelled {
+    background-color: #eee1e6;
+
+    time {
+      color: #d09baf;
+    }
   }
 }
 
