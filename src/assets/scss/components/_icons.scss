@@ -70,26 +70,23 @@
 
 .icon-show-answer {
   @extend %icon-large;
+  cursor: pointer;
   background-image: url('../../assets/images/icons/plus.svg');
 }
 
 .icon-hide-answer {
   @extend %icon-large;
+  cursor: pointer;
   background-image: url('../../assets/images/icons/minus.svg');
 }
 
-%icon-extra-large {
-  height: 1.5rem;
-  width: 1.5rem;
-}
-
 .icon-left-arrow {
-  @extend %icon-extra-large;
+  @extend %icon-large;
   background-image: url('../images/icons/scroll-arrow-left.svg');
 }
 
 .icon-right-arrow {
-  @extend %icon-extra-large;
+  @extend %icon-large;
   background-image: url('../images/icons/scroll-arrow-right.svg');
 }
 

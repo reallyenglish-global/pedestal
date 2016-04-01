@@ -3825,22 +3825,19 @@ ul {
   background-image: url("../images/icons/download.svg");
 }
 
-.icon-show-answer, .icon-hide-answer {
+.icon-show-answer, .icon-hide-answer, .icon-left-arrow, .icon-right-arrow {
   height: 1.5rem;
   width: 1.5rem;
 }
 
 .icon-show-answer {
+  cursor: pointer;
   background-image: url("../../assets/images/icons/plus.svg");
 }
 
 .icon-hide-answer {
+  cursor: pointer;
   background-image: url("../../assets/images/icons/minus.svg");
-}
-
-.icon-left-arrow, .icon-right-arrow {
-  height: 1.5rem;
-  width: 1.5rem;
 }
 
 .icon-left-arrow {
@@ -4059,40 +4056,50 @@ ul {
   color: #59862d;
 }
 
-.lesson {
+.lesson-set {
+  margin-bottom: 1rem;
+}
+.lesson-set .lesson {
   border: 1px solid #e7e7e7;
   border-bottom: none;
   margin: 0;
   padding: 0.8rem 0.5rem;
 }
-.lesson.is-booked {
+.lesson-set .lesson.is-booked {
   background-color: #e0f0f3;
 }
-.lesson.is-complete {
+.lesson-set .lesson.is-complete {
   background-color: #ecf7f2;
   padding: 0 0.5rem;
 }
-.lesson.is-complete time,
-.lesson.is-complete .lesson-avatar,
-.lesson.is-complete .lesson-feedback-status {
+.lesson-set .lesson.is-complete time,
+.lesson-set .lesson.is-complete .lesson-avatar,
+.lesson-set .lesson.is-complete .lesson-feedback-status {
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
-.lesson.is-complete time {
+.lesson-set .lesson.is-complete time {
   display: inline-block;
   color: #7dbaa7;
 }
-.lesson.is-incomplete {
+.lesson-set .lesson.is-incomplete {
   background-color: #f4e9e2;
 }
-.lesson.is-incomplete time {
+.lesson-set .lesson.is-incomplete time {
   color: #dda989;
 }
-.lesson.is-cancelled {
+.lesson-set .lesson.is-cancelled {
   background-color: #eee1e6;
 }
-.lesson.is-cancelled time {
+.lesson-set .lesson.is-cancelled time {
   color: #d09baf;
+}
+.lesson-set.is-unbooked .lesson:nth-child(3) {
+  box-shadow: inset 0 -6px 0 -2px #e0f0f3, inset 0 -7px 0 -2px #edf6f8;
+}
+.lesson-set.is-booked .lesson:nth-child(4) {
+  background-color: #e0f0f3;
+  border-top: none;
 }
 
 .lesson + [class*='is'] {
@@ -4124,17 +4131,6 @@ ul {
   background-color: #fffcef;
   padding: 1rem;
   margin-bottom: 1rem;
-}
-
-.lesson-set {
-  margin-bottom: 1rem;
-}
-.lesson-set.is-unbooked .lesson:nth-child(3) {
-  box-shadow: inset 0 -6px 0 -2px #e0f0f3, inset 0 -7px 0 -2px #edf6f8;
-}
-.lesson-set.is-booked .lesson:nth-child(4) {
-  background-color: #e0f0f3;
-  border-top: none;
 }
 
 @media screen and (min-width: 0em) and (max-width: 39.9375em) {
