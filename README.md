@@ -2,6 +2,8 @@
 
 Booking System Template is a responsive front-end framework based on [Foundation Sites](http://foundation.zurb.com/).
 
+##Getting Started
+
 The easiest way to get started is to download the a zip of latest release [here](https://github.com/reallyenglish/booking-system-template/archive/master.zip).
 
 You can also with bower:
@@ -47,3 +49,7 @@ gulp
 Once it has all been compiled you can see an example application via this URL:
 
 <http://localhost:8000>
+
+###Modular CSS
+
+Booking System Template uses the [SMACSS](https://smacss.com/) methodology to keep it's CSS modular.
