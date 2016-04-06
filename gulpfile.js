@@ -21,7 +21,8 @@ var COMPATIBILITY = ['last 2 versions', 'ie >= 9'];
 var PATHS = {
 	assets: [
 	'src/assets/**/*',
-	'!src/assets/{images,js}/**/*'
+	'!src/assets/{images,fonts,scss,js}/**/*',
+	'!src/assets/{images,fonts,scss,js}/'
 	],
 	sass: [
 	'bower_components/foundation-sites/scss',
@@ -135,7 +136,7 @@ gulp.task('sass', function() {
 gulp.task('base64', function () {
   return gulp.src('dist/assets/css/app.css')
     .pipe(base64({
-      baseDir: "dist",
+      baseDir: "src",
       maxWeightResource: 100000
     }))
     .pipe(gulp.dest('dist/assets/css'));
