@@ -19,7 +19,7 @@ var COMPATIBILITY = ['last 2 versions', 'ie >= 9'];
 var PATHS = {
 	assets: [
 	'src/assets/**/*',
-	'!src/assets/{images,js,scss}/**/*'
+	'!src/assets/{images,js}/**/*'
 	],
 	sass: [
 	'bower_components/foundation-sites/scss',
@@ -146,7 +146,6 @@ gulp.task('javascript', function() {
 // Copy images to the "dist" folder
 // In production, the images are compressed
 gulp.task('images', function() {
-
 	return gulp.src('src/assets/images/**/*')
 	.pipe(gulp.dest('dist/assets/images'))
 	.on('finish', browser.reload);

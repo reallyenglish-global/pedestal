@@ -1,0 +1,169 @@
+.icon {
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
+  display: inline-block;
+}
+
+%icon-progress {
+  height: $progress-checkpoint-size / 2;
+  width: $progress-checkpoint-size / 2;
+}
+
+.icon-rocket {
+  @extend %icon-progress;
+  background-image: url('/assets/images/orientation/rocket.svg');
+}
+
+.icon-skype {
+  @extend %icon-progress;
+  background-image: url('/assets/images/orientation/skype.svg');
+}
+
+.icon-enter {
+  @extend %icon-progress;
+  background-image: url('/assets/images/orientation/enter.svg');
+}
+
+.icon-arrow-down {
+  background-image: url('/assets/images/icons/arrow-down.svg');
+  //TODO: Add square mixin
+  height: 0.5rem;
+  width: 0.5rem;
+}
+
+%icon-small {
+  height: 0.75rem;
+  width: 0.75rem;
+}
+
+.icon-star {
+  @extend %icon-small;
+  background-image: url('/assets/images/icons/star.svg');
+}
+
+.icon-tick {
+  @extend %icon-small;
+  background-image: url('/assets/images/icons/white-tick.svg');
+}
+
+%icon-medium {
+  height: 1rem;
+  width: 1rem;
+}
+
+.icon-question-mark {
+  @extend %icon-medium;
+  background-image: url('/assets/images/icons/question.svg');
+  margin: 0 2px;
+}
+
+.icon-download {
+  @extend %icon-medium;
+  background-image: url('/assets/images/icons/download.svg');
+}
+
+%icon-large {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.icon-show-answer {
+  @extend %icon-large;
+  cursor: pointer;
+  background-image: url('/assets/images/assets/assets/images/icons/plus.svg');
+}
+
+.icon-hide-answer {
+  @extend %icon-large;
+  cursor: pointer;
+  background-image: url('/assets/images/assets/assets/images/icons/minus.svg');
+}
+
+.icon-left-arrow {
+  @extend %icon-large;
+  background-image: url('/assets/images/icons/scroll-arrow-left.svg');
+}
+
+.icon-right-arrow {
+  @extend %icon-large;
+  background-image: url('/assets/images/icons/scroll-arrow-right.svg');
+}
+
+%lesson-icon {
+  height: 2.3rem;
+  width: 2.3rem;
+}
+
+.icon-grammar {
+  @extend %lesson-icon;
+  background-image: url('/assets/images/icons/grammar.svg');
+}
+
+.icon-listening {
+  @extend %lesson-icon;
+  background-image: url('/assets/images/icons/listening.svg');
+}
+
+.icon-reading {
+  @extend %lesson-icon;
+  background-image: url('/assets/images/icons/reading.svg');
+}
+
+.icon-speaking {
+  @extend %lesson-icon;
+  height: 1.25rem;
+  background-image: url('/assets/images/icons/speaking.svg');
+}
+
+%tab-icon {
+  height: 1rem;
+  width: 1rem;
+  margin-right: 0.5rem;
+}
+
+.icon-get-started {
+  @extend %tab-icon;
+  background-image: url('/assets/images/icons/get-started.svg');
+}
+
+.icon-faq {
+  @extend %tab-icon;
+  background-image: url('/assets/images/icons/faq-question.svg');
+}
+
+.icon-bookmark {
+  @extend %tab-icon;
+  background-image: url('/assets/images/icons/bookmark.svg');
+}
+
+.icon-lamp {
+  @extend %tab-icon;
+  background-image: url('/assets/images/icons/lamp.svg');
+}
+
+%task-icon {
+  height: 0.9rem;
+  width: 1rem;
+  margin-right: 0.5rem;
+}
+
+.icon-calendar {
+  @extend %task-icon;
+  background-image: url('/assets/images/icons/calendar.svg');
+}
+
+.icon-tick {
+  @extend %task-icon;
+  background-image: url('/assets/images/icons/white-tick.svg');
+}
+
+.icon-incomplete {
+  @extend %task-icon;
+  background-image: url('/assets/images/icons/incomplete.svg');
+}
+
+.icon-cancel {
+  @extend %task-icon;
+  background-image: url('/assets/images/icons/cancelled.svg');
+}

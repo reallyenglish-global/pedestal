@@ -1,0 +1,12 @@
+.footer {
+  padding-bottom: 2rem;
+  max-width: $global-max-width;
+  margin: 0 auto;
+
+  small {
+    color: #666;
+    font-size: 0.8rem;
+    display: block;
+    text-align: center;
+  }
+}

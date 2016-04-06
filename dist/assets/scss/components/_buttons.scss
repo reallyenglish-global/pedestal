@@ -1,0 +1,102 @@
+.button {
+  font-size: 1rem;
+  text-decoration: none;
+
+  &.is-disabled {
+    background-color: $button-disabled-color;
+  }
+}
+
+.button-secondary {
+  background-color: $secondary-color;
+}
+
+.button-alt {
+  color: #3babde;
+  background-color: $white;
+  border: 2px solid #3babde;
+
+  &:hover,
+  &:focus {
+    background-color: darken($white, 10%);
+    color: #3babde;
+  }
+}
+
+//TODO: Add border radius mixin
+.button-rating {
+  background-color: #fffcef;
+  color: $body-font-color;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  margin-top: 0.8rem;
+  font-size: 0.8rem;
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+
+  > .icon-arrow-down {
+    margin-left: 0.25rem;
+  }
+
+  > .comment {
+    display: inline-block;
+    margin: 0 0 0 0.5rem;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: darken(#fffcef, 10%);
+    color: $body-font-color;
+  }
+}
+
+.button-booked {
+  background-color: #9bcbde;
+}
+
+.button-round {
+  border-radius: 1000px;
+}
+
+.button-small {
+  font-size: 0.9rem;
+  padding: 0.25rem 1rem;
+}
+
+.button-radius {
+  border-radius: 5px;
+}
+
+.button-circle {
+  border-radius: 50%;
+  padding: 0.25rem;
+}
+
+.button-file {
+  position: relative;
+  overflow: hidden;
+
+  [type='file'] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity = 0);
+    opacity: 0;
+    outline: none;
+    background: #fff;
+    cursor: inherit;
+    display: block;
+  }
+}
+
+@include breakpoint(medium down) {
+  .button-small {
+    padding: 0.25rem 0.5rem;
+  }
+}
