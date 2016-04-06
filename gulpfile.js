@@ -10,7 +10,6 @@ var scsslint     = require('gulp-scss-lint');
 var gutil        = require('gulp-util');
 var autoprefixer = require('gulp-autoprefixer');
 var base64       = require('gulp-css-base64');
-var debug        = require('gulp-debug');
 
 // Port to use for the development server.
 var PORT = 8000;
