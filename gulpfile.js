@@ -6,10 +6,10 @@ var panini       = require('panini');
 var rimraf       = require('rimraf');
 var sequence     = require('run-sequence');
 var sherpa       = require('style-sherpa');
-var compass      = require('gulp-compass');
 var scsslint     = require('gulp-scss-lint');
 var gutil        = require('gulp-util');
 var autoprefixer = require('gulp-autoprefixer');
+var base64       = require('gulp-css-base64');
 
 // Port to use for the development server.
 var PORT = 8000;
@@ -20,7 +20,8 @@ var COMPATIBILITY = ['last 2 versions', 'ie >= 9'];
 var PATHS = {
 	assets: [
 	'src/assets/**/*',
-	'!src/assets/{img,js,scss}/**/*'
+	'!src/assets/{images,fonts,scss,js}/**/*',
+	'!src/assets/{images,fonts,scss,js}/'
 	],
 	sass: [
 	'bower_components/foundation-sites/scss',
@@ -118,19 +119,26 @@ gulp.task('scss-lint-check', function() {
 	.pipe(gulp.dest('./'));
 });
 
-gulp.task('compass', function() {
-	gulp.src('./src/assets/scss/**/*.scss')
-	.pipe(compass({
-		config_file: './config.rb',
-		http_path: '/',
-		css: 'dist/assets/css',
-		sass: 'src/assets/scss',
-		relative: false
-	}))
-	.pipe(autoprefixer({
-		browsers: COMPATIBILITY
-	}))
-	.on('finish', browser.reload);;
+gulp.task('sass', function() {
+  return gulp.src('src/assets/scss/app.scss')
+    .pipe($.sass({
+      includePaths: PATHS.sass
+    })
+    .on('error', $.sass.logError))
+    .pipe($.autoprefixer({
+      browsers: COMPATIBILITY
+    }))
+    .pipe(gulp.dest('dist/assets/css'))
+    .pipe(browser.reload({ stream: true }));
+});
+
+gulp.task('base64', function () {
+  return gulp.src('dist/assets/css/app.css')
+    .pipe(base64({
+      baseDir: "src",
+      maxWeightResource: 100000
+    }))
+    .pipe(gulp.dest('dist/assets/css'));
 });
 
 // Combine JavaScript into one file
@@ -149,15 +157,14 @@ gulp.task('javascript', function() {
 // Copy images to the "dist" folder
 // In production, the images are compressed
 gulp.task('images', function() {
-
-	return gulp.src('src/assets/img/**/*')
-	.pipe(gulp.dest('dist/assets/img'))
+	return gulp.src('src/assets/images/**/*')
+	.pipe(gulp.dest('dist/assets/images'))
 	.on('finish', browser.reload);
 });
 
 // Build the "dist" folder by running all of the above tasks
 gulp.task('build', function(done) {
-	sequence('clean', ['pages', 'scss-lint', 'compass', 'javascript', 'images', 'copy'], done);
+	sequence('clean', ['pages', 'scss-lint', 'sass', 'javascript', 'images', 'copy'], 'base64', done);
 });
 
 // Start a server with LiveReload to preview the site in
@@ -172,7 +179,7 @@ gulp.task('default', ['build', 'server'], function() {
 	gulp.watch(PATHS.assets, ['copy']);
 	gulp.watch(['src/pages/**/*'], ['pages']);
 	gulp.watch(['src/{layouts,partials,helpers,data}/**/*'], ['pages:reset']);
-	gulp.watch(['src/assets/scss/**/{*.scss, *.sass}'], ['scss-lint', 'compass']);
+	gulp.watch(['src/assets/scss/**/{*.scss, *.sass}'], ['scss-lint', 'sass']);
 	gulp.watch(['src/assets/js/**/*.js'], ['javascript']);
-	gulp.watch(['src/assets/img/**/*'], ['images']);
+	gulp.watch(['src/assets/images/**/*'], ['images']);
 });
