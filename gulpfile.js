@@ -9,6 +9,8 @@ var sherpa       = require('style-sherpa');
 var scsslint     = require('gulp-scss-lint');
 var gutil        = require('gulp-util');
 var autoprefixer = require('gulp-autoprefixer');
+var base64       = require('gulp-css-base64');
+var debug        = require('gulp-debug');
 
 // Port to use for the development server.
 var PORT = 8000;
@@ -130,6 +132,15 @@ gulp.task('sass', function() {
     .pipe(browser.reload({ stream: true }));
 });
 
+gulp.task('base64', function () {
+  return gulp.src('dist/assets/css/app.css')
+    .pipe(base64({
+      baseDir: "dist",
+      maxWeightResource: 100000
+    }))
+    .pipe(gulp.dest('dist/assets/css'));
+});
+
 // Combine JavaScript into one file
 // In production, the file is minified
 gulp.task('javascript', function() {
@@ -153,7 +164,7 @@ gulp.task('images', function() {
 
 // Build the "dist" folder by running all of the above tasks
 gulp.task('build', function(done) {
-	sequence('clean', ['pages', 'scss-lint', 'sass', 'javascript', 'images', 'copy'], done);
+	sequence('clean', ['pages', 'scss-lint', 'sass', 'javascript', 'images', 'copy'], 'base64', done);
 });
 
 // Start a server with LiveReload to preview the site in
