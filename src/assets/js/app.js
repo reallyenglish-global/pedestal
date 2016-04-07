@@ -34,7 +34,7 @@
   });
 
   $(".show-feedback").click(function() {
-    $(this).parent().siblings().find(".assessment-feedback").toggleClass("hide");
+    $(this).parent().siblings().find(".lesson-assessment-feedback").toggleClass("hide");
   });
 
   $(".icon-show-answer").click(function() {
