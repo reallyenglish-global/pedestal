@@ -2945,6 +2945,8 @@ ul {
 
 .button-secondary {
   background-color: #878787; }
+  .button-secondary:hover {
+    background-color: #6e6e6e; }
 
 .button-alt {
   color: #3babde;
