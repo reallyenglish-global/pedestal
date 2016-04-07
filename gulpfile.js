@@ -128,17 +128,17 @@ gulp.task('sass', function() {
     .pipe($.autoprefixer({
       browsers: COMPATIBILITY
     }))
-    .pipe(gulp.dest('dist/assets/css'))
-    .pipe(browser.reload({ stream: true }));
+    .pipe(gulp.dest('dist/assets/css'));
 });
 
-gulp.task('base64', function () {
+gulp.task('base64', ['scss-lint', 'sass'], function () {
   return gulp.src('dist/assets/css/app.css')
     .pipe(base64({
       baseDir: "src",
       maxWeightResource: 100000
     }))
-    .pipe(gulp.dest('dist/assets/css'));
+    .pipe(gulp.dest('dist/assets/css'))
+    .on('finish', browser.reload);
 });
 
 // Combine JavaScript into one file
@@ -164,7 +164,7 @@ gulp.task('images', function() {
 
 // Build the "dist" folder by running all of the above tasks
 gulp.task('build', function(done) {
-	sequence('clean', ['pages', 'scss-lint', 'sass', 'javascript', 'images', 'copy'], 'base64', done);
+	sequence('clean', ['pages', 'javascript', 'images', 'copy'], 'base64', done);
 });
 
 // Start a server with LiveReload to preview the site in
@@ -179,7 +179,7 @@ gulp.task('default', ['build', 'server'], function() {
 	gulp.watch(PATHS.assets, ['copy']);
 	gulp.watch(['src/pages/**/*'], ['pages']);
 	gulp.watch(['src/{layouts,partials,helpers,data}/**/*'], ['pages:reset']);
-	gulp.watch(['src/assets/scss/**/{*.scss, *.sass}'], ['scss-lint', 'sass']);
+	gulp.watch(['src/assets/scss/**/{*.scss, *.sass}'], ['base64']);
 	gulp.watch(['src/assets/js/**/*.js'], ['javascript']);
 	gulp.watch(['src/assets/images/**/*'], ['images']);
 });

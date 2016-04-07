@@ -9,6 +9,10 @@
 
 .button-secondary {
   background-color: $secondary-color;
+
+  &:hover {
+    background-color: darken($secondary-color, 10%);
+  }
 }
 
 .button-alt {
