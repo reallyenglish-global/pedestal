@@ -10,7 +10,7 @@
 .button-secondary {
   background-color: $secondary-color;
 
-   &:hover {
+  &:hover {
     background-color: darken($secondary-color, 10%);
   }
 }
