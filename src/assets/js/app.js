@@ -50,6 +50,13 @@
     });
   });
 
+  $("#studiedCheckbox").change(function() {
+      $("#bookLessonButton").attr("disabled", function(index, attr) {
+        return attr ? false : true;
+      });
+      $("#bookLessonButton").toggleClass("is-disabled");
+  });
+
   var toggleBookings = function() {
     $(".early-bookings").toggleClass("hide");
     $(".show-bookings").toggleClass("hide");
