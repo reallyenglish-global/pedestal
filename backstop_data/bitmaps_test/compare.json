@@ -1,6 +1,133 @@
 {
   "compareConfig": {
-    "testPairs": []
+    "testPairs": [
+      {
+        "reference": "../../backstop_data/bitmaps_reference/0_0_header_0_phone.png",
+        "test": "../../backstop_data/bitmaps_test/20160408-162027/0_0_header_0_phone.png",
+        "selector": "header",
+        "fileName": "0_0_header_0_phone.png",
+        "label": "My Homepage"
+      },
+      {
+        "reference": "../../backstop_data/bitmaps_reference/0_1_tabs_0_phone.png",
+        "test": "../../backstop_data/bitmaps_test/20160408-162027/0_1_tabs_0_phone.png",
+        "selector": ".tabs",
+        "fileName": "0_1_tabs_0_phone.png",
+        "label": "My Homepage"
+      },
+      {
+        "reference": "../../backstop_data/bitmaps_reference/0_2_calloutcallout-success_0_phone.png",
+        "test": "../../backstop_data/bitmaps_test/20160408-162027/0_2_calloutcallout-success_0_phone.png",
+        "selector": ".callout.callout-success",
+        "fileName": "0_2_calloutcallout-success_0_phone.png",
+        "label": "My Homepage"
+      },
+      {
+        "reference": "../../backstop_data/bitmaps_reference/0_3_calloutcallout-primary_0_phone.png",
+        "test": "../../backstop_data/bitmaps_test/20160408-162027/0_3_calloutcallout-primary_0_phone.png",
+        "selector": ".callout.callout-primary",
+        "fileName": "0_3_calloutcallout-primary_0_phone.png",
+        "label": "My Homepage"
+      },
+      {
+        "reference": "../../backstop_data/bitmaps_reference/0_4_study-taskssectionlesson-setfirst-of-type_0_phone.png",
+        "test": "../../backstop_data/bitmaps_test/20160408-162027/0_4_study-taskssectionlesson-setfirst-of-type_0_phone.png",
+        "selector": "#study-tasks > section.lesson-set:first-of-type",
+        "fileName": "0_4_study-taskssectionlesson-setfirst-of-type_0_phone.png",
+        "label": "My Homepage"
+      },
+      {
+        "reference": "../../backstop_data/bitmaps_reference/0_5_footer_0_phone.png",
+        "test": "../../backstop_data/bitmaps_test/20160408-162027/0_5_footer_0_phone.png",
+        "selector": "footer",
+        "fileName": "0_5_footer_0_phone.png",
+        "label": "My Homepage"
+      },
+      {
+        "reference": "../../backstop_data/bitmaps_reference/0_0_header_1_tablet.png",
+        "test": "../../backstop_data/bitmaps_test/20160408-162027/0_0_header_1_tablet.png",
+        "selector": "header",
+        "fileName": "0_0_header_1_tablet.png",
+        "label": "My Homepage"
+      },
+      {
+        "reference": "../../backstop_data/bitmaps_reference/0_1_tabs_1_tablet.png",
+        "test": "../../backstop_data/bitmaps_test/20160408-162027/0_1_tabs_1_tablet.png",
+        "selector": ".tabs",
+        "fileName": "0_1_tabs_1_tablet.png",
+        "label": "My Homepage"
+      },
+      {
+        "reference": "../../backstop_data/bitmaps_reference/0_2_calloutcallout-success_1_tablet.png",
+        "test": "../../backstop_data/bitmaps_test/20160408-162027/0_2_calloutcallout-success_1_tablet.png",
+        "selector": ".callout.callout-success",
+        "fileName": "0_2_calloutcallout-success_1_tablet.png",
+        "label": "My Homepage"
+      },
+      {
+        "reference": "../../backstop_data/bitmaps_reference/0_3_calloutcallout-primary_1_tablet.png",
+        "test": "../../backstop_data/bitmaps_test/20160408-162027/0_3_calloutcallout-primary_1_tablet.png",
+        "selector": ".callout.callout-primary",
+        "fileName": "0_3_calloutcallout-primary_1_tablet.png",
+        "label": "My Homepage"
+      },
+      {
+        "reference": "../../backstop_data/bitmaps_reference/0_4_study-taskssectionlesson-setfirst-of-type_1_tablet.png",
+        "test": "../../backstop_data/bitmaps_test/20160408-162027/0_4_study-taskssectionlesson-setfirst-of-type_1_tablet.png",
+        "selector": "#study-tasks > section.lesson-set:first-of-type",
+        "fileName": "0_4_study-taskssectionlesson-setfirst-of-type_1_tablet.png",
+        "label": "My Homepage"
+      },
+      {
+        "reference": "../../backstop_data/bitmaps_reference/0_5_footer_1_tablet.png",
+        "test": "../../backstop_data/bitmaps_test/20160408-162027/0_5_footer_1_tablet.png",
+        "selector": "footer",
+        "fileName": "0_5_footer_1_tablet.png",
+        "label": "My Homepage"
+      },
+      {
+        "reference": "../../backstop_data/bitmaps_reference/0_0_header_2_screen.png",
+        "test": "../../backstop_data/bitmaps_test/20160408-162027/0_0_header_2_screen.png",
+        "selector": "header",
+        "fileName": "0_0_header_2_screen.png",
+        "label": "My Homepage"
+      },
+      {
+        "reference": "../../backstop_data/bitmaps_reference/0_1_tabs_2_screen.png",
+        "test": "../../backstop_data/bitmaps_test/20160408-162027/0_1_tabs_2_screen.png",
+        "selector": ".tabs",
+        "fileName": "0_1_tabs_2_screen.png",
+        "label": "My Homepage"
+      },
+      {
+        "reference": "../../backstop_data/bitmaps_reference/0_2_calloutcallout-success_2_screen.png",
+        "test": "../../backstop_data/bitmaps_test/20160408-162027/0_2_calloutcallout-success_2_screen.png",
+        "selector": ".callout.callout-success",
+        "fileName": "0_2_calloutcallout-success_2_screen.png",
+        "label": "My Homepage"
+      },
+      {
+        "reference": "../../backstop_data/bitmaps_reference/0_3_calloutcallout-primary_2_screen.png",
+        "test": "../../backstop_data/bitmaps_test/20160408-162027/0_3_calloutcallout-primary_2_screen.png",
+        "selector": ".callout.callout-primary",
+        "fileName": "0_3_calloutcallout-primary_2_screen.png",
+        "label": "My Homepage"
+      },
+      {
+        "reference": "../../backstop_data/bitmaps_reference/0_4_study-taskssectionlesson-setfirst-of-type_2_screen.png",
+        "test": "../../backstop_data/bitmaps_test/20160408-162027/0_4_study-taskssectionlesson-setfirst-of-type_2_screen.png",
+        "selector": "#study-tasks > section.lesson-set:first-of-type",
+        "fileName": "0_4_study-taskssectionlesson-setfirst-of-type_2_screen.png",
+        "label": "My Homepage"
+      },
+      {
+        "reference": "../../backstop_data/bitmaps_reference/0_5_footer_2_screen.png",
+        "test": "../../backstop_data/bitmaps_test/20160408-162027/0_5_footer_2_screen.png",
+        "selector": "footer",
+        "fileName": "0_5_footer_2_screen.png",
+        "label": "My Homepage"
+      }
+    ]
   },
-  "lastConfigHash": "8a88891527e5f6cf851d5c3f186e98bdc04bff11"
+  "lastConfigHash": "cbf855483da1ef1b5f1d62eab61a2f0ad77028ef"
 }
