@@ -4,6 +4,7 @@
 
   &.is-disabled {
     background-color: $button-disabled-color;
+    pointer-events: auto;
   }
 }
 
