@@ -41,3 +41,10 @@ $(document)
 		modal.find("[data-abide-error]").attr("style", "display: none;")
 	}
 });
+
+$("#studiedCheckbox").change(function() {
+	$("#bookLessonButton").attr("disabled", function(index, attr) {
+		return attr ? false : true;
+	});
+	$("#bookLessonButton").toggleClass("is-disabled");
+});
