@@ -24,16 +24,30 @@
       "removeSelectors": [],
       "selectors": [
         "header",
-        ".tabs",
+        "#task-lesson-tabs",
         ".callout.callout-success",
         ".callout.callout-primary",
-        "#study-tasks > section.lesson-set:first-of-type",
+        "#study-tasks > .lesson-set:first-of-type",
         "footer"
       ],
       "readyEvent": null,
       "delay": 0,
       "onBeforeScript": null,
       "onReadyScript": null
+    },
+    {
+      "label": "Homepage - Booked Lessons tab",
+      "url": "../../dist/index.html",
+      "hideSelectors": [],
+      "removeSelectors": [],
+      "selectors": [
+        "#lesson-table-tabs",
+        "#current-bookings-panel > .lesson-set:first-of-type"
+      ],
+      "readyEvent": null,
+      "delay": 0,
+      "onBeforeScript": null,
+      "onReadyScript": "selectBookedLessonTab"
     }
   ],
   "paths": {
