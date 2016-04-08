@@ -6,24 +6,29 @@
       "height": 480
     },
     {
-      "name": "tablet_v",
-      "width": 568,
+      "name": "tablet",
+      "width": 768,
       "height": 1024
     },
     {
-      "name": "tablet_h",
-      "width": 1024,
+      "name": "screen",
+      "width": 1366,
       "height": 768
     }
   ],
   "scenarios": [
     {
-      "label": "My Homepage",
+      "label": "Homepage - Study Tasks tab",
       "url": "../../dist/index.html",
       "hideSelectors": [],
       "removeSelectors": [],
       "selectors": [
-        "header"
+        "header",
+        ".tabs",
+        ".callout.callout-success",
+        ".callout.callout-primary",
+        "#study-tasks > section.lesson-set:first-of-type",
+        "footer"
       ],
       "readyEvent": null,
       "delay": 0,
