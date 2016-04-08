@@ -2941,7 +2941,8 @@ ul {
   font-size: 1rem;
   text-decoration: none; }
   .button.is-disabled {
-    background-color: #d2d2d2; }
+    background-color: #d2d2d2;
+    pointer-events: auto; }
 
 .button-secondary {
   background-color: #878787; }
