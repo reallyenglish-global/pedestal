@@ -90,6 +90,36 @@
       "delay": 0,
       "onBeforeScript": null,
       "onReadyScript": "selectCancelledLessonTab"
+    },
+    {
+      "label": "Book a lesson page",
+      "url": "../../dist/booking.html",
+      "hideSelectors": [],
+      "removeSelectors": [],
+      "selectors": [
+        ".day-picker",
+        ".pagination",
+        ".row.small-up-4.medium-up-7",
+        ".callout > .booking-row:last-of-type"
+      ],
+      "readyEvent": null,
+      "delay": 0,
+      "onBeforeScript": null,
+      "onReadyScript": null
+    },
+    {
+      "label": "How to Study page - Getting Started tab",
+      "url": "../../dist/how-to-study.html",
+      "hideSelectors": [],
+      "removeSelectors": [],
+      "selectors": [
+        ".tabs",
+        "#get-started"
+      ],
+      "readyEvent": null,
+      "delay": 0,
+      "onBeforeScript": null,
+      "onReadyScript": null
     }
   ],
   "paths": {
