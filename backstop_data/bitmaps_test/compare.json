@@ -3,173 +3,299 @@
     "testPairs": [
       {
         "reference": "../../backstop_data/bitmaps_reference/0_0_header_0_phone.png",
-        "test": "../../backstop_data/bitmaps_test/20160408-170841/0_0_header_0_phone.png",
+        "test": "../../backstop_data/bitmaps_test/20160411-122056/0_0_header_0_phone.png",
         "selector": "header",
         "fileName": "0_0_header_0_phone.png",
         "label": "Homepage - Study Tasks tab"
       },
       {
         "reference": "../../backstop_data/bitmaps_reference/0_1_task-lesson-tabs_0_phone.png",
-        "test": "../../backstop_data/bitmaps_test/20160408-170841/0_1_task-lesson-tabs_0_phone.png",
+        "test": "../../backstop_data/bitmaps_test/20160411-122056/0_1_task-lesson-tabs_0_phone.png",
         "selector": "#task-lesson-tabs",
         "fileName": "0_1_task-lesson-tabs_0_phone.png",
         "label": "Homepage - Study Tasks tab"
       },
       {
         "reference": "../../backstop_data/bitmaps_reference/0_2_calloutcallout-success_0_phone.png",
-        "test": "../../backstop_data/bitmaps_test/20160408-170841/0_2_calloutcallout-success_0_phone.png",
+        "test": "../../backstop_data/bitmaps_test/20160411-122056/0_2_calloutcallout-success_0_phone.png",
         "selector": ".callout.callout-success",
         "fileName": "0_2_calloutcallout-success_0_phone.png",
         "label": "Homepage - Study Tasks tab"
       },
       {
         "reference": "../../backstop_data/bitmaps_reference/0_3_calloutcallout-primary_0_phone.png",
-        "test": "../../backstop_data/bitmaps_test/20160408-170841/0_3_calloutcallout-primary_0_phone.png",
+        "test": "../../backstop_data/bitmaps_test/20160411-122056/0_3_calloutcallout-primary_0_phone.png",
         "selector": ".callout.callout-primary",
         "fileName": "0_3_calloutcallout-primary_0_phone.png",
         "label": "Homepage - Study Tasks tab"
       },
       {
         "reference": "../../backstop_data/bitmaps_reference/0_4_study-taskslesson-setfirst-of-type_0_phone.png",
-        "test": "../../backstop_data/bitmaps_test/20160408-170841/0_4_study-taskslesson-setfirst-of-type_0_phone.png",
+        "test": "../../backstop_data/bitmaps_test/20160411-122056/0_4_study-taskslesson-setfirst-of-type_0_phone.png",
         "selector": "#study-tasks > .lesson-set:first-of-type",
         "fileName": "0_4_study-taskslesson-setfirst-of-type_0_phone.png",
         "label": "Homepage - Study Tasks tab"
       },
       {
         "reference": "../../backstop_data/bitmaps_reference/0_5_footer_0_phone.png",
-        "test": "../../backstop_data/bitmaps_test/20160408-170841/0_5_footer_0_phone.png",
+        "test": "../../backstop_data/bitmaps_test/20160411-122056/0_5_footer_0_phone.png",
         "selector": "footer",
         "fileName": "0_5_footer_0_phone.png",
         "label": "Homepage - Study Tasks tab"
       },
       {
         "reference": "../../backstop_data/bitmaps_reference/0_0_header_1_tablet.png",
-        "test": "../../backstop_data/bitmaps_test/20160408-170841/0_0_header_1_tablet.png",
+        "test": "../../backstop_data/bitmaps_test/20160411-122056/0_0_header_1_tablet.png",
         "selector": "header",
         "fileName": "0_0_header_1_tablet.png",
         "label": "Homepage - Study Tasks tab"
       },
       {
         "reference": "../../backstop_data/bitmaps_reference/0_1_task-lesson-tabs_1_tablet.png",
-        "test": "../../backstop_data/bitmaps_test/20160408-170841/0_1_task-lesson-tabs_1_tablet.png",
+        "test": "../../backstop_data/bitmaps_test/20160411-122056/0_1_task-lesson-tabs_1_tablet.png",
         "selector": "#task-lesson-tabs",
         "fileName": "0_1_task-lesson-tabs_1_tablet.png",
         "label": "Homepage - Study Tasks tab"
       },
       {
         "reference": "../../backstop_data/bitmaps_reference/0_2_calloutcallout-success_1_tablet.png",
-        "test": "../../backstop_data/bitmaps_test/20160408-170841/0_2_calloutcallout-success_1_tablet.png",
+        "test": "../../backstop_data/bitmaps_test/20160411-122056/0_2_calloutcallout-success_1_tablet.png",
         "selector": ".callout.callout-success",
         "fileName": "0_2_calloutcallout-success_1_tablet.png",
         "label": "Homepage - Study Tasks tab"
       },
       {
         "reference": "../../backstop_data/bitmaps_reference/0_3_calloutcallout-primary_1_tablet.png",
-        "test": "../../backstop_data/bitmaps_test/20160408-170841/0_3_calloutcallout-primary_1_tablet.png",
+        "test": "../../backstop_data/bitmaps_test/20160411-122056/0_3_calloutcallout-primary_1_tablet.png",
         "selector": ".callout.callout-primary",
         "fileName": "0_3_calloutcallout-primary_1_tablet.png",
         "label": "Homepage - Study Tasks tab"
       },
       {
         "reference": "../../backstop_data/bitmaps_reference/0_4_study-taskslesson-setfirst-of-type_1_tablet.png",
-        "test": "../../backstop_data/bitmaps_test/20160408-170841/0_4_study-taskslesson-setfirst-of-type_1_tablet.png",
+        "test": "../../backstop_data/bitmaps_test/20160411-122056/0_4_study-taskslesson-setfirst-of-type_1_tablet.png",
         "selector": "#study-tasks > .lesson-set:first-of-type",
         "fileName": "0_4_study-taskslesson-setfirst-of-type_1_tablet.png",
         "label": "Homepage - Study Tasks tab"
       },
       {
         "reference": "../../backstop_data/bitmaps_reference/0_5_footer_1_tablet.png",
-        "test": "../../backstop_data/bitmaps_test/20160408-170841/0_5_footer_1_tablet.png",
+        "test": "../../backstop_data/bitmaps_test/20160411-122056/0_5_footer_1_tablet.png",
         "selector": "footer",
         "fileName": "0_5_footer_1_tablet.png",
         "label": "Homepage - Study Tasks tab"
       },
       {
         "reference": "../../backstop_data/bitmaps_reference/0_0_header_2_screen.png",
-        "test": "../../backstop_data/bitmaps_test/20160408-170841/0_0_header_2_screen.png",
+        "test": "../../backstop_data/bitmaps_test/20160411-122056/0_0_header_2_screen.png",
         "selector": "header",
         "fileName": "0_0_header_2_screen.png",
         "label": "Homepage - Study Tasks tab"
       },
       {
         "reference": "../../backstop_data/bitmaps_reference/0_1_task-lesson-tabs_2_screen.png",
-        "test": "../../backstop_data/bitmaps_test/20160408-170841/0_1_task-lesson-tabs_2_screen.png",
+        "test": "../../backstop_data/bitmaps_test/20160411-122056/0_1_task-lesson-tabs_2_screen.png",
         "selector": "#task-lesson-tabs",
         "fileName": "0_1_task-lesson-tabs_2_screen.png",
         "label": "Homepage - Study Tasks tab"
       },
       {
         "reference": "../../backstop_data/bitmaps_reference/0_2_calloutcallout-success_2_screen.png",
-        "test": "../../backstop_data/bitmaps_test/20160408-170841/0_2_calloutcallout-success_2_screen.png",
+        "test": "../../backstop_data/bitmaps_test/20160411-122056/0_2_calloutcallout-success_2_screen.png",
         "selector": ".callout.callout-success",
         "fileName": "0_2_calloutcallout-success_2_screen.png",
         "label": "Homepage - Study Tasks tab"
       },
       {
         "reference": "../../backstop_data/bitmaps_reference/0_3_calloutcallout-primary_2_screen.png",
-        "test": "../../backstop_data/bitmaps_test/20160408-170841/0_3_calloutcallout-primary_2_screen.png",
+        "test": "../../backstop_data/bitmaps_test/20160411-122056/0_3_calloutcallout-primary_2_screen.png",
         "selector": ".callout.callout-primary",
         "fileName": "0_3_calloutcallout-primary_2_screen.png",
         "label": "Homepage - Study Tasks tab"
       },
       {
         "reference": "../../backstop_data/bitmaps_reference/0_4_study-taskslesson-setfirst-of-type_2_screen.png",
-        "test": "../../backstop_data/bitmaps_test/20160408-170841/0_4_study-taskslesson-setfirst-of-type_2_screen.png",
+        "test": "../../backstop_data/bitmaps_test/20160411-122056/0_4_study-taskslesson-setfirst-of-type_2_screen.png",
         "selector": "#study-tasks > .lesson-set:first-of-type",
         "fileName": "0_4_study-taskslesson-setfirst-of-type_2_screen.png",
         "label": "Homepage - Study Tasks tab"
       },
       {
         "reference": "../../backstop_data/bitmaps_reference/0_5_footer_2_screen.png",
-        "test": "../../backstop_data/bitmaps_test/20160408-170841/0_5_footer_2_screen.png",
+        "test": "../../backstop_data/bitmaps_test/20160411-122056/0_5_footer_2_screen.png",
         "selector": "footer",
         "fileName": "0_5_footer_2_screen.png",
         "label": "Homepage - Study Tasks tab"
       },
       {
         "reference": "../../backstop_data/bitmaps_reference/1_0_lesson-table-tabs_0_phone.png",
-        "test": "../../backstop_data/bitmaps_test/20160408-170841/1_0_lesson-table-tabs_0_phone.png",
+        "test": "../../backstop_data/bitmaps_test/20160411-122056/1_0_lesson-table-tabs_0_phone.png",
         "selector": "#lesson-table-tabs",
         "fileName": "1_0_lesson-table-tabs_0_phone.png",
-        "label": "Homepage - Booked Lessons tab"
+        "label": "Homepage - Booked Lessons tab - Current Bookings"
       },
       {
         "reference": "../../backstop_data/bitmaps_reference/1_1_current-bookings-panellesson-setfirst-of-type_0_phone.png",
-        "test": "../../backstop_data/bitmaps_test/20160408-170841/1_1_current-bookings-panellesson-setfirst-of-type_0_phone.png",
+        "test": "../../backstop_data/bitmaps_test/20160411-122056/1_1_current-bookings-panellesson-setfirst-of-type_0_phone.png",
         "selector": "#current-bookings-panel > .lesson-set:first-of-type",
         "fileName": "1_1_current-bookings-panellesson-setfirst-of-type_0_phone.png",
-        "label": "Homepage - Booked Lessons tab"
+        "label": "Homepage - Booked Lessons tab - Current Bookings"
       },
       {
         "reference": "../../backstop_data/bitmaps_reference/1_0_lesson-table-tabs_1_tablet.png",
-        "test": "../../backstop_data/bitmaps_test/20160408-170841/1_0_lesson-table-tabs_1_tablet.png",
+        "test": "../../backstop_data/bitmaps_test/20160411-122056/1_0_lesson-table-tabs_1_tablet.png",
         "selector": "#lesson-table-tabs",
         "fileName": "1_0_lesson-table-tabs_1_tablet.png",
-        "label": "Homepage - Booked Lessons tab"
+        "label": "Homepage - Booked Lessons tab - Current Bookings"
       },
       {
         "reference": "../../backstop_data/bitmaps_reference/1_1_current-bookings-panellesson-setfirst-of-type_1_tablet.png",
-        "test": "../../backstop_data/bitmaps_test/20160408-170841/1_1_current-bookings-panellesson-setfirst-of-type_1_tablet.png",
+        "test": "../../backstop_data/bitmaps_test/20160411-122056/1_1_current-bookings-panellesson-setfirst-of-type_1_tablet.png",
         "selector": "#current-bookings-panel > .lesson-set:first-of-type",
         "fileName": "1_1_current-bookings-panellesson-setfirst-of-type_1_tablet.png",
-        "label": "Homepage - Booked Lessons tab"
+        "label": "Homepage - Booked Lessons tab - Current Bookings"
       },
       {
         "reference": "../../backstop_data/bitmaps_reference/1_0_lesson-table-tabs_2_screen.png",
-        "test": "../../backstop_data/bitmaps_test/20160408-170841/1_0_lesson-table-tabs_2_screen.png",
+        "test": "../../backstop_data/bitmaps_test/20160411-122056/1_0_lesson-table-tabs_2_screen.png",
         "selector": "#lesson-table-tabs",
         "fileName": "1_0_lesson-table-tabs_2_screen.png",
-        "label": "Homepage - Booked Lessons tab"
+        "label": "Homepage - Booked Lessons tab - Current Bookings"
       },
       {
         "reference": "../../backstop_data/bitmaps_reference/1_1_current-bookings-panellesson-setfirst-of-type_2_screen.png",
-        "test": "../../backstop_data/bitmaps_test/20160408-170841/1_1_current-bookings-panellesson-setfirst-of-type_2_screen.png",
+        "test": "../../backstop_data/bitmaps_test/20160411-122056/1_1_current-bookings-panellesson-setfirst-of-type_2_screen.png",
         "selector": "#current-bookings-panel > .lesson-set:first-of-type",
         "fileName": "1_1_current-bookings-panellesson-setfirst-of-type_2_screen.png",
-        "label": "Homepage - Booked Lessons tab"
+        "label": "Homepage - Booked Lessons tab - Current Bookings"
+      },
+      {
+        "reference": "../../backstop_data/bitmaps_reference/2_0_lesson-table-tabs_0_phone.png",
+        "test": "../../backstop_data/bitmaps_test/20160411-122056/2_0_lesson-table-tabs_0_phone.png",
+        "selector": "#lesson-table-tabs",
+        "fileName": "2_0_lesson-table-tabs_0_phone.png",
+        "label": "Homepage - Booked Lessons tab - Completed Bookings"
+      },
+      {
+        "reference": "../../backstop_data/bitmaps_reference/2_1_completed-lessons-panellesson-setfirst-of-type_0_phone.png",
+        "test": "../../backstop_data/bitmaps_test/20160411-122056/2_1_completed-lessons-panellesson-setfirst-of-type_0_phone.png",
+        "selector": "#completed-lessons-panel > .lesson-set:first-of-type",
+        "fileName": "2_1_completed-lessons-panellesson-setfirst-of-type_0_phone.png",
+        "label": "Homepage - Booked Lessons tab - Completed Bookings"
+      },
+      {
+        "reference": "../../backstop_data/bitmaps_reference/2_0_lesson-table-tabs_1_tablet.png",
+        "test": "../../backstop_data/bitmaps_test/20160411-122056/2_0_lesson-table-tabs_1_tablet.png",
+        "selector": "#lesson-table-tabs",
+        "fileName": "2_0_lesson-table-tabs_1_tablet.png",
+        "label": "Homepage - Booked Lessons tab - Completed Bookings"
+      },
+      {
+        "reference": "../../backstop_data/bitmaps_reference/2_1_completed-lessons-panellesson-setfirst-of-type_1_tablet.png",
+        "test": "../../backstop_data/bitmaps_test/20160411-122056/2_1_completed-lessons-panellesson-setfirst-of-type_1_tablet.png",
+        "selector": "#completed-lessons-panel > .lesson-set:first-of-type",
+        "fileName": "2_1_completed-lessons-panellesson-setfirst-of-type_1_tablet.png",
+        "label": "Homepage - Booked Lessons tab - Completed Bookings"
+      },
+      {
+        "reference": "../../backstop_data/bitmaps_reference/2_0_lesson-table-tabs_2_screen.png",
+        "test": "../../backstop_data/bitmaps_test/20160411-122056/2_0_lesson-table-tabs_2_screen.png",
+        "selector": "#lesson-table-tabs",
+        "fileName": "2_0_lesson-table-tabs_2_screen.png",
+        "label": "Homepage - Booked Lessons tab - Completed Bookings"
+      },
+      {
+        "reference": "../../backstop_data/bitmaps_reference/2_1_completed-lessons-panellesson-setfirst-of-type_2_screen.png",
+        "test": "../../backstop_data/bitmaps_test/20160411-122056/2_1_completed-lessons-panellesson-setfirst-of-type_2_screen.png",
+        "selector": "#completed-lessons-panel > .lesson-set:first-of-type",
+        "fileName": "2_1_completed-lessons-panellesson-setfirst-of-type_2_screen.png",
+        "label": "Homepage - Booked Lessons tab - Completed Bookings"
+      },
+      {
+        "reference": "../../backstop_data/bitmaps_reference/3_0_lesson-table-tabs_0_phone.png",
+        "test": "../../backstop_data/bitmaps_test/20160411-122056/3_0_lesson-table-tabs_0_phone.png",
+        "selector": "#lesson-table-tabs",
+        "fileName": "3_0_lesson-table-tabs_0_phone.png",
+        "label": "Homepage - Booked Lessons tab - Incompleted Bookings"
+      },
+      {
+        "reference": "../../backstop_data/bitmaps_reference/3_1_incompleted-lessons-panellesson-setfirst-of-type_0_phone.png",
+        "test": "../../backstop_data/bitmaps_test/20160411-122056/3_1_incompleted-lessons-panellesson-setfirst-of-type_0_phone.png",
+        "selector": "#incompleted-lessons-panel > .lesson-set:first-of-type",
+        "fileName": "3_1_incompleted-lessons-panellesson-setfirst-of-type_0_phone.png",
+        "label": "Homepage - Booked Lessons tab - Incompleted Bookings"
+      },
+      {
+        "reference": "../../backstop_data/bitmaps_reference/3_0_lesson-table-tabs_1_tablet.png",
+        "test": "../../backstop_data/bitmaps_test/20160411-122056/3_0_lesson-table-tabs_1_tablet.png",
+        "selector": "#lesson-table-tabs",
+        "fileName": "3_0_lesson-table-tabs_1_tablet.png",
+        "label": "Homepage - Booked Lessons tab - Incompleted Bookings"
+      },
+      {
+        "reference": "../../backstop_data/bitmaps_reference/3_1_incompleted-lessons-panellesson-setfirst-of-type_1_tablet.png",
+        "test": "../../backstop_data/bitmaps_test/20160411-122056/3_1_incompleted-lessons-panellesson-setfirst-of-type_1_tablet.png",
+        "selector": "#incompleted-lessons-panel > .lesson-set:first-of-type",
+        "fileName": "3_1_incompleted-lessons-panellesson-setfirst-of-type_1_tablet.png",
+        "label": "Homepage - Booked Lessons tab - Incompleted Bookings"
+      },
+      {
+        "reference": "../../backstop_data/bitmaps_reference/3_0_lesson-table-tabs_2_screen.png",
+        "test": "../../backstop_data/bitmaps_test/20160411-122056/3_0_lesson-table-tabs_2_screen.png",
+        "selector": "#lesson-table-tabs",
+        "fileName": "3_0_lesson-table-tabs_2_screen.png",
+        "label": "Homepage - Booked Lessons tab - Incompleted Bookings"
+      },
+      {
+        "reference": "../../backstop_data/bitmaps_reference/3_1_incompleted-lessons-panellesson-setfirst-of-type_2_screen.png",
+        "test": "../../backstop_data/bitmaps_test/20160411-122056/3_1_incompleted-lessons-panellesson-setfirst-of-type_2_screen.png",
+        "selector": "#incompleted-lessons-panel > .lesson-set:first-of-type",
+        "fileName": "3_1_incompleted-lessons-panellesson-setfirst-of-type_2_screen.png",
+        "label": "Homepage - Booked Lessons tab - Incompleted Bookings"
+      },
+      {
+        "reference": "../../backstop_data/bitmaps_reference/4_0_lesson-table-tabs_0_phone.png",
+        "test": "../../backstop_data/bitmaps_test/20160411-122056/4_0_lesson-table-tabs_0_phone.png",
+        "selector": "#lesson-table-tabs",
+        "fileName": "4_0_lesson-table-tabs_0_phone.png",
+        "label": "Homepage - Booked Lessons tab - Cancelled Bookings"
+      },
+      {
+        "reference": "../../backstop_data/bitmaps_reference/4_1_cancelled-lessons-panellesson-setfirst-of-type_0_phone.png",
+        "test": "../../backstop_data/bitmaps_test/20160411-122056/4_1_cancelled-lessons-panellesson-setfirst-of-type_0_phone.png",
+        "selector": "#cancelled-lessons-panel > .lesson-set:first-of-type",
+        "fileName": "4_1_cancelled-lessons-panellesson-setfirst-of-type_0_phone.png",
+        "label": "Homepage - Booked Lessons tab - Cancelled Bookings"
+      },
+      {
+        "reference": "../../backstop_data/bitmaps_reference/4_0_lesson-table-tabs_1_tablet.png",
+        "test": "../../backstop_data/bitmaps_test/20160411-122056/4_0_lesson-table-tabs_1_tablet.png",
+        "selector": "#lesson-table-tabs",
+        "fileName": "4_0_lesson-table-tabs_1_tablet.png",
+        "label": "Homepage - Booked Lessons tab - Cancelled Bookings"
+      },
+      {
+        "reference": "../../backstop_data/bitmaps_reference/4_1_cancelled-lessons-panellesson-setfirst-of-type_1_tablet.png",
+        "test": "../../backstop_data/bitmaps_test/20160411-122056/4_1_cancelled-lessons-panellesson-setfirst-of-type_1_tablet.png",
+        "selector": "#cancelled-lessons-panel > .lesson-set:first-of-type",
+        "fileName": "4_1_cancelled-lessons-panellesson-setfirst-of-type_1_tablet.png",
+        "label": "Homepage - Booked Lessons tab - Cancelled Bookings"
+      },
+      {
+        "reference": "../../backstop_data/bitmaps_reference/4_0_lesson-table-tabs_2_screen.png",
+        "test": "../../backstop_data/bitmaps_test/20160411-122056/4_0_lesson-table-tabs_2_screen.png",
+        "selector": "#lesson-table-tabs",
+        "fileName": "4_0_lesson-table-tabs_2_screen.png",
+        "label": "Homepage - Booked Lessons tab - Cancelled Bookings"
+      },
+      {
+        "reference": "../../backstop_data/bitmaps_reference/4_1_cancelled-lessons-panellesson-setfirst-of-type_2_screen.png",
+        "test": "../../backstop_data/bitmaps_test/20160411-122056/4_1_cancelled-lessons-panellesson-setfirst-of-type_2_screen.png",
+        "selector": "#cancelled-lessons-panel > .lesson-set:first-of-type",
+        "fileName": "4_1_cancelled-lessons-panellesson-setfirst-of-type_2_screen.png",
+        "label": "Homepage - Booked Lessons tab - Cancelled Bookings"
       }
     ]
   },
-  "lastConfigHash": "79a208e59cb720152c75ca50104da435c72da258"
+  "lastConfigHash": "2486036c4b9c5cbdfad961310c24a55de71583a5"
 }
