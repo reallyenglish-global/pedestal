@@ -120,6 +120,20 @@
       "delay": 0,
       "onBeforeScript": null,
       "onReadyScript": null
+    },
+    {
+      "label": "How to Study page - FAQ tab",
+      "url": "../../dist/how-to-study.html",
+      "hideSelectors": [],
+      "removeSelectors": [],
+      "selectors": [
+        ".tabs",
+        "#faq"
+      ],
+      "readyEvent": null,
+      "delay": 0,
+      "onBeforeScript": null,
+      "onReadyScript": "selectFaqTab"
     }
   ],
   "paths": {
