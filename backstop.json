@@ -36,7 +36,7 @@
       "onReadyScript": null
     },
     {
-      "label": "Homepage - Booked Lessons tab",
+      "label": "Homepage - Booked Lessons tab - Current Bookings",
       "url": "../../dist/index.html",
       "hideSelectors": [],
       "removeSelectors": [],
@@ -48,6 +48,48 @@
       "delay": 0,
       "onBeforeScript": null,
       "onReadyScript": "selectBookedLessonTab"
+    },
+    {
+      "label": "Homepage - Booked Lessons tab - Completed Bookings",
+      "url": "../../dist/index.html",
+      "hideSelectors": [],
+      "removeSelectors": [],
+      "selectors": [
+        "#lesson-table-tabs",
+        "#completed-lessons-panel > .lesson-set:first-of-type"
+      ],
+      "readyEvent": null,
+      "delay": 0,
+      "onBeforeScript": null,
+      "onReadyScript": "selectCompletedLessonsTab"
+    },
+    {
+      "label": "Homepage - Booked Lessons tab - Incompleted Bookings",
+      "url": "../../dist/index.html",
+      "hideSelectors": [],
+      "removeSelectors": [],
+      "selectors": [
+        "#lesson-table-tabs",
+        "#incompleted-lessons-panel > .lesson-set:first-of-type"
+      ],
+      "readyEvent": null,
+      "delay": 0,
+      "onBeforeScript": null,
+      "onReadyScript": "selectIncompletedLessonTab"
+    },
+    {
+      "label": "Homepage - Booked Lessons tab - Cancelled Bookings",
+      "url": "../../dist/index.html",
+      "hideSelectors": [],
+      "removeSelectors": [],
+      "selectors": [
+        "#lesson-table-tabs",
+        "#cancelled-lessons-panel > .lesson-set:first-of-type"
+      ],
+      "readyEvent": null,
+      "delay": 0,
+      "onBeforeScript": null,
+      "onReadyScript": "selectCancelledLessonTab"
     }
   ],
   "paths": {
