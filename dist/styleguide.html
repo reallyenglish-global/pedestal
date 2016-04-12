@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Booking System Template Style Guide</title>
     <link rel="stylesheet" href="assets/css/app.css">
-    <!-- <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/styles/github.min.css"> -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/styles/github.min.css">
 
     <!-- Style guide-specific CSS goes here. -->
     <style>
@@ -68,13 +68,11 @@
             <li class="tabs-title"><a href="#colors">Colors</a></li>
             <li class="tabs-title"><a href="#typography">Typography</a></li>
             <li class="tabs-title"><a href="#buttons">Buttons</a></li>
-            <li class="tabs-title"><a href="#forms">Forms</a></li>
         </ul>
       </div>
 
       <div class="large-9 medium-8 columns" data-tabs-content="ss-sections">
         <div class="tabs-content vertical">
-
             <section class="tabs-panel callout is-active" id="the-grid">
               <h1>The Grid</h1><p class="lead">Problem: You&#39;ve got tons of content, each needing different sized vertical columns, and don&#39;t know how to quick and easily get it all done. Solution: The awesome grid!</p>
 
@@ -167,7 +165,6 @@
   <div class="small-9 columns">9, last</div>
 </div>
             </section>
-
             <section class="tabs-panel callout " id="colors">
               <h1>Colors</h1><p class="lead">Below you can find the different values we created that support the primary color variable you can change at any time in <code>_settings.scss</code></p>
 
@@ -175,39 +172,92 @@
 <div class="row up-1 medium-up-3 large-up-5">
   <div class="column">
     <div class="color-block">
-      <span style="background: #2199e8"></span>
-      #2199e8
+      <span style="background: #48aadf"></span>
+      #48aadf
     </div>
   </div>
   <div class="column">
     <div class="color-block">
-      <span style="background: #3adb76"></span>
-      #3adb76
+      <span style="background: #878787"></span>
+      #878787
     </div>
   </div>
   <div class="column">
     <div class="color-block">
-      <span style="background: #ffae00"></span>
-      #ffae00
+      <span style="background: #D2D2D2"></span>
+      #D2D2D2
     </div>
   </div>
   <div class="column">
     <div class="color-block">
-      <span style="background: #ec5840"></span>
-      #ec5840
+      <span style="background: #bbe9c5"></span>
+      #bbe9c5
     </div>
   </div>
   <div class="column">
     <div class="color-block">
-      <span style="background: #0a0a0a"></span>
-      #0a0a0a
+      <span style="background: #f6dec1"></span>
+      #f6dec1
+    </div>
+  </div>
+  <div class="column">
+    <div class="color-block">
+      <span style="background: #f4c6c8"></span>
+      #f4c6c8
+    </div>
+  </div>
+  <div class="column">
+    <div class="color-block">
+      <span style="background: #bce2ec"></span>
+      #bce2ec
+    </div>
+  </div>
+  <div class="column">
+    <div class="color-block">
+      <span style="background: #167aa2"></span>
+      #167aa2
+    </div>
+  </div>
+  <div class="column">
+    <div class="color-block">
+      <span style="background: #e0f0f3"></span>
+      #e0f0f3
+    </div>
+  </div>
+  <div class="column">
+    <div class="color-block">
+      <span style="background: #9bcbde"></span>
+      #9bcbde
+    </div>
+  </div>
+  <div class="column">
+    <div class="color-block">
+      <span style="background: #fffcef"></span>
+      #fffcef
+    </div>
+  </div>
+  <div class="column">
+    <div class="color-block">
+      <span style="background: #ecf7f2"></span>
+      #ecf7f2
+    </div>
+  </div>
+  <div class="column">
+    <div class="color-block">
+      <span style="background: #f4e9e2"></span>
+      #f4e9e2
+    </div>
+  </div>
+  <div class="column">
+    <div class="color-block">
+      <span style="background: #eee1e6"></span>
+      #eee1e6
     </div>
   </div>
 </div>
             </section>
-
             <section class="tabs-panel callout " id="typography">
-              <h1>Typography</h1><p class="lead">This design uses Helvetica Neue for headings and paragraph text.</p>
+              <h1>Typography</h1><p class="lead">This design uses Proxima Nova for headings and paragraph text.</p>
 
 <hr>
 <h2>Headings</h2><p>Headings are used to denote different sections of content, usually consisting of related paragraphs and other HTML elements. They range from h1 to h6 and should be styled in a clear hierarchy (i.e., largest to smallest)</p>
@@ -234,35 +284,38 @@
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic quibusdam ratione sunt dolorum, qui illo maxime doloremque accusantium cum libero eum, a optio odio placeat debitis ullam aut non distinctio.</p>
 
             </section>
-
             <section class="tabs-panel callout " id="buttons">
               <h1>Buttons</h1><p class="lead">Buttons are tied to an action of some kind, whether that button is on a cheese dispenser or launches the rocket that you&#39;re strapped to. On the web, we follow similar conventions.</p>
 
 <hr>
 <h2>Primary Buttons</h2><p>These buttons are primary calls to action and should be used sparingly. Their size can be adjusted with the <code>.tiny</code>, <code>.small</code>, and <code>.large</code> classes.</p>
-<div class="ss-code"><pre><code class="html"><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"primary large button"</span>&gt;</span>Large button<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"primary button"</span>&gt;</span>Regular button<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"primary small button"</span>&gt;</span>Small button<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"primary tiny button"</span>&gt;</span>Tiny button<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span></code></pre></div>
+<div class="ss-code"><pre><code class="html"><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button button-primary"</span>&gt;</span>Regular button<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button button-primary button-small"</span>&gt;</span>Small button<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span></code></pre></div>
 
-<div class="ss-code-live"><a href="#" class="primary large button">Large button</a>
-<a href="#" class="primary button">Regular button</a>
-<a href="#" class="primary small button">Small button</a>
-<a href="#" class="primary tiny button">Tiny button</a></div><hr>
+<div class="ss-code-live"><a href="#" class="button button-primary">Regular button</a>
+<a href="#" class="button button-primary button-small">Small button</a></div><hr>
 <h2>Secondary Buttons</h2><p>These buttons are used for less important, secondary actions on a page.</p>
-<div class="ss-code"><pre><code class="html"><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"secondary large button"</span>&gt;</span>Large button<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"secondary button"</span>&gt;</span>Regular button<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"secondary small button"</span>&gt;</span>Small button<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"secondary tiny button"</span>&gt;</span>Tiny button<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span></code></pre></div>
+<div class="ss-code"><pre><code class="html"><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button button-secondary"</span>&gt;</span>Regular button<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button button-secondary button-small"</span>&gt;</span>Small button<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span></code></pre></div>
 
-<div class="ss-code-live"><a href="#" class="secondary large button">Large button</a>
-<a href="#" class="secondary button">Regular button</a>
-<a href="#" class="secondary small button">Small button</a>
-<a href="#" class="secondary tiny button">Tiny button</a></div>
-            </section>
+<div class="ss-code-live"><a href="#" class="button button-secondary">Regular button</a>
+<a href="#" class="button button-secondary button-small">Small button</a></div><hr>
+<h2>Button Variations</h2><p>There are many different button colour variations that can be used on a page.</p>
+<div class="ss-code"><pre><code class="html"><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button button-alt"</span>&gt;</span>Alternate button<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button button-booked"</span>&gt;</span>Booked button<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span></code></pre></div>
 
-            <section class="tabs-panel callout " id="forms">
-              <h1>Forms</h1><p class="lead">Use forms to allow users to interact with the site and provide information to the company.</p>
+<div class="ss-code-live"><a href="#" class="button button-alt">Alternate button</a>
+<a href="#" class="button button-booked">Booked button</a></div><hr>
+<h2>Round and Circle Buttons</h2><div class="ss-code"><pre><code class="html"><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button button-primary button-round"</span>&gt;</span>Rounded button<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button button-alt button-circle"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"icon icon-question-mark"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span></code></pre></div>
+
+<div class="ss-code-live"><a href="#" class="button button-primary button-round">Rounded button</a>
+<a href="#" class="button button-alt button-circle">
+  <span class="icon icon-question-mark"></span>
+</a></div><hr>
+<h1>Forms</h1><p class="lead">Use forms to allow users to interact with the site and provide information to the company.</p>
 
 <hr>
 <h2>Elements of a Form</h2><p>A form should be marked up using its default HTML properties. The ones we make use of include (in hierarchical order):</p>

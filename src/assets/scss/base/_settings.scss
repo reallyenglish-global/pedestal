@@ -51,10 +51,17 @@ $global-max-width: 70.5rem;
 
 $primary-color: #48aadf;
 $secondary-color: #878787;
-$success-color: #3adb76;
-$warning-color: #ffae00;
-$alert-color: #f35b52;
-$booked-lesson-color: #e0f0f3;
+$success-color: #bbe9c5;
+$warning-color: #f6dec1;
+$alert-color: #f4c6c8;
+$booked-color: #e0f0f3;
+$booked-alt-color: #9bcbde;
+$rating-color: #fffcef;
+$complete-color: #ecf7f2;
+$incomplete-color: #f4e9e2;
+$cancelled-color: #eee1e6;
+
+
 
 // $black: #0a0a0a;
 $white: #fff;
@@ -124,7 +131,6 @@ $header-sizes: (
 // $header-lineheight: 1.4;
 $header-margin-bottom: 1rem;
 // $header-text-rendering: optimizeLegibility;
-$header-alt-color: #167aa2;
 // $small-font-size: 80%;
 // $header-small-font-color: $medium-gray;
 $paragraph-lineheight: 1.4;
@@ -262,9 +268,9 @@ $button-disabled-color: #d2d2d2;
 
 $callout-background: #f3f3f3;
 $callout-background-primary: #bce2ec;
-$callout-background-alert: #f4c6c8;
-$callout-background-warning: #f6dec1;
-$callout-background-success: #bbe9c5;
+$callout-background-alert: $alert-color;
+$callout-background-warning: $warning-color;
+$callout-background-success: $success-color;
 $callout-background-fade: 0%;
 $callout-border: none;
 //$callout-margin: 0 0 1rem 0;

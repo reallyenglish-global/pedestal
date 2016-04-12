@@ -134,32 +134,86 @@ As you've probably noticed in the examples above, you have access to a small, me
 <div class="row up-1 medium-up-3 large-up-5">
   <div class="column">
     <div class="color-block">
-      <span style="background: #2199e8"></span>
-      #2199e8
+      <span style="background: #48aadf"></span>
+      #48aadf
     </div>
   </div>
   <div class="column">
     <div class="color-block">
-      <span style="background: #3adb76"></span>
-      #3adb76
+      <span style="background: #878787"></span>
+      #878787
     </div>
   </div>
   <div class="column">
     <div class="color-block">
-      <span style="background: #ffae00"></span>
-      #ffae00
+      <span style="background: #D2D2D2"></span>
+      #D2D2D2
     </div>
   </div>
   <div class="column">
     <div class="color-block">
-      <span style="background: #ec5840"></span>
-      #ec5840
+      <span style="background: #bbe9c5"></span>
+      #bbe9c5
     </div>
   </div>
   <div class="column">
     <div class="color-block">
-      <span style="background: #0a0a0a"></span>
-      #0a0a0a
+      <span style="background: #f6dec1"></span>
+      #f6dec1
+    </div>
+  </div>
+  <div class="column">
+    <div class="color-block">
+      <span style="background: #f4c6c8"></span>
+      #f4c6c8
+    </div>
+  </div>
+  <div class="column">
+    <div class="color-block">
+      <span style="background: #bce2ec"></span>
+      #bce2ec
+    </div>
+  </div>
+  <div class="column">
+    <div class="color-block">
+      <span style="background: #167aa2"></span>
+      #167aa2
+    </div>
+  </div>
+  <div class="column">
+    <div class="color-block">
+      <span style="background: #e0f0f3"></span>
+      #e0f0f3
+    </div>
+  </div>
+  <div class="column">
+    <div class="color-block">
+      <span style="background: #9bcbde"></span>
+      #9bcbde
+    </div>
+  </div>
+  <div class="column">
+    <div class="color-block">
+      <span style="background: #fffcef"></span>
+      #fffcef
+    </div>
+  </div>
+  <div class="column">
+    <div class="color-block">
+      <span style="background: #ecf7f2"></span>
+      #ecf7f2
+    </div>
+  </div>
+  <div class="column">
+    <div class="color-block">
+      <span style="background: #f4e9e2"></span>
+      #f4e9e2
+    </div>
+  </div>
+  <div class="column">
+    <div class="color-block">
+      <span style="background: #eee1e6"></span>
+      #eee1e6
     </div>
   </div>
 </div>
@@ -168,7 +222,7 @@ As you've probably noticed in the examples above, you have access to a small, me
 
 # Typography
 
-<p class="lead">This design uses Helvetica Neue for headings and paragraph text.</p>
+<p class="lead">This design uses Proxima Nova for headings and paragraph text.</p>
 
 ---
 
@@ -221,10 +275,8 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic quibusdam ratione 
 These buttons are primary calls to action and should be used sparingly. Their size can be adjusted with the `.tiny`, `.small`, and `.large` classes.
 
 ```html_example
-<a href="#" class="primary large button">Large button</a>
-<a href="#" class="primary button">Regular button</a>
-<a href="#" class="primary small button">Small button</a>
-<a href="#" class="primary tiny button">Tiny button</a>
+<a href="#" class="button button-primary">Regular button</a>
+<a href="#" class="button button-primary button-small">Small button</a>
 ```
 
 ---
@@ -234,13 +286,31 @@ These buttons are primary calls to action and should be used sparingly. Their si
 These buttons are used for less important, secondary actions on a page.
 
 ```html_example
-<a href="#" class="secondary large button">Large button</a>
-<a href="#" class="secondary button">Regular button</a>
-<a href="#" class="secondary small button">Small button</a>
-<a href="#" class="secondary tiny button">Tiny button</a>
+<a href="#" class="button button-secondary">Regular button</a>
+<a href="#" class="button button-secondary button-small">Small button</a>
+```
+---
+
+## Button Variations
+
+There are many different button colour variations that can be used on a page.
+
+```html_example
+<a href="#" class="button button-alt">Alternate button</a>
+<a href="#" class="button button-booked">Booked button</a>
+```
+---
+
+## Round and Circle Buttons
+
+```html_example
+<a href="#" class="button button-primary button-round">Rounded button</a>
+<a href="#" class="button button-alt button-circle">
+  <span class="icon icon-question-mark"></span>
+</a>
 ```
 
-
+---
 
 # Forms
 

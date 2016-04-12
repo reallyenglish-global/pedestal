@@ -14,11 +14,11 @@
   padding: 0.8rem 0.5rem;
 
   &.is-booked {
-    background-color: $booked-lesson-color;
+    background-color: $booked-color;
   }
 
   &.is-complete {
-    background-color: #ecf7f2;
+    background-color: $complete-color;;
     padding: 0 0.5rem;
 
     time,
@@ -35,7 +35,7 @@
   }
 
   &.is-incomplete {
-    background-color: #f4e9e2;
+    background-color: $incomplete-color;
 
     time {
       color: #dda989;
@@ -43,7 +43,7 @@
   }
 
   &.is-cancelled {
-    background-color: #eee1e6;
+    background-color: $cancelled-color;
 
     time {
       color: #d09baf;
