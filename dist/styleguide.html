@@ -68,6 +68,7 @@
             <li class="tabs-title"><a href="#colors">Colors</a></li>
             <li class="tabs-title"><a href="#typography">Typography</a></li>
             <li class="tabs-title"><a href="#buttons">Buttons</a></li>
+            <li class="tabs-title"><a href="#images">Images</a></li>
         </ul>
       </div>
 
@@ -314,138 +315,15 @@
 <div class="ss-code-live"><a href="#" class="button button-primary button-round">Rounded button</a>
 <a href="#" class="button button-alt button-circle">
   <span class="icon icon-question-mark"></span>
-</a></div><hr>
-<h1>Forms</h1><p class="lead">Use forms to allow users to interact with the site and provide information to the company.</p>
+</a></div>
+            </section>
+            <section class="tabs-panel callout " id="images">
+              <h1>Images</h1><p>You can classes to images to easily change any image&#39;s style.</p>
+<div class="ss-code"><pre><code class="html"><span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"assets/images/avatar.png"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"image-circle"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"assets/images/avatar.png"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"image-bordered"</span>&gt;</span></code></pre></div>
 
-<hr>
-<h2>Elements of a Form</h2><p>A form should be marked up using its default HTML properties. The ones we make use of include (in hierarchical order):</p>
-<ul>
-<li>Form</li>
-<li>Label</li>
-<li>Input</li>
-<li>Select</li>
-<li>Text area</li>
-<li>Button</li>
-</ul>
-<hr>
-<h2>How to Use</h2><p>Make forms great and easy to use with the following rules:</p>
-<ul>
-<li>Wrap checkboxes and radio buttons within labels for larger hit areas, and be sure to set the for, name, and id attributes for all applicable elements.</li>
-<li>Series of checkboxes and radio buttons below within a <code>&lt;ul class=&quot;inline-list&quot;&gt;</code>.</li>
-<li>Before selecting any set of fields to use for a required input, explore other options (e.g., radio buttons over select lists).</li>
-</ul>
-<hr>
-<h2>Learn All About Forms</h2><p>Check out the <a href="http://foundation.zurb.com/sites/docs">Foundation Docs</a> to learn about how flexible our forms are for creating different layouts. It works perfectly with the grid to meet all your form needs.</p>
-<hr>
-<h2>Form Layouts</h2><p>Form elements in Foundation are styled based on their type attribute rather than a class. Inputs in Foundation have another major advantage — they are full width by default. That means that inputs will run as wide as the column that contains them. However, you have two options which make these forms extremely versatile:</p>
-<ul>
-<li>You can size inputs using column sizes, like <code>.medium-6</code>, <code>.small-6</code>.</li>
-<li>You can create row elements inside your form and use columns for the form, including inputs, labels and more. Rows inside a form inherit some special padding to even up input spacing.</li>
-</ul>
-<hr>
-<h2>Form Example</h2><div class="ss-code"><pre><code class="html"><span class="hljs-tag">&lt;<span class="hljs-title">form</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"row"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"large-12 columns"</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">label</span>&gt;</span>Label<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">placeholder</span>=<span class="hljs-value">"placeholder"</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"row"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"large-6 columns"</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">label</span>&gt;</span>Label<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">placeholder</span>=<span class="hljs-value">"placeholder"</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"large-6 columns"</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"row collapse"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">label</span>&gt;</span>Label<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"input-group"</span>&gt;</span>
-          <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"input-group-field"</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">placeholder</span>=<span class="hljs-value">"placeholder"</span>&gt;</span>
-          <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"input-group-label"</span>&gt;</span>.com<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"row"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"large-12 columns"</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">label</span>&gt;</span>Select Box<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">select</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"good"</span>&gt;</span>Good<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"better"</span>&gt;</span>Better<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"best"</span>&gt;</span>Best<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
-      <span class="hljs-tag">&lt;/<span class="hljs-title">select</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"row"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"large-6 columns"</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">label</span>&gt;</span>Choose Your Favorite<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"radio"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"radio1"</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"radio1"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"radio1"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"radio1"</span>&gt;</span>Red<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"radio"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"radio2"</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"radio2"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"radio2"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"radio2"</span>&gt;</span>Blue<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"large-6 columns"</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">label</span>&gt;</span>Check these out<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"checkbox1"</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"checkbox"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"checkbox1"</span>&gt;</span>Checkbox 1<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"checkbox2"</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"checkbox"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"checkbox2"</span>&gt;</span>Checkbox 2<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"row"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"large-12 columns"</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">label</span>&gt;</span>Textarea Label<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">textarea</span> <span class="hljs-attribute">placeholder</span>=<span class="hljs-value">"placeholder"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">textarea</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-title">form</span>&gt;</span></code></pre></div>
-
-<div class="ss-code-live"><form>
-  <div class="row">
-    <div class="large-12 columns">
-      <label>Label</label>
-      <input type="text" placeholder="placeholder">
-    </div>
-  </div>
-  <div class="row">
-    <div class="large-6 columns">
-      <label>Label</label>
-      <input type="text" placeholder="placeholder">
-    </div>
-    <div class="large-6 columns">
-      <div class="row collapse">
-        <label>Label</label>
-        <div class="input-group">
-          <input class="input-group-field" type="text" placeholder="placeholder">
-          <span class="input-group-label">.com</span>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="large-12 columns">
-      <label>Select Box</label>
-      <select>
-        <option value="good">Good</option>
-        <option value="better">Better</option>
-        <option value="best">Best</option>
-      </select>
-    </div>
-  </div>
-  <div class="row">
-    <div class="large-6 columns">
-      <label>Choose Your Favorite</label>
-      <input type="radio" name="radio1" value="radio1" id="radio1"><label for="radio1">Red</label>
-      <input type="radio" name="radio2" value="radio2" id="radio2"><label for="radio2">Blue</label>
-    </div>
-    <div class="large-6 columns">
-      <label>Check these out</label>
-      <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
-      <input id="checkbox2" type="checkbox"><label for="checkbox2">Checkbox 2</label>
-    </div>
-  </div>
-  <div class="row">
-    <div class="large-12 columns">
-      <label>Textarea Label</label>
-      <textarea placeholder="placeholder"></textarea>
-    </div>
-  </div>
-</form></div>
+<div class="ss-code-live"><img src="assets/images/avatar.png" class="image-circle">
+<img src="assets/images/avatar.png" class="image-bordered"></div>
             </section>
         </div>
       </div>
