@@ -191,4 +191,5 @@ gulp.task('default', ['build', 'server'], function() {
 	gulp.watch(['src/assets/scss/**/{*.scss, *.sass}'], ['base64']);
 	gulp.watch(['src/assets/js/**/*.js'], ['javascript']);
 	gulp.watch(['src/assets/images/**/*'], ['images']);
+	gulp.watch(['src/styleguide/**/*'], ['styleguide']);
 });

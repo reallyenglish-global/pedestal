@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Style Guide</title>
+    <title>Booking System Template Style Guide</title>
     <link rel="stylesheet" href="assets/css/app.css">
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/styles/github.min.css">
+    <!-- <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/styles/github.min.css"> -->
 
     <!-- Style guide-specific CSS goes here. -->
     <style>
@@ -55,11 +55,9 @@
   <body>
 
     <div class="column row">
-      <h1>Client Style Guide</h1>
+      <h1>Booking System Template Style Guide</h1>
       <p class="lead">This style guide was built with Foundation for Sites. For more information on how to use this responsive front-end framework, check out the documentation, get help from the Foundation community, or request immediate technical support.</p>
       <a href="http://foundation.zurb.com/docs/" class="button">Visit the Docs</a>
-      <a href="http://foundation.zurb.com/forum/" class="secondary button">Foundation Forum</a>
-      <a href="http://foundation.zurb.com/business/business-support.html" class="secondary button">Technical Support</a>
     </div>
 
     <div class="column row"><div class="row collapse">
@@ -75,7 +73,8 @@
       <div class="large-9 medium-8 columns" data-tabs-content="ss-sections">
         <div class="tabs-content vertical">
           {{#each pages}}
-            <section class="tabs-panel {{#if @first}}is-active{{/if}}" id="{{ anchor }}">
+
+            <section class="tabs-panel callout {{#if @first}}is-active{{/if}}" id="{{ anchor }}">
               {{ body }}
             </section>
           {{/each}}
