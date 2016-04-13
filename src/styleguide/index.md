@@ -353,3 +353,21 @@ We change the format of text using helper classes.
 <p class="font-weight-bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 <p class="text-underline">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 ```
+
+## Spacing
+
+There are a bunch of classes that allow you to control padding and margin. To do so, you would add a class of the following format:
+
+```
+.[spacing]-[orientation]-[rem-unit]
+```
+
+- _Spacing_ can either be: `margin` or `padding`.
+- _Orientation_ represents where you want to apply the _spacing_ can either be: `top`, `bottom`, `left` or `right`.
+- _Rem-unit_ represents how much _spacing_ you want to apply in rems. This ranges from 0 - 2.
+
+```html_example
+<p class="margin-bottom-0">No margin on the bottom.</p>
+<p class="padding-top-2">Padding of 2rem at the top.</p>
+<p class="margin-left-1">Margin of 1rem on the left</p>
+```

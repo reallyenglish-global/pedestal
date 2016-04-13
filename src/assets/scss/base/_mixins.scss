@@ -8,7 +8,7 @@ $orientations: (top, bottom, left, right);
   @each $spacing in $spacing-variations {
     @each $orientation in $orientations {
       .#{$spacing}-#{$orientation}-#{$i} {
-        #{$spacing}-#{$orientation}: #{$i};
+        #{$spacing}-#{$orientation}: #{$i}rem;
       }
     }
   }
