@@ -1,0 +1,39 @@
+.credit-status {
+  background-color: $callout-background;
+  margin: 0;
+  border: 1px solid #ddd;
+
+  p {
+    margin: 0;
+    color: #989898;
+  }
+
+  &.row {
+    padding: 0.5rem 0;
+  }
+
+  .status {
+    font-size: 2rem;
+    color: #58595b;
+  }
+
+  .remaining-total {
+    &:first-child {
+      border-right: 1px solid #e7e8e9;
+    }
+  }
+}
+
+@include breakpoint(small only) {
+  .credit-status {
+    max-width: none;
+
+    p {
+      line-height: 1.2;
+    }
+
+    .status {
+      font-size: 1.5rem;
+    }
+  }
+}
