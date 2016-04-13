@@ -428,7 +428,7 @@ And with `.tabs-alt`.
 
 ## Formatting tabs
 
-You can als make tabs rounded with the `.tabs-rounded` class.
+You can also make tabs rounded with the `.tabs-rounded` class.
 
 ```html_example
 <ul class="tabs tabs-alt tabs-rounded" data-tabs="" id="task-lesson-tabs">
@@ -440,3 +440,10 @@ You can als make tabs rounded with the `.tabs-rounded` class.
   </li>
 </ul>
 ```
+
+
+
+# Progress Bars
+
+
+

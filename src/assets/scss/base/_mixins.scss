@@ -1,5 +1,4 @@
 //Spacing
-
 $max-size: 2;
 $spacing-variations: (padding, margin);
 $orientations: (top, bottom, left, right);
@@ -11,5 +10,31 @@ $orientations: (top, bottom, left, right);
         #{$spacing}-#{$orientation}: #{$i}rem;
       }
     }
+  }
+}
+
+//Progress Widths
+@mixin progress-checkpoint-spacing {
+  $j: 0;
+  @while $j <= 100 {
+    .progress-checkpoint-#{$j} {
+      left: calc(#{$j}% - #{$progress-checkpoint-size} / 2);
+    }
+
+    $j: $j + 10;
+  }
+}
+
+@mixin progress-widths {
+  $j: 0;
+  @while $j <= 10 {
+
+    &[aria-valuenow="#{$j * 10}"] {
+      .progress-meter {
+        width: percentage($j / 10);
+      }
+    }
+
+    $j: $j + 1;
   }
 }

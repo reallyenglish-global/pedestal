@@ -3424,12 +3424,28 @@ ul {
 .progress {
   margin: 2rem 3rem 6rem;
   position: relative; }
+  .progress[aria-valuenow="0"] .progress-meter {
+    width: 0%; }
   .progress[aria-valuenow="10"] .progress-meter {
     width: 10%; }
+  .progress[aria-valuenow="20"] .progress-meter {
+    width: 20%; }
+  .progress[aria-valuenow="30"] .progress-meter {
+    width: 30%; }
+  .progress[aria-valuenow="40"] .progress-meter {
+    width: 40%; }
+  .progress[aria-valuenow="50"] .progress-meter {
+    width: 50%; }
   .progress[aria-valuenow="60"] .progress-meter {
     width: 60%; }
+  .progress[aria-valuenow="70"] .progress-meter {
+    width: 70%; }
+  .progress[aria-valuenow="80"] .progress-meter {
+    width: 80%; }
   .progress[aria-valuenow="90"] .progress-meter {
     width: 90%; }
+  .progress[aria-valuenow="100"] .progress-meter {
+    width: 100%; }
 
 .progress-checkpoint {
   background-color: #48aadf;
@@ -3440,23 +3456,47 @@ ul {
   position: absolute;
   top: -1.5rem;
   text-align: center; }
-  .progress-checkpoint > h5 {
+  .progress-checkpoint > p {
     color: #48aadf;
     font-size: 0.8rem;
     position: absolute;
     top: 3.5rem; }
   .progress-checkpoint.is-disabled {
     background-color: #cacaca; }
-    .progress-checkpoint.is-disabled > h5 {
+    .progress-checkpoint.is-disabled > p {
       color: #888; }
 
-.progress-0 {
-  left: -1.75rem; }
+.progress-checkpoint-0 {
+  left: calc(0% - 3.5rem / 2); }
 
-.progress-50 {
+.progress-checkpoint-10 {
+  left: calc(10% - 3.5rem / 2); }
+
+.progress-checkpoint-20 {
+  left: calc(20% - 3.5rem / 2); }
+
+.progress-checkpoint-30 {
+  left: calc(30% - 3.5rem / 2); }
+
+.progress-checkpoint-40 {
+  left: calc(40% - 3.5rem / 2); }
+
+.progress-checkpoint-50 {
   left: calc(50% - 3.5rem / 2); }
 
-.progress-100 {
+.progress-checkpoint-60 {
+  left: calc(60% - 3.5rem / 2); }
+
+.progress-checkpoint-70 {
+  left: calc(70% - 3.5rem / 2); }
+
+.progress-checkpoint-80 {
+  left: calc(80% - 3.5rem / 2); }
+
+.progress-checkpoint-90 {
+  left: calc(90% - 3.5rem / 2); }
+
+.progress-checkpoint-100 {
   left: calc(100% - 3.5rem / 2); }
 
 @media screen and (min-width: 0em) and (max-width: 39.9375em) {

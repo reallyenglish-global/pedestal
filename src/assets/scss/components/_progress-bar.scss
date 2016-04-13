@@ -1,25 +1,8 @@
 .progress {
+  @include progress-widths;
+
   margin: 2rem 3rem 6rem;
   position: relative;
-
-//TODO:Make mixin for this too
-  &[aria-valuenow="10"] {
-    .progress-meter {
-      width: 10%;
-    }
-  }
-
-  &[aria-valuenow="60"] {
-    .progress-meter {
-      width: 60%;
-    }
-  }
-
-  &[aria-valuenow="90"] {
-    .progress-meter {
-      width: 90%;
-    }
-  }
 }
 
 .progress-checkpoint {
@@ -32,7 +15,7 @@
   top: (-$progress-checkpoint-size / 2) + ($progress-height / 2);
   text-align: center;
 
-  > h5 {
+  > p {
     color: $primary-color;
     font-size: 0.8rem;
     position: absolute;
@@ -42,24 +25,13 @@
   &.is-disabled {
     background-color: $progress-background;
 
-    > h5 {
+    > p {
       color: #888;
     }
   }
 }
 
-//TODO: write this as a mixin
-.progress-0 {
-  left: $progress-checkpoint-size / -2;
-}
-
-.progress-50 {
-  left: calc(50% - #{$progress-checkpoint-size} / 2);
-}
-
-.progress-100 {
-  left: calc(100% - #{$progress-checkpoint-size} / 2);
-}
+@include progress-checkpoint-spacing;
 
 @include breakpoint(small only) {
   .progress {
