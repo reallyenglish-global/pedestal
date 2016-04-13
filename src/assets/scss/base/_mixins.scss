@@ -1,0 +1,15 @@
+//Spacing
+
+$max-size: 2;
+$spacing-variations: (padding, margin);
+$orientations: (top, bottom, left, right);
+
+@for $i from 0 through $max-size {
+  @each $spacing in $spacing-variations {
+    @each $orientation in $orientations {
+      .#{$spacing}-#{$orientation}-#{$i} {
+        #{$spacing}-#{$orientation}: #{$i};
+      }
+    }
+  }
+}
