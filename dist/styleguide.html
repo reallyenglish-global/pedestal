@@ -70,6 +70,7 @@
             <li class="tabs-title"><a href="#images">Images</a></li>
             <li class="tabs-title"><a href="#helper-classes">Helper Classes</a></li>
             <li class="tabs-title"><a href="#callouts">Callouts</a></li>
+            <li class="tabs-title"><a href="#tabs">Tabs</a></li>
         </ul>
       </div>
 
@@ -378,6 +379,60 @@
 
 <div class="ss-code-live"><div class="callout callout-primary callout-round">Callout with round corners</div>
 <div class="callout callout-info callout-bordered">Callout with border</div></div>
+            </section>
+            <section class="tabs-panel callout " id="tabs">
+              <h1>Tabs</h1><p>We haved added two types of tabs that can be used by the classes <code>.tabs</code>.</p>
+<div class="ss-code"><pre><code class="html"><span class="hljs-tag">&lt;<span class="hljs-title">ul</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"tabs"</span> <span class="hljs-attribute">data-tabs</span>=<span class="hljs-value">""</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"task-lesson-tabs"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"tabs-title is-active"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#study-tasks"</span> <span class="hljs-attribute">aria-selected</span>=<span class="hljs-value">"true"</span>&gt;</span>Study tasks<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"tabs-title"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#booked-lessons"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"booked-lessons-button"</span>&gt;</span>Booked Lessons<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span></code></pre></div>
+
+<div class="ss-code-live"><ul class="tabs" data-tabs="" id="task-lesson-tabs">
+  <li class="tabs-title is-active">
+    <a href="#study-tasks" aria-selected="true">Study tasks</a>
+  </li>
+  <li class="tabs-title">
+    <a href="#booked-lessons" id="booked-lessons-button">Booked Lessons</a>
+  </li>
+</ul></div><p>And with <code>.tabs-alt</code>.</p>
+<div class="ss-code"><pre><code class="html"><span class="hljs-tag">&lt;<span class="hljs-title">ul</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"tabs tabs-alt"</span> <span class="hljs-attribute">data-tabs</span>=<span class="hljs-value">""</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"task-lesson-tabs"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"tabs-title is-active"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#study-tasks"</span> <span class="hljs-attribute">aria-selected</span>=<span class="hljs-value">"true"</span>&gt;</span>Study tasks<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"tabs-title"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#booked-lessons"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"booked-lessons-button"</span>&gt;</span>Booked Lessons<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span></code></pre></div>
+
+<div class="ss-code-live"><ul class="tabs tabs-alt" data-tabs="" id="task-lesson-tabs">
+  <li class="tabs-title is-active">
+    <a href="#study-tasks" aria-selected="true">Study tasks</a>
+  </li>
+  <li class="tabs-title">
+    <a href="#booked-lessons" id="booked-lessons-button">Booked Lessons</a>
+  </li>
+</ul></div><h2>Formatting tabs</h2><p>You can als make tabs rounded with the <code>.tabs-rounded</code> class.</p>
+<div class="ss-code"><pre><code class="html"><span class="hljs-tag">&lt;<span class="hljs-title">ul</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"tabs tabs-alt tabs-rounded"</span> <span class="hljs-attribute">data-tabs</span>=<span class="hljs-value">""</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"task-lesson-tabs"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"tabs-title is-active"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#study-tasks"</span> <span class="hljs-attribute">aria-selected</span>=<span class="hljs-value">"true"</span>&gt;</span>Study tasks<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"tabs-title"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#booked-lessons"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"booked-lessons-button"</span>&gt;</span>Booked Lessons<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span></code></pre></div>
+
+<div class="ss-code-live"><ul class="tabs tabs-alt tabs-rounded" data-tabs="" id="task-lesson-tabs">
+  <li class="tabs-title is-active">
+    <a href="#study-tasks" aria-selected="true">Study tasks</a>
+  </li>
+  <li class="tabs-title">
+    <a href="#booked-lessons" id="booked-lessons-button">Booked Lessons</a>
+  </li>
+</ul></div>
             </section>
         </div>
       </div>

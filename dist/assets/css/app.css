@@ -3040,7 +3040,7 @@ ul {
 .button-booked {
   background-color: #9bcbde; }
 
-.button-round {
+.button-rounded {
   border-radius: 1000px; }
 
 .button-small {
@@ -3248,7 +3248,7 @@ ul {
 .callout-bordered {
   border: 1px solid #e5e5e4; }
 
-.callout-round {
+.callout-rounded {
   border-radius: 2px; }
 
 .image-bordered {

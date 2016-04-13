@@ -394,3 +394,49 @@ You can format callouts by adding borders or manipulating the border radius.
 <div class="callout callout-primary callout-round">Callout with round corners</div>
 <div class="callout callout-info callout-bordered">Callout with border</div>
 ```
+
+
+
+# Tabs
+
+We haved added two types of tabs that can be used by the classes `.tabs`.
+
+
+```html_example
+<ul class="tabs" data-tabs="" id="task-lesson-tabs">
+  <li class="tabs-title is-active">
+    <a href="#study-tasks" aria-selected="true">Study tasks</a>
+  </li>
+  <li class="tabs-title">
+    <a href="#booked-lessons" id="booked-lessons-button">Booked Lessons</a>
+  </li>
+</ul>
+```
+
+And with `.tabs-alt`.
+
+```html_example
+<ul class="tabs tabs-alt" data-tabs="" id="task-lesson-tabs">
+  <li class="tabs-title is-active">
+    <a href="#study-tasks" aria-selected="true">Study tasks</a>
+  </li>
+  <li class="tabs-title">
+    <a href="#booked-lessons" id="booked-lessons-button">Booked Lessons</a>
+  </li>
+</ul>
+```
+
+## Formatting tabs
+
+You can als make tabs rounded with the `.tabs-rounded` class.
+
+```html_example
+<ul class="tabs tabs-alt tabs-rounded" data-tabs="" id="task-lesson-tabs">
+  <li class="tabs-title is-active">
+    <a href="#study-tasks" aria-selected="true">Study tasks</a>
+  </li>
+  <li class="tabs-title">
+    <a href="#booked-lessons" id="booked-lessons-button">Booked Lessons</a>
+  </li>
+</ul>
+```
