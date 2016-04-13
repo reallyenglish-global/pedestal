@@ -320,3 +320,36 @@ You can classes to images to easily change any image's style.
 <img src="assets/images/avatar.png" class="image-circle">
 <img src="assets/images/avatar.png" class="image-bordered">
 ```
+
+
+
+# Helper Classes
+
+## Text Colours
+
+You add colour to text to convey meaning with these helper classes.
+
+```html_example
+<p class="text-primary">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+<p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+<p class="text-header-alt">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+```
+
+## Text Alignment
+
+There are also classes to help text in your application.
+
+```html_example
+<p class="text-align-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+<p class="text-align-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+<p class="text-align-right">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+```
+
+## Text Formatting
+
+We change the format of text using helper classes.
+
+```html_example
+<p class="font-weight-bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+<p class="text-underline">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+```

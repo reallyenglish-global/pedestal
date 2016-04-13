@@ -2,8 +2,8 @@
   margin-bottom: 1rem;
 
   &.is-unbooked .lesson:nth-child(3) {
-    box-shadow: inset 0 -6px 0 -2px $booked-lesson-color,
-    inset 0 -7px 0 -2px $booked-lesson-color;
+    box-shadow: inset 0 -6px 0 -2px $booked-color,
+    inset 0 -7px 0 -2px $booked-color;
   }
 }
 
