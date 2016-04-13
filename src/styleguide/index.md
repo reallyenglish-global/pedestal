@@ -371,3 +371,26 @@ There are a bunch of classes that allow you to control padding and margin. To do
 <p class="padding-top-2">Padding of 2rem at the top.</p>
 <p class="margin-left-1">Margin of 1rem on the left</p>
 ```
+
+
+
+# Callouts
+
+We haved added changed the styles for callouts. There are many different variations.
+
+```html_example
+<div class="callout callout-primary">Callout primary</div>
+<div class="callout callout-warning">Callout warning</div>
+<div class="callout callout-alert">Callout alert</div>
+<div class="callout callout-success">Callout success</div>
+<div class="callout callout-info">Callout info</div>
+```
+
+## Formatting callouts
+
+You can format callouts by adding borders or manipulating the border radius.
+
+```html_example
+<div class="callout callout-primary callout-round">Callout with round corners</div>
+<div class="callout callout-info callout-bordered">Callout with border</div>
+```
