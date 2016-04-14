@@ -72,7 +72,6 @@
             <li class="tabs-title"><a href="#callouts">Callouts</a></li>
             <li class="tabs-title"><a href="#tabs">Tabs</a></li>
             <li class="tabs-title"><a href="#progress-bars">Progress Bars</a></li>
-            <li class="tabs-title"><a href="#page-10">Page 10</a></li>
         </ul>
       </div>
 
@@ -437,10 +436,69 @@
 </ul></div>
             </section>
             <section class="tabs-panel callout " id="progress-bars">
-              <h1>Progress Bars</h1>
-            </section>
-            <section class="tabs-panel callout " id="page-10">
-              
+              <h1>Progress Bars</h1><p>We can create standard progress bars and control the meter with the <code>aria-valuenow</code> attribute.</p>
+<div class="ss-code"><pre><code class="html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"progress progress-"</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"progressbar"</span> <span class="hljs-attribute">tabindex</span>=<span class="hljs-value">"0"</span> <span class="hljs-attribute">aria-valuenow</span>=<span class="hljs-value">"20"</span> <span class="hljs-attribute">aria-valuemin</span>=<span class="hljs-value">"0"</span> <span class="hljs-attribute">aria-valuemax</span>=<span class="hljs-value">"100"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"progress-meter"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"progress progress-"</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"progressbar"</span> <span class="hljs-attribute">tabindex</span>=<span class="hljs-value">"0"</span> <span class="hljs-attribute">aria-valuenow</span>=<span class="hljs-value">"40"</span> <span class="hljs-attribute">aria-valuemin</span>=<span class="hljs-value">"0"</span> <span class="hljs-attribute">aria-valuemax</span>=<span class="hljs-value">"100"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"progress-meter"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"progress progress-"</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"progressbar"</span> <span class="hljs-attribute">tabindex</span>=<span class="hljs-value">"0"</span> <span class="hljs-attribute">aria-valuenow</span>=<span class="hljs-value">"60"</span> <span class="hljs-attribute">aria-valuemin</span>=<span class="hljs-value">"0"</span> <span class="hljs-attribute">aria-valuemax</span>=<span class="hljs-value">"100"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"progress-meter"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></code></pre></div>
+
+<div class="ss-code-live"><div class="progress progress-" role="progressbar" tabindex="0" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+  <div class="progress-meter"></div>
+</div>
+<div class="progress progress-" role="progressbar" tabindex="0" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
+  <div class="progress-meter"></div>
+</div>
+<div class="progress progress-" role="progressbar" tabindex="0" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+  <div class="progress-meter"></div>
+</div></div><p>We can also add checkpoints with labels and position them with the <code>.progress-checkpoint-[n]</code> class. <em>n</em> represents the how far along the meter you want the checkpoint to be. It&#39;s a number from 0 - 100 in multiples of ten. To give a checkpoint a disabled look and feel, simply add the <code>is-disabled</code> class to the element with the <code>progress-checkpoint</code> class.</p>
+<div class="ss-code"><pre><code class="html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"progress progress-"</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"progressbar"</span> <span class="hljs-attribute">tabindex</span>=<span class="hljs-value">"0"</span> <span class="hljs-attribute">aria-valuenow</span>=<span class="hljs-value">"60"</span> <span class="hljs-attribute">aria-valuemin</span>=<span class="hljs-value">"0"</span> <span class="hljs-attribute">aria-valuemax</span>=<span class="hljs-value">"100"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"progress-meter"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"progress-checkpoint progress-checkpoint-0"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Checkpoint 1<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"progress-checkpoint progress-checkpoint-50"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Checkpoint 2<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"progress-checkpoint progress-checkpoint-100 is-disabled"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Checkpoint 3<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"progress progress-"</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"progressbar"</span> <span class="hljs-attribute">tabindex</span>=<span class="hljs-value">"0"</span> <span class="hljs-attribute">aria-valuenow</span>=<span class="hljs-value">"20"</span> <span class="hljs-attribute">aria-valuemin</span>=<span class="hljs-value">"0"</span> <span class="hljs-attribute">aria-valuemax</span>=<span class="hljs-value">"100"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"progress-meter"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"progress-checkpoint progress-checkpoint-30 is-disabled"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Checkpoint 1<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"progress-checkpoint progress-checkpoint-70 is-disabled"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Checkpoint 2<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></code></pre></div>
+
+<div class="ss-code-live"><div class="progress progress-" role="progressbar" tabindex="0" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+  <div class="progress-meter"></div>
+  <div class="progress-checkpoint progress-checkpoint-0">
+    <p>Checkpoint 1</p>
+  </div>
+  <div class="progress-checkpoint progress-checkpoint-50">
+    <p>Checkpoint 2</p>
+  </div>
+  <div class="progress-checkpoint progress-checkpoint-100 is-disabled">
+    <p>Checkpoint 3</p>
+  </div>
+</div>
+<div class="progress progress-" role="progressbar" tabindex="0" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+  <div class="progress-meter"></div>
+  <div class="progress-checkpoint progress-checkpoint-30 is-disabled">
+    <p>Checkpoint 1</p>
+  </div>
+  <div class="progress-checkpoint progress-checkpoint-70 is-disabled">
+    <p>Checkpoint 2</p>
+  </div>
+</div></div>
             </section>
         </div>
       </div>

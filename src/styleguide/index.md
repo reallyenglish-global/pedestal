@@ -445,5 +445,42 @@ You can also make tabs rounded with the `.tabs-rounded` class.
 
 # Progress Bars
 
+We can create standard progress bars and control the meter with the `aria-valuenow` attribute.
 
+```html_example
+<div class="progress progress-" role="progressbar" tabindex="0" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+  <div class="progress-meter"></div>
+</div>
+<div class="progress progress-" role="progressbar" tabindex="0" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
+  <div class="progress-meter"></div>
+</div>
+<div class="progress progress-" role="progressbar" tabindex="0" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+  <div class="progress-meter"></div>
+</div>
+```
 
+We can also add checkpoints with labels and position them with the `.progress-checkpoint-[n]` class. _n_ represents the how far along the meter you want the checkpoint to be. It's a number from 0 - 100 in multiples of ten. To give a checkpoint a disabled look and feel, simply add the `is-disabled` class to the element with the `progress-checkpoint` class.
+
+```html_example
+<div class="progress progress-" role="progressbar" tabindex="0" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+  <div class="progress-meter"></div>
+  <div class="progress-checkpoint progress-checkpoint-0">
+    <p>Checkpoint 1</p>
+  </div>
+  <div class="progress-checkpoint progress-checkpoint-50">
+    <p>Checkpoint 2</p>
+  </div>
+  <div class="progress-checkpoint progress-checkpoint-100 is-disabled">
+    <p>Checkpoint 3</p>
+  </div>
+</div>
+<div class="progress progress-" role="progressbar" tabindex="0" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+  <div class="progress-meter"></div>
+  <div class="progress-checkpoint progress-checkpoint-30 is-disabled">
+    <p>Checkpoint 1</p>
+  </div>
+  <div class="progress-checkpoint progress-checkpoint-70 is-disabled">
+    <p>Checkpoint 2</p>
+  </div>
+</div>
+```
