@@ -4,5 +4,5 @@ node_modules
 .DS_Store
 bower_components
 scss-report.json
-tests/screenschots
+tests/screenshots
 tests/failures
