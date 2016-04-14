@@ -10469,7 +10469,7 @@ Foundation.Motion = Motion;
         timer;
 
     this.isPaused = false;
-
+    
     this.restart = function(){
       remain = -1;
       clearTimeout(timer);

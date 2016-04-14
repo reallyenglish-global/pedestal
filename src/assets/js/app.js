@@ -1,5 +1,4 @@
 (function() {
-  $(document).foundation();
   var $frame = $('.day-picker-frame');
   var $wrap  = $frame.parent();
 
