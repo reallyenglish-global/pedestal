@@ -10,6 +10,7 @@ var scsslint     = require('gulp-scss-lint');
 var gutil        = require('gulp-util');
 var autoprefixer = require('gulp-autoprefixer');
 var base64       = require('gulp-css-base64');
+var sherpa       = require('style-sherpa');
 
 // Port to use for the development server.
 var PORT = 8000;
@@ -98,6 +99,14 @@ gulp.task('pages:reset', function(done) {
 	done();
 });
 
+// Generate a style guide from the Markdown content and HTML template in styleguide/
+gulp.task('styleguide', function(done) {
+  sherpa('src/styleguide/index.md', {
+    output: 'dist/styleguide.html',
+    template: 'src/styleguide/template.html'
+  }, done);
+});
+
 gulp.task('scss-lint', function() {
 	return gulp.src('./src/assets/scss/**/*.scss')
 	.pipe(scsslint({
@@ -164,7 +173,7 @@ gulp.task('images', function() {
 
 // Build the "dist" folder by running all of the above tasks
 gulp.task('build', function(done) {
-	sequence('clean', ['pages', 'javascript', 'images', 'copy'], 'base64', done);
+	sequence('clean', ['pages', 'javascript', 'images', 'copy'], 'base64', 'styleguide', done);
 });
 
 // Start a server with LiveReload to preview the site in
@@ -182,4 +191,5 @@ gulp.task('default', ['build', 'server'], function() {
 	gulp.watch(['src/assets/scss/**/{*.scss, *.sass}'], ['base64']);
 	gulp.watch(['src/assets/js/**/*.js'], ['javascript']);
 	gulp.watch(['src/assets/images/**/*'], ['images']);
+	gulp.watch(['src/styleguide/**/*'], ['styleguide']);
 });

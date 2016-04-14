@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Booking System Template Style Guide</title>
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/styles/github.min.css">
+
+    <!-- Style guide-specific CSS goes here. -->
+    <style>
+    /* This styles the vertical tabs used for the table of contents. */
+    .tabs.vertical {
+      width: 100%;
+      max-width: 100%;
+    }
+    /* This styles code blocks used for examples. */
+    .ss-code code {
+      display: block;
+      padding: 1rem;
+      overflow-x: scroll;
+      margin-bottom: 1.5rem;
+    }
+    /* This styles the example rows used in the grid documentation. */
+    .row.display {
+      background: #eee;
+      font-size: 11px;
+      margin-bottom: 10px;
+      line-height: 2rem;
+      border: solid 1px #c6c6c6;
+      margin-left: 0 !important;
+      margin-right: 0 !important; }
+      .row.display .columns:nth-child(2), .row.display .columns.small-centered, .row.display .columns.large-centered {
+        background: #e1e1e1; }
+      .row.display .columns.color-end {
+        background: #d4d4d4; }
+    /* This styles the color blocks used in the color documentation. */
+    .color-block {
+      border-radius: 2px;
+      display: block;
+      padding: 8px 8px 6px;
+      color: #333;
+      text-transform: uppercase;
+      border: 1px solid #ddd;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    }
+      .color-block span {
+        display: block;
+        width: 100%;
+        height: 100px;
+        margin-bottom: 0.42857rem;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div class="column row">
+      <h1>Booking System Template Style Guide</h1>
+      <p class="lead">This is a style guide for the Booking System Template which was built with Foundation for Sites. SInce most features directly come from Foundation for Sites, we recommend you read that documentation first which can be found <a href="http://foundation.zurb.com/docs/">here</a>. This style guide just contains extra features which can added through the Booking System Template.</p>
+    </div>
+
+    <div class="column row"><div class="row collapse">
+
+      <div class="large-3 medium-4 columns">
+        <ul class="vertical tabs" data-tabs id="ss-sections">
+          {{#each pages}}
+            <li {{#if @first}}class="tabs-title is-active" aria-selected="true"{{else}}class="tabs-title"{{/if}}><a href="#{{ anchor }}">{{ title }}</a></li>
+          {{/each}}
+        </ul>
+      </div>
+
+      <div class="large-9 medium-8 columns" data-tabs-content="ss-sections">
+        <div class="tabs-content vertical">
+          {{#each pages}}
+            <section class="tabs-panel callout {{#if @first}}is-active{{/if}}" id="{{ anchor }}">
+              {{ body }}
+            </section>
+          {{/each}}
+        </div>
+      </div>
+
+    </div></div>
+
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>

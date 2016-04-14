@@ -34,12 +34,11 @@
   color: $body-font-color;
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
-  margin-top: 0.8rem;
   font-size: 0.8rem;
   display: inline-block;
   vertical-align: top;
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 
   > .icon-arrow-down {
     margin-left: 0.25rem;
@@ -52,16 +51,16 @@
 
   &:hover,
   &:focus {
-    background-color: darken(#fffcef, 10%);
+    background-color: #fffcef;
     color: $body-font-color;
   }
 }
 
 .button-booked {
-  background-color: #9bcbde;
+  background-color: $booked-alt-color;
 }
 
-.button-round {
+.button-rounded {
   border-radius: 1000px;
 }
 

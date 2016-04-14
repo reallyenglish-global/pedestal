@@ -2,8 +2,8 @@
   margin-bottom: 1rem;
 
   &.is-unbooked .lesson:nth-child(3) {
-    box-shadow: inset 0 -6px 0 -2px $booked-lesson-color,
-    inset 0 -7px 0 -2px $booked-lesson-color;
+    box-shadow: inset 0 -6px 0 -2px $booked-color,
+    inset 0 -7px 0 -2px $booked-color;
   }
 }
 
@@ -14,19 +14,13 @@
   padding: 0.8rem 0.5rem;
 
   &.is-booked {
-    background-color: $booked-lesson-color;
+    background-color: $booked-color;
   }
 
   &.is-complete {
-    background-color: #ecf7f2;
-    padding: 0 0.5rem;
-
-    time,
-    .lesson-avatar,
-    .lesson-feedback-status {
-      margin-top: 1rem;
-      margin-bottom: 1rem;
-    }
+    background-color: $complete-color;
+    // padding: 0 0.5rem;
+    padding-bottom: 0;
 
     time {
       display: inline-block;
@@ -35,7 +29,7 @@
   }
 
   &.is-incomplete {
-    background-color: #f4e9e2;
+    background-color: $incomplete-color;
 
     time {
       color: #dda989;
@@ -43,7 +37,7 @@
   }
 
   &.is-cancelled {
-    background-color: #eee1e6;
+    background-color: $cancelled-color;
 
     time {
       color: #d09baf;
