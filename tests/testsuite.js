@@ -93,34 +93,13 @@ casper.test.begin('Booking system template visual tests', function (test) {
     // casper.click('button[data-open="bookModal"]');
   });
 
-
-      // {
-      //   "label": "Book a lesson page",
-      //   "url": "../../dist/booking.html",
-      //   "hideSelectors": [],
-      //   "removeSelectors": [],
-      //   "selectors": [
-
-      //   ],
-      //   "readyEvent": null,
-      //   "delay": 0,
-      //   "onBeforeScript": null,
-      //   "onReadyScript": null
-      // },
-      // {
-      //   "label": "How to Study page - Getting Started tab",
-      //   "url": "../../dist/how-to-study.html",
-      //   "hideSelectors": [],
-      //   "removeSelectors": [],
-      //   "selectors": [
-      //     ".tabs",
-      //     "#get-started"
-      //   ],
-      //   "readyEvent": null,
-      //   "delay": 0,
-      //   "onBeforeScript": null,
-      //   "onReadyScript": null
-      // }
+  casper.then(function() {
+    casper.click('a[href="how-to-study.html"]');
+    phantomcss.screenshot('.tabs', 'Tabs in Get Started page');
+    phantomcss.screenshot('#get-started', 'Get Started Panel');
+    phantomcss.screenshot('#get-started > .callout:first-of-type', 'Intro to Get Started');
+    phantomcss.screenshot('#get-started > .callout:nth-of-type(2)', 'Step of Get Started');
+  });
 
   casper.then(function now_check_the_screenshots() {
     phantomcss.compareAll();
