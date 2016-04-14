@@ -56,7 +56,7 @@
 
     <div class="column row">
       <h1>Booking System Template Style Guide</h1>
-      <p class="lead">This style guide was built with Foundation for Sites. For more information on how to use this responsive front-end framework, check out the documentation <a href="http://foundation.zurb.com/docs/">here</a>.</p>
+      <p class="lead">This is a style guide for the Booking System Template which was built with Foundation for Sites. SInce most features directly come from Foundation for Sites, we recommend you read that documentation first which can be found <a href="http://foundation.zurb.com/docs/">here</a>. This style guide just contains extra features which can added through the Booking System Template.</p>
     </div>
 
     <div class="column row"><div class="row collapse">
@@ -72,6 +72,7 @@
             <li class="tabs-title"><a href="#callouts">Callouts</a></li>
             <li class="tabs-title"><a href="#tabs">Tabs</a></li>
             <li class="tabs-title"><a href="#progress-bars">Progress Bars</a></li>
+            <li class="tabs-title"><a href="#lessons">Lessons</a></li>
         </ul>
       </div>
 
@@ -310,12 +311,12 @@
 
 <div class="ss-code-live"><a href="#" class="button button-alt">Alternate button</a>
 <a href="#" class="button button-booked">Booked button</a></div><hr>
-<h2>Round and Circle Buttons</h2><div class="ss-code"><pre><code class="html"><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button button-primary button-round"</span>&gt;</span>Rounded button<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+<h2>Round and Circle Buttons</h2><div class="ss-code"><pre><code class="html"><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button button-primary button-rounded"</span>&gt;</span>Rounded button<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button button-alt button-circle"</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"icon icon-question-mark"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span></code></pre></div>
 
-<div class="ss-code-live"><a href="#" class="button button-primary button-round">Rounded button</a>
+<div class="ss-code-live"><a href="#" class="button button-primary button-rounded">Rounded button</a>
 <a href="#" class="button button-alt button-circle">
   <span class="icon icon-question-mark"></span>
 </a></div>
@@ -498,6 +499,199 @@
   <div class="progress-checkpoint progress-checkpoint-70 is-disabled">
     <p>Checkpoint 2</p>
   </div>
+</div></div>
+            </section>
+            <section class="tabs-panel callout " id="lessons">
+              <h1>Lessons</h1><p>Lessons are components which can display lesson information to a user. They are normally grouped together using the <code>.lesson-set</code> and <code>.lesson</code> classes.</p>
+<div class="ss-code"><pre><code class="html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"lesson-set"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"callout callout-info row small-collapse medium-uncollapse lesson"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"small-2 medium-1 columns"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"icon icon-speaking"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"small-10 medium-5 columns title"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">strong</span>&gt;</span>Talking about a trip<span class="hljs-tag">&lt;/<span class="hljs-title">strong</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"small-offset-2 small-10 medium-4 medium-offset-0 large-offset-3 large-2 columns"</span>&gt;</span>スピーキング<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"small-offset-10 small-2 medium-offset-0 medium-1 small-collapse large-uncollapse columns"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"font-weight-bold"</span>&gt;</span>PDF<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"icon icon-download hide-for-medium-only"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"callout callout-info row small-collapse medium-uncollapse lesson"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"small-offset-2 small-10 medium-3 medium-offset-1 columns"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"lesson-avatar hide-for-small-only"</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"assets/images/avatar.png"</span>&gt;</span>
+      Simon
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"small-offset-2 small-10 medium-4 medium-offset-0 large-3 large-offset-2 columns end"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"icon icon-calendar hide-for-small-only"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">time</span>&gt;</span>11:30pm <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"lesson-date"</span>&gt;</span> 02/07/2016<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">time</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"medium-2 small-collapse large-uncollapse columns text-right"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"text-secondary text-underline font-weight-bold"</span>&gt;</span>Cancel<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></code></pre></div>
+
+<div class="ss-code-live"><div class="lesson-set">
+  <div class="callout callout-info row small-collapse medium-uncollapse lesson">
+    <div class="small-2 medium-1 columns">
+      <span class="icon icon-speaking"></span>
+    </div>
+      <div class="small-10 medium-5 columns title"><strong>Talking about a trip</strong></div>
+      <div class="small-offset-2 small-10 medium-4 medium-offset-0 large-offset-3 large-2 columns">スピーキング</div>
+      <div class="small-offset-10 small-2 medium-offset-0 medium-1 small-collapse large-uncollapse columns">
+        <a href="#" class="font-weight-bold">PDF</a>
+        <span class="icon icon-download hide-for-medium-only"></span>
+      </div>
+  </div>
+  <div class="callout callout-info row small-collapse medium-uncollapse lesson">
+    <div class="small-offset-2 small-10 medium-3 medium-offset-1 columns">
+      <img class="lesson-avatar hide-for-small-only" src="assets/images/avatar.png">
+      Simon
+    </div>
+    <div class="small-offset-2 small-10 medium-4 medium-offset-0 large-3 large-offset-2 columns end">
+      <span class="icon icon-calendar hide-for-small-only"></span>
+      <time>11:30pm <span class="lesson-date"> 02/07/2016</span></time>
+    </div>
+      <div class="medium-2 small-collapse large-uncollapse columns text-right">
+        <a href="#" class="text-secondary text-underline font-weight-bold">Cancel</a>
+      </div>
+    </div>
+</div></div><p>Lessons can also have different colour variations to show different states using the <code>is-booked</code>, <code>is-complete</code>, <code>is-cancelled</code> and <code>is-incomplete</code> classes.</p>
+<div class="ss-code"><pre><code class="html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"lesson-set"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"callout callout-info row small-collapse medium-uncollapse lesson"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"small-2 medium-1 columns"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"icon icon-speaking"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"small-10 medium-5 columns title"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">strong</span>&gt;</span>Talking about a trip<span class="hljs-tag">&lt;/<span class="hljs-title">strong</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"callout callout-info row small-collapse medium-uncollapse lesson is-booked"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"small-offset-2 small-10 medium-4 medium-offset-0 large-3 large-offset-2 columns end"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"icon icon-calendar hide-for-small-only"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">time</span>&gt;</span>11:30pm <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"lesson-date"</span>&gt;</span> 02/07/2016<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">time</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"medium-2 small-collapse large-uncollapse columns text-right"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"text-secondary text-underline font-weight-bold"</span>&gt;</span>Cancel<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"lesson-set"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"callout callout-info row small-collapse medium-uncollapse lesson"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"small-2 medium-1 columns"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"icon icon-speaking"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"small-10 medium-5 columns title"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">strong</span>&gt;</span>Talking about a trip<span class="hljs-tag">&lt;/<span class="hljs-title">strong</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"callout callout-info row small-collapse medium-uncollapse lesson is-complete"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"small-offset-2 small-10 medium-4 medium-offset-0 large-3 large-offset-2 columns end"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"icon icon-calendar hide-for-small-only"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">time</span>&gt;</span>11:30pm <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"lesson-date"</span>&gt;</span> 02/07/2016<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">time</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"medium-2 small-collapse large-uncollapse columns text-right"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Feedback!<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"lesson-set"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"callout callout-info row small-collapse medium-uncollapse lesson"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"small-2 medium-1 columns"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"icon icon-speaking"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"small-10 medium-5 columns title"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">strong</span>&gt;</span>Talking about a trip<span class="hljs-tag">&lt;/<span class="hljs-title">strong</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"callout callout-info row small-collapse medium-uncollapse lesson is-incomplete"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"small-offset-2 small-10 medium-4 medium-offset-0 large-3 large-offset-2 columns end"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"icon icon-calendar hide-for-small-only"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">time</span>&gt;</span>11:30pm <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"lesson-date"</span>&gt;</span> 02/07/2016<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">time</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"medium-2 small-collapse large-uncollapse columns text-right"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"text-secondary text-underline font-weight-bold"</span>&gt;</span>Cancel<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"lesson-set"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"callout callout-info row small-collapse medium-uncollapse lesson"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"small-2 medium-1 columns"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"icon icon-speaking"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"small-10 medium-5 columns title"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">strong</span>&gt;</span>Talking about a trip<span class="hljs-tag">&lt;/<span class="hljs-title">strong</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"callout callout-info row small-collapse medium-uncollapse lesson is-cancelled"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"small-offset-2 small-10 medium-4 medium-offset-0 large-3 large-offset-2 columns end"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"icon icon-cancel hide-for-small-only"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">time</span>&gt;</span>11:30pm <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"lesson-date"</span>&gt;</span> 02/07/2016<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">time</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"medium-2 small-collapse large-uncollapse columns text-right"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"text-secondary text-underline font-weight-bold"</span>&gt;</span>Cancel<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></code></pre></div>
+
+<div class="ss-code-live"><div class="lesson-set">
+  <div class="callout callout-info row small-collapse medium-uncollapse lesson">
+    <div class="small-2 medium-1 columns">
+      <span class="icon icon-speaking"></span>
+    </div>
+      <div class="small-10 medium-5 columns title"><strong>Talking about a trip</strong></div>
+  </div>
+  <div class="callout callout-info row small-collapse medium-uncollapse lesson is-booked">
+    <div class="small-offset-2 small-10 medium-4 medium-offset-0 large-3 large-offset-2 columns end">
+      <span class="icon icon-calendar hide-for-small-only"></span>
+      <time>11:30pm <span class="lesson-date"> 02/07/2016</span></time>
+    </div>
+      <div class="medium-2 small-collapse large-uncollapse columns text-right">
+        <a href="#" class="text-secondary text-underline font-weight-bold">Cancel</a>
+      </div>
+    </div>
+</div>
+<div class="lesson-set">
+  <div class="callout callout-info row small-collapse medium-uncollapse lesson">
+    <div class="small-2 medium-1 columns">
+      <span class="icon icon-speaking"></span>
+    </div>
+      <div class="small-10 medium-5 columns title"><strong>Talking about a trip</strong></div>
+  </div>
+  <div class="callout callout-info row small-collapse medium-uncollapse lesson is-complete">
+    <div class="small-offset-2 small-10 medium-4 medium-offset-0 large-3 large-offset-2 columns end">
+      <span class="icon icon-calendar hide-for-small-only"></span>
+      <time>11:30pm <span class="lesson-date"> 02/07/2016</span></time>
+    </div>
+      <div class="medium-2 small-collapse large-uncollapse columns text-right">
+        <p>Feedback!</p>
+      </div>
+    </div>
+</div>
+<div class="lesson-set">
+  <div class="callout callout-info row small-collapse medium-uncollapse lesson">
+    <div class="small-2 medium-1 columns">
+      <span class="icon icon-speaking"></span>
+    </div>
+      <div class="small-10 medium-5 columns title"><strong>Talking about a trip</strong></div>
+  </div>
+  <div class="callout callout-info row small-collapse medium-uncollapse lesson is-incomplete">
+    <div class="small-offset-2 small-10 medium-4 medium-offset-0 large-3 large-offset-2 columns end">
+      <span class="icon icon-calendar hide-for-small-only"></span>
+      <time>11:30pm <span class="lesson-date"> 02/07/2016</span></time>
+    </div>
+      <div class="medium-2 small-collapse large-uncollapse columns text-right">
+        <a href="#" class="text-secondary text-underline font-weight-bold">Cancel</a>
+      </div>
+    </div>
+</div>
+<div class="lesson-set">
+  <div class="callout callout-info row small-collapse medium-uncollapse lesson">
+    <div class="small-2 medium-1 columns">
+      <span class="icon icon-speaking"></span>
+    </div>
+      <div class="small-10 medium-5 columns title"><strong>Talking about a trip</strong></div>
+  </div>
+  <div class="callout callout-info row small-collapse medium-uncollapse lesson is-cancelled">
+    <div class="small-offset-2 small-10 medium-4 medium-offset-0 large-3 large-offset-2 columns end">
+      <span class="icon icon-cancel hide-for-small-only"></span>
+      <time>11:30pm <span class="lesson-date"> 02/07/2016</span></time>
+    </div>
+      <div class="medium-2 small-collapse large-uncollapse columns text-right">
+        <a href="#" class="text-secondary text-underline font-weight-bold">Cancel</a>
+      </div>
+    </div>
 </div></div>
             </section>
         </div>

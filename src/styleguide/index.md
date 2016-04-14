@@ -304,7 +304,7 @@ There are many different button colour variations that can be used on a page.
 ## Round and Circle Buttons
 
 ```html_example
-<a href="#" class="button button-primary button-round">Rounded button</a>
+<a href="#" class="button button-primary button-rounded">Rounded button</a>
 <a href="#" class="button button-alt button-circle">
   <span class="icon icon-question-mark"></span>
 </a>
@@ -482,5 +482,113 @@ We can also add checkpoints with labels and position them with the `.progress-ch
   <div class="progress-checkpoint progress-checkpoint-70 is-disabled">
     <p>Checkpoint 2</p>
   </div>
+</div>
+```
+
+
+
+# Lessons
+
+Lessons are components which can display lesson information to a user. They are normally grouped together using the `.lesson-set` and `.lesson` classes.
+
+```html_example
+<div class="lesson-set">
+  <div class="callout callout-info row small-collapse medium-uncollapse lesson">
+    <div class="small-2 medium-1 columns">
+      <span class="icon icon-speaking"></span>
+    </div>
+      <div class="small-10 medium-5 columns title"><strong>Talking about a trip</strong></div>
+      <div class="small-offset-2 small-10 medium-4 medium-offset-0 large-offset-3 large-2 columns">スピーキング</div>
+      <div class="small-offset-10 small-2 medium-offset-0 medium-1 small-collapse large-uncollapse columns">
+        <a href="#" class="font-weight-bold">PDF</a>
+        <span class="icon icon-download hide-for-medium-only"></span>
+      </div>
+  </div>
+  <div class="callout callout-info row small-collapse medium-uncollapse lesson">
+    <div class="small-offset-2 small-10 medium-3 medium-offset-1 columns">
+      <img class="lesson-avatar hide-for-small-only" src="assets/images/avatar.png">
+      Simon
+    </div>
+    <div class="small-offset-2 small-10 medium-4 medium-offset-0 large-3 large-offset-2 columns end">
+      <span class="icon icon-calendar hide-for-small-only"></span>
+      <time>11:30pm <span class="lesson-date"> 02/07/2016</span></time>
+    </div>
+      <div class="medium-2 small-collapse large-uncollapse columns text-right">
+        <a href="#" class="text-secondary text-underline font-weight-bold">Cancel</a>
+      </div>
+    </div>
+</div>
+```
+
+Lessons can also have different colour variations to show different states using the `is-booked`, `is-complete`, `is-cancelled` and `is-incomplete` classes.
+
+```html_example
+<div class="lesson-set">
+  <div class="callout callout-info row small-collapse medium-uncollapse lesson">
+    <div class="small-2 medium-1 columns">
+      <span class="icon icon-speaking"></span>
+    </div>
+      <div class="small-10 medium-5 columns title"><strong>Talking about a trip</strong></div>
+  </div>
+  <div class="callout callout-info row small-collapse medium-uncollapse lesson is-booked">
+    <div class="small-offset-2 small-10 medium-4 medium-offset-0 large-3 large-offset-2 columns end">
+      <span class="icon icon-calendar hide-for-small-only"></span>
+      <time>11:30pm <span class="lesson-date"> 02/07/2016</span></time>
+    </div>
+      <div class="medium-2 small-collapse large-uncollapse columns text-right">
+        <a href="#" class="text-secondary text-underline font-weight-bold">Cancel</a>
+      </div>
+    </div>
+</div>
+<div class="lesson-set">
+  <div class="callout callout-info row small-collapse medium-uncollapse lesson">
+    <div class="small-2 medium-1 columns">
+      <span class="icon icon-speaking"></span>
+    </div>
+      <div class="small-10 medium-5 columns title"><strong>Talking about a trip</strong></div>
+  </div>
+  <div class="callout callout-info row small-collapse medium-uncollapse lesson is-complete">
+    <div class="small-offset-2 small-10 medium-4 medium-offset-0 large-3 large-offset-2 columns end">
+      <span class="icon icon-calendar hide-for-small-only"></span>
+      <time>11:30pm <span class="lesson-date"> 02/07/2016</span></time>
+    </div>
+      <div class="medium-2 small-collapse large-uncollapse columns text-right">
+        <p>Feedback!</p>
+      </div>
+    </div>
+</div>
+<div class="lesson-set">
+  <div class="callout callout-info row small-collapse medium-uncollapse lesson">
+    <div class="small-2 medium-1 columns">
+      <span class="icon icon-speaking"></span>
+    </div>
+      <div class="small-10 medium-5 columns title"><strong>Talking about a trip</strong></div>
+  </div>
+  <div class="callout callout-info row small-collapse medium-uncollapse lesson is-incomplete">
+    <div class="small-offset-2 small-10 medium-4 medium-offset-0 large-3 large-offset-2 columns end">
+      <span class="icon icon-calendar hide-for-small-only"></span>
+      <time>11:30pm <span class="lesson-date"> 02/07/2016</span></time>
+    </div>
+      <div class="medium-2 small-collapse large-uncollapse columns text-right">
+        <a href="#" class="text-secondary text-underline font-weight-bold">Cancel</a>
+      </div>
+    </div>
+</div>
+<div class="lesson-set">
+  <div class="callout callout-info row small-collapse medium-uncollapse lesson">
+    <div class="small-2 medium-1 columns">
+      <span class="icon icon-speaking"></span>
+    </div>
+      <div class="small-10 medium-5 columns title"><strong>Talking about a trip</strong></div>
+  </div>
+  <div class="callout callout-info row small-collapse medium-uncollapse lesson is-cancelled">
+    <div class="small-offset-2 small-10 medium-4 medium-offset-0 large-3 large-offset-2 columns end">
+      <span class="icon icon-cancel hide-for-small-only"></span>
+      <time>11:30pm <span class="lesson-date"> 02/07/2016</span></time>
+    </div>
+      <div class="medium-2 small-collapse large-uncollapse columns text-right">
+        <a href="#" class="text-secondary text-underline font-weight-bold">Cancel</a>
+      </div>
+    </div>
 </div>
 ```

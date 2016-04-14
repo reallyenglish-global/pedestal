@@ -19,14 +19,8 @@
 
   &.is-complete {
     background-color: $complete-color;
-    padding: 0 0.5rem;
-
-    time,
-    .lesson-avatar,
-    .lesson-feedback-status {
-      margin-top: 1rem;
-      margin-bottom: 1rem;
-    }
+    // padding: 0 0.5rem;
+    padding-bottom: 0;
 
     time {
       display: inline-block;
