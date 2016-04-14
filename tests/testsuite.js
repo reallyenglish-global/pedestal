@@ -21,6 +21,7 @@ phantomcss.init({
   onComplete: function completeCallback(){},
   hideElements: '#thing.selector',
   addLabelToFailedImage: true,
+  */
   outputSettings: {
     errorColor: {
       red: 255,
@@ -29,7 +30,7 @@ phantomcss.init({
     },
     errorType: 'movement',
     transparency: 0.3
-  }*/
+  }
 });
 
 casper.test.begin('Booking system template visual tests', function (test) {
@@ -61,65 +62,29 @@ casper.test.begin('Booking system template visual tests', function (test) {
   });
 
   casper.then(function() {
-
+    casper.click('#booked-lessons-button');
+    phantomcss.screenshot('#lesson-table-tabs', 'Tabs for the Booked Lessons page');
+    phantomcss.screenshot('#current-bookings-panel > .lesson-set:first-of-type', 'Booked lessons set');
   });
 
-      // {
-      //   "label": "Homepage - Booked Lessons tab - Current Bookings",
-      //   "url": "../../dist/index.html",
-      //   "hideSelectors": [],
-      //   "removeSelectors": [],
-      //   "selectors": [
-      //     "#lesson-table-tabs",
-      //     "#current-bookings-panel > .lesson-set:first-of-type"
-      //   ],
-      //   "readyEvent": null,
-      //   "delay": 0,
-      //   "onBeforeScript": null,
-      //   "onReadyScript": "selectBookedLessonTab"
-      // },
-      // {
-      //   "label": "Homepage - Booked Lessons tab - Completed Bookings",
-      //   "url": "../../dist/index.html",
-      //   "hideSelectors": [],
-      //   "removeSelectors": [],
-      //   "selectors": [
-      //     "#lesson-table-tabs",
-      //     "#completed-lessons-panel > .lesson-set:first-of-type"
-      //   ],
-      //   "readyEvent": null,
-      //   "delay": 0,
-      //   "onBeforeScript": null,
-      //   "onReadyScript": "selectCompletedLessonsTab"
-      // },
-      // {
-      //   "label": "Homepage - Booked Lessons tab - Incompleted Bookings",
-      //   "url": "../../dist/index.html",
-      //   "hideSelectors": [],
-      //   "removeSelectors": [],
-      //   "selectors": [
-      //     "#lesson-table-tabs",
-      //     "#incompleted-lessons-panel > .lesson-set:first-of-type"
-      //   ],
-      //   "readyEvent": null,
-      //   "delay": 0,
-      //   "onBeforeScript": null,
-      //   "onReadyScript": "selectIncompletedLessonTab"
-      // },
-      // {
-      //   "label": "Homepage - Booked Lessons tab - Cancelled Bookings",
-      //   "url": "../../dist/index.html",
-      //   "hideSelectors": [],
-      //   "removeSelectors": [],
-      //   "selectors": [
-      //     "#lesson-table-tabs",
-      //     "#cancelled-lessons-panel > .lesson-set:first-of-type"
-      //   ],
-      //   "readyEvent": null,
-      //   "delay": 0,
-      //   "onBeforeScript": null,
-      //   "onReadyScript": "selectCancelledLessonTab"
-      // },
+  casper.then(function() {
+    casper.click('#completed-lessons-button');
+    phantomcss.screenshot('#completed-lessons-panel > .lesson-set:first-of-type', 'Completed lessons set');
+    casper.click('#completed-lessons-panel > .lesson-set:first-of-type .show-feedback');
+    phantomcss.screenshot('#completed-lessons-panel > .lesson-set:first-of-type .lesson-assessment-feedback', 'Assessment Feedback')
+  });
+
+  casper.then(function() {
+    casper.click('#incompleted-lessons-button');
+    phantomcss.screenshot('#incompleted-lessons-panel > .lesson-set:first-of-type', 'Incompleted lessons set');
+  });
+
+  casper.then(function() {
+    casper.click('#cancelled-lessons-button');
+    phantomcss.screenshot('#cancelled-lessons-panel > .lesson-set:first-of-type', 'Cancelled lessons set');
+  });
+
+
       // {
       //   "label": "Book a lesson page",
       //   "url": "../../dist/booking.html",
