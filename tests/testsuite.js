@@ -29,7 +29,7 @@ phantomcss.init({
       blue: 0
     },
     errorType: 'movement',
-    transparency: 0.3
+    transparency: 0.45
   }
 });
 
@@ -84,6 +84,15 @@ casper.test.begin('Booking system template visual tests', function (test) {
     phantomcss.screenshot('#cancelled-lessons-panel > .lesson-set:first-of-type', 'Cancelled lessons set');
   });
 
+  casper.then(function() {
+    casper.click('a[href="booking.html"]');
+    phantomcss.screenshot('.day-picker', 'Day Picker');
+    phantomcss.screenshot('.pagination', 'Pagination');
+    phantomcss.screenshot('.row.small-up-4.medium-up-7', 'Row of Teachers');
+    phantomcss.screenshot('.callout > .booking-row:last-of-type', 'Booking Row');
+    // casper.click('button[data-open="bookModal"]');
+  });
+
 
       // {
       //   "label": "Book a lesson page",
@@ -91,10 +100,7 @@ casper.test.begin('Booking system template visual tests', function (test) {
       //   "hideSelectors": [],
       //   "removeSelectors": [],
       //   "selectors": [
-      //     ".day-picker",
-      //     ".pagination",
-      //     ".row.small-up-4.medium-up-7",
-      //     ".callout > .booking-row:last-of-type"
+
       //   ],
       //   "readyEvent": null,
       //   "delay": 0,
