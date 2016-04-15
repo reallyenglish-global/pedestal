@@ -39,16 +39,30 @@ Also we need to install our npm dependencies too:
 npm install
 ```
 
-To run the project, just run the following command:
+To start the web server and run the project, just run the following command:
 
 ```bash
-gulp
+npm start
 ```
 
 Once it has all been compiled you can see an example application via this URL:
 
 <http://localhost:8000>
 
-###Modular CSS
+### Styleguide/Documentation
+
+After starting the web server, you can find the styleguide at this URL:
+
+<http://localhost:8000/styleguide>
+
+### Modular CSS
 
 Booking System Template uses the [SMACSS](https://smacss.com/) methodology to keep it's CSS modular.
+
+### Testing
+
+We [PhantomCSS](https://github.com/Huddle/PhantomCSS) to create visual regression tests. To run these tests, firstly our web server need to be up and then you simply run:
+
+```bash
+npm test
+```

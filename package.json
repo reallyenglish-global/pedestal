@@ -28,9 +28,9 @@
     "yargs": "^4.1.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "casperjs test tests/testsuite.js",
     "lint": "gulp scss-lint-check",
-    "validate": "npm ls"
+    "start": "gulp"
   },
   "repository": {
     "type": "git",
