@@ -117,12 +117,47 @@ casper.test.begin('Booking system template visual tests', function(test) {
         function timeout() {
           casper.test.fail( 'Error with FAQ panel' );
         }
-      )
+        );
     });
 
     casper.then(function() {
       casper.click('a[data-open="feedbackModal"]');
       phantomcss.screenshot('#feedbackModal', 'Feedback modal');
+      casper.click('.reveal-overlay');
+    });
+
+    casper.then(function() {
+      casper.click('a[data-open="skypeModal1"]');
+      casper.waitForSelector('#skypeModal1[style*="display: block"]',
+        function success() {
+          phantomcss.screenshot('#skypeModal1', 'First skype modal');
+        },
+        function timeout() {
+          casper.test.fail('Error with Skype Modal 1');
+        }
+      );
+    });
+    casper.then(function() {
+      casper.click('a[data-open="skypeModal2"]');
+      casper.waitForSelector('#skypeModal2[style*="display: block"]',
+        function success() {
+          phantomcss.screenshot('#skypeModal2', 'Second skype modal');
+        },
+        function timeout() {
+          casper.test.fail('Error with Skype Modal 2');
+        }
+      );
+    });
+    casper.then(function() {
+      casper.click('a[data-open="skypeModal3"]');
+      casper.waitForSelector('#skypeModal3[style*="display: block"]',
+        function success() {
+          phantomcss.screenshot('#skypeModal3', 'Third skype modal');
+        },
+        function timeout() {
+          casper.test.fail('Error with Skype Modal 3');
+        }
+        );
     });
 
     casper.then(function now_check_the_screenshots() {
