@@ -47,7 +47,7 @@ casper.test.begin('Booking system template visual tests', function(test) {
 
     casper.start('http://localhost:8000');
 
-    casper.viewport(1024, 768);
+    casper.viewport(1280, 1024);
 
     casper.then(function() {
       phantomcss.screenshot('header', 'Header Nav');
@@ -90,8 +90,19 @@ casper.test.begin('Booking system template visual tests', function(test) {
       phantomcss.screenshot('.pagination', 'Pagination');
       phantomcss.screenshot('.row.small-up-4.medium-up-7', 'Row of Teachers');
       phantomcss.screenshot('.callout > .booking-row:last-of-type', 'Booking Row');
-    // casper.click('button[data-open="bookModal"]');
-  });
+    });
+
+    casper.then(function() {
+      casper.click('.callout > .booking-row:last-of-type [data-open="bookModal"]');
+      casper.waitForSelector('#bookModal[style*="display: block"]',
+          function success() {
+            phantomcss.screenshot('#bookModal', 'Book Modal');
+          },
+          function timeout() {
+            casper.test.fail('Error with Booking modal');
+          }
+      );
+    });
 
     casper.then(function() {
       casper.click('a[href="how-to-study.html"]');
@@ -115,9 +126,9 @@ casper.test.begin('Booking system template visual tests', function(test) {
           phantomcss.screenshot('#faq > .callout:nth-of-type(4) .faq-answer', 'Answer of FAQ Question');
         },
         function timeout() {
-          casper.test.fail( 'Error with FAQ panel' );
+          casper.test.fail('Error with FAQ panel');
         }
-        );
+      );
     });
 
     casper.then(function() {
