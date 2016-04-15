@@ -61,7 +61,7 @@ Booking System Template uses the [SMACSS](https://smacss.com/) methodology to ke
 
 ### Testing
 
-We [PhantomCSS](https://github.com/Huddle/PhantomCSS) to create visual regression tests. To run these tests, firstly our web server need to be up and then you simply run:
+We use [PhantomCSS](https://github.com/Huddle/PhantomCSS) to create visual regression tests. To run these tests, firstly our web server need to be up and then you simply run:
 
 ```bash
 npm test
