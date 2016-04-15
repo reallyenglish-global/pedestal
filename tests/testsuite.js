@@ -120,6 +120,11 @@ casper.test.begin('Booking system template visual tests', function(test) {
       )
     });
 
+    casper.then(function() {
+      casper.click('a[data-open="feedbackModal"]');
+      phantomcss.screenshot('#feedbackModal', 'Feedback modal');
+    });
+
     casper.then(function now_check_the_screenshots() {
       phantomcss.compareAll();
     });
