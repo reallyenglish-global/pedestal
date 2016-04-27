@@ -53,7 +53,7 @@ Once it has all been compiled you can see an example application via this URL:
 
 After starting the web server, you can find the styleguide at this URL:
 
-<http://localhost:8000/styleguide>
+<http://localhost:8000/styleguide.html>
 
 ### Modular CSS
 
