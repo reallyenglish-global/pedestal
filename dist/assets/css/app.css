@@ -3637,6 +3637,11 @@ ul {
   font-weight: 400;
   font-size: 1rem; }
 
+.menu .active > a {
+  background: #676767; }
+  .menu .active > a:hover {
+    background-color: #555; }
+
 .top-bar-right li {
   height: 2.5rem; }
   .top-bar-right li:hover {
