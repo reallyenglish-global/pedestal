@@ -158,6 +158,7 @@ gulp.task('javascript', function() {
 	.pipe(gulp.dest('dist/assets/js'));
 
 	return gulp.src(PATHS.javascript)
+	.pipe($.babel())
 	.pipe($.concat('app.js'))
 	.pipe(gulp.dest('dist/assets/js'))
 	.on('finish', browser.reload);

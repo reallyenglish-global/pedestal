@@ -94,7 +94,7 @@ $breakpoint-classes: (small medium extramedium large);
 
 $grid-row-width: 100%;
 //$grid-column-count: 12;
-$grid-column-responsive-gutter: (
+$grid-column-gutter: (
   small: 20px,
   medium: 1.5rem,
 );
@@ -514,9 +514,6 @@ $reveal-padding: 2rem;
 $tab-margin: 0 0 1.5rem 0;
 $tab-background: transparent;
 $tab-background-active: $callout-background;
-// $tab-border: $light-gray;
-// $tab-item-font-size: 1rem;
-$tab-item-color: $body-font-color;
 $tab-item-background-hover: darken(#e8e8e8, 10%);
 $tab-item-padding: $button-padding;
 // $tab-expand-max: 6;
