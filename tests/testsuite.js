@@ -28,7 +28,7 @@ phantomcss.init({
   }
 });
 
-casper.test.begin('Booking system template visual tests', function(test) {
+casper.test.begin('Pedestal visual tests', function(test) {
 
   casper.on('remote.message', function(msg) {
     this.echo(msg);
