@@ -1,18 +1,18 @@
-# Booking System Template
+# Pedestal
 
-Booking System Template is a responsive front-end framework based on [Foundation Sites](http://foundation.zurb.com/).
+Pedestal is a responsive front-end framework based on [Foundation Sites](http://foundation.zurb.com/).
 
 ##Getting Started
 
-The easiest way to get started is to download the a zip of latest release [here](https://github.com/reallyenglish/booking-system-template/archive/master.zip).
+The easiest way to get started is to download the a zip of latest release [here](https://github.com/reallyenglish/pedestal/archive/master.zip).
 
 You can also with bower:
 
 ```bash
-bower install https://github.com/reallyenglish/booking-system-template.git#1.0.0
+bower install https://github.com/reallyenglish/pedestal.git#1.0.0
 ```
 
-## Working on Booking System Template
+## Working on Pedestal
 
 Firstly we would need to install these dependencies:
 
@@ -57,7 +57,7 @@ After starting the web server, you can find the styleguide at this URL:
 
 ### Modular CSS
 
-Booking System Template uses the [SMACSS](https://smacss.com/) methodology to keep it's CSS modular.
+Pedestal uses the [SMACSS](https://smacss.com/) methodology to keep it's CSS modular.
 
 ### Testing
 

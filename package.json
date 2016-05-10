@@ -1,5 +1,5 @@
 {
-  "name": "booking-system-template",
+  "name": "pedestal",
   "version": "1.0.0",
   "description": "HTML Templates using Foundation 6 for the Booking System",
   "main": "demo.js",
@@ -34,14 +34,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/reallyenglish/booking-system-template.git"
+    "url": "git+https://github.com/reallyenglish/pedestal.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/reallyenglish/booking-system-template/issues"
+    "url": "https://github.com/reallyenglish/pedestal/issues"
   },
-  "homepage": "https://github.com/reallyenglish/booking-system-template#readme",
+  "homepage": "https://github.com/reallyenglish/pedestal#readme",
   "pre-commit": [
     "lint"
   ]
