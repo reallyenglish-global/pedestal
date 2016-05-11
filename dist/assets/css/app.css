@@ -3829,6 +3829,8 @@ ul {
   padding: 0.5rem 0; }
   .booking-row:nth-child(even) {
     background-color: #f1f2f2; }
+  .booking-row.separator {
+    border-bottom: 3px solid #bababa; }
 
 .credit-status {
   background-color: #f3f3f3;

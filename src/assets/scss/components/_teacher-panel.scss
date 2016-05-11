@@ -5,4 +5,8 @@
   &:nth-child(even) {
     background-color: #f1f2f2;
   }
+
+  &.separator {
+    border-bottom: 3px solid #bababa;
+  }
 }

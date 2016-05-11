@@ -30,7 +30,8 @@
   "scripts": {
     "test": "casperjs test tests/testsuite.js",
     "lint": "gulp scss-lint-check",
-    "start": "gulp"
+    "start": "gulp",
+    "validate": "npm ls"
   },
   "repository": {
     "type": "git",
