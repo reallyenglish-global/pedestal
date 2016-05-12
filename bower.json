@@ -15,7 +15,7 @@
   ],
   "dependencies": {
     "foundation-sites": "~6.2.1",
-    "motion-ui": "~1.1.0",
+    "motion-ui": "~1.2.2",
     "sly": "https://raw.githubusercontent.com/darsain/sly/v1.6.1/dist/sly.min.js"
   },
   "private": true
