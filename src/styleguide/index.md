@@ -394,7 +394,7 @@ We haved added changed the styles for callouts. There are many different variati
 You can format callouts by adding borders or manipulating the border radius.
 
 ```html_example
-<div class="callout callout-primary callout-round">Callout with round corners</div>
+<div class="callout callout-primary callout-rounded">Callout with round corners</div>
 <div class="callout callout-info callout-bordered">Callout with border</div>
 ```
 
