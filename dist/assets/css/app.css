@@ -3779,6 +3779,10 @@ ul {
 .top-bar {
   font-size: 0.75rem;
   font-weight: bold; }
+  .top-bar li {
+    height: 2.5rem; }
+    .top-bar li:not(.menu-text):hover {
+      background-color: #555; }
   .top-bar .menu-text,
   .top-bar a {
     color: #fff; }
@@ -3790,11 +3794,6 @@ ul {
 .menu .active > a {
   background: #676767; }
   .menu .active > a:hover {
-    background-color: #555; }
-
-.top-bar-right li {
-  height: 2.5rem; }
-  .top-bar-right li:hover {
     background-color: #555; }
 
 @media screen and (max-width: 51.8125em) {
