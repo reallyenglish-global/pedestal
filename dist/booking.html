@@ -68,7 +68,6 @@
 		</div>
 	</header>
 	<div class="container">
-		
 		<div class="reveal" id="bookModal" data-reveal>
 			<div class="row">
 				<h3 class="columns hide-for-small-only">Teacher Introduction</h3>
@@ -211,13 +210,41 @@
 					</ul>
 				</div>
 			</div>
-			<div class="row margin-bottom-1">
-				<div class="float-right">
-					<a href="javascript:void(0);" class="text-secondary text-underline show-bookings">Display all bookings</a>
+			<div class="callout callout-info callout-bordered">
+				<form>
+				<h5>Filter by:</h5>
+				<div class="expanded button-group">
+					<button class="button is-disabled">00:00-8:00</button>
+					<button class="button is-disabled">6:00-14:00</button>
+					<button class="button">12:00-20:00</button>
+					<button class="button">18:00-1:00</button>
+					<button class="button">24 hours</button>
 				</div>
-				<div class="float-right">
-					<a href="javascript:void(0);" class="text-secondary text-underline hide-bookings hide">Hide early bookings</a>
-				</div>
+					<div class="row">
+						<div class="small-1 columns">
+							<label for="teachers-select" class="text-left middle">Teachers</label>
+						</div>
+						<div class="small-5 columns">
+							<select id="teachers-select">
+								<option value="all-teachers">All teachers</option>
+								<option value="favourite-teachers">Favourite teachers</option>
+							</select>
+						</div>
+						<div class="small-1 columns">
+							<label for="gender-select" class="text-left middle">Gender</label>
+						</div>
+						<div class="small-5 columns">
+							<select id="gender-select">
+								<option value="both">Both</option>
+								<option value="male">Male</option>
+								<option value="female">Female</option>
+							</select>
+						</div>
+						<div class="small-3 small-offset-9 columns">
+							<button class="button button-rounded expanded">Filter</button>
+						</div>
+					</div>
+				</form>
 			</div>
 			<div class="callout callout-info callout-bordered">
 				<ul class="pagination text-center" role="navigation" aria-label="Pagination">
@@ -240,27 +267,39 @@
 					<div class="columns">&nbsp;</div>
 					<div class="columns text-align-center text-secondary">
 						<img class="image-circle" src="assets/images/avatar.png">
-						Milton
+						<p>Milton</p>
+						<span class="icon icon-star"></span>
+						<span class="icon icon-star"></span> (5)
 					</div>
 					<div class="columns text-align-center text-secondary">
 						<img class="image-circle" src="assets/images/avatar.png">
-						Milton
+						<p>Milton</p>
+						<span class="icon icon-star"></span>
+						<span class="icon icon-star"></span> (5)
 					</div>
 					<div class="columns text-align-center text-secondary">
 						<img class="image-circle" src="assets/images/avatar.png">
-						Milton
+						<p>Milton</p>
+						<span class="icon icon-star"></span>
+						<span class="icon icon-star"></span> (5)
 					</div>
 					<div class="columns text-align-center text-secondary">
 						<img class="image-circle" src="assets/images/avatar.png">
-						Milton
+						<p>Milton</p>
+						<span class="icon icon-star"></span>
+						<span class="icon icon-star"></span> (5)
 					</div>
 					<div class="columns text-align-center text-secondary">
 						<img class="image-circle" src="assets/images/avatar.png">
-						Milton
+						<p>Milton</p>
+						<span class="icon icon-star"></span>
+						<span class="icon icon-star"></span> (5)
 					</div>
 					<div class="columns text-align-center text-secondary">
 						<img class="image-circle" src="assets/images/avatar.png">
-						Milton
+						<p>Milton</p>
+						<span class="icon icon-star"></span>
+						<span class="icon icon-star"></span> (5)
 					</div>
 				</div>
 				<div class="early-bookings hide">
