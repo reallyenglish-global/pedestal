@@ -298,6 +298,9 @@ There are many different button colour variations that can be used on a page.
 ```html_example
 <a href="#" class="button button-alt">Alternate button</a>
 <a href="#" class="button button-booked">Booked button</a>
+<a href="#" class="button button-alert">Alert button</a>
+<a href="#" class="button button-warning">Warning button</a>
+<a href="#" class="button button-success">Success button</a>
 ```
 ---
 

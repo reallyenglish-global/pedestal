@@ -2,6 +2,7 @@
 
 //Base Styles
 @import 'base/settings';
+@include add-foundation-colors;
 @import 'foundation';
 // @import 'motion-ui';
 
