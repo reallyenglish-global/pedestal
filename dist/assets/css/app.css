@@ -3819,21 +3819,28 @@ ul {
 
 .callout-alert {
   background-color: #f4c6c8; }
+  .callout-alert.callout-bordered {
+    border: 1px solid #ec9a9e; }
 
 .callout-warning {
   background-color: #f6dec1; }
+  .callout-warning.callout-bordered {
+    border: 1px solid #efc694; }
 
 .callout-primary {
   background-color: #bce2ec; }
+  .callout-primary.callout-bordered {
+    border: 1px solid #93d0e1; }
 
 .callout-success {
   background-color: #bbe9c5; }
+  .callout-success.callout-bordered {
+    border: 1px solid #94dca3; }
 
 .callout-info {
   background-color: #fff; }
-
-.callout-bordered {
-  border: 1px solid #e5e5e4; }
+  .callout-info.callout-bordered {
+    border: 1px solid #e5e5e5; }
 
 .callout-rounded {
   border-radius: 5px; }

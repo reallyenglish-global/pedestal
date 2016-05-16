@@ -4,26 +4,42 @@
 
 .callout-alert {
   background-color: $callout-background-alert;
+
+  &.callout-bordered {
+    border: 1px solid darken($callout-background-alert, 10.2%);
+  }
 }
 
 .callout-warning {
   background-color: $callout-background-warning;
+
+  &.callout-bordered {
+    border: 1px solid darken($callout-background-warning, 10.2%);
+  }
 }
 
 .callout-primary {
   background-color: $callout-background-primary;
+
+  &.callout-bordered {
+    border: 1px solid darken($callout-background-primary, 10.2%);
+  }
 }
 
 .callout-success {
   background-color: $callout-background-success;
+
+  &.callout-bordered {
+    border: 1px solid darken($callout-background-success, 10.2%);
+  }
 }
 
 .callout-info {
   background-color: $white;
-}
 
-.callout-bordered {
-  border: 1px solid #e5e5e4;
+  &.callout-bordered {
+    border: 1px solid darken($white, 10.2%);
+  }
 }
 
 .callout-rounded {

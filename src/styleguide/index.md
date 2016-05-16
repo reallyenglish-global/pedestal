@@ -404,6 +404,10 @@ You can format callouts by adding borders or manipulating the border radius.
 
 ```html_example
 <div class="callout callout-primary callout-rounded">Callout with round corners</div>
+<div class="callout callout-primary callout-bordered">Callout with border</div>
+<div class="callout callout-warning callout-bordered">Callout with border</div>
+<div class="callout callout-alert callout-bordered">Callout with border</div>
+<div class="callout callout-success callout-bordered">Callout with border</div>
 <div class="callout callout-info callout-bordered">Callout with border</div>
 ```
 
