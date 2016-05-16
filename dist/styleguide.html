@@ -14,6 +14,11 @@
       width: 100%;
       max-width: 100%;
     }
+
+    .tabs-panel .callout {
+      width: 80%;
+      margin: 0 auto 1rem auto;
+    }
     /* This styles code blocks used for examples. */
     .ss-code code {
       display: block;
@@ -307,10 +312,16 @@
 <a href="#" class="button button-secondary button-small">Small button</a></div><hr>
 <h2>Button Variations</h2><p>There are many different button colour variations that can be used on a page.</p>
 <div class="ss-code"><pre><code class="html"><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button button-alt"</span>&gt;</span>Alternate button<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button button-booked"</span>&gt;</span>Booked button<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span></code></pre></div>
+<span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button button-booked"</span>&gt;</span>Booked button<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button button-alert"</span>&gt;</span>Alert button<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button button-warning"</span>&gt;</span>Warning button<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button button-success"</span>&gt;</span>Success button<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span></code></pre></div>
 
 <div class="ss-code-live"><a href="#" class="button button-alt">Alternate button</a>
-<a href="#" class="button button-booked">Booked button</a></div><hr>
+<a href="#" class="button button-booked">Booked button</a>
+<a href="#" class="button button-alert">Alert button</a>
+<a href="#" class="button button-warning">Warning button</a>
+<a href="#" class="button button-success">Success button</a></div><hr>
 <h2>Round and Circle Buttons</h2><div class="ss-code"><pre><code class="html"><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button button-primary button-rounded"</span>&gt;</span>Rounded button<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button button-alt button-circle"</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"icon icon-question-mark"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
@@ -375,11 +386,24 @@
 <div class="callout callout-warning">Callout warning</div>
 <div class="callout callout-alert">Callout alert</div>
 <div class="callout callout-success">Callout success</div>
-<div class="callout callout-info">Callout info</div></div><h2>Formatting callouts</h2><p>You can format callouts by adding borders or manipulating the border radius.</p>
-<div class="ss-code"><pre><code class="html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"callout callout-primary callout-round"</span>&gt;</span>Callout with round corners<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<div class="callout callout-info">Callout info</div></div><h2>Callout Sizes</h2><p>We can reduce the padding in callouts.</p>
+<div class="ss-code"><pre><code class="html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"callout callout-primary callout-small"</span>&gt;</span>Small callout<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"callout callout-info callout-large"</span>&gt;</span>Large callout<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></code></pre></div>
+
+<div class="ss-code-live"><div class="callout callout-primary callout-small">Small callout</div>
+<div class="callout callout-info callout-large">Large callout</div></div><h2>Formatting callouts</h2><p>You can format callouts by adding borders or manipulating the border radius.</p>
+<div class="ss-code"><pre><code class="html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"callout callout-primary callout-rounded"</span>&gt;</span>Callout with round corners<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"callout callout-primary callout-bordered"</span>&gt;</span>Callout with border<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"callout callout-warning callout-bordered"</span>&gt;</span>Callout with border<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"callout callout-alert callout-bordered"</span>&gt;</span>Callout with border<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"callout callout-success callout-bordered"</span>&gt;</span>Callout with border<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"callout callout-info callout-bordered"</span>&gt;</span>Callout with border<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></code></pre></div>
 
-<div class="ss-code-live"><div class="callout callout-primary callout-round">Callout with round corners</div>
+<div class="ss-code-live"><div class="callout callout-primary callout-rounded">Callout with round corners</div>
+<div class="callout callout-primary callout-bordered">Callout with border</div>
+<div class="callout callout-warning callout-bordered">Callout with border</div>
+<div class="callout callout-alert callout-bordered">Callout with border</div>
+<div class="callout callout-success callout-bordered">Callout with border</div>
 <div class="callout callout-info callout-bordered">Callout with border</div></div>
             </section>
             <section class="tabs-panel callout " id="tabs">

@@ -2,6 +2,7 @@
 
 //Base Styles
 @import 'base/settings';
+@include add-foundation-colors;
 @import 'foundation';
 // @import 'motion-ui';
 
@@ -15,7 +16,7 @@
 // @include foundation-accordion;
 // @include foundation-accordion-menu;
 // @include foundation-badge;
-// @include foundation-breadcrumbs;
+@include foundation-breadcrumbs;
 // @include foundation-button-group;
 @include foundation-callout;
 @include foundation-close-button;
@@ -34,7 +35,7 @@
 // @include foundation-slider;
 // @include foundation-sticky;
 @include foundation-reveal;
-// @include foundation-switch;
+@include foundation-switch;
 @include foundation-table;
 @include foundation-tabs;
 // @include foundation-thumbnail;

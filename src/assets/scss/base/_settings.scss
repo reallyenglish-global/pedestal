@@ -48,7 +48,13 @@ $global-font-size: 100%;
 $global-width: rem-calc(1200);
 $global-lineheight: 1.5;
 $global-max-width: 70.5rem;
-
+$foundation-palette: (
+  primary: #48aadf,
+  secondary: #878787,
+  success: #bbe9c5,
+  warning: #f6dec1,
+  alert: #f4c6c8
+);
 $primary-color: #48aadf;
 $secondary-color: #878787;
 $success-color: #bbe9c5;

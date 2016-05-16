@@ -298,6 +298,9 @@ There are many different button colour variations that can be used on a page.
 ```html_example
 <a href="#" class="button button-alt">Alternate button</a>
 <a href="#" class="button button-booked">Booked button</a>
+<a href="#" class="button button-alert">Alert button</a>
+<a href="#" class="button button-warning">Warning button</a>
+<a href="#" class="button button-success">Success button</a>
 ```
 ---
 
@@ -386,12 +389,25 @@ We haved added changed the styles for callouts. There are many different variati
 <div class="callout callout-info">Callout info</div>
 ```
 
+## Callout Sizes
+
+We can reduce the padding in callouts.
+
+```html_example
+<div class="callout callout-primary callout-small">Small callout</div>
+<div class="callout callout-info callout-large">Large callout</div>
+```
+
 ## Formatting callouts
 
 You can format callouts by adding borders or manipulating the border radius.
 
 ```html_example
-<div class="callout callout-primary callout-round">Callout with round corners</div>
+<div class="callout callout-primary callout-rounded">Callout with round corners</div>
+<div class="callout callout-primary callout-bordered">Callout with border</div>
+<div class="callout callout-warning callout-bordered">Callout with border</div>
+<div class="callout callout-alert callout-bordered">Callout with border</div>
+<div class="callout callout-success callout-bordered">Callout with border</div>
 <div class="callout callout-info callout-bordered">Callout with border</div>
 ```
 

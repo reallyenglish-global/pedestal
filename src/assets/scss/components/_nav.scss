@@ -7,6 +7,14 @@
   font-size: 0.75rem;
   font-weight: bold;
 
+  li {
+    height: 2.5rem;
+
+    &:not(.menu-text):hover {
+      background-color: #555;
+    }
+  }
+
   .menu-text,
   a {
     color: $white;
@@ -21,17 +29,6 @@
 .menu {
   .active > a {
     background: $topbar-background;
-
-    &:hover {
-      background-color: #555;
-    }
-  }
-}
-
-
-.top-bar-right {
-  li {
-    height: 2.5rem;
 
     &:hover {
       background-color: #555;

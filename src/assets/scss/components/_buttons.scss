@@ -8,10 +8,41 @@
   }
 }
 
+.button-alert {
+  background-color: darken($alert-color, 15%);
+  color: $white;
+
+  &:hover,
+  &:active {
+    background-color: darken($alert-color, 5%);
+  }
+}
+
+.button-warning {
+  background-color: darken($warning-color, 15%);
+  color: $white;
+
+  &:hover,
+  &:active {
+    background-color: darken($warning-color, 5%);
+  }
+}
+
+.button-success {
+  background-color: darken($success-color, 15%);
+  color: $white;
+
+  &:hover,
+  &:active {
+    background-color: darken($success-color, 5%);
+  }
+}
+
 .button-secondary {
   background-color: $secondary-color;
 
-  &:hover {
+  &:hover,
+  &:active {
     background-color: darken($secondary-color, 10%);
   }
 }
