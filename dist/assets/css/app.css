@@ -3570,22 +3570,22 @@ ul {
     pointer-events: auto; }
 
 .button-alert {
-  background-color: #f4c6c8;
+  background-color: #e8868a;
   color: #fff; }
   .button-alert:hover, .button-alert:active {
-    background-color: #ec9b9f; }
+    background-color: #f0b1b3; }
 
 .button-warning {
-  background-color: #f6dec1;
+  background-color: #ecba7e;
   color: #fff; }
   .button-warning:hover, .button-warning:active {
-    background-color: #f0c694; }
+    background-color: #f3d2ab; }
 
 .button-success {
-  background-color: #bbe9c5;
+  background-color: #81d694;
   color: #fff; }
   .button-success:hover, .button-success:active {
-    background-color: #94dda4; }
+    background-color: #a8e3b5; }
 
 .button-secondary {
   background-color: #878787; }

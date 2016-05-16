@@ -9,32 +9,32 @@
 }
 
 .button-alert {
-  background-color: $alert-color;
+  background-color: darken($alert-color, 15%);
   color: $white;
 
   &:hover,
   &:active {
-    background-color: darken($alert-color, 10%);
+    background-color: darken($alert-color, 5%);
   }
 }
 
 .button-warning {
-  background-color: $warning-color;
+  background-color: darken($warning-color, 15%);
   color: $white;
 
   &:hover,
   &:active {
-    background-color: darken($warning-color, 10%);
+    background-color: darken($warning-color, 5%);
   }
 }
 
 .button-success {
-  background-color: $success-color;
+  background-color: darken($success-color, 15%);
   color: $white;
 
   &:hover,
   &:active {
-    background-color: darken($success-color, 10%);
+    background-color: darken($success-color, 5%);
   }
 }
 
