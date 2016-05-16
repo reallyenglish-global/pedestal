@@ -3838,6 +3838,12 @@ ul {
 .callout-rounded {
   border-radius: 5px; }
 
+.callout-small {
+  padding: 0.625rem; }
+
+.callout-large {
+  padding: 1.875rem; }
+
 .image-bordered {
   border: 2px solid #929497; }
 

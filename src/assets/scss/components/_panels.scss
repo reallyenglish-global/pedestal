@@ -29,3 +29,11 @@
 .callout-rounded {
   border-radius: 5px;
 }
+
+.callout-small {
+  padding: rem-calc(10);
+}
+
+.callout-large {
+  padding: rem-calc(30);
+}

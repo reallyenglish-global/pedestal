@@ -389,6 +389,15 @@ We haved added changed the styles for callouts. There are many different variati
 <div class="callout callout-info">Callout info</div>
 ```
 
+## Callout Sizes
+
+We can reduce the padding in callouts.
+
+```html_example
+<div class="callout callout-primary callout-small">Small callout</div>
+<div class="callout callout-info callout-large">Large callout</div>
+```
+
 ## Formatting callouts
 
 You can format callouts by adding borders or manipulating the border radius.
