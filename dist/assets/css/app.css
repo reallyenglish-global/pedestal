@@ -3967,7 +3967,8 @@ ul {
     cursor: pointer; }
     .day-picker-frame .day.is-disabled {
       background-color: #e5e5e5;
-      color: #939598; }
+      color: #939598;
+      cursor: auto; }
     .day-picker-frame .day.is-active {
       color: #fff;
       background-color: #3babde; }
