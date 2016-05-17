@@ -3967,7 +3967,8 @@ ul {
     cursor: pointer; }
     .day-picker-frame .day.is-disabled {
       background-color: #e5e5e5;
-      color: #939598; }
+      color: #939598;
+      cursor: auto; }
     .day-picker-frame .day.is-active {
       color: #fff;
       background-color: #3babde; }
@@ -3991,8 +3992,10 @@ ul {
   padding: 0.5rem 0; }
   .booking-row:nth-child(even) {
     background-color: #f1f2f2; }
-  .booking-row.separator {
-    border-bottom: 3px solid #bababa; }
+  .booking-row.row-separator {
+    background-color: #bababa;
+    height: 3px;
+    padding: 0; }
 
 .credit-status {
   background-color: #f3f3f3;

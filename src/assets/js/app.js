@@ -20,7 +20,7 @@
       dynamicHandle: 1,
       clickBar: 1,
 
-      startAt: $('.day-picker-frame li').index($('.day-picker-frame li.active')),
+      startAt: $('.day-picker-frame li').index($('.day-picker-frame li.is-active')),
 
       // Cycling
       cycleBy: 'pages',
@@ -30,9 +30,15 @@
 
       // Buttons
       prevPage: $('button.previous-week'),
-      nextPage: $('button.next-week')
+      nextPage: $('button.next-week'),
+
+      activeClass:   'is-active',
+      disabledClass: 'is-disabled'
     });
   }
+
+  //Add back into sly.js
+  $('.day-picker-frame li.is-disabled').click(false);
 
   $(".show-feedback").click(function() {
     $(this).parent().siblings().find(".lesson-assessment-feedback").toggleClass("hide");
