@@ -28,9 +28,10 @@ var PATHS = {
 	'bower_components/foundation-sites/scss',
 	'bower_components/motion-ui/src/'
 	],
-	javascript: [
-	'bower_components/jquery/dist/jquery.js',
-	'bower_components/what-input/what-input.js',
+  jquery: [
+  'bower_components/jquery/dist/jquery.js'
+  ],
+  foundation: [
 	'bower_components/foundation-sites/js/foundation.core.js',
 	'bower_components/foundation-sites/js/foundation.util.*.js',
 	'bower_components/foundation-sites/js/foundation.abide.js',
@@ -52,9 +53,11 @@ var PATHS = {
 	'bower_components/foundation-sites/js/foundation.tabs.js',
 	'bower_components/foundation-sites/js/foundation.toggler.js',
 	'bower_components/foundation-sites/js/foundation.tooltip.js',
+	],
+	eztt: [
+	'bower_components/what-input/what-input.js',
 	'bower_components/sly/index.js',
-	'src/assets/js/**/!(demo).js',
-	'src/assets/js/app.js'
+	'src/assets/js/eztt.js'
 	]
 };
 
@@ -150,14 +153,32 @@ gulp.task('base64', ['scss-lint', 'sass'], function () {
     .on('finish', browser.reload);
 });
 
+gulp.task('jquery', function() {
+  return gulp.src(PATHS.jquery)
+    .pipe(gulp.dest('dist/assets/js'));
+});
+gulp.task('foundation', function() {
+  return gulp.src(PATHS.foundation)
+	  .pipe($.babel())
+	  .pipe($.concat('foundation.js'))
+	  .pipe(gulp.dest('dist/assets/js'));
+});
+gulp.task('eztt', function() {
+  return gulp.src(PATHS.eztt)
+	  .pipe($.babel())
+	  .pipe($.concat('eztt.js'))
+	  .pipe(gulp.dest('dist/assets/js'));
+});
 // Combine JavaScript into one file
 // In production, the file is minified
-gulp.task('javascript', function() {
+gulp.task('javascript', ['jquery', 'foundation', 'eztt'], function() {
 
 	gulp.src('src/assets/js/demo.js')
 	.pipe(gulp.dest('dist/assets/js'));
 
-	return gulp.src(PATHS.javascript)
+	return gulp.src(['dist/assets/js/jquery.js',
+                   'dist/assets/js/foundation.js',
+                   'dist/assets/js/eztt.js'])
 	.pipe($.babel())
 	.pipe($.concat('app.js'))
 	.pipe(gulp.dest('dist/assets/js'))
