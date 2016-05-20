@@ -3859,6 +3859,11 @@ ul {
 .reveal-large {
   max-width: 70.5rem; }
 
+.switch-rounded > .switch-paddle {
+  border-radius: 1000px; }
+  .switch-rounded > .switch-paddle::after {
+    border-radius: 50%; }
+
 .has-tip > * {
   cursor: pointer; }
 
@@ -3994,8 +3999,12 @@ ul {
     background-color: #f1f2f2; }
   .booking-row.row-separator {
     background-color: #bababa;
-    height: 3px;
+    text-align: center;
     padding: 0; }
+    .booking-row.row-separator > p {
+      margin-bottom: 0;
+      font-size: 1rem;
+      color: #fff; }
 
 .credit-status {
   background-color: #f3f3f3;

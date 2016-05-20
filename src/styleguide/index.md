@@ -503,6 +503,21 @@ We can also add checkpoints with labels and position them with the `.progress-ch
 
 
 
+# Switches
+
+Among the Foundation switches there are also rounded switches available. This can be produced by simply adding the `switch-rounded` class to the switch component.
+
+```html_example
+<div class="switch switch-rounded">
+  <input class="switch-input" id="exampleSwitch" type="checkbox" name="exampleSwitch">
+  <label class="switch-paddle" for="exampleSwitch">
+    <span class="show-for-sr">Download Kittens</span>
+  </label>
+</div>
+```
+
+
+
 # Lessons
 
 Lessons are components which can display lesson information to a user. They are normally grouped together using the `.lesson-set` and `.lesson` classes.
