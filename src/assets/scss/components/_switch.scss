@@ -2,7 +2,7 @@
   > .switch-paddle {
     border-radius: 1000px;
 
-    &:after {
+    &::after {
       border-radius: 50%;
     }
   }

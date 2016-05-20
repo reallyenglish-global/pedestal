@@ -3861,7 +3861,7 @@ ul {
 
 .switch-rounded > .switch-paddle {
   border-radius: 1000px; }
-  .switch-rounded > .switch-paddle:after {
+  .switch-rounded > .switch-paddle::after {
     border-radius: 50%; }
 
 .has-tip > * {
