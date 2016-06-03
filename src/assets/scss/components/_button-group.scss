@@ -1,5 +1,26 @@
 .button-group {
   > .button {
-    background-color: #3babde;
+    background-color: $booked-color;
+    color: $secondary-color;
+
+    &:hover {
+      background-color: darken($booked-color, 10%);
+    }
+
+    &.is-selected {
+      background-color: #3babde;
+      color: $white;
+
+      &:hover {
+        background-color: darken(#3babde, 10%);
+      }
+    }
   }
+}
+
+
+//There's a bug in foundation regarding expanded button groups. You have to slightly shrink the width of buttons for them all to fit on one line.
+.button-group.expanded .button:first-child:nth-last-child(5),
+.button-group.expanded .button:first-child:nth-last-child(5):first-child:nth-last-child(5) ~ .button {
+  width: 19.8%;
 }
