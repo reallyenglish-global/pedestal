@@ -3604,7 +3604,19 @@ ul {
     padding: 0.25rem 0.5rem; } }
 
 .button-group > .button {
-  background-color: #3babde; }
+  background-color: #e0f0f3;
+  color: #777; }
+  .button-group > .button:hover {
+    background-color: #bbdee5; }
+  .button-group > .button.is-selected {
+    background-color: #3babde;
+    color: #fff; }
+    .button-group > .button.is-selected:hover {
+      background-color: #2192c5; }
+
+.button-group.expanded .button:first-child:nth-last-child(5),
+.button-group.expanded .button:first-child:nth-last-child(5):first-child:nth-last-child(5) ~ .button {
+  width: 19.8%; }
 
 .icon {
   background-repeat: no-repeat;
