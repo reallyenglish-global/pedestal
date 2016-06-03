@@ -16,8 +16,8 @@
 // @include foundation-accordion;
 // @include foundation-accordion-menu;
 // @include foundation-badge;
-@include foundation-breadcrumbs;
-// @include foundation-button-group;
+// @include foundation-breadcrumbs;
+@include foundation-button-group;
 @include foundation-callout;
 @include foundation-close-button;
 @include foundation-drilldown-menu;
@@ -57,6 +57,7 @@
 //Component Styles
 @import 'components/tabs';
 @import 'components/buttons';
+@import 'components/button-group';
 @import 'components/icons';
 @import 'components/nav';
 @import 'components/panels';
