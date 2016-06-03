@@ -3759,12 +3759,10 @@ ul {
   background-color: #e0f0f3;
   color: #777; }
   .button-group > .button:hover {
-    background-color: #bbdee5; }
+    background-color: #c3e2e8; }
   .button-group > .button.is-selected {
     background-color: #3babde;
     color: #fff; }
-    .button-group > .button.is-selected:hover {
-      background-color: #2192c5; }
 
 .button-group.expanded .button:first-child:nth-last-child(5),
 .button-group.expanded .button:first-child:nth-last-child(5):first-child:nth-last-child(5) ~ .button {
@@ -4082,6 +4080,8 @@ ul {
     padding: 0.5rem 0;
     width: 5.61rem;
     cursor: pointer; }
+    .day-picker-frame .day:hover {
+      background-color: #c3e2e8; }
     .day-picker-frame .day.is-disabled {
       background-color: #e5e5e5;
       color: #939598;

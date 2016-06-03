@@ -41,6 +41,10 @@
     width: 5.61rem;
     cursor: pointer;
 
+    &:hover {
+      background-color: darken($booked-color, 8%);
+    }
+
     &.is-disabled {
       background-color: #e5e5e5;
       color: #939598;

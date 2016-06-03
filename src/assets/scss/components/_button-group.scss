@@ -4,16 +4,12 @@
     color: $secondary-color;
 
     &:hover {
-      background-color: darken($booked-color, 10%);
+      background-color: darken($booked-color, 8%);
     }
 
     &.is-selected {
       background-color: #3babde;
       color: $white;
-
-      &:hover {
-        background-color: darken(#3babde, 10%);
-      }
     }
   }
 }
