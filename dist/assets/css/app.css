@@ -2105,36 +2105,6 @@ select {
 .clearfix::after {
   clear: both; }
 
-<<<<<<< 4d70dc47206cbdad53ccf363d45f2ed6b1014a67
-.breadcrumbs {
-  list-style: none;
-  margin: 0 0 1rem 0; }
-  .breadcrumbs::before, .breadcrumbs::after {
-    content: ' ';
-    display: table; }
-  .breadcrumbs::after {
-    clear: both; }
-  .breadcrumbs li {
-    float: left;
-    color: #0a0a0a;
-    font-size: 0.6875rem;
-    cursor: default;
-    text-transform: uppercase; }
-    .breadcrumbs li:not(:last-child)::after {
-      color: #cacaca;
-      content: "/";
-      margin: 0 0.75rem;
-      position: relative;
-      top: 1px;
-      opacity: 1; }
-  .breadcrumbs a {
-    color: #48aadf; }
-    .breadcrumbs a:hover {
-      text-decoration: underline; }
-  .breadcrumbs .disabled {
-    color: #cacaca;
-    cursor: not-allowed; }
-=======
 .button-group {
   margin-bottom: 1.5rem;
   font-size: 0; }
@@ -2179,35 +2149,35 @@ select {
       width: 16.66667%;
       margin-right: 1px; }
   .button-group.primary .button {
-    background-color: #2199e8;
+    background-color: #48aadf;
     color: #fff; }
     .button-group.primary .button:hover, .button-group.primary .button:focus {
-      background-color: #147cc0;
+      background-color: #238fc9;
       color: #fff; }
   .button-group.secondary .button {
-    background-color: #777;
+    background-color: #878787;
     color: #fff; }
     .button-group.secondary .button:hover, .button-group.secondary .button:focus {
-      background-color: #5f5f5f;
+      background-color: #6c6c6c;
       color: #fff; }
   .button-group.success .button {
-    background-color: #3adb76;
-    color: #fff; }
+    background-color: #bbe9c5;
+    color: #0a0a0a; }
     .button-group.success .button:hover, .button-group.success .button:focus {
-      background-color: #22bb5b;
-      color: #fff; }
+      background-color: #7cd48f;
+      color: #0a0a0a; }
   .button-group.warning .button {
-    background-color: #ffae00;
-    color: #fff; }
+    background-color: #f6dec1;
+    color: #0a0a0a; }
     .button-group.warning .button:hover, .button-group.warning .button:focus {
-      background-color: #cc8b00;
-      color: #fff; }
+      background-color: #ebb574;
+      color: #0a0a0a; }
   .button-group.alert .button {
-    background-color: #ec5840;
-    color: #fff; }
+    background-color: #f4c6c8;
+    color: #0a0a0a; }
     .button-group.alert .button:hover, .button-group.alert .button:focus {
-      background-color: #da3116;
-      color: #fff; }
+      background-color: #e67c81;
+      color: #0a0a0a; }
   .button-group.stacked .button, .button-group.stacked-for-small .button, .button-group.stacked-for-medium .button {
     width: 100%;
     border-right: 1px solid transparent; }
@@ -2229,7 +2199,6 @@ select {
       .button-group.stacked-for-small.expanded .button {
         display: block;
         margin-right: 0; } }
->>>>>>> Added filters to booking page
 
 .callout {
   margin: 0 0 1rem 0;
@@ -3757,7 +3726,7 @@ ul {
 
 .button-group > .button {
   background-color: #e0f0f3;
-  color: #777; }
+  color: #878787; }
   .button-group > .button:hover {
     background-color: #c3e2e8; }
   .button-group > .button.is-selected {
