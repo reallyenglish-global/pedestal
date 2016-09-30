@@ -3959,6 +3959,8 @@ ul {
   margin-bottom: 1rem; }
   .lesson-set.is-unbooked .lesson:nth-child(3) {
     box-shadow: inset 0 -6px 0 -2px #e0f0f3, inset 0 -7px 0 -2px #e0f0f3; }
+  .lesson-set.is-unbooked-business .lesson:nth-child(4) {
+    box-shadow: inset 0 -6px 0 -2px #e0f0f3, inset 0 -7px 0 -2px #e0f0f3; }
 
 .lesson {
   border: 1px solid #e7e7e7;
