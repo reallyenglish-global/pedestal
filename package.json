@@ -1,6 +1,6 @@
 {
   "name": "pedestal",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "HTML Templates using Foundation 6 for the Booking System",
   "main": "demo.js",
   "dependencies": {},
