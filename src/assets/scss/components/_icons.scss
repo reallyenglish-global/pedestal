@@ -58,6 +58,18 @@
   margin: 0 2px;
 }
 
+.icon-info {
+  @extend %icon-medium;
+  background-image: url('/assets/images/icons/info.svg');
+  margin: 0 2px;
+}
+
+.icon-external-link {
+  @extend %icon-medium;
+  background-image: url('/assets/images/icons/external-link.svg');
+  margin: 0 2px;
+}
+
 .icon-download {
   @extend %icon-medium;
   background-image: url('/assets/images/icons/download.svg');
