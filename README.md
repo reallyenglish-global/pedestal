@@ -9,7 +9,7 @@ The easiest way to get started is to download the a zip of latest release [here]
 You can also with bower:
 
 ```bash
-bower install https://github.com/reallyenglish/pedestal.git#1.3.7
+bower install https://github.com/reallyenglish/pedestal.git
 ```
 
 ## Working on Pedestal
