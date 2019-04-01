@@ -110,27 +110,6 @@ gulp.task('styleguide', function(done) {
   }, done);
 });
 
-gulp.task('scss-lint', function() {
-	return gulp.src('./src/assets/scss/**/*.scss')
-	.pipe(scsslint({
-		'bundleExec': true,
-		'config': 'scss-lint.yml',
-		'filePipeOutput': 'scss-report.json'
-	}))
-	.pipe(gulp.dest('./'));
-});
-
-gulp.task('scss-lint-check', function() {
-	return gulp.src('./src/assets/scss/**/*.scss')
-	.pipe(scsslint({
-		'bundleExec': true,
-		'config': 'scss-lint.yml',
-		'filePipeOutput': 'scss-report.json',
-		'customReport': customReporter
-	}))
-	.pipe(gulp.dest('./'));
-});
-
 gulp.task('sass', function() {
   return gulp.src('src/assets/scss/app.scss')
     .pipe($.sass({
@@ -143,7 +122,7 @@ gulp.task('sass', function() {
     .pipe(gulp.dest('dist/assets/css'));
 });
 
-gulp.task('base64', ['scss-lint', 'sass'], function () {
+gulp.task('base64', ['sass'], function () {
   return gulp.src('dist/assets/css/app.css')
     .pipe(base64({
       baseDir: "src",

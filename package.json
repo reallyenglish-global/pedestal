@@ -29,7 +29,6 @@
   },
   "scripts": {
     "test": "casperjs test tests/testsuite.js",
-    "lint": "gulp scss-lint-check",
     "start": "gulp",
     "validate": "npm ls"
   },
@@ -42,8 +41,5 @@
   "bugs": {
     "url": "https://github.com/reallyenglish/pedestal/issues"
   },
-  "homepage": "https://github.com/reallyenglish/pedestal#readme",
-  "pre-commit": [
-    "lint"
-  ]
+  "homepage": "https://github.com/reallyenglish/pedestal#readme"
 }
